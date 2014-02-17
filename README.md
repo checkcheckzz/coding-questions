@@ -14,3 +14,6 @@ Given an unsigned int array with size n，the sum of array equals a，calculate 
 Max production subarray
 
 Given a string, print out the chars with maximal number of consecutive counts
+
+Given a nestted array, such as {a,{b,c},{{d},e}}, return the level sum = a + 2 * (b + c) + 3 * d + 2 * e
+
