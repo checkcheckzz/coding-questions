@@ -55,4 +55,24 @@ coding-problems
 
 27.Shortest distance between two nodes of binary tree
 
-28.
+28.Size of the largest subtree that is complete
+
+29.Caclulate (m^n)%(10^k)
+
+30.For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N
+
+31.Highest 1 position of binary expression
+
+32.Delete k digits of a number to get minimal number
+
+33.Write a function outputing true with probability 1/2^N given a function outputing true with probability 0.5
+
+34.Put m apples to n plates
+
+35.
+
+36.
+
+37.
+
+38.
