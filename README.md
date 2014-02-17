@@ -29,7 +29,19 @@ coding-problems
 
 14.Iterative Binary Search
 
-15.
+15.Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)
+
+16.Grid Traversal
+
+17.How many rabbits can the fox eat
+
+18.Number of closed rectangles in a matrix
+
+19.Valid whether a graph exists
+
+20.Calculate the distance from each empty room to nearest guard
+
+
 
 
 
