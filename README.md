@@ -69,10 +69,24 @@ coding-problems
 
 34.Put m apples to n plates
 
-35.
+35.Given a positive integer N, print all combinations of non-negative integer sum to N
 
-36.
+36.BinaryMatching
 
-37.
+37.Check whether two strings match by insertdeletereplace one char of any one of string
 
-38.
+38.Compound Words
+
+39.Delete repeating strings
+
+40.Filter dirty words
+
+41.Find a vowel product sum of an ASCII string
+
+42.Given a list of strings, find the longest common prefix(at least two)
+
+43.Given a list of words and a string pattern including question mark, find all match words
+
+44.Given a string s, return the shortest substring that is only occurring once in s
+
+45.Given a string，delete all char A，and double all char B
