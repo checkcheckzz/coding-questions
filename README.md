@@ -41,7 +41,18 @@ coding-problems
 
 20.Calculate the distance from each empty room to nearest guard
 
+21.Construct a xml tree
 
+22.Heapify a binary tree
 
+23.Immediate right neighbor of given node(parent links, no root)
 
+24.Longest distance between two nodes of binary tree
 
+25.Printing all nodes at a given distance from a starting node in a binary tree
+
+26.Second largest node in BST
+
+27.Shortest distance between two nodes of binary tree
+
+28.
