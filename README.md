@@ -23,5 +23,13 @@ coding-problems
 
 11.Find the minimal difference between two sorted arrays
 
+12.Sliding Window Maximum
+
+13.Jump the river
+
+14.Iterative Binary Search
+
+15.
+
 
 
