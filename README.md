@@ -90,3 +90,19 @@ coding-problems
 44.Given a string s, return the shortest substring that is only occurring once in s
 
 45.Given a string，delete all char A，and double all char B
+
+46.Given two string arrays, sort the string in first array according to the string order in second array
+
+47.Given two strings, get the longest length of reapeating part between end of first string and start of second string
+
+48.Longest substring containing just two unique chars
+
+49.Number of matched patterns in a string
+
+50.One-byte or two-byte encoding
+
+51.Length of shortest subarray with sum larger than S
+
+
+
+50.
