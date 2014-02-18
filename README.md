@@ -105,4 +105,22 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 51.Length of shortest subarray with sum larger than S
 
-52.
+52.Black white reverse board game
+
+53.Catch that cow
+
+54.Colored sticks
+
+55.Cover board with tile
+
+56.Deep iterator
+
+57.Divide integers
+
+58.Equation solution
+
+59.Familiy relation
+
+60.Final perimeter  multiple rectangles cover
+
+61.
