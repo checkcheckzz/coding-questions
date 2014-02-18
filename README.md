@@ -123,4 +123,61 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 60.Final perimeter  multiple rectangles cover
 
-61.
+61.Find the latest version
+
+62.Get the volumn
+
+63.Group contact by email list
+
+64.Harry potter in the maze
+
+65.Last n lines of a file
+
+66.Longest repeating substring
+
+67.Maximal path gain of two persons on board
+
+68.N factorial
+
+69.Number of online user
+
+70.Number of squares
+
+71.Oil deposits
+
+72.Password lock
+
+73.Pizza picking problem
+
+74.Present black and white graph with quadtree
+
+75.Process num with limited functional deque
+
+76.Pushing boxes
+
+77.Racer score
+
+78.Random algorithm
+
+79.Red and black
+
+80.Shuffle up
+
+81.Skyline
+
+82.Spreadsheet Calculation
+
+83.Thief Problem
+
+84.Total area multiple rectangles cover
+
+85.Total weight of a subtree below this node
+
+86.Turn off lights
+
+87.Two dimension top k
+
+88.Water in histogram
+
+89.Water in two dimensional histogram
+
