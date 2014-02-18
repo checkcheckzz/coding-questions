@@ -1,5 +1,7 @@
 coding-problems
 ===============
+These problem comes from interview, discussion and blogs I read. 
+
 
 1.Detect cycle in an array
 
