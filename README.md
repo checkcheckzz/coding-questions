@@ -181,6 +181,8 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 89.Water in two dimensional histogram
 
+--------------------------------------------
+
 90.Angle between the hour and minute
 
 91.Boggle puzzle
@@ -205,7 +207,8 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 101.Get original number counted digit 7
 
-102.
+102.Implement memmove
+
 
 
 
