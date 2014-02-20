@@ -191,7 +191,7 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 93.count the longest continuous bit 0s in array
 
-94.Design class support add delete and getRandom
+94.Design class support insert, delete and getRandom
 
 95.Find 1st one in large duplicated sorted array
 
