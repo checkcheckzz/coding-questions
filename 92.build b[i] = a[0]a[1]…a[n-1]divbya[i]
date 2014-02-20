@@ -10,9 +10,9 @@ You must do this in O(n) without using division.
 
 
 
-
-//O(n) time, O(1) space
-
+/*solution: scan two times
+O(n) time, O(1) space
+*/
  
 void BuildB(int a[], int n, int b[])
 {
