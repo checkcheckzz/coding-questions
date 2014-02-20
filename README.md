@@ -181,3 +181,32 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 89.Water in two dimensional histogram
 
+90.Angle between the hour and minute
+
+91.Boggle puzzle
+
+92.Build b[i] = a[0]a[1]…a[n-1]/a[i]
+
+93.count the longest continuous bit 0s in array
+
+94.Design class support add delete and getRandom
+
+95.Find 1st one in large duplicated sorted array
+
+96.Find none duplicate elements in two arrays
+
+97.Find the largest BST sub tree in BT
+
+98.Find the colored largest square in matrix
+
+99.Find the max item A[i], such that A[i]=A[x]+A[y]
+
+100.Find the right most node in each level
+
+101.Get original number counted digit 7
+
+102.
+
+
+
+
