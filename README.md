@@ -209,6 +209,27 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 102.Implement memmove
 
+103.Insert into a Cyclic Sorted List
+
+104.Length of First continuous subarray that sums to 0
+
+105.Length of smallest subarray sum no less than k
+
+106.Longest substring which appears more than once
+
+107.Minimal subset sum
+
+108.PreInPostorder travel of bT
+
+109.SerializeDeSerialize a binary tree
+
+110.SerializeDeSerialize an arbitrary nodes tree
+
+111.Stable 2 way partition
+
+112.Statistical BST
+
+113.Switch binary tree to make equal
 
 
 
