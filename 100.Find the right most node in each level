@@ -1,0 +1,56 @@
+/*
+Find the right most node in each level of a binary tree
+*/
+
+/*
+solution: preorder traversal but with right child at first
+O(n) time
+*/
+
+
+
+#include<iostream>
+#include<cstdlib>
+#include<vector>
+using namespace std;
+
+struct NODE
+{
+    int val;
+    NODE* pLft;
+    NODE* pRgt;
+ 
+    NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
+};
+
+void getRightMostBThelp(NODE* Node, vector<NODE*>& vec, int Lev)
+{
+    if (NULL == Node)
+        return;
+ 
+    if (nLev >= vec.size())
+	{vec.push_back(Node);
+	cout<<Node->val;}
+	
+ 
+    getRightMostBThelp(Node->pRgt, vec, Lev+1);
+    getRightMostBThelp(Node->pLft, vec, Lev+1);
+}
+ 
+vector<NODE*> getRightMostBT(NODE* root)
+{
+    vector<NODE*> vec;
+    getRightMostBThelp(root, vec, 0);
+ 
+    return vec;
+}
+
+int main(){
+
+	NODE *head=new NODE(2);
+	head->pLft=new NODE(3);
+	head->pRgt=new NODE(5);
+	head->pRgt->pRgt=new NODE(7);
+
+	getRightMostBT(head);
+}
