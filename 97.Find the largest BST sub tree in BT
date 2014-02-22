@@ -1,0 +1,125 @@
+/*
+
+Given a binary tree, find the largest subtree which is a binary search tree. 
+Here largest subtree means a subtree with largest number of nodes in it, including all of its descendants
+
+*/
+
+/*
+solution: bottom up upper and lower bound
+O(n) time
+*/
+
+#include<iostream>
+#include<cassert>
+#include<stack>
+using namespace std;
+struct NODE 
+{
+    int val;
+    NODE* pLft;
+    NODE* pRgt;
+ 
+    NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
+};
+
+ 
+int getLargestBSTHelp(NODE* pNode, int& nMin, int& nMax, NODE*& pMaxNode, int& nMaxBST)
+{
+    
+    assert(pNode);
+ 
+    nMin = pNode->val;
+    nMax = pNode->val;
+ 
+    int nRet = 1; //count root
+    bool bIvalid = false;
+    if (pNode->pLft != NULL)
+    {
+        int nLftMax, nLftMin;
+        int nNum = getLargestBSTHelp(pNode->pLft, nLftMin, nLftMax, pMaxNode, nMaxBST);
+        if (nNum <= 0 || nLftMax > pNode->val) //check invalid
+            bIvalid = true; 
+        else//pNode->pLft is a valid BST
+        {
+            nRet += nNum; //count size of left subtree
+            nMin = nLftMin; //update bound
+        }
+    }
+ 
+    if (pNode->pRgt != NULL)
+    {
+        int nRgtMax, nRgtMin;
+        int nNum = getLargestBSTHelp(pNode->pRgt, nRgtMin, nRgtMax, pMaxNode, nMaxBST);
+        if (nNum <= 0 || nRgtMin < pNode->val) //check invalid
+            bIvalid = true;
+        else //pNode->pRgt is a valid BST
+        {
+            nRet += nNum; //count size of right subtree
+            nMax = nRgtMax; //update bound
+        }
+    }
+ 
+    if (bIvalid) return -1; //return value identify a BST or not
+ 
+    if (nRet > nMaxBST) //update maximal BST
+    {
+        pMaxNode = pNode;
+        nMaxBST = nRet;
+    }
+ 
+    return nRet;
+}
+ 
+NODE* getLargestBST(NODE* root)
+{
+  //input root of a BT and return the root of largest BST
+    if (NULL == root) return NULL;
+ 
+    NODE* pRet = NULL;
+    int nMaxBST = 0;
+    int nMin, nMax;
+    getLargestBSTHelp(root, nMin, nMax, pRet, nMaxBST);
+ 
+    return pRet;
+}
+
+void inOrderTravel(NODE* root)
+{
+    assert(root);
+ 
+    stack<NODE*> stk;
+    NODE* pCur = root;
+    while (NULL != pCur)
+    {
+        stk.push(pCur);
+        pCur = pCur->pLft;
+    }
+ 
+    while (!stk.empty())
+    {
+        pCur = stk.top();
+        cout<<pCur->val<<endl;
+        stk.pop();
+ 
+        pCur = pCur->pRgt;
+        while (NULL != pCur)
+        {
+            stk.push(pCur);
+            pCur = pCur->pLft;
+        }
+    }
+}
+
+int main()
+{
+	NODE *root=new NODE(5);
+	root->pLft=new NODE(3);
+	root->pRgt=new NODE(6);
+	root->pLft->pRgt=new NODE(4);
+	root->pLft->pLft=new NODE(2);
+	root->pRgt->pRgt=new NODE(8);
+	inOrderTravel(getLargestBST(root));
+	
+}
+
