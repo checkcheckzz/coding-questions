@@ -1,0 +1,36 @@
+/*
+
+count the longest continuous bit 0s in array
+
+
+*/
+
+
+/*
+solution: for each number, check its  all digits
+O(n) time, O(1) space
+
+*/
+ 
+int getLongestZeros(int a[], int n)
+{
+    
+ 
+    int ret = 0;
+    int cur = 0;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < 32; j++)
+        {
+            if ((0x80000000 & (a[i] << j)) == 0) 
+                cur++;
+            else
+            {
+                ret = max(ret, cur);
+                cur = 0;
+            }
+        }
+    }
+ 
+    return ret;
+}
