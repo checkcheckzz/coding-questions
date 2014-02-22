@@ -1,6 +1,6 @@
 coding-problems
 ===============
-Besides the problem from Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion and blogs I read. 
+Besides the problem from Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion and blogs I read.
 
 
 1.Detect cycle in an array
