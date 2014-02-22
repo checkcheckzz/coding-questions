@@ -1,0 +1,41 @@
+/*
+given an array, get the length of first subarray that sums to 0
+*/
+
+/*
+solution: note if sum[i...j] == 0, then sum[0...i-1] == sum[0 ... j]
+O(n) time, O(n) space
+
+*/
+
+#include<iostream>
+#include<cassert>
+#include<unsorted_map>
+using namespace std;
+
+int firstContZero(int a[], int n)
+{
+    assert(a && n > 0);
+ 
+    unsorted_map<int, int> mp;
+    int Sum = a[0];
+    int Ret = (Sum == 0 ? 1 : 0);
+ 
+    for (int i = 1; i < n; i++)
+    {
+        Sum += a[i];
+        if (mp.find(Sum) == mp.end())//does not find Sum in mp
+            mp[Sum] = i;
+        else
+			
+            Ret = max(Ret, i-mp[Sum]);
+    }
+ 
+    return Ret;
+}
+int main(){
+
+	int a[6]={1, -1, 2, -2, 1, 0};
+	cout<<firstContZero(a, 6)<<endl;
+
+}
