@@ -1,0 +1,41 @@
+/*
+
+Given two arrays, find which number in first array is not present in the second array
+
+
+*/
+ 
+
+/*
+
+solution: sort & two pointers
+O(nlogn+mlogm) time, O(1) space
+
+
+*/
+
+
+void findUnique(int a[], int n, int b[], int m)
+{
+    assert(a && b && n > 0 && m > 0);
+ 
+    sort(a, a+n);
+    sort(b, b+m);
+ 
+    int itera = 0;
+    int iterb = 0;
+    while (itera < n && iterb < m)
+    {
+        
+        if (a[itera] <= b[iterb]) 
+        {
+            if (a[itera] != b[iterb])
+                cout<<a[itera]<<endl;
+            itera++;
+        }
+        else iterb++;
+    }
+ 
+    while (itera < n) 
+        cout<<a[itera++]<<endl; 
+}
