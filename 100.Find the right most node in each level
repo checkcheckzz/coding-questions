@@ -10,7 +10,6 @@ O(n) time
 
 
 #include<iostream>
-#include<cstdlib>
 #include<vector>
 using namespace std;
 
@@ -54,3 +53,5 @@ int main(){
 
 	getRightMostBT(head);
 }
+
+
