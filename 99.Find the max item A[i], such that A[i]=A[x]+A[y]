@@ -1,0 +1,68 @@
+/*
+ Given an integer array A,find the maximal a[i] such that a[i]=a[x]+a[y].
+*/
+
+/*
+
+solution: sort&binary search
+O(nlogn) time, O(1) space
+
+*/
+
+#include<iostream>
+#include<cassert>
+#include<algorithm>
+using namespace std;
+
+bool twoSum(int a[], int n, int skipIndex)
+{
+    assert(a && n > 0 && skipIndex >= 0 && skipIndex < n);
+ 
+    int beg = 0;
+    int end = n-1;
+    while (beg < end)
+    {
+        
+        if (beg == skipIndex)
+            beg++;
+        else if (end == skipIndex)
+            end--;
+        else if (a[beg] + a[end] == a[skipIndex])
+            return true;
+        else if (a[beg] + a[end] < a[skipIndex])
+            beg++;
+        else end--;
+    }
+ 
+    return false;
+}
+ 
+bool findMaxItem(int a[], int n, int& res)
+{
+    assert(a && n > 0);
+ 
+    sort(a, a+n);
+ 
+    bool found = false;
+    int maxa = INT_MIN;
+    for (int i = 0; i < n; ++i)
+    {
+        if (twoSum(a, n, i))
+        {
+            found = true;
+            maxa = max(maxa, a[i]);
+        }
+    }
+ 
+    if (found) res = maxa;
+ 
+    return found;
+}
+int main()
+{
+	int a[9]={1,3,2,4,5,7,-3,-2,13};
+	int res=-10000;
+	findMaxItem(a,9,res);
+	cout<<res<<endl;
+
+}
