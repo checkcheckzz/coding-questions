@@ -1,0 +1,121 @@
+/*
+SerializeDeSerialize a binary tree
+*/
+
+/*
+solution: preorder traversal
+O(n) time
+
+*/
+
+
+
+#include<iostream>
+using namespace std;
+
+struct NODE
+{
+    int nVal;
+    NODE* pLft;
+    NODE* pRgt;
+ 
+    NODE(int n) : nVal(n), pLft(NULL), pRgt(NULL) {}
+};
+ 
+void _inner_Serialize(char * &p, NODE* pNode)
+{
+    if (NULL == pNode)
+    {
+        *p++ = '#';
+        *p++ = ' ';
+        return;
+    }
+	//char *  itoa ( int value, char * str, int base );
+    //Converts an integer value to a null-terminated string using 
+	//the specified base and stores the result in the array given
+	//by str parameter.
+	
+    itoa(pNode->nVal, p, 10);
+	
+    p += strlen(p);
+    *p++ = ' ';
+ 
+    _inner_Serialize(p, pNode->pLft);
+    _inner_Serialize(p, pNode->pRgt);
+	
+}
+char* Serialize(char mem[], NODE* root)
+{
+	char *p=mem;
+	_inner_Serialize(p, root);
+	p++;
+	*p='\0';
+	return mem;
+}
+
+/////////////////////////////////////////// 
+struct TOKEN
+{
+    bool bNull;
+    int nVal;
+    TOKEN(bool b, int n) : bNull(b), nVal(n) {}
+};
+ 
+TOKEN GetToken(const char* &p)
+{
+    while(*p == ' ')
+        p++;
+ 
+    if (*p < '0' || *p > '9')
+    {
+        p++;
+        return TOKEN(true, 0);
+    }
+ 
+    int nVal = 0;
+    while (*p >= '0' && *p <= '9')
+        nVal = 10*nVal + *p++ - '0';
+ 
+    return TOKEN(false, nVal);
+}
+ 
+NODE*  _inner_DeSerialize(const char* &p)
+{
+    TOKEN tk = GetToken(p);
+	
+ 
+    if (tk.bNull) return NULL;
+ 
+    NODE* pRet = new NODE(tk.nVal);
+    pRet->pLft =_inner_DeSerialize(p);
+    pRet->pRgt =_inner_DeSerialize(p);
+ 
+    return pRet;
+}
+
+NODE* DeSerialize(const char mem[])
+{
+    if (NULL == mem) 
+        return NULL;
+ 
+    const char* p = mem;
+    return _inner_DeSerialize(p);
+}
+int main()
+
+{
+	NODE *root=new NODE(3);
+	root->pLft=new NODE(1);
+	root->pRgt=new NODE(4);
+	char str[]="";
+	Serialize(str, root);
+	
+	cout<<str<<endl;
+	
+	const char str1[]="3 1 # # 4 # #";
+	NODE *r=DeSerialize(str1);
+	cout<<r->nVal<<endl;
+	cout<<r->pLft->nVal<<endl;
+	cout<<r->pRgt->nVal<<endl;
+
+}
