@@ -1,0 +1,52 @@
+/*
+Given a node from a cyclic sorted linked list, insert a value into the list such that it is still a cyclic sorted list. 
+The given node can be any single node in the list.
+*/
+
+/*
+
+solution: scan 
+O(n) time, O(1) space
+
+*/
+ 
+struct NODE 
+{
+    int val;
+    NODE* Next;
+ 
+    NODE(int x) : val(x), Next(NULL) {}
+};
+ 
+void insert(NODE* p, int x) //insert x after p
+{
+    NODE* Tmp = p->Next;
+    NODE* pNew = new NODE(x);
+    p->Next = pNew;
+    pNew->Next = Tmp;
+}
+ 
+void insertToCycleLink(NODE* Node, int x)
+{
+    assert(Node != NULL);
+ 
+    NODE* Iter = Node;
+    NODE* Big = Iter; 
+ 
+    
+    do
+    {
+        if ((Iter->val == x) || 
+            (Iter->val <= x && Iter->Next->val >= x)) //insert at proper position
+            return insert(Iter, x);
+ 
+        if (Iter->val > Big->val) //update big
+            Big = Iter;
+ 
+        Iter = Iter->pNext;
+
+    }while (Iter != Node);
+ 
+    insert(Big, x);
+}
+
