@@ -29,3 +29,33 @@ int findShortest1(vector<int>& num, int s)
 	return res;
 }
 
+/*
+
+solution2: use queue to store the subarray
+O(n^2) worst time, O(n) space
+*/
+
+int findShortest2(vector<int>& num,int s)
+{
+	int n=num.size();
+	queue<int> q;
+	int res=n+1,Sum=0;
+	for(int i=0;i<n;++i)
+	{
+		if(q.empty()||Sum<s)
+		{
+			q.push(num[i]);
+			Sum+=num[i];
+		}
+		
+		while(!q.empty()&&Sum>=s)
+		{
+			res=min(res,(int)q.size());
+			Sum-=q.front();
+			q.pop();
+		}
+	}
+	return res;
+}
+
+
