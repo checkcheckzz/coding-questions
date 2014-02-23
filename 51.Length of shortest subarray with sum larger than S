@@ -1,0 +1,31 @@
+/*
+
+Given an array, find the length of the shortest subarray, the sum of which is greater than or equal to S.
+
+*/
+
+/*
+
+solution1: iterate the end and begin position
+O(n^2) time, O(1) space
+*/
+
+int findShortest1(vector<int>& num, int s)
+{
+	int sum=0;
+	int start=0,end=0;
+	int res=num.size()+1;
+	while(end<num.size())
+	{
+		if(sum<s)
+			sum+=num[end];
+		while(sum>=s)
+		{
+			res=min(res,end-start+1);
+			sum-=num[start++];
+		}
+		end++;
+	}
+	return res;
+}
+
