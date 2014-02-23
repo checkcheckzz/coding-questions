@@ -213,11 +213,13 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 104.Length of First continuous subarray that sums to 0
 
+105.Moririsl traversal
+
 106.Longest substring which appears more than once
 
 107.Minimal subset sum
 
-108.PreInPostorder travel of bT
+108.PreInPostorder travel of bT with stack
 
 109.SerializeDeSerialize a binary tree
 
