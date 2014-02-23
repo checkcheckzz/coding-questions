@@ -59,3 +59,83 @@ int findShortest2(vector<int>& num,int s)
 }
 
 
+/*
+
+solution3: quick partion for the positive elements of array
+O(nlogn) time, O(logn) space
+*/
+
+#include<iostream>
+using namespace std;
+
+int searchSubarray(int a[], int n, int k)
+{
+	//quicksort partition
+
+    if (1 == n || 0 == n)
+        return n;
+ 
+    int i = 1;
+    int j = 1;
+    int Sum = a[0];
+	//the elements from a[0] to a[i-1] <=a[0], the elements from a[i] to a[n-1]>a[0]
+    for (; j < n; j++)
+    {
+        if (a[j] >= a[0])
+        {
+            swap(a[i], a[j]);
+            Sum += a[i++];//all >= a[0] element
+        }
+    }
+ 
+    swap(a[0], a[i-1]);
+ 
+    int Partition = i-1;
+    if (Sum >= k && Sum - a[Partition] < k) //a[0] to a[partition] is the shortest subarray
+        return Partition + 1;
+ 
+    if (Sum < k) //search right
+        return searchSubarray(a+Partition+1, n-Partition-1, k-Sum) +Partition + 1;
+    //search left
+    return searchSubarray(a, Partition, k);
+}
+ 
+int findShortest3(int a[], int n, int k)
+{
+    if (k < 0)//k negative is a special case
+    {
+        int Max = a[0];
+        for (int i = 1; i < n; i++)
+            Max = max(a[i], Max);
+        return Max >= k ? 1 : 0;
+    }
+ 
+    
+    int i = 0;
+    int j = n-1;
+    int SumPos = 0;//sum of all positive elements
+	//sort a such that negative element comes first
+    while (i <= j)
+    {
+        if (a[i] < 0)
+            i++;
+        else if (a[j] >= 0)
+        {
+            SumPos += a[j];
+            j--;
+        }
+        else swap(a[i], a[j]);
+    }
+ 
+    if (i >= n || SumPos < k) return 0; //no such subarray
+    return searchSubarray(a+i, n-i, k);//search from positive element
+}
+
+int main()
+{
+	int a[4]={1,2,3,4};
+	cout<<findShortest3(a,4,6)<<endl;
+
+}
+
+
