@@ -1,0 +1,31 @@
+/*
+Given a time in 24 hour format, calculate the angle between the hour and minute hands
+*/
+
+/*
+solution: math
+O(1) time, O(1) space
+*/
+
+#include<cassert>
+#include<iostream>
+using namespace std;
+int calAngle(int Hour, int Min)
+{
+    assert(Hour >= 0 && Hour < 24);
+    assert(Min >= 0 && Min < 60);
+ 
+    int DegreeMin = 360*Min/60;
+    int DegreeHr = 360*(Hour%12)/12 + 30*Min/60;//30 degree per hour
+ 
+    return abs(DegreeHr - DegreeMin);
+}
+
+int main(){
+
+	cout<<calAngle(12,0)<<endl;
+	cout<<calAngle(18,0)<<endl;
+	cout<<calAngle(12,30)<<endl;
+
+
+}
