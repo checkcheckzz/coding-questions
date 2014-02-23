@@ -213,8 +213,6 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 104.Length of First continuous subarray that sums to 0
 
-105.Length of smallest subarray sum no less than k
-
 106.Longest substring which appears more than once
 
 107.Minimal subset sum
