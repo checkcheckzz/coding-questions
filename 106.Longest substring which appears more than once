@@ -1,0 +1,67 @@
+/*
+Given an input string, find the longest substring which appears more than once in the string
+
+*/
+
+/*
+
+solution: suffix array. Any substring must be a prefix of one of origin string's suffix.
+O(n^2) time, O(n) space
+
+*/
+
+
+#include<iostream>
+#include<cassert>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+bool LessThan(const char* p1, const char* p2)
+{
+    return strcmp(p1, p2) < 0;
+}
+ 
+void findLongestDup(const char* str)
+{
+    assert(str);
+ 
+    const char* p = str;
+    vector<const char*> vec; //suffix array pointers
+    while (*p != 0)
+        vec.push_back(p++);
+ 
+    sort(vec.begin(), vec.end(), LessThan);
+ 
+    int nMax = 0;
+    const char* pMax = str;
+    for (int i = 0; i < vec.size() - 1; i++)
+    {
+        int nLen = 0;
+        const char* pIter1 = vec[i];
+        const char* pIter2 = vec[i+1];
+        while (*pIter1 != 0 && *pIter2 != 0 && *pIter1 == *pIter2) //two prefix overlap
+        {
+            pIter1++, pIter2++;
+            nLen++;
+        }
+ 
+        if (nLen > nMax)
+        {
+            pMax = vec[i];
+            nMax = nLen;
+        }
+    }
+ 
+    for (int i = 0; i < nMax; i++)
+        cout<<*pMax++;
+    cout<<endl;
+}
+
+int main()
+{
+	char s[]="abcdfscdfbc";
+	findLongestDup(s);
+
+}
+
