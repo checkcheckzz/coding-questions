@@ -1,5 +1,7 @@
 /*
 SerializeDeSerialize a binary tree
+Note: we assume the tree stores integer value and we must use another symbol (# here) to identify the NULL pointer.
+
 */
 
 /*
