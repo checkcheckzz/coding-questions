@@ -1,11 +1,125 @@
 /*
 
+Preorder, Inorder, Postorder traversal of bT with stack
 
 */
 
 
 /*
-
+solution: use stack
+O(n) time, O(n) space
 
 */
+
+#include<cstdlib>
+#include <cassert>
+#include<stack>
+#include<iostream>
+using namespace std;
+
+struct NODE
+{
+    int val;
+    NODE* pLft;
+    NODE* pRgt;
+ 
+    NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
+};
+
+//postorder
+void PostOrderTravel(NODE* root)
+{
+    assert(root);
+ 
+    stack<NODE*> stk;
+    NODE* Cur = root;
+    while (Cur != NULL)
+    {
+        stk.push(Cur);
+        Cur = Cur->pLft;
+    }
+ 
+    NODE* Prev = NULL;
+    while (!stk.empty())
+    {
+        NODE* Tmp = stk.top();
+		
+ 
+        if (Tmp->pRgt != NULL && Prev != Tmp->pRgt)
+        {
+            NODE* Iter = Tmp->pRgt;
+            while (Iter != NULL)
+            {
+                stk.push(Iter);
+                Iter = Iter->pLft;
+            }
+        }
+        else
+        {
+            cout<<Tmp->val<<endl;
+            Prev = Tmp;
+            stk.pop();
+        }
+    }
+}
+ 
+ //preorder
+void PrevOrderTravel(NODE* root)
+{
+    assert(root);
+ 
+    stack<NODE*> stk;
+    stk.push(root);
+ 
+    while (!stk.empty())
+    {
+        NODE* Top = stk.top();
+        stk.pop();
+ 
+        cout<<Top->val<<endl;
+ 
+        if (Top->pRgt != NULL)
+            stk.push(Top->pRgt);
+        if (Top->pLft != NULL)
+            stk.push(Top->pLft);
+    }
+}
+ 
+ //inorder
+void InOrderTravel(NODE* root)
+{
+    assert(root);
+ 
+    stack<NODE*> stk;
+    NODE* Cur = root;
+    while (Cur!=NULL)
+    {
+        stk.push(Cur);
+        Cur = Cur->pLft;
+    }
+ 
+    while (!stk.empty())
+    {
+        Cur = stk.top();
+        cout<<Cur->val<<endl;
+        stk.pop();
+ 
+        Cur = Cur->pRgt;
+        while (Cur!=NULL)
+        {
+            stk.push(Cur);
+            Cur = Cur->pLft;
+        }
+    }
+}
+
+int main(){
+
+	NODE *head=new NODE(2);
+	head->pLft=new NODE(1);
+	head->pRgt=new NODE(3);
+	PrevOrderTravel(head);
+	InOrderTravel(head);
+	PostOrderTravel(head);
+}
 
