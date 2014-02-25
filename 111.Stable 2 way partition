@@ -70,6 +70,7 @@ int main(){
 	print(a,6);
 	reSort(a,6);
 	print(a,6);
+	
 	return 0;
 }
 
