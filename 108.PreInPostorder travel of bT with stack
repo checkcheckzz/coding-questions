@@ -121,5 +121,6 @@ int main(){
 	PrevOrderTravel(head);
 	InOrderTravel(head);
 	PostOrderTravel(head);
+	return 0;
 }
 
