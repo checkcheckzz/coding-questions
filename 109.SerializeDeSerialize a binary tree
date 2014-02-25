@@ -119,5 +119,7 @@ int main()
 	cout<<r->nVal<<endl;
 	cout<<r->pLft->nVal<<endl;
 	cout<<r->pRgt->nVal<<endl;
+	
+	return 0;
 
 }
