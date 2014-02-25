@@ -1,0 +1,75 @@
+/*
+Given an array of positive and negative integers, resort it so that you have positives on one end and negatives on the other,
+but retain the original order of appearance, do it in-place.
+
+*/
+
+/*
+solution: divide&conquer
+O(nlogn) time
+*/
+
+#include<iostream>
+#include <cassert>
+#include<algorithm>
+using namespace std;
+
+//swap the elements in array from beg to end
+void swapRa(int a[], int beg, int end)
+{ 
+    
+    assert(a && beg <= end);
+ 
+    while (beg < end)
+        swap(a[beg++], a[end--]);
+}
+ 
+
+void reSort(int a[], int n)
+{
+    assert(a && n > 0);
+ 
+    if (n <= 1) return;
+ 
+    reSort(a, n/2);
+    reSort(a + n/2, n - n/2); 
+	//here, the numbers have this format: ---- "+++ --" ++++
+ 
+    int nLft = 0;
+    while (a[nLft] < 0) 
+        nLft++;
+    int nRgt = n-1;
+    while (a[nRgt] >= 0)
+        nRgt--;
+     
+   
+    if (nRgt <= nLft) return; //middle part has current order
+	
+    //swap the middle part
+    swapRa(a, nLft, nRgt);
+ 
+    int nBegRgt = nLft;
+    while (a[nBegRgt] < 0) 
+        nBegRgt++;
+    //swap the two parts to make middle part retain the origin order
+    swapRa(a, nLft, nBegRgt-1);
+    swapRa(a, nBegRgt, nRgt);
+}
+
+void print(int a[], int n)
+{
+	for (int i=0; i<n;i++)
+		cout<<a[i]<<",";
+
+	cout<<endl;
+
+}
+int main(){
+
+	int a[6]={1, 3, -7, 8, -1, 4};
+	print(a,6);
+	reSort(a,6);
+	print(a,6);
+	return 0;
+}
+
