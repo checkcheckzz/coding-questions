@@ -1,0 +1,89 @@
+/*
+Judge whether a binary tree can be equal to another by switching the left and right child (along with the subtree). 
+Calculate how many switches is needed.
+E.g
+        a                        a
+     b     c        ==       c       b           ==> switch 2 times
+   d   e  f  g             g   f   d    e
+
+*/
+/*
+solution: dfs recursion, use one parameter to record the final time
+O(n) time
+
+*/
+
+#include<iostream>
+#include<cassert>
+using namespace std;
+
+struct NODE
+{
+    int val;
+    NODE* Lft;
+    NODE* Rgt;
+ 
+    NODE(int n) : val(n), Lft(NULL), Rgt(NULL) {}
+};
+ 
+bool binTreeSwitchEqualHelp(NODE* Node1, NODE* Node2, int& Switch)
+{
+    Switch = 0;
+	
+    if (Node1==NULL || Node2==NULL)
+        return Node1 == NULL && Node2 == NULL;
+ 
+    if (Node1->val != Node2->val)
+        return false;
+ 
+    int Tmp1,Tmp2;
+    if (binTreeSwitchEqualHelp(Node1->Lft, Node2->Lft, Tmp1) && 
+        binTreeSwitchEqualHelp(Node1->Rgt, Node2->Rgt, Tmp2))
+    {
+        Switch = Tmp1 + Tmp2;
+        return true;
+    }
+ 
+    if (binTreeSwitchEqualHelp(Node1->Lft, Node2->Rgt, Tmp1) && 
+        binTreeSwitchEqualHelp(Node1->Rgt, Node2->Lft, Tmp2))
+    {
+        Switch = Tmp1 + Tmp2 + 1;//add 1 to count switch left and right part
+        return true;
+    }
+ 
+    return false;
+}
+ 
+int binTreeSwitchEqual(NODE* root1, NODE* root2)
+{
+    assert(root2 && root1);
+ 
+    int Switch = 0;
+    bool Ret = binTreeSwitchEqualHelp(root1, root2, Switch);
+ 
+    return Ret ? Switch : -1;
+}
+
+int main()
+{
+	NODE *root1=new NODE(5);
+	root1->Lft=new NODE(1);
+	root1->Rgt=new NODE(2);
+	root1->Lft->Lft=new NODE(0);
+	root1->Lft->Rgt=new NODE(7);
+	root1->Rgt->Lft=new NODE(3);
+	root1->Rgt->Rgt=new NODE(4);
+
+  NODE *root2=new NODE(5);
+	root2->Lft=new NODE(2);
+	root2->Rgt=new NODE(1);
+	root2->Lft->Lft=new NODE(4);
+	root2->Lft->Rgt=new NODE(3);
+	root2->Rgt->Lft=new NODE(7);
+	root2->Rgt->Rgt=new NODE(0);
+
+	cout<<binTreeSwitchEqual(root1, root2)<<endl;
+
+	return 0;
+}
+
