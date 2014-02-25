@@ -64,5 +64,5 @@ int main()
 	int res=-10000;
 	findMaxItem(a,9,res);
 	cout<<res<<endl;
-
+        return 0;
 }
