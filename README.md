@@ -205,7 +205,7 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 100.Find the right most node in each level
 
-101.Get original number counted digit 7
+101.Get original number including digit 7
 
 102.Implement memmove
 
@@ -232,6 +232,17 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 113.Switch binary tree to make equal
 
 114.Find the LCM and GCD of two numbers
+
+115.Function to read 12-bit unit
+
+116.Read4() to implement read(int size,char* buffer)
+
+117.Read4k() to implement read(int size,char* buffer)
+
+118.Fetch10k() to implement fetch(int size,char* buffer)
+
+
+
 
 
 
