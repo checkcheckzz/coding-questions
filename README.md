@@ -241,6 +241,7 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 118.Fetch10k() to implement fetch(int size,char* buffer)
 
+---
 
 
 
