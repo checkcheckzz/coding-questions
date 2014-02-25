@@ -231,6 +231,8 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 113.Switch binary tree to make equal
 
+114.Find the LCM and GCD of two numbers
+
 
 
 
