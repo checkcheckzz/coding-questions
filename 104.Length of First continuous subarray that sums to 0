@@ -37,5 +37,6 @@ int main(){
 
 	int a[6]={1, -1, 2, -2, 1, 0};
 	cout<<firstContZero(a, 6)<<endl;
+	return 0;
 
 }
