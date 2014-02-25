@@ -122,5 +122,7 @@ int main()
 	cout<<root->nVal<<endl;
 	for (vector<NODE*>::iterator it = root->vec.begin();it != root->vec.end(); it++)
 		cout<<(*it)->nVal<<endl;
+		
+	return 0;	
 
 }
