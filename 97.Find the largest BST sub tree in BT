@@ -120,6 +120,7 @@ int main()
 	root->pLft->pLft=new NODE(2);
 	root->pRgt->pRgt=new NODE(8);
 	inOrderTravel(getLargestBST(root));
+	return 0;
 	
 }
 
