@@ -68,5 +68,6 @@ int main()
 
 	int a[5]={3, 5, 7, 11, 13};
 	cout<<findPartiion(a,5)<<endl;
+	return 0;
 
 }
