@@ -199,15 +199,13 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 97.Find the largest BST sub tree in BT
 
-98.Find the colored largest square in matrix
-
 99.Find the max item A[i], such that A[i]=A[x]+A[y]
 
 100.Find the right most node in each level
 
 101.Get original number including digit 7
 
-102.Implement memmove
+102.Implement memmove and memcopy
 
 103.Insert into a Cyclic Sorted List
 
@@ -219,7 +217,7 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 107.Minimal subset sum
 
-108.PreInPostorder travel of bT with stack
+108.PreInPostorder travel of binary tree with stack
 
 109.SerializeDeSerialize a binary tree
 
@@ -227,7 +225,7 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 111.Stable 2 way partition
 
-112.Statistical BST
+112.Statistical binary search tree
 
 113.Switch binary tree to make equal
 
