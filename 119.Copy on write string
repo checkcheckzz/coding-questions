@@ -1,0 +1,88 @@
+/*
+implement copy on write string class in c++ 
+
+*/
+#include<iostream>
+using namespace std;
+
+
+class CopyOWString
+{
+public:
+    CopyOWString(const char* str) { newStr(str); }
+    CopyOWString(CopyOWString& cowStr) { incRef(cowStr); }
+    ~CopyOWString() { decRef(); }
+	char* getstr(){return pStr;}
+	int* getcount(){return pCount;}
+ 
+    CopyOWString& operator = (const char* str);
+    CopyOWString& operator = (CopyOWString& cowStr);
+ 
+private:
+    void incRef(CopyOWString& cowStr);
+    void decRef();
+    void newStr(const char* str);
+ 
+    char* pStr;
+    int* pCount;
+};
+ 
+void CopyOWString::incRef(CopyOWString& cowStr)
+{
+    pCount = cowStr.pCount;
+    pStr = cowStr.pStr;
+    (*pCount)++;
+}
+ 
+void CopyOWString::decRef()
+{
+    (*pCount)--;
+    if (*pCount <= 0)
+    {
+        delete []pStr;
+        delete pCount;
+    }
+}
+ 
+void CopyOWString::newStr(const char* str)
+{
+    pStr = new char[strlen(str) + 1];
+    strcpy(pStr, str);
+    pCount = new int(1);
+}
+ 
+CopyOWString& CopyOWString::operator = (CopyOWString& cowStr)
+{
+    if (this != &cowStr)
+    {
+        decRef();
+        incRef(cowStr);
+    }
+ 
+    return *this;
+}
+ 
+CopyOWString& CopyOWString::operator = (const char* str)
+{
+    decRef();
+    newStr(str);
+ 
+    return *this;
+}
+
+int main(){
+
+	CopyOWString a("abc");
+	
+
+    cout<<*a.getstr()<<endl;
+	cout<<*a.getcount()<<endl;
+	CopyOWString b(a);
+	cout<<*a.getcount()<<endl;
+	a.~CopyOWString();
+	cout<<*a.getcount()<<endl;
+	int tt;
+	cin>>tt;
+	return 0;
+}
+
