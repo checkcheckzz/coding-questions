@@ -21,9 +21,9 @@ struct NODE
 class BinaryTreeIterator
 {
 public:
-    void Init(NODE* pRoot)
+    void IterCon(NODE* pRoot)
     { 
-       PushLefts(pRoot);
+       BuildIter(pRoot);
      
     }
  
@@ -35,13 +35,13 @@ public:
         NODE* Ret = stk.top();
         stk.pop();
  
-        PushLefts(Ret->pRgt);
+        BuildIter(Ret->pRgt);
  
         return Ret;
     }
  
 private:
-    void PushLefts(NODE* Node)
+    void BuildIter(NODE* Node)
     {
         while (NULL != Node)
         {
