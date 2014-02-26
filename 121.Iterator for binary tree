@@ -1,0 +1,57 @@
+/*
+
+Write an iterator for binary tree. 
+Here is the inorder iterator.
+
+*/
+
+
+
+struct NODE 
+{
+    int val;
+    NODE* pLft;
+    NODE* pRgt;
+ 
+    NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
+};
+
+
+
+class BinaryTreeIterator
+{
+public:
+    void Init(NODE* pRoot)
+    { 
+       PushLefts(pRoot);
+     
+    }
+ 
+    NODE* Next()
+    {
+        if (stk.empty())
+            return NULL;
+ 
+        NODE* Ret = stk.top();
+        stk.pop();
+ 
+        PushLefts(Ret->pRgt);
+ 
+        return Ret;
+    }
+ 
+private:
+    void PushLefts(NODE* Node)
+    {
+        while (NULL != Node)
+        {
+            stk.push(Node);
+            pNode = Node->pLft;
+        }
+    }
+
+    stack<NODE*> stk;
+   
+};
+
+
