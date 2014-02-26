@@ -14,7 +14,7 @@ You must do this in O(n) without using division.
 O(n) time, O(1) space
 */
  
-void BuildB(int a[], int n, int b[])
+void buildArray(int a[], int n, int b[])
 {
     b[n-1] = 1;
     for (int i = n-2; i >= 0; i--) //b[i]=a[i+1]*a[i]*......*a[n-1];
