@@ -1,0 +1,56 @@
+/*
+implement smart pointer in C++
+*/
+
+template <class T> 
+class SmartP
+{
+public:
+    SmartP(const SmartP<T>& p) { incRef(p); }
+    SmartP(T* p) { assign(p); }
+    ~SmartP() { decRef(); }
+ 
+
+    SmartP<T>& operator = (const SmartP<T>& p)
+    {
+        if (this != &p)
+        {
+            decRef();
+            incRef(p);
+        }
+ 
+        return *this;
+    }
+ 
+    T* operator ->() const { return pVal; }
+    T& operator *() const  { return *pVal; }
+ 
+private:
+    void decRef()
+    {
+        (*pRef)--;
+ 
+        if (0 == *pRef)
+        {
+            delete pVal;
+            delete pRef;
+        }
+    }
+ 
+    void incRef(const SmartP<T>& ptr)
+    {
+        pRef = ptr.pRef;
+        pVal = ptr.pVal;
+        (*pRef)++; 
+    }
+ 
+    void assign(T* p)
+    {
+        pVal = p;
+        pRef = new int(1);
+    }
+
+    T* pVal;
+    int* pRef;
+};
+
