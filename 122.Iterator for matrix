@@ -1,0 +1,70 @@
+//iterator for a matrix
+
+class MatrixIter
+{
+ 
+public:
+
+  MatrixIter (vector<vector<int>>& matrix) : vecvec(matrix), ni(0), nj(0), Inited(false){}
+ 
+  bool HasNext()
+  {
+    if (!vecvec.empty() && !vecvec[0].empty())
+        return true;
+ 
+    int i,j;
+    return Prob(i,j);
+  }
+ 
+  int GetVal() { return vecvec[ni][nj]; }
+ 
+  void Next()
+  {
+    if (!Inited)
+    {
+        Inited = true;
+        if (!vecvec.empty() && !vecvec[0].empty())
+          return;
+    }
+ 
+    prob(ni, nj);
+  }
+ 
+private:
+
+  bool Prob(int& i, int& j) //by reference
+  {
+    i = ni;
+    j = nj;
+     
+    if (i >= vecvec.size())
+        return false;
+     
+    if (i < vecvec.size() && j < vecvec[i].size()-1) //col++
+    {
+        j++;
+        return true;
+    }
+ 
+    i++; //row ++
+    for(; i < vecvec.size(); i++)
+    {
+        if (!vecvec[i].empty())
+            break;
+    }
+ 
+    if (i == vecvec.size()) return false;
+ 
+    j = 0; //new row
+ 
+    return true;
+  }
+
+  vector<vector<int>>& vecvec;
+  bool Inited; 
+  int ni;
+  int nj;
+
+
+};
+
