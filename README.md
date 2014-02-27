@@ -247,7 +247,7 @@ Besides the problem from Cracking the Coding Interview, Leetcode OJ and Geeksfor
 
 121.Iterator for binary tree
 
-122.Iterator for vector of vector
+122.Iterator for matrix
 
 123.Implement malloc and free
 
