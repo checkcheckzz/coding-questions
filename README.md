@@ -205,15 +205,15 @@ Remove comments
 
 Get original number including digit 7
 
-Implement memmove and memcopy
+[Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20memmove%20and%20memcopy)
 
 [Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/Insert%20into%20a%20Cyclic%20Sorted%20List)
 
-Length of First continuous subarray that sums to 0
+[Length of First continuous subarray that sums to 0](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200)
 
 Moririsl traversal
 
-Longest substring which appears more than once
+[Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20substring%20which%20appears%20more%20than%20once)
 
 Minimal subset sum
 
@@ -245,7 +245,7 @@ Smart pointer
 
 Iterator for binary tree
 
-Iterator for matrix
+[Iterator for matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix)
 
 Implement malloc and free
 
