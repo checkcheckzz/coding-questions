@@ -103,7 +103,7 @@ Number of matched patterns in a string
 
 One-byte or two-byte encoding
 
-Length of shortest subarray with sum larger than S
+[Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S)
 
 Black white reverse board game
 
@@ -185,19 +185,19 @@ Water in two dimensional histogram
 
 Boggle puzzle
 
-Build b[i] = a[0]a[1]…a[n-1]/a[i]
+[Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problems/blob/master/Build%20b%5Bi%5D%20=%20a%5B0%5Da%5B1%5D%E2%80%A6a%5Bn-1%5Ddivbya%5Bi%5D)
 
-Count the longest continuous bit 0s in array
+[Count the longest continuous bit 0s in array](https://github.com/checkcheckzz/coding-problems/blob/master/Count%20the%20longest%20continuous%20bit%200s)
 
-Design class support insert, delete and getRandom
+[Design class support insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/Design%20class%20support%20add%20delete%20and%20getRandom)
 
-Find 1st one in large duplicated sorted array
+[Find 1st one in large duplicated sorted array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%201st%20one%20in%20large%20duplicated%20sorted%20array)
 
-Find none duplicate elements in two arrays
+[Find none duplicate elements in two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20none%20duplicate%20elements%20in%20two%20arrays)
 
-Find the largest BST sub tree in BT
+[Find the largest BST subtree in Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20largest%20BST%20sub%20tree%20in%20BT)
 
-Remove comments
+[Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/Remove%20comments)
 
 [Find the max item A[i], such that A[i]=A[x]+A[y]](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D)
 
@@ -241,9 +241,9 @@ Fetch10k() to implement fetch(int size,char* buffer)
 
 [Copy on write string](Copy on write string)
 
-Smart pointer
+[Smart pointer](https://github.com/checkcheckzz/coding-problems/blob/master/Smart%20pointer)
 
-Iterator for binary tree
+[Iterator for binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20binary%20tree)
 
 [Iterator for matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix)
 
