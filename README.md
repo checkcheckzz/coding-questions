@@ -31,169 +31,169 @@ Jump the river
 
 Iterative Binary Search
 
-15.Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)
+Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)
 
-16.Grid Traversal
+Grid Traversal
 
-17.How many rabbits can the fox eat
+How many rabbits can the fox eat
 
-18.Number of closed rectangles in a matrix
+Number of closed rectangles in a matrix
 
-19.Valid whether a graph exists
+Valid whether a graph exists
 
-20.Calculate the distance from each empty room to nearest guard
+Calculate the distance from each empty room to nearest guard
 
-21.Construct a xml tree
+Construct a xml tree
 
-22.Heapify a binary tree
+Heapify a binary tree
 
-23.Immediate right neighbor of given node(parent links, no root)
+Immediate right neighbor of given node(parent links, no root)
 
-24.Longest distance between two nodes of binary tree
+Longest distance between two nodes of binary tree
 
-25.Printing all nodes at a given distance from a starting node in a binary tree
+Printing all nodes at a given distance from a starting node in a binary tree
 
-26.Second largest node in BST
+Second largest node in BST
 
-27.Shortest distance between two nodes of binary tree
+Shortest distance between two nodes of binary tree
 
-28.Size of the largest subtree that is complete
+Size of the largest subtree that is complete
 
-29.Caclulate (m^n)%(10^k)
+Caclulate (m^n)%(10^k)
 
-30.For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N
+For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N
 
-31.Highest 1 position of binary expression
+Highest 1 position of binary expression
 
-32.Delete k digits of a number to get minimal number
+Delete k digits of a number to get minimal number
 
-33.Write a function outputing true with probability 1/2^N given a function outputing true with probability 0.5
+Write a function outputing true with probability 1/2^N given a function outputing true with probability 0.5
 
-34.Put m apples to n plates
+Put m apples to n plates
 
-35.Given a positive integer N, print all combinations of non-negative integer sum to N
+Given a positive integer N, print all combinations of non-negative integer sum to N
 
-36.BinaryMatching
+BinaryMatching
 
-37.Check whether two strings match by insertdeletereplace one char of any one of string
+Check whether two strings match by insertdeletereplace one char of any one of string
 
-38.Compound Words
+Compound Words
 
-39.Delete repeating strings
+Delete repeating strings
 
-40.Filter dirty words
+Filter dirty words
 
-41.Find a vowel product sum of an ASCII string
+Find a vowel product sum of an ASCII string
 
-42.Given a list of strings, find the longest common prefix(at least two)
+Given a list of strings, find the longest common prefix(at least two)
 
-43.Given a list of words and a string pattern including question mark, find all match words
+Given a list of words and a string pattern including question mark, find all match words
 
-44.Given a string s, return the shortest substring that is only occurring once in s
+Given a string s, return the shortest substring that is only occurring once in s
 
-45.Given a string，delete all char A，and double all char B
+Given a string，delete all char A，and double all char B
 
-46.Given two string arrays, sort the string in first array according to the string order in second array
+Given two string arrays, sort the string in first array according to the string order in second array
 
-47.Given two strings, get the longest length of reapeating part between end of first string and start of second string
+Given two strings, get the longest length of reapeating part between end of first string and start of second string
 
-48.Longest substring containing just two unique chars
+Longest substring containing just two unique chars
 
-49.Number of matched patterns in a string
+Number of matched patterns in a string
 
-50.One-byte or two-byte encoding
+One-byte or two-byte encoding
 
-51.Length of shortest subarray with sum larger than S
+Length of shortest subarray with sum larger than S
 
-52.Black white reverse board game
+Black white reverse board game
 
-53.Catch that cow
+Catch that cow
 
-54.Colored sticks
+Colored sticks
 
-55.Cover board with tile
+Cover board with tile
 
-56.Deep iterator
+Deep iterator
 
-57.Divide integers
+Divide integers
 
-58.Equation solution
+Equation solution
 
-59.Familiy relation
+Familiy relation
 
-60.Final perimeter  multiple rectangles cover
+Final perimeter  multiple rectangles cover
 
-61.Find the latest version
+Find the latest version
 
-62.Get the volumn
+Get the volumn
 
-63.Group contact by email list
+Group contact by email list
 
-64.Harry potter in the maze
+Harry potter in the maze
 
-65.Last n lines of a file
+Last n lines of a file
 
-66.Longest repeating substring
+Longest repeating substring
 
-67.Maximal path gain of two persons on board
+Maximal path gain of two persons on board
 
-68.N factorial
+N factorial
 
-69.Number of online user
+Number of online user
 
-70.Number of squares
+Number of squares
 
-71.Oil deposits
+Oil deposits
 
-72.Password lock
+Password lock
 
-73.Pizza picking problem
+Pizza picking problem
 
-74.Present black and white graph with quadtree
+Present black and white graph with quadtree
 
-75.Process num with limited functional deque
+Process num with limited functional deque
 
-76.Pushing boxes
+Pushing boxes
 
-77.Racer score
+Racer score
 
-78.Random algorithm
+Random algorithm
 
-79.Red and black
+Red and black
 
-80.Shuffle up
+Shuffle up
 
-81.Skyline
+Skyline
 
-82.Spreadsheet Calculation
+Spreadsheet Calculation
 
-83.Thief Problem
+Thief Problem
 
-84.Total area multiple rectangles cover
+Total area multiple rectangles cover
 
-85.Total weight of a subtree below this node
+Total weight of a subtree below this node
 
-86.Turn off lights
+Turn off lights
 
-87.Two dimension top k
+Two dimension top k
 
-88.Water in two dimensional histogram
+Water in two dimensional histogram
 
 ---
 
 [Angle between the hour and minute](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute)
 
-91.Boggle puzzle
+Boggle puzzle
 
-92.Build b[i] = a[0]a[1]…a[n-1]/a[i]
+Build b[i] = a[0]a[1]…a[n-1]/a[i]
 
-93.count the longest continuous bit 0s in array
+Count the longest continuous bit 0s in array
 
-94.Design class support insert, delete and getRandom
+Design class support insert, delete and getRandom
 
-95.Find 1st one in large duplicated sorted array
+Find 1st one in large duplicated sorted array
 
-96.Find none duplicate elements in two arrays
+Find none duplicate elements in two arrays
 
 97.Find the largest BST sub tree in BT
 
