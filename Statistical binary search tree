@@ -1,0 +1,121 @@
+/*
+Statistical binary search tree
+
+*/
+
+#include<iostream>
+using namespace std;
+
+struct NODE 
+{
+    int val;
+    NODE* pLft;
+    NODE* pRgt;
+    int size; //the size of the subtree rooted at that node
+    NODE* pParent;
+     
+    NODE(int n, int sz = 1) : val(n), size(sz), pLft(NULL), pRgt(NULL), pParent(NULL) {}
+ 
+    void setLeft(NODE* Node)
+    {
+        if (Node==NULL) return;
+        pLft = Node;
+        Node->pParent = this;
+    }
+ 
+    void setRight(NODE* Node)
+    {
+        if (Node==NULL) return;
+        pRgt = Node;
+        Node->pParent = this;
+    }
+};
+ 
+ //O(logn) insert
+void insert(NODE* Node, NODE* Tmp)
+{
+    if (Node==NULL|| Tmp==NULL)
+        return;
+ 
+    Node->size++;
+ 
+    if (Tmp->val >= Node->val)
+    {
+        if (Node->pRgt == NULL)
+            Node->setRight(Tmp);
+        else
+            insert(Node->pRgt, Tmp);
+    }
+    else
+    {
+        if (Node->pLft == NULL)
+            Node->setLeft(Tmp);
+        else
+            insert(Node->pLft, Tmp);
+    }
+}
+//find the n'th smallest element stored in the tree in O(logn) time
+NODE* Select(NODE* Root, int n)
+{
+    if (Root==NULL || n <= 0)
+        return NULL;
+ 
+    NODE* Cur = Root;
+    int Curn = 0;
+    do
+    {
+        int Add = 1 + (Cur->pLft == NULL ? 0 : Cur->pLft->size);
+        int This = Curn + Add;
+ 
+        if (This == n)
+            return Curn;
+ 
+        if (This < n) // need search right subtree, add the size of left subtree
+            Curn += Add;
+ 
+        Cur = (This > n ? Cur->pLft : Cur->pRgt); //continue to search left or right subtree 
+    } 
+    while (Cur!=NULL);
+ 
+    return NULL;
+}
+//find the rank of element node in the tree in O(logn) time
+int GetNum(NODE* Root, NODE* Node)
+{
+    if (Root==NULL|| Node==NULL)
+        return 0;
+ 
+    if (Node == Root)
+        return Node->pLft == NULL ? 1 : 1 + Node->pLft->size;
+ 
+    NODE* Cur = Node;
+    int Ret = 1;
+    while (Cur->pParent!=NULL)
+    {
+        if (Cur == Cur->pParent->pRgt) // if node is its parent right child
+            Ret += 1 + (Cur->pParent->pLft == NULL ? 0 : Cur->pParent->pLft->size); 
+        Cur = Cur->pParent;
+    }
+ 
+    return Ret;
+}
+
+int main()
+{
+	NODE *root=new NODE(3);
+	insert(root, new NODE(1));
+	insert(root, new NODE(5));
+	NODE *p1=new NODE(4);
+	insert(root,p1);
+	cout<<root->size<<endl;//4
+	
+	cout<<Select(root,1)->val<<endl;
+	cout<<Select(root,2)->val<<endl;
+	cout<<Select(root,3)->val<<endl;
+	cout<<Select(root,4)->val<<endl;
+	cout<<GetNum(root, p1)<<endl;
+    
+	return 0; 
+
+}
+
