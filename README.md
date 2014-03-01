@@ -195,62 +195,62 @@ Find 1st one in large duplicated sorted array
 
 Find none duplicate elements in two arrays
 
-97.Find the largest BST sub tree in BT
+Find the largest BST sub tree in BT
 
-98.Remove comments
+Remove comments
 
-99.Find the max item A[i], such that A[i]=A[x]+A[y]
+Find the max item A[i], such that A[i]=A[x]+A[y]
 
-100.Find the right most node in each level
+Find the right most node in each level
 
-101.Get original number including digit 7
+Get original number including digit 7
 
-102.Implement memmove and memcopy
+Implement memmove and memcopy
 
-103.Insert into a Cyclic Sorted List
+Insert into a Cyclic Sorted List
 
-104.Length of First continuous subarray that sums to 0
+Length of First continuous subarray that sums to 0
 
-105.Moririsl traversal
+Moririsl traversal
 
-106.Longest substring which appears more than once
+Longest substring which appears more than once
 
-107.Minimal subset sum
+Minimal subset sum
 
-108.PreInPostorder travel of binary tree with stack
+PreInPostorder travel of binary tree with stack
 
-109.SerializeDeSerialize a binary tree
+SerializeDeSerialize a binary tree
 
-110.SerializeDeSerialize an arbitrary nodes tree
+SerializeDeSerialize an arbitrary nodes tree
 
-111.Stable 2 way partition
+Stable 2 way partition
 
-112.Statistical binary search tree
+Statistical binary search tree
 
-113.Switch binary tree to make equal
+Switch binary tree to make equal
 
-114.Find the LCM and GCD of two numbers
+Find the LCM and GCD of two numbers
 
-115.Function to read 12-bit unit
+Function to read 12-bit unit
 
-116.Read4() to implement read(int size,char* buffer)
+Read4() to implement read(int size,char* buffer)
 
-117.Read4k() to implement read(int size,char* buffer)
+Read4k() to implement read(int size,char* buffer)
 
-118.Fetch10k() to implement fetch(int size,char* buffer)
+Fetch10k() to implement fetch(int size,char* buffer)
 
-119.Copy on write string
+Copy on write string
 
-120.Smart pointer
+Smart pointer
 
-121.Iterator for binary tree
+Iterator for binary tree
 
-122.Iterator for matrix
+Iterator for matrix
 
-123.Implement malloc and free
+Implement malloc and free
 
 
----
+
 
 
 
