@@ -199,15 +199,15 @@ Find the largest BST sub tree in BT
 
 Remove comments
 
-Find the max item A[i], such that A[i]=A[x]+A[y]
+[Find the max item A[i], such that A[i]=A[x]+A[y]](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D)
 
-[Find the right most node in eachlevel](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree)
+[Find the right most node in each level](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree)
 
 Get original number including digit 7
 
 Implement memmove and memcopy
 
-Insert into a Cyclic Sorted List
+[Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/Insert%20into%20a%20Cyclic%20Sorted%20List)
 
 Length of First continuous subarray that sums to 0
 
