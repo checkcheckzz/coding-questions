@@ -225,7 +225,7 @@ Moririsl traversal
 
 [Stable 2 way partition](https://github.com/checkcheckzz/coding-problems/blob/master/Stable%202%20way%20partition)
 
-Statistical binary search tree
+[Statistical binary search tree](https://github.com/checkcheckzz/coding-problems/blob/master/Statistical%20binary%20search%20tree)
 
 [Switch binary tree to make equal](https://github.com/checkcheckzz/coding-problems/blob/master/Switch%20binary%20tree%20to%20make%20equal)
 
