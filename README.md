@@ -215,21 +215,21 @@ Moririsl traversal
 
 [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20substring%20which%20appears%20more%20than%20once)
 
-Minimal subset sum
+[Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/Minimal%20subset%20sum)
 
-PreInPostorder travel of binary tree with stack
+[PreInPostorder travel of binary tree with stack](https://github.com/checkcheckzz/coding-problems/blob/master/PreInPostorder%20travel%20of%20bT%20with%20stack)
 
-SerializeDeSerialize a binary tree
+[SerializeDeSerialize a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/SerializeDeSerialize%20a%20binary%20tree)
 
-SerializeDeSerialize an arbitrary nodes tree
+[SerializeDeSerialize an arbitrary nodes tree](https://github.com/checkcheckzz/coding-problems/blob/master/SerializeDeSerialize%20an%20arbitrary%20nodes%20tree)
 
-Stable 2 way partition
+[Stable 2 way partition](https://github.com/checkcheckzz/coding-problems/blob/master/Stable%202%20way%20partition)
 
 Statistical binary search tree
 
-Switch binary tree to make equal
+[Switch binary tree to make equal](https://github.com/checkcheckzz/coding-problems/blob/master/Switch%20binary%20tree%20to%20make%20equal)
 
-Find the LCM and GCD of two numbers
+[Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers)
 
 Function to read 12-bit unit
 
@@ -239,7 +239,7 @@ Read4k() to implement read(int size,char* buffer)
 
 Fetch10k() to implement fetch(int size,char* buffer)
 
-Copy on write string
+[Copy on write string](Copy on write string)
 
 Smart pointer
 
