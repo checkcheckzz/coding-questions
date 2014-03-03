@@ -33,7 +33,7 @@ Jump the river
 
 Iterative Binary Search
 
-Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)
+[Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)](https://github.com/checkcheckzz/coding-problems/blob/master/Minimize%20max(a-b,b-c,c-a))
 
 Grid Traversal
 
