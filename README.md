@@ -25,7 +25,7 @@ Given an array of size n, the array contains numbers in range from 0 to k-1 wher
 
 Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate)
 
-Find the minimal difference between two sorted arrays
+[Find the minimal difference between two sorted arrays](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20minimal%20difference%20between%20two%20sorted%20arrays)
 
 Sliding Window Maximum
 
