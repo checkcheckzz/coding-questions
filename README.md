@@ -9,7 +9,7 @@ Detect the longest cycle in an array
 
 [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/List%20level%20sum)
 
-Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays
+[Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays)
 
 Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...
 
