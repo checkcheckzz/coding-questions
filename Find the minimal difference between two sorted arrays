@@ -1,0 +1,53 @@
+/*
+
+Find the minimal difference between two sorted arrays elements
+
+*/
+
+/*
+solution: compare the elements, and increase the index of the smaller array
+O(m+n) time, O(1) space
+*/
+
+#include<iostream>
+#include<cassert>
+using namespace std;
+
+int minDiff(int A[],int m, int B[],int n)
+{
+   assert(A && m>0 && B && n>0);
+
+   int i=0;
+   int j=0;
+
+   int res = INT_MAX;
+   while(i<m && j<n)
+   {
+      int diff = abs(A[i]-B[j]);
+      res = min(diff,res);
+      if(res == 0)
+      {
+         return 0;
+      }
+
+      if(A[i]>B[j])
+      {
+         j++;
+      }
+      else
+      {
+        i++;
+       }
+   }
+   return res;
+}
+
+int main()
+{
+  int a[2]={0,3};
+  int b[3]={2,7,9};
+  cout<<minDiff(a,2,b,3)<<endl;
+
+  return 0;
+
+}
