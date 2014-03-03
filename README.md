@@ -27,7 +27,7 @@ Given an array of size n, the array contains numbers in range from 0 to k-1 wher
 
 [Find the minimal difference between two sorted arrays](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20minimal%20difference%20between%20two%20sorted%20arrays)
 
-Sliding Window Maximum
+[Sliding Window Maximum](https://github.com/checkcheckzz/coding-problems/blob/master/Sliding%20Window%20Maximum)
 
 Jump the river
 
