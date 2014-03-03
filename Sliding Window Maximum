@@ -13,18 +13,21 @@ Output :
 
 /*
 
-solution1:
+solution1: whenever the window moves, calculate the maximal number in the window. 
+O(nk) time, O(1) space
 
 */
 
 /*
 
-solution2:
+solution2: use maximal heep to store k numbers.
+O(nlogn) time, O(n) space
 
 */
 
 /*
 
-solution3:
+solution3:use deque to store k numnbers. 
+O(n) time, O(k) space
 
 */
