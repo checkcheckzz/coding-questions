@@ -35,6 +35,11 @@ Iterative Binary Search
 
 [Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)](https://github.com/checkcheckzz/coding-problems/blob/master/Minimize%20max(a-b,b-c,c-a))
 
+Given m sets, generate a new array a (size m), where a[i] comes from set i, output all possible array a
+
+Given 2 binary arrays A and B i.e. containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value
+
+
 Grid Traversal
 
 How many rabbits can the fox eat
