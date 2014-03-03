@@ -15,10 +15,10 @@ int calAngle(int Hour, int Min)
     assert(Hour >= 0 && Hour < 24);
     assert(Min >= 0 && Min < 60);
  
-    int DegreeMin = 360*Min/60;
-    int DegreeHr = 360*(Hour%12)/12 + 30*Min/60;//30 degree per hour
+    int degreeMin = 360*Min/60;
+    int degreeHr = 360*(Hour%12)/12 + 30*Min/60;//30 degree per hour
  
-    return abs(DegreeHr - DegreeMin);
+    return abs(degreeHr - degreeMin);
 }
 
 int main(){
@@ -26,6 +26,7 @@ int main(){
 	cout<<calAngle(12,0)<<endl;
 	cout<<calAngle(18,0)<<endl;
 	cout<<calAngle(12,30)<<endl;
+	
 	return 0;
 
 }
