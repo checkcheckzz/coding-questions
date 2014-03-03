@@ -258,7 +258,8 @@ Fetch10k() to implement fetch(int size,char* buffer)
 
 [Iterator for matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix)
 
-Implement malloc and free
+[Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20malloc%20and%20free)
+
 
 
 
