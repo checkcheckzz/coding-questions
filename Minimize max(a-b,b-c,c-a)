@@ -1,6 +1,51 @@
 /*
-
 Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)
-
 */
 
+/*
+solution: sort three arrays, from the beginning of each array, compare three elements, increase the array index of the smallest element.
+O(n+m+l) time, O(1) space
+*/
+
+#include<iostream>
+#include<cassert>
+#include<algorithm>
+using namespace std;
+
+int getMinDiff(int a[], int n, int b[], int m, int c[], int l)
+{
+
+   assert(a && n>0 && b && m>0 && c && l>0);
+
+   int i=0;
+   int j=0;
+   int k=0;
+
+   int res = INT_MAX;
+   while(i<n && j<m && k<l)
+   {
+	 int curdiff=max(max(abs(a[i]-b[j]), abs(a[i]-c[k])), abs(b[j]-c[k]));
+	 res=min(curdiff,res);
+	 if (res==0) return 0;
+
+	 if (a[i]<=b[j] && a[i]<=c[k])
+		  i++;
+	 else if(b[j]<=a[i] && b[j]<=c[k])
+		  j++;
+	 else
+	      k++;
+
+   }
+   return res;
+}
+
+int main()
+{
+	int a[15]={7, 13, 25, 26, 31, 31, 50, 52, 52, 58, 58, 69, 71, 87, 96};
+	int b[15]={3, 28, 28, 33, 38, 45, 46, 49, 67, 69, 71, 78, 84, 87, 98};
+	int c[15]={17, 18, 21, 34, 36, 46, 53, 54, 65, 72, 79, 80, 82, 85, 93};
+	cout<<getMinDiff(a,15,b,15,c,15);
+
+
+	return 0;
+}
