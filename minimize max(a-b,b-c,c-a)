@@ -1,0 +1,6 @@
+/*
+
+Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)
+
+*/
+
