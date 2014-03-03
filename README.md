@@ -39,6 +39,10 @@ Given m sets, generate a new array a (size m), where a[i] comes from set i, outp
 
 Given 2 binary arrays A and B i.e. containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value
 
+Given an integer array and a range, find all subarray such that its sum is in the range
+
+Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false
+
 
 Grid Traversal
 
