@@ -15,7 +15,7 @@ Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5
 
 Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k
 
-Max production subarray
+[Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/Max%20production%20subarray)
 
 [Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Diagonal%20elements%20sum%20of%20spiral%20matrix)
 
