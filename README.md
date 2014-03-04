@@ -260,6 +260,22 @@ Fetch10k() to implement fetch(int size,char* buffer)
 
 [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20malloc%20and%20free)
 
+---
+
+Here is also a summary of special topics in my blog:
+
+[Stream Series](http://niuzhist.com/study/2014/01/24/coding-stream-series/)
+
+[Interval Series](http://niuzhist.com/study/2014/02/13/coding-interval-series/)
+
+[Shortest Path Series](http://niuzhist.com/study/2014/02/14/coding-shortest-path/)
+
+[Pattern Match](http://niuzhist.com/study/2014/02/16/coding-pattern-match/)
+
+[Arithmetic Expression & Evaluation](http://niuzhist.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
+
+
+
 
 
 
