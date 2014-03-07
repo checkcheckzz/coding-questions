@@ -21,7 +21,7 @@ Given an unsigned int array with size n，the sum of array equals a，calculate 
 
 Given a string, print out the chars with maximal number of consecutive counts
 
-Given an array of size n, the array contains numbers in range from 0 to k-1 where k is a positive integer and k <= n. Find the maximum repeating number in this array
+[Given an array of size n, the array contains numbers in range from 0 to k-1 where k is a positive integer and k <= n. Find the maximum repeating number in this array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20maximum%20repeating%20number%20in%20this%20array)
 
 [Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate)](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20duplicate%20element)
 
