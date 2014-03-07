@@ -5,7 +5,9 @@ Implement malloc and free in C
 */
 
 /*
-Background: for each process, OS already allocated a small memory space. When the program calls malloc, it will search this space at first. If the space is not enough, malloc will call  function sbrk to extend the end of the allocated memory space.
+Background: for each process, OS already allocated a small memory space. When the program calls malloc, 
+it will search this space at first. 
+If the space is not enough, malloc will call  function sbrk to extend the end of the allocated memory space.
 */
 
 //memory control block
