@@ -3,9 +3,9 @@ coding-problems
 Besides the problem from Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion and blogs I read.
 
 
-Detect cycle in an array
+[Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Detect%20cycle%20in%20an%20array)
 
-Detect the longest cycle in an array
+[Detect the longest cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Detect%20the%20longest%20cycle%20in%20an%20array)
 
 [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/List%20level%20sum)
 
