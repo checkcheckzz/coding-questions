@@ -19,7 +19,7 @@ Given an unsigned int array with size n，the sum of array equals a，calculate 
 
 [Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Diagonal%20elements%20sum%20of%20spiral%20matrix)
 
-Given a string, print out the chars with maximal number of consecutive counts
+[Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/Chars%20with%20maximal%20number%20of%20consecutive%20counts)
 
 [Given an array of size n, the array contains numbers in range from 0 to k-1 where k is a positive integer and k <= n. Find the maximum repeating number in this array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20maximum%20repeating%20number%20in%20this%20array)
 
@@ -29,7 +29,7 @@ Given a string, print out the chars with maximal number of consecutive counts
 
 [Sliding Window Maximum](https://github.com/checkcheckzz/coding-problems/blob/master/Sliding%20Window%20Maximum)
 
-Jump the river
+[Jump the river](https://github.com/checkcheckzz/coding-problems/blob/master/Jump%20the%20river)
 
 Iterative Binary Search
 
@@ -41,7 +41,7 @@ Given 2 binary arrays A and B i.e. containing only 0s and 1s each of size N. Fin
 
 Given an integer array and a range, find all subarray such that its sum is in the range
 
-Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false
+[Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20array%20and%20a%20number%20k)
 
 
 Grid Traversal
