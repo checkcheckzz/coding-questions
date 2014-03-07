@@ -1,0 +1,7 @@
+/*
+
+Given an array of integers where each element points to the index of the next element 
+how would you detect the longest cycle in this array
+
+
+*/
