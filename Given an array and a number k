@@ -1,0 +1,7 @@
+/*
+
+Given an array and a number k, if there exists an element arr[i] 
+such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false
+
+*/
+
