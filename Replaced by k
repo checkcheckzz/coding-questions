@@ -1,0 +1,6 @@
+/*
+
+Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the
+sum of array becomes b when all numbers in the array greater than k is replaced by k
+
+*/
