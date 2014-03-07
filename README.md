@@ -11,9 +11,9 @@ Detect the longest cycle in an array
 
 [Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays)
 
-Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...
+[Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...](https://github.com/checkcheckzz/coding-problems/blob/master/Generate%20all%20sequences%20such%20that)
 
-Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k
+[Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k](https://github.com/checkcheckzz/coding-problems/blob/master/Replaced%20by%20k)
 
 [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/Max%20production%20subarray)
 
@@ -37,9 +37,9 @@ Iterative Binary Search
 
 Given m sets, generate a new array arr (size m), where a[i] comes from set i, output all possible array arr
 
-Given 2 binary arrays A and B i.e. containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value
+[Given 2 binary arrays A and B i.e. containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20subarray%20with%20equal%20sum)
 
-Given an integer array and a range, find all subarray such that its sum is in the range
+[Given an integer array and a range, find all subarray such that its sum is in the range](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20integer%20array%20and%20a%20range)
 
 [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20array%20and%20a%20number%20k)
 
