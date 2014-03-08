@@ -3,7 +3,7 @@
 Given a set of integer, you could apply sign operation to the integer, find 
 the minimum sum that is close to but  no less than 0;
 
-eg.
+
 input 3 5 7 11 13
 
 output 1
