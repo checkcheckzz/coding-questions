@@ -214,7 +214,7 @@ Boggle puzzle
 
 [Find the right most node in each level](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree)
 
-Get original number including digit 7
+[Get original number including digit 7](https://github.com/checkcheckzz/coding-problems/blob/master/Get%20original%20number%20including%20digit%207)
 
 [Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20memmove%20and%20memcopy)
 
