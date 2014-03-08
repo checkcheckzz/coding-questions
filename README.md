@@ -248,7 +248,7 @@ Function to read 12-bit unit
 
 [Read4k() to implement read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4k())
 
-Fetch10k() to implement fetch(int size,char* buffer)
+[Fetch10k() to implement fetch(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Fetch10k())
 
 [Copy on write string](Copy on write string)
 
