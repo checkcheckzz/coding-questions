@@ -222,7 +222,7 @@ Boggle puzzle
 
 [Length of First continuous subarray that sums to 0](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200)
 
-Moririsl traversal of Binary Tree
+[Moririsl traversal of Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Moririsl%20traversal%20of%20Binary%20Tree)
 
 [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20substring%20which%20appears%20more%20than%20once)
 
