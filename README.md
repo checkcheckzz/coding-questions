@@ -244,7 +244,7 @@ Boggle puzzle
 
 Function to read 12-bit unit
 
-Read4() to implement read(int size,char* buffer)
+[Read4() to implement read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4())
 
 Read4k() to implement read(int size,char* buffer)
 
