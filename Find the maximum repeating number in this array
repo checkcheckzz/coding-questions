@@ -11,3 +11,49 @@ but the original array should be recovered at the end.
 
 */
 
+/*
+
+solution: For each a[i], add N to a[a[i]%N], a[i]%N is the orignal number, a[i]/N is the number of a[i] occurance.
+At last, recover the array.
+O(n) time, O(1) space
+
+*/
+
+
+#include<iostream>
+using namespace std;
+
+int maxReap(int a[], int len)
+{
+	for(int i = 0; i < len; i++) 
+	{
+            int num = a[i]%len;
+            a[num] += len;
+    }
+	int res=-1;
+	int maxcount=1;
+	for(int i = 0; i <len; i++) 
+	{
+            if(a[i]/len > maxcount) 
+			{  
+				maxcount=a[i]/len;
+                res=i;
+            }
+    }
+   
+	for(int i = 0; i < len; i++) 
+	{
+            a[i] %= len;
+    }
+
+	return res;
+	 
+}
+
+int main()
+{
+	int a[]={1, 3, 3, 2, 0, 2, 0, 2, 3, 8, 2, 9, 2, 3};
+	cout<<maxReap(a,14)<<endl;
+
+	return 0;
+}
