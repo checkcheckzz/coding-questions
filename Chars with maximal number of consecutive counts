@@ -15,8 +15,8 @@ using namespace std;
 
 /*
 
-solution1: whenever the two different consecutive chars occur, update the counter and final result if the counter is equal to larger than current 
-maximal counter, otherwise, just reset the counter.
+solution1: whenever the two different consecutive chars occur, update the count and final result
+if the count is equal to larger than current maximal count, otherwise, just reset the count.
 
 */
 
@@ -35,7 +35,7 @@ void maxRepCount1(char *sen)
           if( count >=  maxcount && isalpha(prechar)){
               if(count> maxcount) res.clear();
               res+=prechar;
-               maxcount=count;
+              maxcount=count;
           }
           prechar=*sen;
           count=1;
@@ -64,7 +64,7 @@ void maxRepCount2(char *sen)
     char c=*p;
    
 
-    // First pass: count and find max
+    // first pass to count and find max
     while(*p)
     {
         c=*p;
@@ -83,7 +83,7 @@ void maxRepCount2(char *sen)
     }
    
 
-    // Second pass: output each max alphabet only once
+    // second pass to output each max alphabet only once
     p=sen;
     index=0;
     cout<<"[";
@@ -102,13 +102,13 @@ void maxRepCount2(char *sen)
 
 int main()
 {
-	//char s[]="this is a sentence";
+    //char s[]="this is a sentence";
     //char s[]="thiis iss a senntencee";
     char s[]="thiisss iss a senntttenceee";
     //char s[]="thiisss iss a sennnntttenceee";
     maxRepCount1(s);
-	maxRepCount2(s);
+    maxRepCount2(s);
 
-	return 0;
+    return 0;
 }
 
