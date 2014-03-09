@@ -1,5 +1,119 @@
 /*
 
-Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...
+Given an integer sequence like 2,1 5,4 6, generate one sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...
 
 */
+
+/*
+
+solution1: sort the array at first, then interleave the first half and second half.
+O(nlogn) time, O(1) space
+
+solution2: put the array to a min heap. Pop elements to all even positions, then all odd positions.
+O(n) time, O(n) space
+*/
+
+/*
+
+solution3: check i and i+1, if i is even and A[i] > A[i+1] swap two values, if i is odd and A[i] < A[i+1] swap two values.
+O(n) time, O(1) space
+*/
+
+#include<iostream>
+#include<iterator>
+#include<vector>
+#include<algorithm>
+
+using namespace std;
+
+void oneInterleaveSeq(int a[], int len)
+{
+  if(len<=1) return;
+  int i;
+  for(i = 0 ; i < len-1 ; ++i)
+  {
+    if( (i%2==0 && a[i] > a[i+1]) ||(i%2==1 && a[i] < a[i+1]))
+       swap(a[i],a[i+1]);
+  }
+
+}
+
+void printarr(int a[], int len)
+{
+	for(int i=0; i<len; i++)
+		cout<<a[i]<<" ";
+	cout<<endl;
+}
+
+
+/*
+
+Given an integer sequence like 2,1 5,4 6, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...
+
+*/
+
+/*
+
+solution: backtracking
+
+*/
+
+
+
+void allInterleaveSeqHelp(vector<int>& nums,vector<int>& cur,vector<int>& used)
+{
+	if(cur.size()==nums.size())
+	{
+		copy(cur.begin(),cur.end(),ostream_iterator<int>(cout," "));
+		cout<<endl;
+		return;
+	}
+	int k=cur.size()+1;
+	for(size_t i=0;i<nums.size();i++)
+	{
+		if(used[i])
+			continue;
+		if((k&1)&&(k==1||nums[i]<cur.back()))//even position
+		{
+			used[i]=1;
+			cur.push_back(nums[i]);
+			allInterleaveSeqHelp(nums,cur,used); 
+			cur.pop_back();
+			used[i]=0;
+		}
+		else if ((k%2==0)&&nums[i]>cur.back())//odd position
+		{
+			used[i]=1;
+			cur.push_back(nums[i]);
+			allInterleaveSeqHelp(nums,cur,used);
+			cur.pop_back();
+			used[i]=0;
+		}
+	}
+}
+
+void allInterleaveSeq(vector<int>& nums)
+{
+	if(nums.empty())
+		return;
+	sort(nums.begin(),nums.end());
+	vector<int> cur;
+	vector<int> used(nums.size(),0);
+	allInterleaveSeqHelp(nums,cur,used);
+}
+
+
+int main()
+{
+	int a[]={1,2,4,5,6};
+	oneInterleaveSeq(a,5);
+	printarr(a,5);
+
+	vector<int> b(5,0);
+	b[0]=1,b[1]=2, b[2]=4, b[3]=5, b[4]=6;
+	allInterleaveSeq(b);
+
+	int tt;
+	cin>>tt;
+	return 0;
+}
