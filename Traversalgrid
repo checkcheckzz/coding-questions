@@ -1,0 +1,10 @@
+/*
+
+
+There is a rectangular grid of size m * n . Mike is in location ( x, y ) inside grid. He can move in 4 directions up, down, right and left. 
+He will die if he steps outside of rectangular grid. Find the probability that bob is alive given initial position of bob as ( x, y ) 
+and number of steps he moves as N. (Given that Mike moves only one step at a time).
+
+
+*/
+
