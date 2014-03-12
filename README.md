@@ -245,7 +245,7 @@ Boggle puzzle
 
 [Read4() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4())
 
-[Read4k() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4k())
+[Readk() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Readk())
 
 [Read4k() to implement char *readline(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4k()line)
 
