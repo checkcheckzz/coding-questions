@@ -1,0 +1,6 @@
+/*
+
+Given the node of a graph, and each node's degree (at most one edge between two nodes), 
+check whether the graph exists.
+
+*/
