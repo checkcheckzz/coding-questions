@@ -44,15 +44,15 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20array%20and%20a%20number%20k)
 
 
-Grid Traversal
+[Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/Traversalgrid)
 
-How many rabbits can the fox eat
+[How many rabbits can the fox eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20rabbits%20can%20the%20fox%20eat)
 
-Number of closed rectangles in a matrix
+[Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Number%20of%20closed%20rectangles%20in%20a%20matrix)
 
-Valid whether a graph exists
+[Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/Graph%20exists)
 
-Calculate the distance from each empty room to nearest guard
+[Calculate the distance from each empty room to nearest guard](https://github.com/checkcheckzz/coding-problems/blob/master/Nearest%20guard)
 
 Construct a xml tree
 
@@ -242,7 +242,6 @@ Boggle puzzle
 
 [Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers)
 
-Function to read 12-bit unit
 
 [Read4() to implement read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4())
 
