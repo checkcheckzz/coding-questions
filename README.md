@@ -54,21 +54,21 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 
 [Calculate the distance from each empty room to nearest guard](https://github.com/checkcheckzz/coding-problems/blob/master/Nearest%20guard)
 
-Construct a xml tree
+[Construct a xml tree](https://github.com/checkcheckzz/coding-problems/blob/master/Construct%20a%20xml%20tree)
 
-Heapify a binary tree
+[Heapify a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Heapify%20a%20binary%20tree)
 
-Immediate right neighbor of given node(parent links, no root)
+[Immediate right neighbor of given node (parent links, no root) in binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Immediate%20right%20neighbor)
 
-Longest distance between two nodes of binary tree
+[Longest distance between two nodes of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20distance%20between%20two%20nodes)
 
-Printing all nodes at a given distance from a starting node in a binary tree
+[Printing all nodes at a given distance from a starting node in a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Printing%20all%20nodes)
 
-Second largest node in BST
+[Second largest node in BST](https://github.com/checkcheckzz/coding-problems/blob/master/Second%20largest%20node%20in%20BST)
 
-Shortest distance between two nodes of binary tree
+[Shortest distance between two nodes of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Shortest%20distance%20between%20two%20nodes)
 
-Size of the largest subtree that is complete
+[Size of the largest complete subtree in a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Size%20of%20the%20largest%20complete%20subtree)
 
 Caclulate (m^n)%(10^k)
 
