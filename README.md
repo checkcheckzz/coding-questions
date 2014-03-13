@@ -275,7 +275,7 @@ Here is also a summary of special topics in my blog:
 
 [Arithmetic Expression & Evaluation](http://niuzhist.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
 
-
+[Advanced Data Structure](http://itgeekworkhard.com/study/2014/03/13/coding-advanced-data-structure/)
 
 
 
