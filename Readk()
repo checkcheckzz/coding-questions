@@ -3,7 +3,7 @@
 There is an encapsulated function, int block_reader(char *buf). A statis pointer is in this function and it
 can only move to the end of a file but rewind. It read k bytes block into buf and return the bytes it read (always K unless reach the end of a file).
 Please implement int anysize_reader(char *buf, int size), this function can read any size data you want into buf, and return the real data size it read.
-
+Note: int anysize_reader(char *buf, int size) may be called several times to read a whole block of data.
      
 */
 
