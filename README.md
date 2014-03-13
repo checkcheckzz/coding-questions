@@ -243,13 +243,10 @@ Boggle puzzle
 [Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers)
 
 
-[Read4() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4())
-
 [Readk() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Readk())
 
 [Read4k() to implement char *readline(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Read4k()line)
 
-[Fetch10k() to implement fetch(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Fetch10k())
 
 [Copy on write string](Copy on write string)
 
