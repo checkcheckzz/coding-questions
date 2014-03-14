@@ -260,17 +260,16 @@ Boggle puzzle
 
 Here is also a summary of special topics in my blog:
 
-[Stream Series](http://niuzhist.com/study/2014/01/24/coding-stream-series/)
+[Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
 
-[Interval Series](http://niuzhist.com/study/2014/02/13/coding-interval-series/)
+[Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
 
-[Shortest Path Series](http://niuzhist.com/study/2014/02/14/coding-shortest-path/)
+[Shortest Path Series](http://itgeekworkhard.com/study/2014/02/14/coding-shortest-path/)
 
-[Pattern Match](http://niuzhist.com/study/2014/02/16/coding-pattern-match/)
+[Pattern Match](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
 
-[Arithmetic Expression & Evaluation](http://niuzhist.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
+[Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
 
-[Advanced Data Structure](http://itgeekworkhard.com/study/2014/03/13/coding-advanced-data-structure/)
 
 
 
