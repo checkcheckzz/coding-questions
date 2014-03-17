@@ -1,6 +1,6 @@
 coding-problems
 ===============
-Besides the problem from Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion and blogs I read.
+Here are some interesting coding problem. They come from interview, discussion and blogs I read.
 
 
 [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Detect%20cycle%20in%20an%20array)
@@ -101,6 +101,8 @@ Check whether two strings match by insertdeletereplace one char of any one of st
 
 Compound Words
 
+Compute the shortest unique prefix of each word in a set of words
+
 Delete repeating strings
 
 Filter dirty words
@@ -115,6 +117,8 @@ Given a list of words and a string pattern including question mark, find all mat
 
 Given a string s, return the shortest substring that is only occurring once in s
 
+Given a dict and a char set, find all words in the dict where all chars come from the char set
+
 Given a string，delete all char A，and double all char B
 
 Given two string arrays, sort the string in first array according to the string order in second array
@@ -124,6 +128,14 @@ Given two strings, get the longest length of reapeating part between end of firs
 Longest substring containing just two unique chars
 
 Longest substring which begins and ends with two unique chars
+
+Longest substring with more than once apperance
+
+String encode and decode
+
+Given a string s, check whether it is k duplicates of a string t
+
+Given a dict and a word, find all words with edit distance=1 in this dict
 
 Number of matched patterns in a string
 
