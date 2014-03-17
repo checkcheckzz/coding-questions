@@ -50,15 +50,15 @@ bool graphExist(int g[], int len)
 			while(j<n)
 			{
 
-             g[i-j-1]--;
-			 if (g[i-j-1]<0) return false;
-			 j++;
+                           g[i-j-1]--;
+			   if (g[i-j-1]<0) return false;
+			   j++;
 
 			}
 
 			qsort(g, 0, i-1);
 
-          }
+                 }
 
 	}
 
