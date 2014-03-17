@@ -93,8 +93,6 @@ How to find largest triangle in convex hull aside from brute force search
 Factorial digit sum
 
 
-
-
 BinaryMatching
 
 Check whether two strings match by insertdeletereplace one char of any one of string
@@ -218,6 +216,28 @@ Turn off lights
 Two dimension top k
 
 Water in two dimensional histogram
+
+Dividing a plane of points into two equal halves
+
+Find largest triangle in convex hull
+
+Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3
+
+Print all lines in a file reversely 
+
+Query relationship
+
+Given k numbers,  get a target with certain operators
+
+Merge stack of stones
+
+Word dragon
+
+Paint K houses
+
+Number of subsequence
+
+Pick gift with maximal limit
 
 ---
 
