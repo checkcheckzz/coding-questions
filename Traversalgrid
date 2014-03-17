@@ -5,6 +5,50 @@ There is a rectangular grid of size m * n . Mike is in location ( x, y ) inside 
 He will die if he steps outside of rectangular grid. Find the probability that bob is alive given initial position of bob as ( x, y ) 
 and number of steps he moves as N. (Given that Mike moves only one step at a time).
 
+*/
+
+/*
+
+solution: backtracking
 
 */
+
+
+#include<iostream>
+using namespace std;
+
+void probLive(int m,int n,int x,int y, float &a,float &b,int step,int N)
+{    
+    if(step==N && x>=0 && y>=0 && x<m && y<n)
+    {
+        (a)++;
+        return;
+    }
+    else if((step<=N) && (x<0 || y<0 || x>=m || y>=n))
+    {
+        (b)++;
+        return;
+    }
+    else
+    {
+        probLive(m,n,x+1,y,a,b,step+1,N);
+        probLive(m,n,x-1,y,a,b,step+1,N);
+        probLive(m,n,x,y+1,a,b,step+1,N);
+        probLive(m,n,x,y-1,a,b,step+1,N);
+    }
+}
+
+int main()
+{
+	int m=5, n=4;
+	int x=3, y=2;
+	float a=0.0, b=0.0;
+	int N=8;
+	probLive(m,n,x+1,y,a,b,0,N);
+	cout<<a/(a+b);
+
+	return 0;
+}
+
+
 
