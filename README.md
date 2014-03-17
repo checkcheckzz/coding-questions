@@ -70,6 +70,10 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 
 [Size of the largest complete subtree in a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Size%20of%20the%20largest%20complete%20subtree)
 
+[Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20getNextNode())
+
+[Find all leafs below a node in a N-way tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20all%20leafs%20below%20a%20node%20in%20a%20N-way%20tree)
+
 Caclulate (m^n)%(10^k)
 
 For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N
@@ -84,6 +88,13 @@ Put m apples to n plates
 
 Given a positive integer N, print all combinations of non-negative integer sum to N
 
+How to find largest triangle in convex hull aside from brute force search
+
+Factorial digit sum
+
+
+
+
 BinaryMatching
 
 Check whether two strings match by insertdeletereplace one char of any one of string
@@ -95,6 +106,8 @@ Delete repeating strings
 Filter dirty words
 
 Find a vowel product sum of an ASCII string
+
+Find a replace rule
 
 Given a list of strings, find the longest common prefix(at least two)
 
@@ -110,9 +123,13 @@ Given two strings, get the longest length of reapeating part between end of firs
 
 Longest substring containing just two unique chars
 
+Longest substring which begins and ends with two unique chars
+
 Number of matched patterns in a string
 
 One-byte or two-byte encoding
+
+Pair with largest common words
 
 [Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S)
 
