@@ -46,7 +46,7 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 
 [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/Traversalgrid)
 
-[How many rabbits can the fox eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20rabbits%20can%20the%20fox%20eat)
+[How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20carrots%20can%20the%20rabbit%20eat)
 
 [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Number%20of%20closed%20rectangles%20in%20a%20matrix)
 
