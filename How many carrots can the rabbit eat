@@ -1,7 +1,58 @@
 /*
 
-Given a grid, the coordinates of a rabbit and the coordinates of the carrots, find out the number of carrots that the rabbit can eat.
+Given a squre, the coordinates of a rabbit and the coordinates of the carrots, 
+find out the number of carrots that the rabbit can eat. This is only one rabbit and all rest are carrots.
 
+The rabbit can only eat carrots which are in its own row, own column or in any of the diagonals.
 
 */
+
+/*
+
+solution: Just scan the grid to check the row index difference, column index difference or column index difference/row index difference.
+O(n^2) time, O(1) space
+
+*/
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int numCarrot(vector<vector<int> > squre, int x, int y, int n)
+{
+	int res=0;
+
+	for(int i=0; i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+
+			int diffx=x-i;
+			int diffy=y-j;
+
+			if (diffx==0 && diffy!=0) res++;
+
+			else if (diffy==0 && diffx!=0) res++;
+
+			else if ((diffx!=0 && diffy!=0) && (diffy/diffx==1 || diffy/diffx==-1)) res++;
+
+		}
+
+	}
+
+	return res;
+
+}
+
+int main()
+{
+
+  int n=5;	 
+  vector<vector<int> > square(n, vector<int>(n, 0));
+  cout<<numCarrot(square, 2,2, n)<<endl;
+  
+  return 0;
+
+}
 
