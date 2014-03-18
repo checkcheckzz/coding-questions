@@ -1,6 +1,6 @@
 coding-problems
 ===============
-Here are some interesting coding problem. They come from interview, discussion and blogs I read.
+Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read.
 
 
 [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Detect%20cycle%20in%20an%20array)
