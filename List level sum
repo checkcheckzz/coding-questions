@@ -12,18 +12,18 @@ Because C++ can not handle a list with either list or a number, the solution is 
 
 public static int sum(List<Object> list,int level)
 {
-        int sum = 0;
+        int res= 0;
         for(Object obj:list)
         {
             if(obj instanceof Integer)
             {
-                sum+=level*(Integer)obj;
+                res+=level*(Integer)obj;
             }
             else if(obj instanceof List){
                 
-                sum+=sum((List)obj,level+1);
+                res+=sum((List)obj,level+1);
             }
         }
-        return sum;
+        return res;
     }
 }
