@@ -53,6 +53,9 @@ Return the duplicate indexs  equally
 Find the complement domino pairs
 
 
+
+
+
 [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/Traversalgrid)
 
 [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20carrots%20can%20the%20rabbit%20eat)
@@ -85,6 +88,11 @@ Find the complement domino pairs
 
 Large tree preorder travsersal
 
+
+
+
+
+
 Vertical sum in a  binary tree
 
 Caclulate (m^n)%(10^k)
@@ -105,6 +113,25 @@ How to find largest triangle in convex hull aside from brute force search
 
 Factorial digit sum
 
+Last digit of a^b
+
+Form a triangle
+
+Happy Number
+
+Magic Number
+
+Nearest greater palindrome
+
+GetDecimal
+
+Smallest positive number can not be represented
+
+Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)
+
+
+
+
 
 BinaryMatching
 
@@ -120,7 +147,7 @@ Filter dirty words
 
 Find a vowel product sum of an ASCII string
 
-Find a replace rule
+Find the replace rule
 
 Given a list of strings, find the longest common prefix(at least two)
 
@@ -153,6 +180,9 @@ Number of matched patterns in a string
 One-byte or two-byte encoding
 
 Pair with largest common words
+
+
+
 
 [Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S)
 
@@ -251,6 +281,12 @@ Paint K houses
 Number of subsequence
 
 Pick gift with maximal limit
+
+Implement iterator interface
+
+Shortest path
+
+Quack class
 
 ---
 
