@@ -44,6 +44,15 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20array%20and%20a%20number%20k)
 
 
+Find the largest sum of 3 integers in a row in an array
+
+Running average in a sliding window
+
+Return the duplicate indexs  equally
+
+Find the complement domino pairs
+
+
 [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/Traversalgrid)
 
 [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20carrots%20can%20the%20rabbit%20eat)
@@ -73,6 +82,10 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 [Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20getNextNode())
 
 [Find all leafs below a node in a N-way tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20all%20leafs%20below%20a%20node%20in%20a%20N-way%20tree)
+
+Large tree preorder travsersal
+
+Vertical sum in a  binary tree
 
 Caclulate (m^n)%(10^k)
 
