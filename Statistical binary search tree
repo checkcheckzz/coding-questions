@@ -1,4 +1,5 @@
 /*
+
 Statistical binary search tree
 
 */
@@ -16,104 +17,118 @@ struct NODE
      
     NODE(int n, int sz = 1) : val(n), size(sz), pLft(NULL), pRgt(NULL), pParent(NULL) {}
  
-    void setLeft(NODE* Node)
+    void setLeft(NODE* node)
     {
-        if (Node==NULL) return;
-        pLft = Node;
-        Node->pParent = this;
+        if (node==NULL) return;
+        pLft = node;
+        node->pParent = this;
     }
  
-    void setRight(NODE* Node)
+    void setRight(NODE* node)
     {
-        if (Node==NULL) return;
-        pRgt = Node;
-        Node->pParent = this;
+        if (node==NULL) return;
+        pRgt = node;
+        node->pParent = this;
     }
 };
  
  //O(logn) insert
-void insert(NODE* Node, NODE* Tmp)
+void insert(NODE* node, NODE* tmp)
 {
-    if (Node==NULL|| Tmp==NULL)
-        return;
+    if (node==NULL|| tmp==NULL) return;
  
-    Node->size++;
+    node->size++;
  
-    if (Tmp->val >= Node->val)
-    {
-        if (Node->pRgt == NULL)
-            Node->setRight(Tmp);
-        else
-            insert(Node->pRgt, Tmp);
-    }
-    else
-    {
-        if (Node->pLft == NULL)
-            Node->setLeft(Tmp);
-        else
-            insert(Node->pLft, Tmp);
+    if (tmp->val >= node->val) {
+    
+        if (node->pRgt == NULL) {
+        
+            node->setRight(tmp);
+            
+        } else {
+        
+            insert(node->pRgt, tmp);
+        } 
+        
+    } else {
+    
+        if (node->pLft == NULL) {
+        
+            node->setLeft(tmp);
+            
+        } else {
+        
+            insert(node->pLft, tmp);
+        }   
     }
 }
+
 //find the n'th smallest element stored in the tree in O(logn) time
-NODE* Select(NODE* Root, int n)
+
+NODE* select(NODE* root, int n)
 {
-    if (Root==NULL || n <= 0)
-        return NULL;
+    if (root==NULL || n <= 0) return NULL;
  
-    NODE* Cur = Root;
-    int Curn = 0;
-    do
-    {
-        int Add = 1 + (Cur->pLft == NULL ? 0 : Cur->pLft->size);
-        int This = Curn + Add;
+    NODE* cur = root;
+    
+    int cursum = 0;
+    
+    do {
+    
+        int lefttreesize = 1 + (cur->pLft == NULL ? 0 : cur->pLft->size);
+        int totalsum = cursum + lefttreesize;
  
-        if (This == n)
-            return Curn;
+        if (totalsum == n) return curn;
  
-        if (This < n) // need search right subtree, add the size of left subtree
-            Curn += Add;
- 
-        Cur = (This > n ? Cur->pLft : Cur->pRgt); //continue to search left or right subtree 
-    } 
-    while (Cur!=NULL);
+        if (totalsum < n)  {  //  add the size of left subtree
+        
+            cursum += lefttreesize;
+            
+        }
+        
+        cur = (totalsum > n ? cur->pLft : cur->pRgt);  //continue to search left or right subtree
+        
+    } while (cur!=NULL);
  
     return NULL;
 }
+
 //find the rank of element node in the tree in O(logn) time
-int GetNum(NODE* Root, NODE* Node)
+
+int getNum(NODE* root, NODE* node)
 {
-    if (Root==NULL|| Node==NULL)
-        return 0;
+    if (root == NULL|| node == NULL) return 0;
  
-    if (Node == Root)
-        return Node->pLft == NULL ? 1 : 1 + Node->pLft->size;
+    if (node == root) return node->pLft == NULL ? 1 : 1 + node->pLft->size;
  
-    NODE* Cur = Node;
-    int Ret = 1;
-    while (Cur->pParent!=NULL)
-    {
-        if (Cur == Cur->pParent->pRgt) // if node is its parent right child
-            Ret += 1 + (Cur->pParent->pLft == NULL ? 0 : Cur->pParent->pLft->size); 
-        Cur = Cur->pParent;
+    NODE* cur = node;
+    int result = 1;
+    while (cur->pParent != NULL) {
+    
+        if (cur == cur->pParent->pRgt) { // if node is its parent right child
+            result += 1 + (cur->pParent->pLft == NULL ? 0 : cur->pParent->pLft->size); 
+        }
+        
+        cur = cur->pParent;
     }
  
-    return Ret;
+    return result;
 }
 
 int main()
 {
-	NODE *root=new NODE(3);
+	NODE *root = new NODE(3);
 	insert(root, new NODE(1));
 	insert(root, new NODE(5));
-	NODE *p1=new NODE(4);
+	NODE *p1 = new NODE(4);
 	insert(root,p1);
 	cout<<root->size<<endl;//4
 	
-	cout<<Select(root,1)->val<<endl;
-	cout<<Select(root,2)->val<<endl;
-	cout<<Select(root,3)->val<<endl;
-	cout<<Select(root,4)->val<<endl;
-	cout<<GetNum(root, p1)<<endl;
+	cout<<select(root,1)->val<<endl;
+	cout<<select(root,2)->val<<endl;
+	cout<<select(root,3)->val<<endl;
+	cout<<select(root,4)->val<<endl;
+	cout<<getNum(root, p1)<<endl;
     
 	return 0; 
 
