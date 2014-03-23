@@ -1,7 +1,7 @@
 /*
 
 Write an iterator for binary tree. 
-Here is the inorder iterator.
+
 
 */
 
@@ -16,37 +16,41 @@ struct NODE
     NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
 };
 
+/*
 
+Here is the inorder iterator.
+
+*/
 
 class BinaryTreeIterator
 {
+
 public:
-    void IterCon(NODE* pRoot)
+    void iterCon(NODE* root)
     { 
-       BuildIter(pRoot);
+       buildIter(root);
      
     }
  
     NODE* Next()
     {
-        if (stk.empty())
-            return NULL;
+        if (stk.empty()) return NULL;
  
-        NODE* Ret = stk.top();
+        NODE* ret = stk.top();
         stk.pop();
  
-        BuildIter(Ret->pRgt);
+        BuildIter(ret->pRgt);
  
-        return Ret;
+        return ret;
     }
  
 private:
-    void BuildIter(NODE* Node)
+    void buildIter(NODE* node)
     {
-        while (NULL != Node)
-        {
-            stk.push(Node);
-            pNode = Node->pLft;
+        while (NULL != node) {
+        
+            stk.push(node);
+            node = node->pLft;
         }
     }
 
