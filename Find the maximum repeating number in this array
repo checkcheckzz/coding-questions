@@ -23,37 +23,40 @@ O(n) time, O(1) space
 #include<iostream>
 using namespace std;
 
-int maxReap(int a[], int len)
+int maxRepeat(int arr[], int len)
 {
-	for(int i = 0; i < len; i++) 
-	{
-            int num = a[i]%len;
-            a[num] += len;
+    for(int i = 0; i < len; i++) {
+    
+         int num = arr[i]%len;
+         arr[num] += len;
     }
-	int res=-1;
-	int maxcount=1;
-	for(int i = 0; i <len; i++) 
-	{
-            if(a[i]/len > maxcount) 
-			{  
-				maxcount=a[i]/len;
-                res=i;
-            }
+    
+    int result = -1;
+    int maxcount = 1;
+	
+    for(int i = 0; i <len; i++) {
+    
+        if(arr[i]/len > maxcount) {  
+        
+	  maxcount = arr[i]/len;
+          result = i;
+          
+        }
     }
    
-	for(int i = 0; i < len; i++) 
-	{
-            a[i] %= len;
+    for(int i = 0; i < len; i++) {
+    
+            arr[i] %= len;
     }
 
-	return res;
+    return result;
 	 
 }
 
 int main()
 {
 	int a[]={1, 3, 3, 2, 0, 2, 0, 2, 3, 8, 2, 9, 2, 3};
-	cout<<maxReap(a,14)<<endl;
+	cout<<maxRepeat(a,14)<<endl;
 
 	return 0;
 }
