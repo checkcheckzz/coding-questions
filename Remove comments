@@ -7,63 +7,67 @@ Remove the comments in a string, comments are the chars after "//" or between "/
 #include<iostream>
 using namespace std;
 
-const char* removeComment(const char* Org, char strN[])
+const char* removeComment(const char* org, char str[])
 {
-    if (Org == NULL || strN == NULL)
-        return strN;
+    if (org == NULL || str == NULL) return strN;
  
-    const char* Iter = Org;
-    char* Writer = strN;
-    char* Start = NULL;    
+    const char* iter = org;
+    char* writer = str;
+    char* start = NULL;    
  
-    while (*Iter != '\0')
-    {
-        if (*Iter == '/')
-        {
-            if (*(Iter+1) == '/')
-            {
-                while (*Iter != '\n' && *Iter !='\0') //omit all rest chars
-                    Iter++;
+    while (*iter != '\0') {
+    
+        if (*iter == '/') {
+        
+            if (*(iter+1) == '/') {
+            
+                while (*iter != '\n' && *iter !='\0') { //omit all rest chars
+                
+                    iter++;
+                }
+                
+                continue;
+                
+            } else if (*(iter + 1) == '*') {
+            
+                if (start == NULL) {
+                
+                    start = writer;  //record the previous position before /*
+                    
+                }    
  
+                *writer++ = *iter++;
+                *writer++ = *iter++;
                 continue;
             }
-            else if (*(Iter + 1) == '*')
-            {
-                if (Start == NULL)
-                    Start = Writer; //record the previous position before /*
- 
-                *Writer++ = *Iter++;
-                *Writer++ = *Iter++;
-                continue;
-            }
-        }
-        else if (*Iter == '*')
-        {
-            if (*(Iter+1) == '/')
-            {
-                if (Start != NULL)
-                {
-                    Writer =Start; //jump back to the previous char of /*
-                    Start = NULL;
-                    Iter += 2; //omit */
+            
+        } else if (*iter == '*') {
+        
+            if (*(iter+1) == '/') {
+            
+                if (start != NULL) {
+                
+                    writer = start;  //jump back to the previous char of /*
+                    start = NULL;
+                    iter += 2; //omit */
                     continue;
                 }
             }
         }
  
-        *Writer++ = *Iter++;
+        *writer++ = *iter++;
     }
  
-    *Writer = '\0';
+    *writer = '\0';
  
-    return strN;
+    return str;
 }
 
 int main()
 {
-	const char text[]="fsdf /*teert */ afdsaf";
-	char res[]="";
-	char *p=res;
+	const char text[] = "fsdf /*teert */ afdsaf";
+	char res[] = "";
+	char *p = res;
 	removeComment(text, p);
 	
 	cout<<res<<endl;
