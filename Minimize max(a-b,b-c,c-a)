@@ -12,38 +12,48 @@ O(n+m+l) time, O(1) space
 #include<algorithm>
 using namespace std;
 
-int getMinDiff(int a[], int n, int b[], int m, int c[], int l)
+int getMinDiff(int arr[], int arrlen, int barr[], int barrlen, int carr[], int carrlen)
 {
 
-   assert(a && n>0 && b && m>0 && c && l>0);
+   assert(arr && arrlen>0 && barr && barrlen>0 && carr && carrlen>0);
 
-   int i=0;
-   int j=0;
-   int k=0;
+   int arriter = 0;
+   int barriter = 0;
+   int carriter = 0;
 
-   int res = INT_MAX;
-   while(i<n && j<m && k<l)
-   {
-	 int curdiff=max(max(abs(a[i]-b[j]), abs(a[i]-c[k])), abs(b[j]-c[k]));
-	 res=min(curdiff,res);
-	 if (res==0) return 0;
+   int result = INT_MAX;
+   
+   while (arriter < arrlen && barriter < barrlen && carriter < carrlen) {
+   
+	 int curdiff = max(max(abs(arr[arriter] - barr[barriter]), abs(arr[arriter] - carr[carriter])), abs(barr[barriter] - carr[carriter]));
+	
+	 result = min(curdiff, result);
+	 
+	 if (res == 0) return 0;
 
-	 if (a[i]<=b[j] && a[i]<=c[k])
-		  i++;
-	 else if(b[j]<=a[i] && b[j]<=c[k])
-		  j++;
-	 else
-	      k++;
+	 if (a[arriter] <= b[barriter] && a[arriter] <= c[carriter]) {
+	 
+		  arriter++;
+		  
+	 } else if(b[barriter] <= a[arriter] && b[barriter] <= c[carriter]) {
+	 
+		  barriter++;
+		  
+	 } else {
+	 
+	      carriter++;
 
+         }
    }
-   return res;
+   
+   return result;
 }
 
 int main()
 {
-	int a[15]={7, 13, 25, 26, 31, 31, 50, 52, 52, 58, 58, 69, 71, 87, 96};
-	int b[15]={3, 28, 28, 33, 38, 45, 46, 49, 67, 69, 71, 78, 84, 87, 98};
-	int c[15]={17, 18, 21, 34, 36, 46, 53, 54, 65, 72, 79, 80, 82, 85, 93};
+	int a[15] = {7, 13, 25, 26, 31, 31, 50, 52, 52, 58, 58, 69, 71, 87, 96};
+	int b[15] = {3, 28, 28, 33, 38, 45, 46, 49, 67, 69, 71, 78, 84, 87, 98};
+	int c[15] = {17, 18, 21, 34, 36, 46, 53, 54, 65, 72, 79, 80, 82, 85, 93};
 	cout<<getMinDiff(a,15,b,15,c,15);
 
 
