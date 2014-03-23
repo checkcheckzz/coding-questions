@@ -22,8 +22,8 @@ int calulateAngle(int hour, int minute)
     assert(hour >= 0 && hour < 24);
     assert(minute >= 0 && minute < 60);
  
-    int minutedegree = 360*minute/60;
-    int hourdegree = 360*(hour%12)/12 + 30*minute/60;  //30 degree per hour
+    int minutedegree = 360 * minute / 60;
+    int hourdegree = 360 * (hour % 12) / 12 + 30 * minute / 60;  //30 degree per hour
  
     return abs(hourdegree - minutedegree);
 }
