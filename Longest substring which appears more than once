@@ -18,7 +18,7 @@ O(n^2) time, O(n) space
 #include<algorithm>
 using namespace std;
 
-bool LessThan(const char* p1, const char* p2)
+bool lessThan(const char* p1, const char* p2)
 {
     return strcmp(p1, p2) < 0;
 }
@@ -29,39 +29,47 @@ void findLongestDup(const char* str)
  
     const char* p = str;
     vector<const char*> vec; //suffix array pointers
-    while (*p != 0)
+    while (*p != 0) {
+    
         vec.push_back(p++);
+        
+    }    
  
-    sort(vec.begin(), vec.end(), LessThan);
+    sort(vec.begin(), vec.end(), lessThan);
  
-    int nMax = 0;
-    const char* pMax = str;
-    for (int i = 0; i < vec.size() - 1; i++)
-    {
-        int nLen = 0;
-        const char* pIter1 = vec[i];
-        const char* pIter2 = vec[i+1];
-        while (*pIter1 != 0 && *pIter2 != 0 && *pIter1 == *pIter2) //two prefix overlap
-        {
-            pIter1++, pIter2++;
-            nLen++;
+    int curmax = 0;
+    
+    const char* pmax = str;
+    
+    for (int i = 0; i < vec.size() - 1; ++i) {
+    
+        int len = 0;
+        const char* piter1 = vec[i];
+        const char* piter2 = vec[i+1];
+        while (*piter1 != 0 && *piter2 != 0 && *piter1 == *piter2) { //two prefix overlap
+        
+            piter1++, piter2++;
+            len++;
         }
  
-        if (nLen > nMax)
-        {
-            pMax = vec[i];
-            nMax = nLen;
+        if (len > curmax) {
+        
+            pmax = vec[i];
+            curmax = len;
         }
     }
  
-    for (int i = 0; i < nMax; i++)
-        cout<<*pMax++;
+    for (int i = 0; i < curmax; ++i) {
+    
+        cout<<*pmax++;
+        
+    }    
     cout<<endl;
 }
 
 int main()
 {
-	char s[]="abcdfscdfbc";
+	char s[] = "abcdfscdfbc";
 	findLongestDup(s);
 	return 0;
 
