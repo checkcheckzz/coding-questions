@@ -27,100 +27,102 @@ struct NODE
 };
 
 //postorder
-void PostOrderTravel(NODE* root)
+void postOrderTravel(NODE* root)
 {
     assert(root);
  
     stack<NODE*> stk;
-    NODE* Cur = root;
-    while (Cur != NULL)
-    {
-        stk.push(Cur);
-        Cur = Cur->pLft;
+    NODE* cur = root;
+    while (cur != NULL) {
+    
+        stk.push(cur);
+        cur = cur->pLft;
     }
  
-    NODE* Prev = NULL;
-    while (!stk.empty())
-    {
-        NODE* Tmp = stk.top();
+    NODE* prev = NULL;
+    
+    while (!stk.empty()) {
+    
+        NODE* tmp = stk.top();
 		
  
-        if (Tmp->pRgt != NULL && Prev != Tmp->pRgt)
-        {
-            NODE* Iter = Tmp->pRgt;
-            while (Iter != NULL)
-            {
-                stk.push(Iter);
-                Iter = Iter->pLft;
+        if (tmp->pRgt != NULL && prev != tmp->pRgt) {
+        
+            NODE* iter = tmp->pRgt;
+            while (iter != NULL) {
+            
+                stk.push(iter);
+                iter = iter->pLft;
             }
-        }
-        else
-        {
-            cout<<Tmp->val<<endl;
-            Prev = Tmp;
+            
+        } else {
+        
+            cout<<tmp->val<<endl;
+            prev = tmp;
             stk.pop();
         }
     }
 }
  
- //preorder
-void PrevOrderTravel(NODE* root)
+//preorder
+void prevOrderTravel(NODE* root)
 {
     assert(root);
  
     stack<NODE*> stk;
     stk.push(root);
  
-    while (!stk.empty())
-    {
-        NODE* Top = stk.top();
+    while (!stk.empty()) {
+    
+        NODE* top = stk.top();
         stk.pop();
  
-        cout<<Top->val<<endl;
+        cout<<top->val<<endl;
  
-        if (Top->pRgt != NULL)
-            stk.push(Top->pRgt);
-        if (Top->pLft != NULL)
-            stk.push(Top->pLft);
+        if (top->pRgt != NULL) stk.push(top->pRgt);
+        
+        if (top->pLft != NULL) stk.push(top->pLft);
     }
 }
  
- //inorder
-void InOrderTravel(NODE* root)
+//inorder
+
+void inOrderTravel(NODE* root)
 {
     assert(root);
  
     stack<NODE*> stk;
-    NODE* Cur = root;
-    while (Cur!=NULL)
-    {
-        stk.push(Cur);
-        Cur = Cur->pLft;
+    NODE* cur = root;
+    while (cur!=NULL) {
+    
+        stk.push(cur);
+        cur = cur->pLft;
     }
  
-    while (!stk.empty())
-    {
-        Cur = stk.top();
-        cout<<Cur->val<<endl;
+    while (!stk.empty()) {
+    
+        cur = stk.top();
+        cout<<cur->val<<endl;
         stk.pop();
  
-        Cur = Cur->pRgt;
-        while (Cur!=NULL)
-        {
-            stk.push(Cur);
-            Cur = Cur->pLft;
+        cur = cur->pRgt;
+        
+        while (cur!=NULL) {
+        
+            stk.push(cur);
+            cur = cur->pLft;
         }
     }
 }
 
 int main(){
 
-	NODE *head=new NODE(2);
-	head->pLft=new NODE(1);
-	head->pRgt=new NODE(3);
-	PrevOrderTravel(head);
-	InOrderTravel(head);
-	PostOrderTravel(head);
+	NODE *head = new NODE(2);
+	head->pLft = new NODE(1);
+	head->pRgt = new NODE(3);
+	prevOrderTravel(head);
+	inOrderTravel(head);
+	postOrderTravel(head);
 	return 0;
 }
 
