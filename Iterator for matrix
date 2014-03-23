@@ -7,24 +7,22 @@ public:
 
   MatrixIter (vector<vector<int>>& matrix) : vecvec(matrix), ni(0), nj(0), Inited(false){}
  
-  bool HasNext()
+  bool hasNext()
   {
-    if (!vecvec.empty() && !vecvec[0].empty())
-        return true;
+    if (!vecvec.empty() && !vecvec[0].empty()) return true;
  
     int i,j;
-    return Prob(i,j);
+    return prob(i,j);
   }
  
-  int GetVal() { return vecvec[ni][nj]; }
+  int getVal() { return vecvec[ni][nj]; }
  
-  void Next()
+  void next()
   {
-    if (!Inited)
-    {
-        Inited = true;
-        if (!vecvec.empty() && !vecvec[0].empty())
-          return;
+    if (!inited) {
+    
+        inited = true;
+        if (!vecvec.empty() && !vecvec[0].empty()) return;
     }
  
     prob(ni, nj);
@@ -32,25 +30,24 @@ public:
  
 private:
 
-  bool Prob(int& i, int& j) //by reference
+  bool prob(int& i, int& j) //by reference
   {
     i = ni;
     j = nj;
      
-    if (i >= vecvec.size())
-        return false;
+    if (i >= vecvec.size()) return false;
      
-    if (i < vecvec.size() && j < vecvec[i].size()-1) //col++
-    {
+    if (i < vecvec.size() && j < vecvec[i].size()-1) { //col++
+    
         j++;
         return true;
     }
  
     i++; //row ++
-    for(; i < vecvec.size(); i++)
-    {
-        if (!vecvec[i].empty())
-            break;
+    
+    for(; i < vecvec.size(); i++) {
+    
+        if (!vecvec[i].empty()) break;
     }
  
     if (i == vecvec.size()) return false;
@@ -61,7 +58,7 @@ private:
   }
 
   vector<vector<int>>& vecvec;
-  bool Inited; 
+  bool inited; 
   int ni;
   int nj;
 
