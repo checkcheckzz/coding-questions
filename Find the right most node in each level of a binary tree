@@ -22,18 +22,22 @@ struct NODE
     NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
 };
 
-void getRightMostBThelp(NODE* Node, vector<NODE*>& vec, int Lev)
+void getRightMostBTInner(NODE* Node, vector<NODE*> &vec, int Lev)
 {
-    if (NULL == Node)
+    if (Node == NULL) {
+    
         return;
+    }    
  
-    if (nLev >= vec.size())
-	{vec.push_back(Node);
-	cout<<Node->val;}
+    if (Lev >= vec.size()) {
+    
+        vec.push_back(Node);
+	cout<<Node->val;
+    }
 	
  
-    getRightMostBThelp(Node->pRgt, vec, Lev+1);
-    getRightMostBThelp(Node->pLft, vec, Lev+1);
+    getRightMostBTInnerNode->pRgt, vec, Lev+1);
+    getRightMostBTInner(Node->pLft, vec, Lev+1);
 }
  
 vector<NODE*> getRightMostBT(NODE* root)
