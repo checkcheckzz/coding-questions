@@ -22,35 +22,35 @@ public:
         return *this;
     }
  
-    T* operator ->() const { return pVal; }
-    T& operator *() const  { return *pVal; }
+    T* operator ->() const { return val; }
+    T& operator *() const  { return *val; }
  
 private:
     void decRef()
     {
-        (*pRef)--;
+        (*ref)--;
  
-        if (0 == *pRef)
+        if (0 == *ref)
         {
-            delete pVal;
-            delete pRef;
+            delete val;
+            delete ref;
         }
     }
  
     void incRef(const SmartP<T>& ptr)
     {
-        pRef = ptr.pRef;
-        pVal = ptr.pVal;
-        (*pRef)++; 
+        ref = ptr.ref;
+        val = ptr.val;
+        (*ref)++; 
     }
  
     void assign(T* p)
     {
-        pVal = p;
-        pRef = new int(1);
+        val = p;
+        ref = new int(1);
     }
 
-    T* pVal;
-    int* pRef;
+    T* val;
+    int* ref;
 };
 
