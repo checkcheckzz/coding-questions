@@ -8,6 +8,7 @@ SerializeDeSerialize an arbitrary nodes tree
 
 solution: preorder traversal
 O(n) time
+
 */
 
 
@@ -17,111 +18,127 @@ O(n) time
 using namespace std;
 struct NODE 
 {
-    int nVal;
+    int val;
     vector<NODE*> vec;
  
-    NODE(int n) : nVal(n), vec() {}
+    NODE(int n) : val(n), vec() {}
 };
  
-void _inner_serial(NODE* pNode, char*& p)
+void serialInner(NODE* node, char*& p)
 {
-    //if (NULL == pNode)
-     //   return;
+
 	
-	 
-    itoa(pNode->nVal, p, 10);
+    itoa(node->val, p, 10);
     p += strlen(p);
 	
-    int num= pNode->vec.size();
-	itoa(num, p, 10);
+    int num = node->vec.size();
+    itoa(num, p, 10);
     p += strlen(p);
 	
 
-	if(pNode->vec.size()==0) return;
+    if(node->vec.size() == 0) return;
     
-     //cout<<*p<<endl;
+    
 	
-    for (vector<NODE*>::iterator it = pNode->vec.begin();
-        it != pNode->vec.end(); it++)
-        _inner_serial(*it, p);
+    for (vector<NODE*>::iterator it = node->vec.begin(); it != pNode->vec.end(); it++) {
+    
+        serialInner(*it, p);
+    }    
 }
  
-char* Serialize(NODE* pRoot, char mem[])
+char* serialize(NODE* root, char mem[])
 {
-    if (NULL == mem || NULL == pRoot)
-        return NULL;
+    if (NULL == mem || NULL == root) return NULL;
  
     char* p = mem;
-    _inner_serial(pRoot, p);
+    serialInner(root, p);
     p++;
-	*p='\0';
+    *p='\0';
     return mem;
 }
-int Proc(const char*& p)
+
+
+int proc(const char*& p)
 {
     
  
-    int nVal = 0;
-    while (*p >= '0' && *p <= '9' & *p!=' ')
-        nVal = 10*nVal + *p++ - '0';
+    int val = 0;
+    
+    while (*p >= '0' && *p <= '9' && *p!=' ') {
+    
+        val = 10 * val + *p++ - '0';
+        
+    }
+    
     p++;
-    return nVal;
+    return val;
 }
  
-NODE* _inner_deserial(const char*& p)
+NODE* deserialInner(const char*& p)
 {
 	
     
-	int val=Proc(p);
-    NODE* pRet = new NODE(val);
-	val=Proc(p);
+    int val = proc(p);
+    
+    NODE* result = new NODE(val);
+    
+    val = proc(p);
 
-	int n = val;
+    int childnum = val;
    
 
-    for (int i = 0; i < n; i++)
-        pRet->vec.push_back(_inner_deserial(p));
+    for (int i = 0; i < childnum; ++i) {
+    
+        result->vec.push_back(deserialInner(p));
+    
+    }    
  
-    return pRet;
+    return result;
 }
  
-NODE* DeSerialize(const char mem[])
+NODE* deSerialize(const char mem[])
 {
-    if (NULL == mem) 
-        return NULL;
+    if (NULL == mem) return NULL;
  
     const char* p = mem;
-    return _inner_deserial(p);
+    return deserialInner(p);
 }
 
 int main()
 {
     
-	NODE *root1=new NODE(3);
-	NODE *p1=new NODE(1);
+	NODE *root1 = new NODE(3);
+	NODE *p1 = new NODE(1);
 	
 
-	NODE *p2=new NODE(2);
+	NODE *p2 = new NODE(2);
 	
-	NODE *p3=new NODE(4);
+	NODE *p3 = new NODE(4);
 	
 	root1->vec.push_back(p1);
 	root1->vec.push_back(p2);
 	root1->vec.push_back(p3);
 	
 	
-	char str[]="";
+	char str[] = "";
 
-	Serialize(root1,str);
+	serialize(root1,str);
+	
 	cout<<str<<endl;
     
 
 	
-	const char mem1[]="3 3 1 0 2 0 4 0";
-	NODE *root=DeSerialize(mem1);
-	cout<<root->nVal<<endl;
-	for (vector<NODE*>::iterator it = root->vec.begin();it != root->vec.end(); it++)
-		cout<<(*it)->nVal<<endl;
+	const char mem1[] = "3 3 1 0 2 0 4 0";
+	
+	NODE *root = deSerialize(mem1);
+	
+	cout<<root->val<<endl;
+	
+	for (vector<NODE*>::iterator it = root->vec.begin(); it != root->vec.end(); it++) {
+	
+	     cout<<(*it)->val<<endl;
+		
+	}	
 		
 	return 0;	
 
