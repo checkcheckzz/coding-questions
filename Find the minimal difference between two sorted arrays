@@ -13,33 +13,38 @@ O(m+n) time, O(1) space
 #include<cassert>
 using namespace std;
 
-int minDiff(int A[],int m, int B[],int n)
+int minDiff(int arrA[],int arrAlen, int arrB[], int arrBlen)
 {
-   assert(A && m>0 && B && n>0);
+   assert(arrA && arrAlen > 0 && arrB && arrBlen > 0);
 
-   int i=0;
-   int j=0;
+   int arrAiter = 0;
+   int arrBiter = 0;
 
-   int res = INT_MAX;
-   while(i<m && j<n)
-   {
-      int diff = abs(A[i]-B[j]);
-      res = min(diff,res);
-      if(res == 0)
-      {
+   int result = INT_MAX;
+   
+   while (arrAiter < arrAlen && arrBiter < arrBlen) {
+   
+      int diff = abs(arrA[i]-arrB[j]);
+      
+      result = min(diff,result);
+      
+      if (result == 0) {
+      
          return 0;
       }
 
-      if(A[i]>B[j])
-      {
-         j++;
+      if (arrA[arrAiter] > arrB[arrBiter]) {
+      
+         arrBiter++;
+         
+      } else {
+      
+        arrAiter++;
+        
       }
-      else
-      {
-        i++;
-       }
    }
-   return res;
+   
+   return result;
 }
 
 int main()
