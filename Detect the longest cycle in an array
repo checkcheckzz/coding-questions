@@ -1,4 +1,5 @@
 /*
+
 Given an array of integers where each element points to the index of the next element 
 how would you detect the longest cycle in this array.
 
@@ -8,46 +9,62 @@ must be at least one cycle. If one element points itself, this particular cycle 
 */
 
 /*
+
 solution: DFS
 O(n) time, O(n) space
 
 */
+
+
 #include<iostream>
 #include<vector>
 #include<cassert>
 using namespace std;
 
-void dfs(int start, int idx, int arr[], vector<bool>& used, int &len) 
+void detectLongestCycleInner(int start, int idx, int arr[], vector<bool>& visited, int &len) 
 {
-     used[idx] = true;
+     visited[idx] = true;
      len++;
-     if (!used[arr[idx]]) {
-            dfs(start, arr[idx], arr, used, len);
+     
+     if (!visited[arr[idx]]) {
+     
+           detectLongestCycleInner(start, arr[idx], arr, visited, len);
+            
      } else {
-            assert(start != idx);//a cycle
+     
+           assert(start != idx);   //a cycle
      }
      
 }
 
 
-int longestCycle(int arr[], int n)
+/*
+
+Input: array arr[] and len as the length of arr[].
+Output: the length of longest cycle.
+
+*/
+
+int detectLongestCycle(int arr[], int len)
 {
 
 	int maxlen=0;
-	int len=0;
-	vector<bool> used(n, false);
-    for (int i = 0; i <n; ++i) 
-	{
-      if (!used[i]) 
-	  {
-           dfs(i, i, arr, used, len);
-           if (len > maxlen) 
-		   {
-                maxlen = len;
-           }
-    }
+	int curlen=0;
+	vector<bool> visited(n, false);
+	
+        for (int i = 0; i <len; ++i) {
+           
+          if (!visited[i]) {
+          
+             detectLongestCycleInner(i, i, arr, visited, len);
+          
+             if (curlen > maxlen) {
+                maxlen = curlen;
+             }
+          }
+        }
 
-    return maxlen;
+        return maxlen;
 }
 
 
@@ -58,7 +75,7 @@ int main()
 {
 	int a[]={3, 2, 1, 4, 0};
 
-	cout<<longestCycle(a, 5)<<endl;
+	cout<<detectLongestCycle(a, 5)<<endl;
 
 	return 0;
 
