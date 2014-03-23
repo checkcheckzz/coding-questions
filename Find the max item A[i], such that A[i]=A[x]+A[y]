@@ -1,5 +1,7 @@
 /*
- Given an integer array A,find the maximal a[i] such that a[i]=a[x]+a[y].
+
+ Given an integer array arr, find the maximal a[i] such that a[i]=a[x]+a[y].
+ 
 */
 
 /*
@@ -14,47 +16,59 @@ O(nlogn) time, O(1) space
 #include<algorithm>
 using namespace std;
 
-bool twoSum(int a[], int n, int skipIndex)
+bool twoSum(int arr[], int len, int skipindex)
 {
-    assert(a && n > 0 && skipIndex >= 0 && skipIndex < n);
+    assert(arr && len > 0 && skipindex >= 0 && skipindex < len);
  
     int beg = 0;
-    int end = n-1;
-    while (beg < end)
-    {
+    int end = len-1;
+    
+    while (beg < end) {
         
-        if (beg == skipIndex)
+        if (beg == skipindex) {
+        
             beg++;
-        else if (end == skipIndex)
+            
+        } else if (end == skipindex) {
+        
             end--;
-        else if (a[beg] + a[end] == a[skipIndex])
+            
+        } else if (a[beg] + a[end] == a[skipindex]) {
+        
             return true;
-        else if (a[beg] + a[end] < a[skipIndex])
+            
+        } else if (a[beg] + a[end] < a[skipindex]) {
+        
             beg++;
-        else end--;
+            
+        } else { 
+        
+          end--;
+        }  
     }
  
     return false;
 }
  
-bool findMaxItem(int a[], int n, int& res)
+bool findMaxItem(int arr[], int len, int& result)
 {
-    assert(a && n > 0);
+    assert(arr && len > 0);
  
-    sort(a, a+n);
+    sort(arr, arr+len);
  
     bool found = false;
-    int maxa = INT_MIN;
-    for (int i = 0; i < n; ++i)
-    {
-        if (twoSum(a, n, i))
-        {
+    int maxelement = INT_MIN;
+    
+    for (int i = 0; i < len; ++i) {
+    
+        if (twoSum(arr, len, i)) {
+        
             found = true;
-            maxa = max(maxa, a[i]);
+            maxelement = max(maxelement, arr[i]);
         }
     }
  
-    if (found) res = maxa;
+    if (found) result = maxelement;
  
     return found;
 }
