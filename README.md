@@ -1,6 +1,6 @@
 coding-problems
 ===============
-Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solution is not my
+Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are not my
 original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
