@@ -1,5 +1,7 @@
 /*
-Given a sorted integer array and a specific integer, find the first position of that integer. Array contains a lot of duplicates.
+
+Given a sorted integer array and a specific integer, find the first position of that integer. 
+Array contains duplicates.
 
 */
  
@@ -9,22 +11,31 @@ solution: binary search
 O(logn) time, O(1) space
 
 */
-int GetFirst(int a[], int n, int target)
+
+
+int getFirstPosition(int arr[], int len, int target)
 {
-    assert(a && n > 0);
+    assert(arr && len > 0);
  
     int beg = 0;
     int end = n-1;
-    while (beg <= end)
-    {
+    
+    while (beg <= end) {
+    
         int mid = beg + (end-beg)/2;
  
-        if (a[mid] == target && (0 == mid || a[mid-1] != target))
+        if (arr[mid] == target && (0 == mid || arr[mid-1] != target)) {
+        
             return mid;
-        else if (a[mid] >= target)//note the = here
+            
+        } else if (arr[mid] >= target) {
+        
             end = mid - 1;
-        else
+            
+        }  else {
+        
             beg = mid + 1;
+        }    
     }
  
     return -1;
