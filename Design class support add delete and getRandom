@@ -17,7 +17,7 @@ public:
             return;
  
         vec.push_back(x);
-        mp[x] = vec.size()-1;//start from index 0
+        mp[x] = vec.size()-1;  //start from index 0
     }
  
     void dele(int x)
