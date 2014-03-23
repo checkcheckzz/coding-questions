@@ -1,4 +1,8 @@
-//iterator for a matrix
+/*
+
+iterator for a matrix
+
+*/
 
 class MatrixIter
 {
