@@ -12,21 +12,22 @@ O(n^2) time, O(1) space
 
 int findShortest1(vector<int>& num, int s)
 {
-	int sum=0;
-	int start=0,end=0;
-	int res=num.size()+1;
-	while(end<num.size())
-	{
-		if(sum<s)
-			sum+=num[end];
-		while(sum>=s)
-		{
-			res=min(res,end-start+1);
-			sum-=num[start++];
+	int sum = 0;
+	int start = 0, end = 0;
+	int result = num.size() + 1;
+	while (end < num.size()) {
+	
+		if (sum < s) sum += num[end];
+		
+		while (sum >= s) {
+		
+			result = min(result, end - start + 1);
+			sum -= num[start++];
 		}
+		
 		end++;
 	}
-	return res;
+	return result;
 }
 
 /*
@@ -37,25 +38,26 @@ O(n^2) worst time, O(n) space
 
 int findShortest2(vector<int>& num,int s)
 {
-	int n=num.size();
+	int len = num.size();
 	queue<int> q;
-	int res=n+1,Sum=0;
-	for(int i=0;i<n;++i)
-	{
-		if(q.empty()||Sum<s)
-		{
+	int result = len + 1, sum = 0;
+	for (int i = 0; i < len; ++i) {
+	
+		if (q.empty() || sum < s) {
+		
 			q.push(num[i]);
-			Sum+=num[i];
+			sum + =num[i];
 		}
 		
-		while(!q.empty()&&Sum>=s)
-		{
-			res=min(res,(int)q.size());
-			Sum-=q.front();
+		while (!q.empty() && sum >= s) {
+		
+			result = min(result,(int)q.size());
+			sum -= q.front();
 			q.pop();
 		}
 	}
-	return res;
+	
+	return result;
 }
 
 
@@ -68,72 +70,88 @@ O(nlogn) time, O(logn) space
 #include<iostream>
 using namespace std;
 
-int searchSubarray(int a[], int n, int k)
+int searchSubarray(int arr[], int len, int k)
 {
 	//quicksort partition
 
-    if (1 == n || 0 == n)
-        return n;
+    if (1 == len || 0 == len) return len;
  
     int i = 1;
     int j = 1;
-    int Sum = a[0];
-	//the elements from a[0] to a[i-1] <=a[0], the elements from a[i] to a[n-1]>a[0]
-    for (; j < n; j++)
-    {
-        if (a[j] >= a[0])
-        {
-            swap(a[i], a[j]);
-            Sum += a[i++];//all >= a[0] element
+    int sum = arr[0];
+    
+    //the elements from arr[0] to arr[i-1] <=a[0], the elements from a[i] to a[n-1]>a[0]
+    for (; j < len; ++j) {
+    
+        if (arr[j] >= arr[0]) {
+        
+            swap(arr[i], arr[j]);
+            sum += arr[i++];   //all >= arr[0] element
         }
     }
  
-    swap(a[0], a[i-1]);
+    swap(arr[0], arr[i-1]);
  
-    int Partition = i-1;
-    if (Sum >= k && Sum - a[Partition] < k) //a[0] to a[partition] is the shortest subarray
-        return Partition + 1;
+    int partition = i-1;
+    
+    if (sum >= k && sum - arr[partition] < k) { //arr[0] to a[partition] is the shortest subarray
+        
+        return partition + 1;
+        
+    }    
  
-    if (Sum < k) //search right
-        return searchSubarray(a+Partition+1, n-Partition-1, k-Sum) +Partition + 1;
+    if (sum < k) {  //search right
+    
+        return searchSubarray(arr+partition+1, len-partition-1, k-sum) +partition + 1;
+        
+    }
+    
     //search left
-    return searchSubarray(a, Partition, k);
+    return searchSubarray(arr, partition, k);
 }
  
-int findShortest3(int a[], int n, int k)
+int findShortest3(int arr[], int len, int k)
 {
-    if (k < 0)//k negative is a special case
-    {
-        int Max = a[0];
-        for (int i = 1; i < n; i++)
-            Max = max(a[i], Max);
-        return Max >= k ? 1 : 0;
+    if (k < 0) {  //k negative is a special case
+    
+        int maxnum = arr[0];
+        for (int i = 1; i < len; i++) {
+        
+            maxnum = max(arr[i], maxnum);
+            
+        }
+        
+        return maxnum >= k ? 1 : 0;
     }
  
     
     int i = 0;
-    int j = n-1;
-    int SumPos = 0;//sum of all positive elements
-	//sort a such that negative element comes first
-    while (i <= j)
-    {
-        if (a[i] < 0)
+    int j = len-1;
+    int sumpos = 0;   //sum of all positive elements
+    
+    //sort a such that negative element comes first
+    while (i <= j) {
+    
+        if (arr[i] < 0) {
+     
             i++;
-        else if (a[j] >= 0)
-        {
-            SumPos += a[j];
+            
+        }  else if (arr[j] >= 0) {
+        
+            sumpos += arr[j];
             j--;
         }
-        else swap(a[i], a[j]);
+        
+        else swap(arr[i], arr[j]);
     }
  
-    if (i >= n || SumPos < k) return 0; //no such subarray
-    return searchSubarray(a+i, n-i, k);//search from positive element
+    if (i >= len || sumpos < k) return 0;   //no such subarray
+    return searchSubarray(arr+i, len-i, k);   //search from positive element
 }
 
 int main()
 {
-	int a[4]={1,2,3,4};
+	int a[4] = {1,2,3,4};
 	cout<<findShortest3(a,4,6)<<endl;
 	return 0;
 
