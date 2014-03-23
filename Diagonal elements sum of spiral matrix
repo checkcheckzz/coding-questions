@@ -25,6 +25,8 @@ O(n*n) time, O(1) space
 
 solution2: consider the special structure of the matrix
 
+O(n) time, O(1) space
+
 */
 
 int diagSum(int maxtrixdim)
