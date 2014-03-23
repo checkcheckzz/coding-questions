@@ -23,19 +23,21 @@ O(n*n) time, O(1) space
 
 /*
 
-solution2: use the special structure of the matrix
+solution2: consider the special structure of the matrix
 
 */
 
-int diagSum(int n)
+int diagSum(int maxtrixdim)
 {
-   if(n < 1) return 0;
-   int Cur = (n-1)*n + 1;
-   int Sum = Cur;
-   while(--n > 0){
-     Cur -= (n + n);
-     Sum += Cur;
+   if (maxtrixdim < 1) return 0;
+   int curelement = (maxtrixdim-1)*maxtrixdim + 1;
+   int result = curelement;
+   while (--maxtrixdim > 0) {
+   
+     curelement -= (maxtrixdim + maxtrixdim);
+     result += curelement;
    }
-   return Sum;
+   
+   return result;
 }
 
