@@ -13,40 +13,40 @@ O(n) time, O(1) space
 struct NODE 
 {
     int val;
-    NODE* Next;
+    NODE* next;
  
-    NODE(int x) : val(x), Next(NULL) {}
+    NODE(int x) : val(x), next(NULL) {}
 };
  
 void insert(NODE* p, int x) //insert x after p
 {
-    NODE* Tmp = p->Next;
-    NODE* pNew = new NODE(x);
-    p->Next = pNew;
-    pNew->Next = Tmp;
+    NODE* tmp = p->next;
+    NODE* newnode = new NODE(x);
+    p->next = newnode;
+    newnode->next = tmp;
 }
  
-void insertToCycleLink(NODE* Node, int x)
+void insertToCycleLink(NODE* node, int x)
 {
-    assert(Node != NULL);
+    assert(node != NULL);
  
-    NODE* Iter = Node;
-    NODE* Big = Iter; 
+    NODE* iter = node;
+    NODE* big = iter; 
  
     
-    do
-    {
-        if ((Iter->val == x) || 
-            (Iter->val <= x && Iter->Next->val >= x)) //insert at proper position
-            return insert(Iter, x);
+    do {
+    
+        if ((iter->val == x) || iter->val <= x && iter->next->val >= x)) { //insert at proper position
+        
+            return insert(iter, x);
+        }    
  
-        if (Iter->val > Big->val) //update big
-            Big = Iter;
+        if (iter->val > big->val) big = iter; //update big
  
-        Iter = Iter->pNext;
+        iter = iter->next;
 
-    }while (Iter != Node);
+    } while (iter != node);
  
-    insert(Big, x);
+    insert(big, x);
 }
 
