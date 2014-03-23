@@ -10,20 +10,21 @@ Because C++ can not handle a list with either list or a number, the solution is 
 
 */
 
-public static int sum(List<Object> list,int level)
+public static int sum(List<Object> list, int level)
 {
-        int res= 0;
-        for(Object obj:list)
-        {
-            if(obj instanceof Integer)
-            {
-                res+=level*(Integer)obj;
-            }
-            else if(obj instanceof List){
+        int result = 0;
+        for (Object obj:list) {
+        
+            if (obj instanceof Integer) {
+            
+                result += level * (Integer)obj;
                 
-                res+=sum((List)obj,level+1);
+            } else if(obj instanceof List) {
+                
+                result += sum((List)obj, level + 1);
             }
         }
-        return res;
+        
+        return result;
     }
 }
