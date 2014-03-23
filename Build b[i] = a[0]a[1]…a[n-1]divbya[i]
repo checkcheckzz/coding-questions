@@ -9,22 +9,28 @@ You must do this in O(n) without using division.
 */
 
 
-
-/*solution: scan two times
+/*
+solution: scan two times.
 O(n) time, O(1) space
 */
+
+/*
+Input: array input[] is the input array, len is the size of array input[].
+Output: array output[] is the output array
+*/
  
-void buildArray(int a[], int n, int b[])
+void buildArray(int input[], int len, int output[])
 {
-    b[n-1] = 1;
-    for (int i = n-2; i >= 0; i--) //b[i]=a[i+1]*a[i]*......*a[n-1];
-        b[i] = b[i+1] * a[i+1];
+    output[len-1] = 1;
+    for (int i = len-2; i >= 0; i--)  // output[i]=input[i+1]*intput[i]*......*input[n-1];
+        output[i] = output[i+1] * intput[i+1];
  
-    int Tmp = 1;
-    for (int i = 1; i < n; i++) //add a[0]*...a[i-1]
+    int allrestinput = 1;
+    
+    for (int i = 1; i < len; i++) // add input[0]*...input[i-1] to output[i]
     {
-        Tmp *= a[i-1];
-        b[i] = b[i] * Tmp;
+        allrestinput *= input[i-1];
+        output[i] = output[i] * allrestinput;
     }
     
 }    
