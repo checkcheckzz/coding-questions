@@ -34,41 +34,54 @@ using namespace std;
 
 int longSubarrayEq(const vector<int>& a,const vector<int>& b)
 {
-	int na = a.size(),nb =b.size();
-	assert(na==nb);
+	int na = a.size(), nb = b.size();
+	assert(na == nb);
 	vector<int> c(na,0);
-	for(int i=0;i<na;i++)
-		c[i]=a[i]-b[i];
-	for(int i=1;i<na;i++)
-		c[i]=c[i-1]+c[i];
+	
+	for (int i = 0; i < na; ++i) {
+	
+		c[i] = a[i] - b[i];
+		
+	}
+	
+	for (int i = 1; i < na; ++i) {
+	
+		c[i] = c[i-1] + c[i];
+        }
+        
+	int result = -1;
 
-	int ret=-1;
-
-	map<int,int> exist; //(c[i], i)
+	map<int,int> exist;   //(c[i], i)
 	map<int,int>::iterator it;
 	exist.insert(pair<int,int>(0,-1));
-	for(int i=0;i<na;i++)
-	{
+	
+	for (int i = 0;i < na; ++i) {
+	
 		it = exist.find(c[i]);	
-		if ( it==exist.end() ) // not exist
-			exist.insert(it,pair<int,int>(c[i],i));
-		else
-		{
-			ret=max(ret, (i-it->second) );
+		
+		if ( it == exist.end()) {  // not exist
+		
+			exist.insert(it, pair<int,int>(c[i],i));
+			
+		} else {
+		
+			result = max(result, (i - it->second) );
 		}
 	}
-	return ret;
+	
+	return result;
 }
 
 
 int main()
 {
-	int n=11;
+	int n = 11;
 	vector<int> a(n,0);  
-    vector<int> b(n,0);  
-	a[1]=1, a[5]=1, a[8]=1;
-	b[0]=1, b[2]=1, b[3]=1,b[4]=1,b[6]=1, b[7]=1, b[9]=1;
+        vector<int> b(n,0);  
+	a[1] = 1, a[5] = 1, a[8] = 1;
+	b[0] = 1, b[2] = 1, b[3] = 1, b[4] = 1,b[6] = 1, b[7] = 1, b[9] = 1;
 	cout<<longSubarrayEq(a,b)<<endl;
+	
 	/*
 	int a[]={0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0};
 	int b[]={1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0};
