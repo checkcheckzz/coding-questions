@@ -11,12 +11,14 @@ O(nlogn) time, O(1) space
 
 solution2: put the array to a min heap. Pop elements to all even positions, then all odd positions.
 O(n) time, O(n) space
+
 */
 
 /*
 
 solution3: check i and i+1, if i is even and A[i] > A[i+1] swap two values, if i is odd and A[i] < A[i+1] swap two values.
 O(n) time, O(1) space
+
 */
 
 #include<iostream>
@@ -26,22 +28,30 @@ O(n) time, O(1) space
 
 using namespace std;
 
-void oneInterleaveSeq(int a[], int len)
+void oneInterleaveSeq(int arr[], int len)
 {
-  if(len<=1) return;
-  int i;
-  for(i = 0 ; i < len-1 ; ++i)
-  {
-    if( (i%2==0 && a[i] > a[i+1]) ||(i%2==1 && a[i] < a[i+1]))
-       swap(a[i],a[i+1]);
-  }
+   if(len<=1) {
+  
+     return;
+  
+   }
+  
+ 
+   for(int i = 0 ; i < len-1 ; ++i) {
+   
+    if((i % 2 == 0 && arr[i] > arr[i+1]) ||(i % 2 == 1 && arr[i] < arr[i+1])) {
+    
+       swap(arr[i],arr[i+1]);
+   }
 
 }
 
-void printarr(int a[], int len)
+void printarr(int arr[], int len)
 {
-	for(int i=0; i<len; i++)
-		cout<<a[i]<<" ";
+	for(int i=0; i<len; i++) {
+	
+		cout<<arr[i]<<" ";
+        }		
 	cout<<endl;
 }
 
@@ -60,46 +70,57 @@ solution: backtracking
 
 
 
-void allInterleaveSeqHelp(vector<int>& nums,vector<int>& cur,vector<int>& used)
+void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visited)
 {
-	if(cur.size()==nums.size())
-	{
-		copy(cur.begin(),cur.end(),ostream_iterator<int>(cout," "));
+	if(cur.size() == nums.size()) {
+	
+		copy(cur.begin(), cur.end(), ostream_iterator<int>(cout," "));
 		cout<<endl;
 		return;
 	}
-	int k=cur.size()+1;
-	for(size_t i=0;i<nums.size();i++)
-	{
-		if(used[i])
-			continue;
-		if((k&1)&&(k==1||nums[i]<cur.back()))//even position
-		{
-			used[i]=1;
+	
+	int curlen  =cur.size() + 1;
+	
+	for(size_t i = 0 ; i < nums.size(); ++i) {
+	
+		if(visited[i]) {
+		
+		    continue;
+		
+		}    
+		
+		//even position	
+		if((curlen & 1) && (curlen == 1 || nums[i] < cur.back())) {  
+		
+			visited[i] = 1;
 			cur.push_back(nums[i]);
-			allInterleaveSeqHelp(nums,cur,used); 
+			allInterleaveSeqInner(nums,cur,visited); 
 			cur.pop_back();
-			used[i]=0;
-		}
-		else if ((k%2==0)&&nums[i]>cur.back())//odd position
-		{
-			used[i]=1;
+			visited[i] = 0;
+			
+		} else if ((curlen % 2 == 0) && nums[i] > cur.back()) { //odd position
+		
+			visited[i] = 1;
 			cur.push_back(nums[i]);
-			allInterleaveSeqHelp(nums,cur,used);
+			allInterleaveSeqInner(nums,cur,visited);
 			cur.pop_back();
-			used[i]=0;
+			visited[i] = 0;
 		}
 	}
 }
 
 void allInterleaveSeq(vector<int>& nums)
 {
-	if(nums.empty())
-		return;
+	if(nums.empty()) {
+	
+	   return;
+	   
+	}
+	
 	sort(nums.begin(),nums.end());
 	vector<int> cur;
-	vector<int> used(nums.size(),0);
-	allInterleaveSeqHelp(nums,cur,used);
+	vector<int> visited(nums.size(),0);
+	allInterleaveSeqInner(nums,cur,visited);
 }
 
 
