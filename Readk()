@@ -15,8 +15,7 @@ int block_reader(char *buf);
 
 void moveToBuf(char*& pW, int n)
 {
-    if (n <= 0 || pW == NULL || preSize < n) 
-        return;
+    if (n <= 0 || pW == NULL || preSize < n) return;
      
     memcpy(pW, buffer, n);
     preSize -= n;
@@ -26,8 +25,7 @@ void moveToBuf(char*& pW, int n)
 
 int anysize_reader(char *buf, int size)
 {
-    if (buf == NULL || size <= 0)
-        return 0;
+    if (buf == NULL || size <= 0) return 0;
 
     char* pw = buf;
     int Lft = size;  //the size you want to read 
@@ -35,8 +33,8 @@ int anysize_reader(char *buf, int size)
     moveToBuf(pW, Mov); //get the valid data from buffer last time left  
     Lft -= Mov;
      
-    while (Lft > 0)
-    {
+    while (Lft > 0) {
+    
         int Read = block_reader(buffer); //read k bytes into buffer and set preSize
         Mov = Lft < Read ? Lft : Read;
         moveToBuf(pW, Mov);
