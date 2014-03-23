@@ -15,58 +15,68 @@ O(nlogn) time
 using namespace std;
 
 //swap the elements in array from beg to end
-void swapRa(int a[], int beg, int end)
+void swapRa(int arr[], int beg, int end)
 { 
     
-    assert(a && beg <= end);
+    assert(arr && beg <= end);
  
-    while (beg < end)
+    while (beg < end) {
+    
         swap(a[beg++], a[end--]);
+        
+    }    
 }
  
 
-void reSort(int a[], int n)
+void reSort(int arr[], int len)
 {
-    assert(a && n > 0);
+    assert(arr && len > 0);
  
-    if (n <= 1) return;
+    if (len <= 1) return;
  
-    reSort(a, n/2);
-    reSort(a + n/2, n - n/2); 
-	//here, the numbers have this format: ---- "+++ --" ++++
+    reSort(arr, len/2);
+    reSort(arr + len/2, len - len/2); 
+    
+    //here, the numbers have this format: ---- "+++ --" ++++
  
-    int nLft = 0;
-    while (a[nLft] < 0) 
-        nLft++;
-    int nRgt = n-1;
-    while (a[nRgt] >= 0)
-        nRgt--;
+    int lftiter = 0;
+    
+    while (arr[lftiter] < 0) lftiter++;
+    
+    int rgtiter = len-1;
+    
+    while (arr[rgtiter] >= 0) rgtiter--;
      
    
-    if (nRgt <= nLft) return; //middle part has current order
+    if (rgtiter <= lftiter) return; //middle part has current order
 	
     //swap the middle part
-    swapRa(a, nLft, nRgt);
+    swapRa(arr, lftiter, rgtiter);
  
-    int nBegRgt = nLft;
-    while (a[nBegRgt] < 0) 
-        nBegRgt++;
+    int begrgt = lftiter;
+    
+    while (arr[begrgt] < 0) begrgt++;
+        
     //swap the two parts to make middle part retain the origin order
-    swapRa(a, nLft, nBegRgt-1);
-    swapRa(a, nBegRgt, nRgt);
+    
+    swapRa(arr, lftiter, begrgt-1);
+    swapRa(arr, begrgt, rgtiter);
 }
 
-void print(int a[], int n)
+void print(int arr[], int len)
 {
-	for (int i=0; i<n;i++)
-		cout<<a[i]<<",";
-
+	for (int i = 0; i < len; ++i) {
+	
+		cout<<arr[i]<<",";
+        }
 	cout<<endl;
 
 }
+
 int main(){
 
-	int a[6]={1, 3, -7, 8, -1, 4};
+	int a[6] = {1, 3, -7, 8, -1, 4};
+	
 	print(a,6);
 	reSort(a,6);
 	print(a,6);
