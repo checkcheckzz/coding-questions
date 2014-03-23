@@ -17,34 +17,33 @@ solution: backtracking
 #include<iostream>
 using namespace std;
 
-void probLive(int m,int n,int x,int y, float &a,float &b,int step,int N)
+void probLive(int xdim, int ydim, int startx, int starty, float &alive, float &death, int step, int N)
 {    
-    if(step==N && x>=0 && y>=0 && x<m && y<n)
-    {
-        (a)++;
+    if(step==N && startx>=0 && starty>=0 && startx<xdim && starty<ydim) {
+    
+        alive++;
         return;
     }
-    else if((step<=N) && (x<0 || y<0 || x>=m || y>=n))
-    {
-        (b)++;
+    else if((step<=N) && (startx<0 || starty<0 || startx>=xdim || starty>=ydim)) {
+    
+        death++;
         return;
-    }
-    else
-    {
-        probLive(m,n,x+1,y,a,b,step+1,N);
-        probLive(m,n,x-1,y,a,b,step+1,N);
-        probLive(m,n,x,y+1,a,b,step+1,N);
-        probLive(m,n,x,y-1,a,b,step+1,N);
+    } else {
+    
+        probLive(xdim, ydim, startx+1, starty, alive, death, step+1, N);
+        probLive(xdim, ydim, startx-1, starty, alive, death, step+1, N);
+        probLive(xdim, ydim, startx, starty+1, alive, death, step+1, N);
+        probLive(xdim, ydim, startx, starty-1, alive, death, step+1, N);
     }
 }
 
 int main()
 {
-	int m=5, n=4;
-	int x=3, y=2;
-	float a=0.0, b=0.0;
-	int N=8;
-	probLive(m,n,x+1,y,a,b,0,N);
+	int xdim = 5, ydim = 4;
+	int startx = 3, starty = 2;
+	float alive = 0.0, death = 0.0;
+	int N = 8;
+	probLive(xdim, ydim, startx, starty, alive, death, 0, N);
 	cout<<a/(a+b);
 
 	return 0;
