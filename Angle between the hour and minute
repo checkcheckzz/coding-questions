@@ -10,15 +10,22 @@ O(1) time, O(1) space
 #include<cassert>
 #include<iostream>
 using namespace std;
-int calAngle(int Hour, int Min)
+
+/*
+
+Input:  time format in 24 hour: hour and minute
+Output: the angle between the hour and minute hands
+
+*/
+int calulateAngle(int hour, int minute)
 {
-    assert(Hour >= 0 && Hour < 24);
-    assert(Min >= 0 && Min < 60);
+    assert(hour >= 0 && hour < 24);
+    assert(minute >= 0 && minute < 60);
  
-    int degreeMin = 360*Min/60;
-    int degreeHr = 360*(Hour%12)/12 + 30*Min/60;//30 degree per hour
+    int minutedegree = 360*minute/60;
+    int hourdegree = 360*(hour%12)/12 + 30*minute/60;  //30 degree per hour
  
-    return abs(degreeHr - degreeMin);
+    return abs(hourdegree - minutedegree);
 }
 
 int main(){
