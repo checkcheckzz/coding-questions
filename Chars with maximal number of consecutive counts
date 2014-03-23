@@ -21,29 +21,36 @@ if the count is equal to larger than current maximal count, otherwise, just rese
 */
 
 
+
 void maxRepCount1(char *sen)
 {
   if (!sen || !(*sen)) return;
-  int maxcount=0;
-  int count=0;
-  string res;
+  int maxcount = 0;
+  int curcount = 0;
+  string result;
 
   char prechar=*sen;
-  do{
-       if(*sen!=prechar)
-       {
-          if( count >=  maxcount && isalpha(prechar)){
-              if(count> maxcount) res.clear();
-              res+=prechar;
-              maxcount=count;
+  do {
+       if (*sen!=prechar) {
+       
+          if(curcount >=  maxcount && isalpha(prechar)) {
+              if(curcount> maxcount) result.clear();
+              result+=prechar;
+              maxcount=curcount;
           }
+          
           prechar=*sen;
-          count=1;
+          curcount=1;
+          
+       } else {
+       
+       count++;
+       
        }
-        else count++;
+       
   } while(*sen++);
 
-  cout<<res<<endl;
+  cout<<result<<endl;
 }
 
 /*
@@ -58,27 +65,27 @@ void maxRepCount2(char *sen)
     if (!sen || !(*sen)) return;
     int table[256] = {0};
     char *p = sen;
-    int max=1;
-    int count=1;
-    int index=0;
-    char c=*p;
+    int maxcount = 1;
+    int curcount = 1;
+    int index = 0;
+    char c = *p;
    
 
     // first pass to count and find max
-    while(*p)
-    {
-        c=*p;
-        count=0;
-        while(*p == c) //here also count empty char
-        {
-            count++;
+    while (*p) {
+        c = *p;
+        curcount = 0;
+        while(*p == c) {
+        
+            curcount++;
             p++;
             index++;
         }
-        if (count>=max)
-        {
-            max = count;
-            table[index-1] = count;
+        
+        if (curcount >= maxcount) {
+        
+            maxcount = curcount;
+            table[index-1] = curcount;
         }
     }
    
@@ -87,12 +94,14 @@ void maxRepCount2(char *sen)
     p=sen;
     index=0;
     cout<<"[";
-    while(*p)
-    {
+    while (*p) {
         
         c=*p;
-        if((table[index]==max)&&(isalpha(c)))
+        if((table[index]==max)&&(isalpha(c))) {
+        
             cout<<c<<",";
+        }    
+        
         p++;
         index++;
     }
