@@ -2,7 +2,6 @@
 
 Given two arrays, find which number in first array is not present in the second array
 
-
 */
  
 
@@ -11,31 +10,42 @@ Given two arrays, find which number in first array is not present in the second 
 solution: sort & two pointers
 O(nlogn+mlogm) time, O(1) space
 
-
 */
 
 
-void findUnique(int a[], int n, int b[], int m)
+
+
+void findUniqueArray(int arr1[], int arr1len, int arr2[], int arr2len)
 {
-    assert(a && b && n > 0 && m > 0);
+    assert(arr1 && arr2 && arr1len > 0 && arr2len > 0);
  
-    sort(a, a+n);
-    sort(b, b+m);
+    sort(arr1, arr1+arr1len);
+    sort(arr2, arr2+arr2len);
  
-    int itera = 0;
-    int iterb = 0;
-    while (itera < n && iterb < m)
-    {
+    int iterarr1 = 0;
+    int iterarr2 = 0;
+    
+    while (iterarr1 < arr1len && iterarr2 < arr2len) {
         
-        if (a[itera] <= b[iterb]) 
-        {
-            if (a[itera] != b[iterb])
-                cout<<a[itera]<<endl;
-            itera++;
+        if (arr1[iterarr1] <= arr2[iterarr2]) {
+        
+            if (arr1[iterarr1] != arr2[iterarr2]) {
+            
+                cout<<arr1[iterarr1]<<endl;
+            }
+            
+            iterarr1++;
+            
+        } else { 
+        
+        iterarr2++;
+        
         }
-        else iterb++;
     }
  
-    while (itera < n) 
-        cout<<a[itera++]<<endl; 
+    while ( iterarr1 <arr1len) {
+    
+        cout<<arr1[iterarr1++]<<endl; 
+    }
+    
 }
