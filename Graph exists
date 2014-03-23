@@ -35,30 +35,34 @@ void qsort(int a[], int s, int e){
 }
 
 
-bool graphExist(int g[], int len)
+bool graphExist(int graph[], int len)
 {
 	
 
-	for (int i=len-1; i>=0; i--)
-	{
-		if (g[i]>i) return false;
+	for (int i=len-1; i>=0; i--) {
+	
+		if (graph[i]>i) {
+		
+		   return false;
+		   
+                } else {
+                
+		   int degree=graph[i];
+		   int iter=0;
+		   
+		   while(iter<n) {
 
-		else 
-		{
-			int n=g[i];
-			int j=0;
-			while(j<n)
-			{
+                      graph[i-iter-1]--;   // decrease th degree
+                      
+		      if (g[i-iter-1]<0)   return false;
+		      
+	              iter++;
 
-                           g[i-j-1]--;
-			   if (g[i-j-1]<0) return false;
-			   j++;
+		   }
 
-			}
+		    qsort(g, 0, i-1);
 
-			qsort(g, 0, i-1);
-
-                 }
+                }
 
 	}
 
