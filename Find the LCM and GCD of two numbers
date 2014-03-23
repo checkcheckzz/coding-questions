@@ -3,6 +3,7 @@ Find the LCM and GCD of two numbers
 */
 
 /*
+
 solution: math
 
 */
@@ -12,14 +13,17 @@ using namespace std;
 
 int getGCD(int a, int b)
 {
-    int Max = max(a, b);
-    int Min = min(a, b);
+    int maxnum = max(a, b);
+    int minnum = min(a, b);
  
     // a & b's gcd equals to a & |a-b|'s gcd
-    while (Max%Min != 0)
-        Min = Max%Min;
+    
+    while (maxnum % minnum != 0) {
+    
+        minnum = maxnum % minnum;
+    }    
  
-    return Min;
+    return minnum;
 }
  
 int getLCM(int a, int b)
