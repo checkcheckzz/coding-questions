@@ -31,21 +31,26 @@ O(nlogn) time, O(n) space
 
 
 typedef pair<int, int> Pair;
-void maxSlidingWindow2(int A[], int n, int k, int B[])
+
+void maxSlidingWindow2(int arr[], int len, int k, int window[])
 {
 	priority_queue<Pair> Q; 
-	for (int i = 0; i < k; i++)
-		Q.push(Pair(A[i], i));  
-	for (int i = k; i < n; i++) {
+	for (int i = 0; i < k; ++i) {
+		Q.push(Pair(arr[i], i)); 
+	}	
+	for (int i = k; i < len; ++i) {
+	
 		Pair p = Q.top();
-		B[i-k] = p.first;
+		window[i-k] = p.first;
 		while (p.second <= i-k) {//pop the old elements not in new window
+		
 			Q.pop();
 			p = Q.top();
+			
 		}
-		Q.push(Pair(A[i], i));
+		Q.push(Pair(arr[i], i));
 	}
-	B[n-k] = Q.top().first;
+	window[n-k] = Q.top().first;
 }
 
 
@@ -56,25 +61,37 @@ O(n) time, O(k) space
 
 */
 
-void maxSlidingWindow3(int A[], int n, int k, int B[]) 
+void maxSlidingWindow3(int arr[], int len, int k, int window[]) 
 {
   deque<int> Q;
-  for (int i = 0; i < k; i++) {
-    while (!Q.empty() && A[i] >= A[Q.back()]) //elements in the deque decreaes.
-      Q.pop_back();
-    Q.push_back(i);
+  for (int i = 0; i < k; ++i) {
+  
+     while (!Q.empty() && arr[i] >= arr[Q.back()]) { //elements in the deque decreaes.
+        Q.pop_back();
+        
+     }
+     
+     Q.push_back(i);
   }
-  for (int i = k; i < n; i++) {
-    B[i-k] = A[Q.front()];
-    while (!Q.empty() && A[i] >= A[Q.back()]) 
+  
+  for (int i = k; i < len; ++i) {
+  
+    window[i-k] = arr[Q.front()];
+    while (!Q.empty() && arr[i] >= arr[Q.back()]) {
+    
       Q.pop_back();
-    while (!Q.empty() && Q.front() <= i-k) //pop the old elements not in new window
+      
+    } 
+    
+    while (!Q.empty() && Q.front() <= i-k) {//pop the old elements not in new window
+    
       Q.pop_front();
+    }
+    
     Q.push_back(i);
   }
-  B[n-k] = A[Q.front()];
+  window[n-k] = arr[Q.front()];
 }
-
 
 
 
@@ -84,13 +101,22 @@ int main()
   int a[9] = {1, 2, 3, 1, 4, 5, 2, 3, 6};
   int b[7];
   int c[7];
+  
   maxSlidingWindow2(a,9,3,b);
   maxSlidingWindow3(a,9,3,c);
-  for(int i=0;i<7;i++)
+  
+  for(int i = 0; i < 7; ++i) {
+  
 	  cout<<b[i]<<" ";
+	  
+  }	  
   cout<<endl;
-  for(int i=0;i<7;i++)
+  
+  for(int i = 0; i < 7; ++i) {
+  
 	  cout<<c[i]<<" ";
+  }
+  
   cout<<endl;
   return 0;
 
