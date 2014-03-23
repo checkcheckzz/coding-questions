@@ -1,8 +1,11 @@
 coding-problems
 ===============
-Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read.
+Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solution is not my
+original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
+
+===============
 
 
 [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Detect%20cycle%20in%20an%20array)
