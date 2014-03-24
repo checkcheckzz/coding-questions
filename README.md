@@ -48,14 +48,14 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 
 [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20array%20and%20a%20number%20k)
 
+[Find the largest sum of 3 integers in a row in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20largest%20sum)
 
-Find the largest sum of 3 integers in a row in an array
+[Running average in a sliding window](https://github.com/checkcheckzz/coding-problems/blob/master/Running%20average%20in%20a%20sliding%20window)
 
-Running average in a sliding window
-
-Return the duplicate indexs  equally
+[Return the duplicate indexs with equal probability](https://github.com/checkcheckzz/coding-problems/blob/master/Return%20the%20duplicate)
 
 Find the complement domino pairs
+
 
 
 
@@ -98,27 +98,27 @@ Large tree preorder travsersal
 
 
 
-Vertical sum in a  binary tree
+[Vertical sum in a  binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Vertical%20sum%20in%20a%20%20binary%20tree)
 
-Caclulate (m^n)%(10^k)
+[Caclulate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problems/blob/master/Caclulate%20(m%5En)%25(10%5Ek))
 
-For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N
+[For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N](https://github.com/checkcheckzz/coding-problems/blob/master/Print%20all%20the%20solutions)
 
-Highest 1 position of binary expression
+[Highest 1 position of binary expression](https://github.com/checkcheckzz/coding-problems/blob/master/Highest%201%20position%20of%20binary%20expression)
 
-Delete k digits of a number to get minimal number
+[Delete k digits from a number to get minimal number](https://github.com/checkcheckzz/coding-problems/blob/master/Delete%20k%20digits)
 
-Write a function outputing true with probability 1/2^N given a function outputing true with probability 0.5
+[Output true with probability 1/2^N given a function outputing true with probability 0.5](https://github.com/checkcheckzz/coding-problems/blob/master/Output%20true)
 
-Put m apples to n plates
+[Put m apples to n plates](https://github.com/checkcheckzz/coding-problems/blob/master/Put%20m%20apples%20to%20n%20plates)
 
-Given a positive integer N, print all combinations of non-negative integer sum to N
+[Given a positive integer N, print all combinations of non-negative integer sum to N](https://github.com/checkcheckzz/coding-problems/blob/master/Print%20all%20combinations)
 
 How to find largest triangle in convex hull aside from brute force search
 
 Factorial digit sum
 
-Last digit of a^b
+[Last digit of a^b](https://github.com/checkcheckzz/coding-problems/blob/master/Last%20digit%20of%20a%5Eb)
 
 Form a triangle
 
