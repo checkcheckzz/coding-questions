@@ -33,11 +33,11 @@ bool twoSum(int arr[], int len, int skipindex)
         
             end--;
             
-        } else if (a[beg] + a[end] == a[skipindex]) {
+        } else if (arr[beg] + arr[end] == arr[skipindex]) {
         
             return true;
             
-        } else if (a[beg] + a[end] < a[skipindex]) {
+        } else if (arr[beg] + arr[end] < arr[skipindex]) {
         
             beg++;
             
