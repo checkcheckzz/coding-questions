@@ -22,7 +22,7 @@ void swapRa(int arr[], int beg, int end)
  
     while (beg < end) {
     
-        swap(a[beg++], a[end--]);
+        swap(arr[beg++], arr[end--]);
         
     }    
 }
