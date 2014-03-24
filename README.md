@@ -367,9 +367,15 @@ Here is also a summary of special topics in my blog:
 
 [Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
 
-[Shortest Path Series](http://itgeekworkhard.com/study/2014/02/14/coding-shortest-path/)
+[Shortest Path Series1](http://itgeekworkhard.com/study/2014/02/14/coding-shortest-path/)
 
-[Pattern Match](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
+[Shortest Path Series2](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
+
+[Pattern Match1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
+
+[Pattern Match2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
+
+[Advanced Data Structures](http://itgeekworkhard.com/study/2014/03/15/coding-advanced-data-structures/)
 
 [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
 
