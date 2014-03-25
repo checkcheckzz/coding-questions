@@ -15,7 +15,7 @@ using namespace std;
 int getMinDiff(int arr[], int arrlen, int barr[], int barrlen, int carr[], int carrlen)
 {
 
-   assert(arr && arrlen>0 && barr && barrlen>0 && carr && carrlen>0);
+   assert(arr && arrlen > 0 && barr && barrlen  >0 && carr && carrlen > 0);
 
    int arriter = 0;
    int barriter = 0;
