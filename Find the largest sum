@@ -17,7 +17,7 @@ using namespace std;
 
 int findLargest3Sum(int arr[], int len) {
 
-	assert(arr || len <= 2);
+	assert(arr && len > 2);
 	
 	int result = arr[0] + arr[1] + arr[2];
 
