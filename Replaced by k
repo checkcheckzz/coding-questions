@@ -24,7 +24,7 @@ using namespace std;
 int replacNum(int arr[], int len, int b)
 {
 
-    assert(arr || len <= 0 || b < 0);
+    assert(arr && len > 0 && b >= 0);
     
     int index = -1;
     int cursum = -1;
