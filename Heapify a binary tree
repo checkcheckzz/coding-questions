@@ -28,12 +28,12 @@ void shiftUp(NODE *node) {
 
         largest = node->plft; 
 
-	 }
+     }
      if (node->prgt != NULL && largest->val < node->prgt->val) {
 
         largest = node->prgt;
 
-	 }
+     }
 
 	 // if root has the largest value, return
      if (largest == node) return;
@@ -48,20 +48,20 @@ void shiftUp(NODE *node) {
 
 void heapifyBinaryTree(NODE *root) {
 
-	if (!root) return;
+     if (!root) return;
 
      if (root->plft) {
 
-         heapifyBinaryTree(root->plft);
-	 }
+         heapifyBinaryTree(root->plft); 
+     }    
 
      if (root->prgt) {
 
          heapifyBinaryTree(root->prgt);
      
-	  }
+     }
 
-      shiftUp(root);
+     shiftUp(root);
 
 }
 
@@ -69,10 +69,10 @@ void heapifyBinaryTree(NODE *root) {
 
 int main() {
 
-	NODE *root=new NODE(1);
-	root->plft= new NODE(2);
-	root->prgt= new NODE(3);
-	root->prgt->plft=new NODE(5);
+	NODE *root = new NODE(1);
+	root->plft = new NODE(2);
+	root->prgt = new NODE(3);
+	root->prgt->plft = new NODE(5);
 
 	heapifyBinaryTree(root);
 
