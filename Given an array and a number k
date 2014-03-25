@@ -17,7 +17,7 @@ using namespace std;
 
 bool hasDupk(int arr[], int len, int k)
 {
-	assert(arr || k < 0 || k >= len || len <= 0);
+	assert(arr && k >= 0 && k < len && len > 0);
 
 	set<int> checked;
 	
