@@ -5,6 +5,9 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
+total Number (not including the special topics at last): about 160.
+
+
 ===============
 
 
