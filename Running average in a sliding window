@@ -17,7 +17,7 @@ using namespace std;
 
 void runningAverageWindow(int arr[], int len, int windowsize) {
 
-	assert (arr || len<=0);
+	assert (arr && len > 0);
 	float sum=0;
    
     if (len <= windowsize) {
