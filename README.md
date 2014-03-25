@@ -119,39 +119,39 @@ Factorial digit sum
 
 [Last digit of a^b](https://github.com/checkcheckzz/coding-problems/blob/master/Last%20digit%20of%20a%5Eb)
 
-Form a triangle
+[Form a triangle](https://github.com/checkcheckzz/coding-problems/blob/master/Form%20a%20triangle)
 
-Happy Number
+[Happy Number](https://github.com/checkcheckzz/coding-problems/blob/master/Happy%20Number)
 
-Magic Number
+[Magic Number](https://github.com/checkcheckzz/coding-problems/blob/master/Magic%20Number)
 
-Nearest greater palindrome
+[Nearest greater palindrome](https://github.com/checkcheckzz/coding-problems/blob/master/Nearest%20greater%20palindrome)
 
-GetDecimal
+[GetDecimal](https://github.com/checkcheckzz/coding-problems/blob/master/GetDecimal)
 
-Smallest positive number can not be represented
+[Smallest positive number can not be represented](https://github.com/checkcheckzz/coding-problems/blob/master/Smallest%20positive%20number)
 
-Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)
-
-
+[Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)](https://github.com/checkcheckzz/coding-problems/blob/master/Number%20k%3Da%5E2%20%2Bb%5E2)
 
 
 
-BinaryMatching
 
-Check whether two strings match by insertdeletereplace one char of any one of string
 
-Compound Words
+[BinaryMatching](https://github.com/checkcheckzz/coding-problems/blob/master/BinaryMatching)
+
+[Check whether two strings match by insertdeletereplace one char of any one of string](https://github.com/checkcheckzz/coding-problems/blob/master/Edit%20Distance%20one)
+
+[Compound Words](https://github.com/checkcheckzz/coding-problems/blob/master/Compound%20Words)
 
 Compute the shortest unique prefix of each word in a set of words
 
-Delete repeating strings
+[Delete repeating strings](https://github.com/checkcheckzz/coding-problems/blob/master/Delete%20repeating%20strings)
 
-Filter dirty words
+[Filter dirty words](https://github.com/checkcheckzz/coding-problems/blob/master/Filter%20dirty%20words)
 
-Find a vowel product sum of an ASCII string
+[Find a vowel product sum of an ASCII string](https://github.com/checkcheckzz/coding-problems/blob/master/Vowel%20product)
 
-Find the replace rule
+[Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20replace%20rule)
 
 Given a list of strings, find the longest common prefix(at least two)
 
