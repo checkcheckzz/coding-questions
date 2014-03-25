@@ -89,7 +89,6 @@ Find the complement domino pairs
 
 [Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20getNextNode())
 
-[Find all leafs below a node in a N-way tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20all%20leafs%20below%20a%20node%20in%20a%20N-way%20tree)
 
 Large tree preorder travsersal
 
