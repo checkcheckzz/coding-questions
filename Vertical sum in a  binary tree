@@ -25,6 +25,8 @@ HD for root is 0, a right edge (edge connecting to right subtree) is considered 
 
 Do an inorder traversal and calcuate the horizontal distance recursively.
 
+O(n) time, O(n) space
+
 */
 
 #include<iostream>
