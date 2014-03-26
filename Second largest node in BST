@@ -15,10 +15,10 @@ O(n) time, O(1) space
 
 struct Node {
   int val;
-  TreeNode *plft;
-  TreeNode *prgt;
+  Node *plft;
+  Node *prgt;
   
-  Node(string v) : val(v), plft(NULL), prgt(NULL) {}
+  Node(int v) : val(v), plft(NULL), prgt(NULL) {}
 };
 
 
