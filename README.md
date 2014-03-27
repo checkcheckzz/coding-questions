@@ -309,7 +309,7 @@ Read and Write UTF8
 
 ---
 
-[Angle between the hour and minute](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute)
+[Angle between the hour and minute](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute.cpp)
 
 Boggle puzzle
 
