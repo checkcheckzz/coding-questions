@@ -7,6 +7,8 @@ Most code style follows [Google C++ Style Guide](http://google-styleguide.google
 
 Total Number (not including the special topics at last): about 160.
 
+Although I try to run every program in IDE, bug may exist because the test cases are usually not enough. 
+
 
 ===============
 
@@ -294,6 +296,16 @@ Implement iterator interface
 Shortest path
 
 Quack class
+
+Find the ID with most posts
+
+How to test a random shuffle program
+
+Producing 64bit digest
+
+Read a line from a file randomly
+
+Read and Write UTF8
 
 ---
 
