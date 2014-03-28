@@ -3,7 +3,7 @@
 Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate).
 
 
-Ex: {2,3,1,5,4,6,3}//should return 3.
+Ex: {2,3,1,5,4,6,3} //should return 3.
 
 
 */
@@ -23,14 +23,16 @@ O(n) time, O(1) space
 
 */
 
-int findDuplication(int A[], int n)
-{
-   for (int i=0; i<n; i++) 
-   {
-     while (A[i] != i+1) 
-     {
-       if ( A[ A[i]-1 ] == A[i])
+int findDuplication(int A[], int n) {
+
+   for (int i = 0; i < n; ++i) {
+   
+     while (A[i] != i+1) {
+	 
+       if ( A[ A[i]-1 ] == A[i]) {
+	   
           return A[i];
+	   }  
 
        swap(A[i], A[ A[i]-1 ]); //swap the element to correct position
      }
@@ -50,20 +52,19 @@ O(n) time, O(1) space.
 
 */
 
-int duplicate(int A[], int n)
-{
+int duplicate(int A[], int n) {
         
-    int XOR1=1;
-    for(int i=2;i<=n-1;i++)
-    {
-          XOR1=XOR1^i;
+    int XOR1 = 1;
+    for (int i = 2; i <= n-1; ++i) {
+	
+          XOR1 = XOR1 ^ i;
     }
-    int XOR2=A[0];
-    for(int i=1;i<n;i++)
-    {
-         XOR2=XOR2^A[i];
+    int XOR2 = A[0];
+    for(int i = 1;i < n; ++i) {
+	
+         XOR2 = XOR2 ^ A[i];
     }
-    return XOR1^XOR2;
+    return XOR1 ^ XOR2;
         
 }
 
