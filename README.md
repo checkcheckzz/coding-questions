@@ -156,25 +156,25 @@ Compute the shortest unique prefix of each word in a set of words
 
 [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20replace%20rule.cpp)
 
-[Given a list of strings, find the longest common prefix(at least two)](Longest Common prefixtwo)
+[Given a list of strings, find the longest common prefix(at least two)](https://github.com/checkcheckzz/coding-problem/blob/master/Longest%20Common%20prefixtwo.cpp)
 
-[Given a list of words and a string pattern including question mark, find all match words](Patternsearchquestionmark)
+[Given a list of words and a string pattern including question mark, find all match words](https://github.com/checkcheckzz/coding-problem/blob/master/Patternsearchquestionmark.cpp)
 
-[Given a string s, return the shortest substring that is only occurring once in s](Shortest substring once)
+[Given a string s, return the shortest substring that is only occurring once in s](https://github.com/checkcheckzz/coding-problem/blob/master/Shortest%20substring%20once.cpp)
 
-[Given a dict and a char set, find all words in the dict where all chars come from the char set](Charset)
+[Given a dict and a char set, find all words in the dict where all chars come from the char set](https://github.com/checkcheckzz/coding-problem/blob/master/Charset.cpp)
 
-[Given a string，delete all char A，and double all char B](DeleteAdoubleB)
+[Given a string，delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/DeleteAdoubleB.cpp)
 
-[Given two string arrays, sort the string in first array according to the string order in second array](Sortfirstaccordingsecond)
+[Given two string arrays, sort the string in first array according to the string order in second array](https://github.com/checkcheckzz/coding-problem/blob/master/Sortfirstaccordingsecond.cpp)
 
-[Given two strings, get the longest length of overlap part between end of first string and start of second string](Longestoverlap)
+[Given two strings, get the longest length of overlap part between end of first string and start of second string](https://github.com/checkcheckzz/coding-problem/blob/master/Longestoverlap.cpp)
 
-[Longest substring containing just two unique chars](LongestSubstring2uniquechars)
+[Longest substring containing just two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstring2uniquechars.cpp)
 
-[Longest substring which begins and ends with two unique chars](LongestSubstringbeginend2uniquechars)
+[Longest substring which begins and ends with two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstringbeginend2uniquechars.cpp)
 
-[Longest substring with more than once appearance](LongestSubstringmorethanone)
+[Longest substring with more than once appearance](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstringmorethanone.cpp)
 
 String encode and decode
 
