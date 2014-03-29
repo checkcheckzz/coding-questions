@@ -102,7 +102,7 @@ Large tree preorder travsersal
 
 [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/Vertical%20sum%20in%20a%20binary%20tree.cpp)
 
-[Caclulate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/Calculate%20(m%5En)%25(10%5Ek).cpp)
+[Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/Calculate%20(m%5En)%25(10%5Ek).cpp)
 
 [For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N](https://github.com/checkcheckzz/coding-problems/blob/master/Print%20all%20the%20solutions.cpp)
 
@@ -156,25 +156,25 @@ Compute the shortest unique prefix of each word in a set of words
 
 [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20replace%20rule.cpp)
 
-Given a list of strings, find the longest common prefix(at least two)
+[Given a list of strings, find the longest common prefix(at least two)](Longest Common prefixtwo)
 
-Given a list of words and a string pattern including question mark, find all match words
+[Given a list of words and a string pattern including question mark, find all match words](Patternsearchquestionmark)
 
-Given a string s, return the shortest substring that is only occurring once in s
+[Given a string s, return the shortest substring that is only occurring once in s](Shortest substring once)
 
-Given a dict and a char set, find all words in the dict where all chars come from the char set
+[Given a dict and a char set, find all words in the dict where all chars come from the char set](Charset)
 
-Given a string，delete all char A，and double all char B
+[Given a string，delete all char A，and double all char B](DeleteAdoubleB)
 
-Given two string arrays, sort the string in first array according to the string order in second array
+[Given two string arrays, sort the string in first array according to the string order in second array](Sortfirstaccordingsecond)
 
-Given two strings, get the longest length of reapeating part between end of first string and start of second string
+[Given two strings, get the longest length of overlap part between end of first string and start of second string](Longestoverlap)
 
-Longest substring containing just two unique chars
+[Longest substring containing just two unique chars](LongestSubstring2uniquechars)
 
-Longest substring which begins and ends with two unique chars
+[Longest substring which begins and ends with two unique chars](LongestSubstringbeginend2uniquechars)
 
-Longest substring with more than once apperance
+[Longest substring with more than once appearance](LongestSubstringmorethanone)
 
 String encode and decode
 
