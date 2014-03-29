@@ -1,13 +1,13 @@
 coding-problems
 ===============
-Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are not my
+Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
 original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the special topics at last): about 160.
+Total Number (not including the special topics at last): about 168 (90 done).
 
-Although I try to run every program in IDE, bug may exist because the test cases are usually not enough. 
+Although I try to run every program in IDE, bugs may exist because the test cases are usually not enough. Welcome to write comments.
 
 
 ===============
@@ -40,8 +40,6 @@ Although I try to run every program in IDE, bug may exist because the test cases
 [Sliding Window Maximum](https://github.com/checkcheckzz/coding-problems/blob/master/Sliding%20Window%20Maximum.cpp)
 
 [Jump the river](https://github.com/checkcheckzz/coding-problems/blob/master/Jump%20the%20river.cpp)
-
-Iterative Binary Search
 
 [Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)](https://github.com/checkcheckzz/coding-problems/blob/master/Minimize%20max(a-b,b-c,c-a).cpp)
 
@@ -102,9 +100,9 @@ Large tree preorder travsersal
 
 
 
-[Vertical sum in a  binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Vertical%20sum%20in%20a%20%20binary%20tree.cpp)
+[Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/Vertical%20sum%20in%20a%20binary%20tree.cpp)
 
-[Caclulate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problems/blob/master/Caclulate%20(m%5En)%25(10%5Ek).cpp)
+[Caclulate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/Calculate%20(m%5En)%25(10%5Ek).cpp)
 
 [For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N](https://github.com/checkcheckzz/coding-problems/blob/master/Print%20all%20the%20solutions.cpp)
 
@@ -359,9 +357,7 @@ Boggle puzzle
 
 [Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers.cpp)
 
-
 [Readk() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Readk().cpp)
-
 
 [Copy on write string](Copy on write string.cpp)
 
