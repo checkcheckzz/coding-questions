@@ -1,17 +1,17 @@
 coding-problems
 ===============
-Besides the Cracking the Coding Interview, Leetcode OJ and GeeksforGeeks, here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
+Here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
 original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the special topics at last): about 168 (90 done).
+Total Number (not including the special topics at last): about 168 (76 done).
 
-Although I try to run every program in IDE, bugs may exist because the test cases are usually not enough. Welcome to write comments.
+Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. The time complexity is 
 
+usually the worst time and space complexity does not include stack space.
 
 ===============
-
 
 [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Detect%20cycle%20in%20an%20array.cpp)
 
@@ -92,7 +92,6 @@ Find the complement domino pairs
 
 [Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20getNextNode().cpp)
 
-
 Large tree preorder travsersal
 
 
@@ -118,7 +117,7 @@ Large tree preorder travsersal
 
 How to find largest triangle in convex hull aside from brute force search
 
-Factorial digit sum
+[Factorial digit sum](https://github.com/checkcheckzz/coding-problems/blob/master/Factorialdigitsum.cpp)
 
 [Last digit of a^b](https://github.com/checkcheckzz/coding-problems/blob/master/Last%20digit%20of%20a%5Eb.cpp)
 
@@ -389,7 +388,7 @@ Here is also a summary of special topics in my blog:
 
 [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
 
-
+[KnapSack Problem](http://itgeekworkhard.com/study/2014/02/27/coding-knapsack/)
 
 
 

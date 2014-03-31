@@ -24,7 +24,7 @@ O(nk) time, O(1) space
 
 /*
 
-solution2: use maximal heep to store k numbers.
+solution2: use maximal heap to store k numbers.
 O(nlogn) time, O(n) space
 
 */
@@ -56,7 +56,7 @@ void maxSlidingWindow2(int arr[], int len, int k, int window[])
 
 /*
 
-solution3:use deque to store k numnbers. 
+solution3:use deque to store k numbers. 
 O(n) time, O(k) space
 
 */
@@ -66,7 +66,7 @@ void maxSlidingWindow3(int arr[], int len, int k, int window[])
   deque<int> Q;
   for (int i = 0; i < k; ++i) {
   
-     while (!Q.empty() && arr[i] >= arr[Q.back()]) { //elements in the deque decreaes.
+     while (!Q.empty() && arr[i] >= arr[Q.back()]) { //elements in the deque decreases.
         Q.pop_back();
         
      }
