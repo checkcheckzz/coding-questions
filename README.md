@@ -5,7 +5,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the special topics at last): about 168 (76 done).
+Total Number (not including the special topics at last): about 168 (81 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. The time complexity is 
 
@@ -143,9 +143,9 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Check whether two strings match by insertdeletereplace one char of any one of string](https://github.com/checkcheckzz/coding-problems/blob/master/Edit%20Distance%20one.cpp)
 
-[Compound Words](https://github.com/checkcheckzz/coding-problems/blob/master/Compound%20Words.cpp)
+[Two Words](https://github.com/checkcheckzz/coding-problems/blob/master/Twowords.cpp)
 
-Compute the shortest unique prefix of each word in a set of words
+[Compute the shortest unique prefix of each word in a set of words](https://github.com/checkcheckzz/coding-problems/blob/master/Uniqueshortestprefix.cpp)
 
 [Delete repeating strings](https://github.com/checkcheckzz/coding-problems/blob/master/Delete%20repeating%20strings.cpp)
 
@@ -175,17 +175,17 @@ Compute the shortest unique prefix of each word in a set of words
 
 [Longest substring with more than once appearance](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstringmorethanone.cpp)
 
-String encode and decode
+[String encode and decode](https://github.com/checkcheckzz/coding-problem/blob/master/Stringencodedecode.cpp)
 
-Given a string s, check whether it is k duplicates of a string t
+[Given a string s, check whether it is k duplicates of a string t](https://github.com/checkcheckzz/coding-problem/blob/master/Kduplicates.cpp)
 
-Given a dict and a word, find all words with edit distance=1 in this dict
+[Given a dict and a word, find all words with edit distance=1 in this dict](https://github.com/checkcheckzz/coding-problem/blob/master/Editonewordindict.cpp)
 
-Number of matched patterns in a string
+[Number of matched patterns in a string](https://github.com/checkcheckzz/coding-problem/blob/master/Nummatchpatterns.cpp)
 
-One-byte or two-byte encoding
+[One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/Onetwobyteencoding.cpp)
 
-Pair with largest common words
+[Pair with largest common words](https://github.com/checkcheckzz/coding-problem/blob/master/Pairwithlargestcommonwords.cpp)
 
 
 
