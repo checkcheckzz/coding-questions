@@ -7,9 +7,9 @@ Most code style follows [Google C++ Style Guide](http://google-styleguide.google
 
 Total Number (not including the special topics at last): about 168 (81 done).
 
-Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. The time complexity is 
+Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
-usually the worst time and space complexity does not include stack space.
+The time complexity is usually the worst time and space complexity does not include stack space.
 
 ===============
 
