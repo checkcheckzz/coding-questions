@@ -5,7 +5,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the special topics at last): about 168 (81 done).
+Total Number (not including the problem in the special topics at last): about 168 (86 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -149,8 +149,6 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Delete repeating strings](https://github.com/checkcheckzz/coding-problems/blob/master/Delete%20repeating%20strings.cpp)
 
-[Filter dirty words](https://github.com/checkcheckzz/coding-problems/blob/master/Filter%20dirty%20words.cpp)
-
 [Find a vowel product sum of an ASCII string](https://github.com/checkcheckzz/coding-problems/blob/master/Vowel%20product.cpp)
 
 [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20replace%20rule.cpp)
@@ -186,6 +184,8 @@ How to find largest triangle in convex hull aside from brute force search
 [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/Onetwobyteencoding.cpp)
 
 [Pair with largest common words](https://github.com/checkcheckzz/coding-problem/blob/master/Pairwithlargestcommonwords.cpp)
+
+[Isomorphic Strings](https://github.com/checkcheckzz/coding-problem/blob/master/Mapstring.cpp)
 
 
 
