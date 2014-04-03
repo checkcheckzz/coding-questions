@@ -1,6 +1,9 @@
-coding-problems
+Coding-Problem
 ===============
-Here are some other interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
+
+Statement
+---
+Here are some interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
 original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
@@ -9,9 +12,12 @@ Total Number (not including the problem in the special topics at last): about 16
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
+The solution may not be optimal, welcome to give your advice. 
+
 The time complexity is usually the worst time and space complexity does not include stack space.
 
-===============
+Problem
+---
 
 [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Detect%20cycle%20in%20an%20array.cpp)
 
@@ -368,9 +374,10 @@ Boggle puzzle
 
 [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20malloc%20and%20free.cpp)
 
+Special Topics
 ---
 
-Here is also a summary of special topics in my blog:
+Here is a summary of special topics in my blog:
 
 [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
 
@@ -388,7 +395,7 @@ Here is also a summary of special topics in my blog:
 
 [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
 
-[KnapSack Problem](http://itgeekworkhard.com/study/2014/02/27/coding-knapsack/)
+[Knapsack Problem](http://itgeekworkhard.com/study/2014/02/27/coding-knapsack/)
 
 
 
