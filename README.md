@@ -3,12 +3,12 @@ Coding-Problem
 
 Statement
 ---
-Here are some interesting coding problem. They come from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
+The coding problem comes from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
 original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 168 (86 done).
+Total Number (not including the problem in the special topics at last): about 166 (91 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -163,8 +163,6 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Given a list of words and a string pattern including question mark, find all match words](https://github.com/checkcheckzz/coding-problem/blob/master/Patternsearchquestionmark.cpp)
 
-[Given a string s, return the shortest substring that is only occurring once in s](https://github.com/checkcheckzz/coding-problem/blob/master/Shortest%20substring%20once.cpp)
-
 [Given a dict and a char set, find all words in the dict where all chars come from the char set](https://github.com/checkcheckzz/coding-problem/blob/master/Charset.cpp)
 
 [Given a string，delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/DeleteAdoubleB.cpp)
@@ -185,8 +183,6 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Given a dict and a word, find all words with edit distance=1 in this dict](https://github.com/checkcheckzz/coding-problem/blob/master/Editonewordindict.cpp)
 
-[Number of matched patterns in a string](https://github.com/checkcheckzz/coding-problem/blob/master/Nummatchpatterns.cpp)
-
 [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/Onetwobyteencoding.cpp)
 
 [Pair with largest common words](https://github.com/checkcheckzz/coding-problem/blob/master/Pairwithlargestcommonwords.cpp)
@@ -198,21 +194,21 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S.cpp)
 
-Black white reverse board game
+[Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/Blackwhitereversegame.cpp)
 
-Catch that cow
+[Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/Catchcow.cpp)
 
-Colored sticks
+[Colored sticks](https://github.com/checkcheckzz/coding-problems/blob/master/Colorsticks.cpp)
 
-Cover board with tile
+[Cover board with tile](https://github.com/checkcheckzz/coding-problems/blob/master/Coverboardwithtiles.cpp)
 
-Deep iterator
+[Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Deepiterator.cpp)
 
-Divide integers
+[Divide integers](https://github.com/checkcheckzz/coding-problems/blob/master/Divideinteger.cpp)
 
-Equation solution
+[Equation solution](https://github.com/checkcheckzz/coding-problems/blob/master/Equationsolution.cpp)
 
-Familiy relation
+[Familiy relation](https://github.com/checkcheckzz/coding-problems/blob/master/Familyrelation.cpp)
 
 Final perimeter  multiple rectangles cover
 
