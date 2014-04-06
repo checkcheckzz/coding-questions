@@ -8,7 +8,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 166 (91 done).
+Total Number (not including the problem in the special topics at last): about 162 (93 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -98,7 +98,7 @@ Find the complement domino pairs
 
 [Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20getNextNode().cpp)
 
-Large tree preorder travsersal
+[Large tree preorder travsersal](https://github.com/checkcheckzz/coding-problems/blob/master/Largetreepreordertravsersal.cpp)
 
 
 
@@ -151,15 +151,11 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Two Words](https://github.com/checkcheckzz/coding-problems/blob/master/Twowords.cpp)
 
-[Compute the shortest unique prefix of each word in a set of words](https://github.com/checkcheckzz/coding-problems/blob/master/Uniqueshortestprefix.cpp)
-
 [Delete repeating strings](https://github.com/checkcheckzz/coding-problems/blob/master/Delete%20repeating%20strings.cpp)
 
 [Find a vowel product sum of an ASCII string](https://github.com/checkcheckzz/coding-problems/blob/master/Vowel%20product.cpp)
 
 [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20replace%20rule.cpp)
-
-[Given a list of strings, find the longest common prefix(at least two)](https://github.com/checkcheckzz/coding-problem/blob/master/Longest%20Common%20prefixtwo.cpp)
 
 [Given a list of words and a string pattern including question mark, find all match words](https://github.com/checkcheckzz/coding-problem/blob/master/Patternsearchquestionmark.cpp)
 
@@ -169,19 +165,15 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Given two string arrays, sort the string in first array according to the string order in second array](https://github.com/checkcheckzz/coding-problem/blob/master/Sortfirstaccordingsecond.cpp)
 
-[Given two strings, get the longest length of overlap part between end of first string and start of second string](https://github.com/checkcheckzz/coding-problem/blob/master/Longestoverlap.cpp)
-
 [Longest substring containing just two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstring2uniquechars.cpp)
 
 [Longest substring which begins and ends with two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstringbeginend2uniquechars.cpp)
-
-[Longest substring with more than once appearance](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstringmorethanone.cpp)
 
 [String encode and decode](https://github.com/checkcheckzz/coding-problem/blob/master/Stringencodedecode.cpp)
 
 [Given a string s, check whether it is k duplicates of a string t](https://github.com/checkcheckzz/coding-problem/blob/master/Kduplicates.cpp)
 
-[Given a dict and a word, find all words with edit distance=1 in this dict](https://github.com/checkcheckzz/coding-problem/blob/master/Editonewordindict.cpp)
+[Given a dict and a word, find all words with edit distance<=1 in this dict](https://github.com/checkcheckzz/coding-problem/blob/master/Editonewordindict.cpp)
 
 [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/Onetwobyteencoding.cpp)
 
