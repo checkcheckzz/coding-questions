@@ -8,7 +8,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 162 (93 done).
+Total Number (not including the problem in the special topics at last): about 162 (95 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -214,9 +214,7 @@ Harry potter in the maze
 
 Last n lines of a file
 
-Longest repeating substring
-
-Maximal path gain of two persons on board
+[Maximal path gain of two persons on board](https://github.com/checkcheckzz/coding-problems/blob/master/Maximalpathgain.cpp)
 
 N factorial
 
@@ -226,7 +224,7 @@ Number of squares
 
 Oil deposits
 
-Password lock
+[Password lock](https://github.com/checkcheckzz/coding-problems/blob/master/Passwordlock.cpp)
 
 Pizza picking problem
 
@@ -264,7 +262,7 @@ Dividing a plane of points into two equal halves
 
 Find largest triangle in convex hull
 
-Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3
+[Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3](https://github.com/checkcheckzz/coding-problems/blob/master/Specialnumber.cpp)
 
 Print all lines in a file reversely 
 
@@ -288,7 +286,7 @@ Shortest path
 
 Quack class
 
-Find the ID with most posts
+[Find the ID with most posts](https://github.com/checkcheckzz/coding-problems/blob/master/MostPosts.cpp)
 
 How to test a random shuffle program
 
