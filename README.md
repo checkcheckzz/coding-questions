@@ -210,13 +210,13 @@ Get the volumn
 
 Group contact by email list
 
-Harry potter in the maze
+[Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/Harryporterinmaze.cpp)
 
 Last n lines of a file
 
 [Maximal path gain of two persons on board](https://github.com/checkcheckzz/coding-problems/blob/master/Maximalpathgain.cpp)
 
-N factorial
+[N factorial](https://github.com/checkcheckzz/coding-problems/blob/master/Nfactorial.cpp)
 
 Number of online user
 
@@ -230,11 +230,11 @@ Pizza picking problem
 
 Present black and white graph with quadtree
 
-Process num with limited functional deque
+Operation number with limited functional deque
 
 Pushing boxes
 
-Racer score
+[Racer score](https://github.com/checkcheckzz/coding-problems/blob/master/Racescore.cpp)
 
 Random algorithm
 
@@ -242,9 +242,9 @@ Red and black
 
 Shuffle up
 
-Skyline
+[Skyline](https://github.com/checkcheckzz/coding-problems/blob/master/Skyline.cpp)
 
-Spreadsheet Calculation
+[Spreadsheet Calculation](https://github.com/checkcheckzz/coding-problems/blob/master/Spreedsheet.cpp)
 
 Thief Problem
 
@@ -252,11 +252,11 @@ Total area multiple rectangles cover
 
 Total weight of a subtree below this node
 
-Turn off lights
+[Turn off lights](https://github.com/checkcheckzz/coding-problems/blob/master/Turnofflight.cpp)
 
-Two dimension top k
+[Two dimension top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk.cpp)
 
-Water in two dimensional histogram
+[Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram.cpp)
 
 Dividing a plane of points into two equal halves
 
@@ -266,9 +266,9 @@ Find largest triangle in convex hull
 
 Print all lines in a file reversely 
 
-Query relationship
+[Query relationship](https://github.com/checkcheckzz/coding-problems/blob/master/Queryrelation.cpp)
 
-Given k numbers,  get a target with certain operators
+[Given k numbers,  get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
 
 Merge stack of stones
 
@@ -277,8 +277,6 @@ Word dragon
 Paint K houses
 
 Number of subsequence
-
-Pick gift with maximal limit
 
 Implement iterator interface
 
