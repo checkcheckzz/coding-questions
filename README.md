@@ -8,7 +8,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 162 (95 done).
+Total Number (not including the problem in the special topics at last): about 161 (95 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -206,19 +206,17 @@ Final perimeter  multiple rectangles cover
 
 Find the latest version
 
-Get the volumn
+[Get the volume](https://github.com/checkcheckzz/coding-problems/blob/master/Getthevolume.cpp)
 
-Group contact by email list
+[Group contact by email list](https://github.com/checkcheckzz/coding-problems/blob/master/Groupcontact.cpp)
 
 [Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/Harryporterinmaze.cpp)
 
-Last n lines of a file
+[Last n lines of a file](https://github.com/checkcheckzz/coding-problems/blob/master/Lastnlines.cpp)
 
 [Maximal path gain of two persons on board](https://github.com/checkcheckzz/coding-problems/blob/master/Maximalpathgain.cpp)
 
-[N factorial](https://github.com/checkcheckzz/coding-problems/blob/master/Nfactorial.cpp)
-
-Number of online user
+[Number of online user](https://github.com/checkcheckzz/coding-problems/blob/master/Onlineuser.cpp)
 
 Number of squares
 
@@ -230,7 +228,7 @@ Pizza picking problem
 
 Present black and white graph with quadtree
 
-Operation number with limited functional deque
+[Operation number with limited functional deque](https://github.com/checkcheckzz/coding-problems/blob/master/Limiteddeque.cpp)
 
 Pushing boxes
 
@@ -246,11 +244,11 @@ Shuffle up
 
 [Spreadsheet Calculation](https://github.com/checkcheckzz/coding-problems/blob/master/Spreedsheet.cpp)
 
-Thief Problem
+[Thief Problem](https://github.com/checkcheckzz/coding-problems/blob/master/ThiefProblem.cpp)
 
 Total area multiple rectangles cover
 
-Total weight of a subtree below this node
+[Total weight of a subtree below this node](https://github.com/checkcheckzz/coding-problems/blob/master/Totalweight.cpp)
 
 [Turn off lights](https://github.com/checkcheckzz/coding-problems/blob/master/Turnofflight.cpp)
 
@@ -264,23 +262,23 @@ Find largest triangle in convex hull
 
 [Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3](https://github.com/checkcheckzz/coding-problems/blob/master/Specialnumber.cpp)
 
-Print all lines in a file reversely 
+[Print all lines in a file reversely](https://github.com/checkcheckzz/coding-problems/blob/master/Reverselines.cpp)
 
 [Query relationship](https://github.com/checkcheckzz/coding-problems/blob/master/Queryrelation.cpp)
 
 [Given k numbers,  get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
 
-Merge stack of stones
+[Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 
 Word dragon
 
-Paint K houses
+[Paint K houses](https://github.com/checkcheckzz/coding-problems/blob/master/PaintKhouses.cpp)
 
 Number of subsequence
 
 Implement iterator interface
 
-Shortest path
+[Total Shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 
 Quack class
 
@@ -290,7 +288,7 @@ How to test a random shuffle program
 
 Producing 64bit digest
 
-Read a line from a file randomly
+[Read a line from a file randomly](https://github.com/checkcheckzz/coding-problems/blob/master/Readaline.cpp)
 
 Read and Write UTF8
 
