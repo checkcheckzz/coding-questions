@@ -8,7 +8,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 161 (95 done).
+Total Number (not including the problem in the special topics at last): about 155 (95 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -190,8 +190,6 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/Catchcow.cpp)
 
-[Colored sticks](https://github.com/checkcheckzz/coding-problems/blob/master/Colorsticks.cpp)
-
 [Cover board with tile](https://github.com/checkcheckzz/coding-problems/blob/master/Coverboardwithtiles.cpp)
 
 [Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Deepiterator.cpp)
@@ -220,8 +218,6 @@ Find the latest version
 
 Number of squares
 
-Oil deposits
-
 [Password lock](https://github.com/checkcheckzz/coding-problems/blob/master/Passwordlock.cpp)
 
 Pizza picking problem
@@ -230,15 +226,9 @@ Present black and white graph with quadtree
 
 [Operation number with limited functional deque](https://github.com/checkcheckzz/coding-problems/blob/master/Limiteddeque.cpp)
 
-Pushing boxes
-
 [Racer score](https://github.com/checkcheckzz/coding-problems/blob/master/Racescore.cpp)
 
 Random algorithm
-
-Red and black
-
-Shuffle up
 
 [Skyline](https://github.com/checkcheckzz/coding-problems/blob/master/Skyline.cpp)
 
@@ -269,8 +259,6 @@ Find largest triangle in convex hull
 [Given k numbers,  get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
 
 [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
-
-Word dragon
 
 [Paint K houses](https://github.com/checkcheckzz/coding-problems/blob/master/PaintKhouses.cpp)
 
