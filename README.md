@@ -8,7 +8,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 155 (95 done).
+Total Number (not including the problem in the special topics at last): about 155 (97 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -200,9 +200,9 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Familiy relation](https://github.com/checkcheckzz/coding-problems/blob/master/Familyrelation.cpp)
 
-Final perimeter  multiple rectangles cover
+[Final perimeter multiple rectangles cover](https://github.com/checkcheckzz/coding-problems/blob/master/Perimetercover.cpp)
 
-Find the latest version
+[Find the latest version](https://github.com/checkcheckzz/coding-problems/blob/master/Latestversion.cpp)
 
 [Get the volume](https://github.com/checkcheckzz/coding-problems/blob/master/Getthevolume.cpp)
 
@@ -216,11 +216,11 @@ Find the latest version
 
 [Number of online user](https://github.com/checkcheckzz/coding-problems/blob/master/Onlineuser.cpp)
 
-Number of squares
+[Number of squares](https://github.com/checkcheckzz/coding-problems/blob/master/Numsquares)
 
 [Password lock](https://github.com/checkcheckzz/coding-problems/blob/master/Passwordlock.cpp)
 
-Pizza picking problem
+[Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/Pizzapick)
 
 Present black and white graph with quadtree
 
@@ -236,7 +236,7 @@ Random algorithm
 
 [Thief Problem](https://github.com/checkcheckzz/coding-problems/blob/master/ThiefProblem.cpp)
 
-Total area multiple rectangles cover
+[Total area multiple rectangles cover](https://github.com/checkcheckzz/coding-problems/blob/master/Areacover.cpp)
 
 [Total weight of a subtree below this node](https://github.com/checkcheckzz/coding-problems/blob/master/Totalweight.cpp)
 
@@ -256,7 +256,7 @@ Find largest triangle in convex hull
 
 [Query relationship](https://github.com/checkcheckzz/coding-problems/blob/master/Queryrelation.cpp)
 
-[Given k numbers,  get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
+[Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
 
 [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 
