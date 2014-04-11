@@ -45,7 +45,7 @@ Problem
 
 [Sliding Window Maximum](https://github.com/checkcheckzz/coding-problems/blob/master/Sliding%20Window%20Maximum.cpp)
 
-[Jump the river](https://github.com/checkcheckzz/coding-problems/blob/master/Jump%20the%20river.cpp)
+Jump the river
 
 [Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)](https://github.com/checkcheckzz/coding-problems/blob/master/Minimize%20max(a-b,b-c,c-a).cpp)
 
@@ -53,7 +53,7 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 
 [Given 2 binary arrays A and B i.e. containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20subarray%20with%20equal%20sum.cpp)
 
-[Given an integer array and a range, find all subarray such that its sum is in the range](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20integer%20array%20and%20a%20range.cpp)
+Given an integer array and a range, find all subarray such that its sum is in the range
 
 [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/Given%20an%20array%20and%20a%20number%20k.cpp)
 
@@ -65,22 +65,30 @@ Given m sets, generate a new array arr (size m), where a[i] comes from set i, ou
 
 Find the complement domino pairs
 
+Nearest greatest element
 
+Print all K-complementary in an array
 
+Find a partition in an array to minimize the sum of two parts
 
+Find the complement domino pairs
+
+Find the longest consecutive increasing subarray in a grid
+
+Calculate the rotation distance for a sorted rotated array
 
 
 [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/Traversalgrid.cpp)
 
 [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
 
-[Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Number%20of%20closed%20rectangles%20in%20a%20matrix.cpp)
+Number of closed rectangles in a matrix
 
 [Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/Graph%20exists.cpp)
 
-[Calculate the distance from each empty room to nearest guard](https://github.com/checkcheckzz/coding-problems/blob/master/Nearest%20guard.cpp)
+Calculate the distance from each empty room to nearest guard
 
-[Construct a xml tree](https://github.com/checkcheckzz/coding-problems/blob/master/Construct%20a%20xml%20tree.cpp)
+Construct a xml tree
 
 [Heapify a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Heapify%20a%20binary%20tree.cpp)
 
@@ -94,16 +102,17 @@ Find the complement domino pairs
 
 [Shortest distance between two nodes of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Shortest%20distance%20between%20two%20nodes.cpp)
 
-[Size of the largest complete subtree in a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Size%20of%20the%20largest%20complete%20subtree.cpp)
+Size of the largest complete subtree in a binary tree
 
 [Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20getNextNode().cpp)
 
-[Large tree preorder travsersal](https://github.com/checkcheckzz/coding-problems/blob/master/Largetreepreordertravsersal.cpp)
+Large tree preorder travsersal
 
+Check whether a tree exists
 
+Quadtree operation
 
-
-
+Construct a tree by a list of pairs
 
 [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/Vertical%20sum%20in%20a%20binary%20tree.cpp)
 
@@ -117,8 +126,6 @@ Find the complement domino pairs
 
 [Output true with probability 1/2^N given a function outputing true with probability 0.5](https://github.com/checkcheckzz/coding-problems/blob/master/Output%20true.cpp)
 
-[Put m apples to n plates](https://github.com/checkcheckzz/coding-problems/blob/master/Put%20m%20apples%20to%20n%20plates.cpp)
-
 [Given a positive integer N, print all combinations of non-negative integer sum to N](https://github.com/checkcheckzz/coding-problems/blob/master/Print%20all%20combinations.cpp)
 
 How to find largest triangle in convex hull aside from brute force search
@@ -131,18 +138,23 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Happy Number](https://github.com/checkcheckzz/coding-problems/blob/master/Happy%20Number.cpp)
 
-[Magic Number](https://github.com/checkcheckzz/coding-problems/blob/master/Magic%20Number.cpp)
+Magic Number
 
-[Nearest greater palindrome](https://github.com/checkcheckzz/coding-problems/blob/master/Nearest%20greater%20palindrome.cpp)
+Nearest greater palindrome
 
 [GetDecimal](https://github.com/checkcheckzz/coding-problems/blob/master/GetDecimal.cpp)
 
-[Smallest positive number can not be represented](https://github.com/checkcheckzz/coding-problems/blob/master/Smallest%20positive%20number.cpp)
+Smallest positive number can not be represented
 
 [Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)](https://github.com/checkcheckzz/coding-problems/blob/master/Number%20k%3Da%5E2%20%2Bb%5E2.cpp)
 
+Change a m base number to a n base number
 
+Impletement the cancall() function
 
+Find the longest 0s surrounded by 1s in a binary expression
+
+Print all numbers including digit 5 smaller than number N
 
 
 [BinaryMatching](https://github.com/checkcheckzz/coding-problems/blob/master/BinaryMatching.cpp)
@@ -159,9 +171,9 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Given a list of words and a string pattern including question mark, find all match words](https://github.com/checkcheckzz/coding-problem/blob/master/Patternsearchquestionmark.cpp)
 
-[Given a dict and a char set, find all words in the dict where all chars come from the char set](https://github.com/checkcheckzz/coding-problem/blob/master/Charset.cpp)
+Given a dictionary and a char set, find all words in the dictionary where all chars come from the char set
 
-[Given a string，delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/DeleteAdoubleB.cpp)
+[Given a string, delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/DeleteAdoubleB.cpp)
 
 [Given two string arrays, sort the string in first array according to the string order in second array](https://github.com/checkcheckzz/coding-problem/blob/master/Sortfirstaccordingsecond.cpp)
 
@@ -169,78 +181,80 @@ How to find largest triangle in convex hull aside from brute force search
 
 [Longest substring which begins and ends with two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/LongestSubstringbeginend2uniquechars.cpp)
 
-[String encode and decode](https://github.com/checkcheckzz/coding-problem/blob/master/Stringencodedecode.cpp)
+String encode and decode
 
 [Given a string s, check whether it is k duplicates of a string t](https://github.com/checkcheckzz/coding-problem/blob/master/Kduplicates.cpp)
 
-[Given a dict and a word, find all words with edit distance<=1 in this dict](https://github.com/checkcheckzz/coding-problem/blob/master/Editonewordindict.cpp)
+Given a dictionary and a word, find all words with edit distance<=1 in this dictionary
 
 [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/Onetwobyteencoding.cpp)
 
-[Pair with largest common words](https://github.com/checkcheckzz/coding-problem/blob/master/Pairwithlargestcommonwords.cpp)
+Pair with largest common words
 
 [Isomorphic Strings](https://github.com/checkcheckzz/coding-problem/blob/master/Mapstring.cpp)
 
+Implementate string.split()
 
+Ordered mininum window substring
 
 
 [Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S.cpp)
 
-[Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/Blackwhitereversegame.cpp)
+Black white reverse board game
 
 [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/Catchcow.cpp)
 
-[Cover board with tile](https://github.com/checkcheckzz/coding-problems/blob/master/Coverboardwithtiles.cpp)
+Cover board with tile
 
-[Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Deepiterator.cpp)
+Deep iterator
 
-[Divide integers](https://github.com/checkcheckzz/coding-problems/blob/master/Divideinteger.cpp)
+Divide integers
 
 [Equation solution](https://github.com/checkcheckzz/coding-problems/blob/master/Equationsolution.cpp)
 
 [Familiy relation](https://github.com/checkcheckzz/coding-problems/blob/master/Familyrelation.cpp)
 
-[Final perimeter multiple rectangles cover](https://github.com/checkcheckzz/coding-problems/blob/master/Perimetercover.cpp)
+Final perimeter multiple rectangles cover
 
-[Find the latest version](https://github.com/checkcheckzz/coding-problems/blob/master/Latestversion.cpp)
+Find the latest version
 
-[Get the volume](https://github.com/checkcheckzz/coding-problems/blob/master/Getthevolume.cpp)
+Get the volume
 
-[Group contact by email list](https://github.com/checkcheckzz/coding-problems/blob/master/Groupcontact.cpp)
+Group contact by email list
 
-[Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/Harryporterinmaze.cpp)
+Harry potter in the maze
 
-[Last n lines of a file](https://github.com/checkcheckzz/coding-problems/blob/master/Lastnlines.cpp)
+Last n lines of a file
 
 [Maximal path gain of two persons on board](https://github.com/checkcheckzz/coding-problems/blob/master/Maximalpathgain.cpp)
 
 [Number of online user](https://github.com/checkcheckzz/coding-problems/blob/master/Onlineuser.cpp)
 
-[Number of squares](https://github.com/checkcheckzz/coding-problems/blob/master/Numsquares)
+Number of squares
 
-[Password lock](https://github.com/checkcheckzz/coding-problems/blob/master/Passwordlock.cpp)
+Password lock
 
-[Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/Pizzapick)
+Pizza picking problem
 
 Present black and white graph with quadtree
 
-[Operation number with limited functional deque](https://github.com/checkcheckzz/coding-problems/blob/master/Limiteddeque.cpp)
+Operation number with limited functional deque
 
-[Racer score](https://github.com/checkcheckzz/coding-problems/blob/master/Racescore.cpp)
+Racer score
 
 Random algorithm
 
-[Skyline](https://github.com/checkcheckzz/coding-problems/blob/master/Skyline.cpp)
+Skyline
 
 [Spreadsheet Calculation](https://github.com/checkcheckzz/coding-problems/blob/master/Spreedsheet.cpp)
 
-[Thief Problem](https://github.com/checkcheckzz/coding-problems/blob/master/ThiefProblem.cpp)
+Thief Problem
 
-[Total area multiple rectangles cover](https://github.com/checkcheckzz/coding-problems/blob/master/Areacover.cpp)
+Total area multiple rectangles cover
 
 [Total weight of a subtree below this node](https://github.com/checkcheckzz/coding-problems/blob/master/Totalweight.cpp)
 
-[Turn off lights](https://github.com/checkcheckzz/coding-problems/blob/master/Turnofflight.cpp)
+Turn off lights
 
 [Two dimension top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk.cpp)
 
@@ -252,15 +266,15 @@ Find largest triangle in convex hull
 
 [Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3](https://github.com/checkcheckzz/coding-problems/blob/master/Specialnumber.cpp)
 
-[Print all lines in a file reversely](https://github.com/checkcheckzz/coding-problems/blob/master/Reverselines.cpp)
+Print all lines in a file reversely
 
-[Query relationship](https://github.com/checkcheckzz/coding-problems/blob/master/Queryrelation.cpp)
+Query relationship
 
 [Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
 
 [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 
-[Paint K houses](https://github.com/checkcheckzz/coding-problems/blob/master/PaintKhouses.cpp)
+Paint K houses
 
 Number of subsequence
 
@@ -279,6 +293,12 @@ Producing 64bit digest
 [Read a line from a file randomly](https://github.com/checkcheckzz/coding-problems/blob/master/Readaline.cpp)
 
 Read and Write UTF8
+
+Largest X structure in a grid
+
+Calculate the number of all 0s submatrix 
+
+Implement a recommendation function
 
 ---
 
