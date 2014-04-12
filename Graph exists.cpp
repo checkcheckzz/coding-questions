@@ -1,6 +1,6 @@
 /*
 
-Given the node of an undirected graph, and each node's degree (at most one edge between two nodes), 
+Given the node of a connected undirected graph, and each node's degree (at most one edge between two nodes), 
 check whether the graph exists.
 
 */

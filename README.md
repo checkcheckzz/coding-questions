@@ -8,7 +8,7 @@ original work.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 155 (97 done).
+Total Number (not including the problem in the special topics at last): about 192 (100 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
 
@@ -78,6 +78,8 @@ Find the longest consecutive increasing subarray in a grid
 Calculate the rotation distance for a sorted rotated array
 
 
+
+
 [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/Traversalgrid.cpp)
 
 [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
@@ -115,6 +117,9 @@ Quadtree operation
 Construct a tree by a list of pairs
 
 [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/Vertical%20sum%20in%20a%20binary%20tree.cpp)
+
+
+
 
 [Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/Calculate%20(m%5En)%25(10%5Ek).cpp)
 
@@ -155,6 +160,8 @@ Impletement the cancall() function
 Find the longest 0s surrounded by 1s in a binary expression
 
 Print all numbers including digit 5 smaller than number N
+
+
 
 
 [BinaryMatching](https://github.com/checkcheckzz/coding-problems/blob/master/BinaryMatching.cpp)
@@ -220,9 +227,9 @@ Find the latest version
 
 Get the volume
 
-Group contact by email list
+[Group contact by email list](https://github.com/checkcheckzz/coding-problems/blob/master/Groupcontact.cpp)
 
-Harry potter in the maze
+[Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/Harryporterinmaze.cpp)
 
 Last n lines of a file
 
@@ -244,7 +251,7 @@ Racer score
 
 Random algorithm
 
-Skyline
+[Skyline](https://github.com/checkcheckzz/coding-problems/blob/master/Skyline.cpp)
 
 [Spreadsheet Calculation](https://github.com/checkcheckzz/coding-problems/blob/master/Spreedsheet.cpp)
 
@@ -256,9 +263,9 @@ Total area multiple rectangles cover
 
 Turn off lights
 
-[Two dimension top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk.cpp)
+Two dimension top k
 
-[Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram.cpp)
+Water in two dimensional histogram
 
 Dividing a plane of points into two equal halves
 
@@ -270,7 +277,7 @@ Print all lines in a file reversely
 
 Query relationship
 
-[Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
+Given k numbers, get a target with certain operators
 
 [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 
