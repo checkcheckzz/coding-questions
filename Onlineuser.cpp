@@ -36,8 +36,9 @@ void online_user(vector<Log> &logs);
 
 /*
 
-solution: use a map to record the time point and the number of uses change based on second previous time points.
-print the interval from map, output print out the intervals with non zero changes.
+solution: use a map to record the time point and the number of users change. When there is a login, increase the count. 
+When there is a logout, decrease the count. Print the interval based on the map, 
+only output the intervals with non zero changes.
 O(n) time, O(n) space
 */
 #include<iostream>

@@ -3,15 +3,14 @@ Coding-Problem
 
 Statement
 ---
-The coding problem comes from interview, discussion from mitbbs and blogs I read. Some solutions are NOT my
-original work.
+The coding problem comes from interview, discussion from mitbbs and blogs I read. Some codes are NOT my
+original work. But I also don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 192 (100 done).
+Total Number (not including the problem in the special topics at last): about 200 (105 done).
 
-Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find the bugs. 
-
+Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
 
 The time complexity is usually the worst time and space complexity does not include stack space.
@@ -77,6 +76,14 @@ Find the longest consecutive increasing subarray in a grid
 
 Calculate the rotation distance for a sorted rotated array
 
+Find the smallest missing number
+
+Generate parentheses with different types
+
+Kth element in two sorted array
+
+Find the minimal number in a given left turned array
+
 
 
 
@@ -117,6 +124,10 @@ Quadtree operation
 Construct a tree by a list of pairs
 
 [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/Vertical%20sum%20in%20a%20binary%20tree.cpp)
+
+Maximal path sum of n-way tree
+
+
 
 
 
@@ -161,6 +172,10 @@ Find the longest 0s surrounded by 1s in a binary expression
 
 Print all numbers including digit 5 smaller than number N
 
+Find the next higher number with the same digits
+
+
+
 
 
 
@@ -204,10 +219,20 @@ Implementate string.split()
 
 Ordered mininum window substring
 
+Find all the possible interleavings of two input strings
+
+Given a string s and a dictionary , find the a word break way with minimal number of words 
+
+Implement regular expression
+
+Permutation array of strings
+
+
+
 
 [Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S.cpp)
 
-Black white reverse board game
+[Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/Blackwhitereversegame.cpp)
 
 [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/Catchcow.cpp)
 
@@ -225,8 +250,6 @@ Final perimeter multiple rectangles cover
 
 Find the latest version
 
-Get the volume
-
 [Group contact by email list](https://github.com/checkcheckzz/coding-problems/blob/master/Groupcontact.cpp)
 
 [Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/Harryporterinmaze.cpp)
@@ -241,7 +264,7 @@ Number of squares
 
 Password lock
 
-Pizza picking problem
+[Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/Pizzapick.cpp)
 
 Present black and white graph with quadtree
 
@@ -265,7 +288,7 @@ Turn off lights
 
 Two dimension top k
 
-Water in two dimensional histogram
+[Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram)
 
 Dividing a plane of points into two equal halves
 
@@ -277,7 +300,7 @@ Print all lines in a file reversely
 
 Query relationship
 
-Given k numbers, get a target with certain operators
+[Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber)
 
 [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 
@@ -285,7 +308,7 @@ Paint K houses
 
 Number of subsequence
 
-Implement iterator interface
+[Implement iterator interface](https://github.com/checkcheckzz/coding-problems/blob/master/Interface.cpp)
 
 [Total Shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 

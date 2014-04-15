@@ -67,8 +67,6 @@ void stoneMinMaxScores(int num[], int len) {
 
 }
 
-
-
 int main(){
 
 	int org[] = {-1, 4, 4, 5, 9}; //does not use index 0
