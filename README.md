@@ -8,7 +8,7 @@ original work. But I also don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 200 (105 done).
+Total Number (not including the problem in the special topics at last): about 200 (111 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
@@ -236,15 +236,15 @@ Permutation array of strings
 
 [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/Catchcow.cpp)
 
-Cover board with tile
+[Cover board with tile](https://github.com/checkcheckzz/coding-problems/blob/master/Coverboardwithtiles.cpp)
 
-Deep iterator
+[Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Deepiterator.cpp)
 
 Divide integers
 
 [Equation solution](https://github.com/checkcheckzz/coding-problems/blob/master/Equationsolution.cpp)
 
-[Familiy relation](https://github.com/checkcheckzz/coding-problems/blob/master/Familyrelation.cpp)
+[Family relation](https://github.com/checkcheckzz/coding-problems/blob/master/Familyrelation.cpp)
 
 Final perimeter multiple rectangles cover
 
@@ -262,15 +262,15 @@ Last n lines of a file
 
 Number of squares
 
-Password lock
+[Password lock](https://github.com/checkcheckzz/coding-problems/blob/master/Passwordlock.cpp)
 
 [Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/Pizzapick.cpp)
 
-Present black and white graph with quadtree
+[Present black and white graph with quadtree](https://github.com/checkcheckzz/coding-problems/blob/master/Quadtree.cpp)
 
 Operation number with limited functional deque
 
-Racer score
+[Racer score](https://github.com/checkcheckzz/coding-problems/blob/master/Racescore.cpp)
 
 Random algorithm
 
@@ -286,7 +286,7 @@ Total area multiple rectangles cover
 
 Turn off lights
 
-Two dimension top k
+[Two dimension top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk)
 
 [Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram)
 

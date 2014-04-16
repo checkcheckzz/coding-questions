@@ -19,7 +19,8 @@ using namespace std;
 
 const int HEIGHT=4;
 const int WIDTH=5;
-const int END=(1<<20)-1;
+//the final state, all cells are black
+const int END = (1<<20)-1;
 int visited[END+10];
 int step[END+10];
 
@@ -28,17 +29,17 @@ void roll(int x,int y,int& grid){
 
 	if(x < 0||x >= HEIGHT||y < 0||y >= WIDTH) return;
 
-	int position = (x*WIDTH)+y;
+	int position = (x * WIDTH) + y;
 	//flip the bit
-	grid = grid^(1<<position);
+	grid = grid ^ (1<<position);
 }
 int click(int x,int y,int grid)
 {
-	int a[]={0,-1,+1,0,0};
-	int b[]={0,0,0,-1,+1};
+	int a[] = {0,-1,+1,0,0};
+	int b[] = {0,0,0,-1,+1};
 	//five cells
-	for(int i = 0;i < 5;i++) {
-		roll(x + a[i],y + b[i],grid);
+	for(int i = 0; i < 5; i++) {
+		roll(x + a[i],y + b[i], grid);
 	}
 	return grid;
 }
@@ -68,22 +69,22 @@ int blackWriteReverse(vector<string> board) {
 	memset(step,0,sizeof(step));
 	while(!Q.empty())
 	{
-		int now=Q.front();
+		int now = Q.front();
 		Q.pop();
-		if(now==END)
+		if(now == END)
 		{
 			return step[now];
 		}
-		for(int x=0;x<4;x++)
+		for(int x = 0; x < 4;x++)
 		{
-			for(int y=0;y<5;y++)
+			for(int y = 0; y < 5;y++)
 			{
 				int state = click(x,y,now);
 
 				if(!visited[state])
 				{
-					visited[state]=1;
-					step[state] = step[now]+1;
+					visited[state] = 1;
+					step[state] = step[now] + 1;
 					Q.push(state);
 				}
 			}

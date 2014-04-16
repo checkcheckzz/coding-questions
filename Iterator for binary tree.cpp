@@ -1,11 +1,6 @@
 /*
-
 Write an iterator for binary tree. 
-
-
 */
-
-
 
 struct NODE 
 {
@@ -17,22 +12,20 @@ struct NODE
 };
 
 /*
-
 Here is the inorder iterator.
-
 */
 
 class BinaryTreeIterator
 {
 
 public:
-    void iterCon(NODE* root)
+    void iterconstruct(NODE* root)
     { 
        buildIter(root);
      
     }
  
-    NODE* Next()
+    NODE *Next()
     {
         if (stk.empty()) return NULL;
  
@@ -47,7 +40,7 @@ public:
 private:
     void buildIter(NODE* node)
     {
-        while (NULL != node) {
+        while (node != NULL) {
         
             stk.push(node);
             node = node->pLft;
