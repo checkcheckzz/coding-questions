@@ -8,7 +8,7 @@ original work. But I also don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 200 (118 done).
+Total Number (not including the problem in the special topics at last): about 199 (118 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
@@ -118,8 +118,6 @@ Size of the largest complete subtree in a binary tree
 Large tree preorder travsersal
 
 Check whether a tree exists
-
-Quadtree operation
 
 Construct a tree by a list of pairs
 
