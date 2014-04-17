@@ -8,7 +8,7 @@ original work. But I also don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 200 (111 done).
+Total Number (not including the problem in the special topics at last): about 200 (118 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
@@ -64,25 +64,25 @@ Given an integer array and a range, find all subarray such that its sum is in th
 
 Find the complement domino pairs
 
-Nearest greatest element
+[Nearest greatest element](https://github.com/checkcheckzz/coding-problems/blob/master/Neargreatestelement.cpp)
 
-Print all K-complementary in an array
+[Print all K-complementary in an array](https://github.com/checkcheckzz/coding-problems/blob/master/K-complementary.cpp)
 
-Find a partition in an array to minimize the sum of two parts
+[Find a partition in an array to minimize the sum of two parts](https://github.com/checkcheckzz/coding-problems/blob/master/Partitionnarray.cpp)
 
-Find the complement domino pairs
+Find independent parts in an array
 
 Find the longest consecutive increasing subarray in a grid
 
-Calculate the rotation distance for a sorted rotated array
+[Calculate the rotation distance for a sorted rotated array](https://github.com/checkcheckzz/coding-problems/blob/master/Rotatearraydistance.cpp)
 
-Find the smallest missing number
+[Find the smallest missing number](https://github.com/checkcheckzz/coding-problems/blob/master/Smallestmissingnumber.cpp)
 
-Generate parentheses with different types
+[Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/GenerateParentheseswithdiffkinds.cpp)
 
 Kth element in two sorted array
 
-Find the minimal number in a given left turned array
+[Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/Minimalelementinleftsortedarray.cpp)
 
 
 
