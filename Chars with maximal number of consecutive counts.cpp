@@ -22,8 +22,7 @@ if the count is equal to larger than current maximal count, otherwise, just rese
 
 
 
-void maxRepCount1(char *sen)
-{
+void maxRepCount1(char *sen) {
   if (!sen || !(*sen)) return;
   int maxcount = 0;
   int curcount = 0;
@@ -60,8 +59,7 @@ O(n) time, O(1) space
 
 */
 
-void maxRepCount2(char *sen)
-{
+void maxRepCount2(char *sen) {
     if (!sen || !(*sen)) return;
     int table[256] = {0};
     char *p = sen;
@@ -105,7 +103,7 @@ void maxRepCount2(char *sen)
         p++;
         index++;
     }
-	cout<<"]"<<endl;
+    cout<<"]"<<endl;
 }
 
 
@@ -117,7 +115,6 @@ int main()
     //char s[]="thiisss iss a sennnntttenceee";
     maxRepCount1(s);
     maxRepCount2(s);
-
     return 0;
 }
 

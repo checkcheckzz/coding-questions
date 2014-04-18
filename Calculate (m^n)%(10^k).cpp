@@ -85,15 +85,10 @@ string calculate(long m, long n, int k) {
 
 int main() {
 
-	long m = 5;
-	long n = 8;
-	int k = 3;
-	
-	string result = calculate(m, n, k);
-
+    long m = 5;
+    long n = 8;
+    int k = 3;
+    string result = calculate(m, n, k);
     cout<<result<<endl;
-
-	return 0;
-
-
+    return 0;
 }

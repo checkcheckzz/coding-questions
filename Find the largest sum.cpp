@@ -68,9 +68,9 @@ int findLargest3Sum(int arr[], int len) {
 
 int main() {
 
-	int arr[10]={1,3,1,5,2,-3,-1,4,5,2};
-	cout<<findLargest3Sum(arr, 10)<<endl;
-
+	int arr[] = {1,3,1,5,2,-3,-1,4,5,2};
+	int len = sizeof(arr)/sizeof(arr[0]);
+	cout<<findLargest3Sum(arr, len)<<endl;
 	return 0;
 }
 

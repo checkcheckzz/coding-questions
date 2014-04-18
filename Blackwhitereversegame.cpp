@@ -25,7 +25,7 @@ int visited[END+10];
 int step[END+10];
 
 
-void roll(int x,int y,int& grid){ 
+void roll(int x,int y,int& grid) { 
 
 	if(x < 0||x >= HEIGHT||y < 0||y >= WIDTH) return;
 
@@ -33,8 +33,7 @@ void roll(int x,int y,int& grid){
 	//flip the bit
 	grid = grid ^ (1<<position);
 }
-int click(int x,int y,int grid)
-{
+int click(int x,int y,int grid) {
 	int a[] = {0,-1,+1,0,0};
 	int b[] = {0,0,0,-1,+1};
 	//five cells
@@ -44,8 +43,7 @@ int click(int x,int y,int grid)
 	return grid;
 }
 
-int init(vector<string> board)
-{
+int init(vector<string> board) {
 	int k=0;
 	int grid=0;
 	for(int i = 0;i<4;i++)
@@ -99,9 +97,7 @@ int main() {
 	board.push_back("01111");
 	board.push_back("11110");
 	board.push_back("11100");
-
 	int result = blackWriteReverse(board);
 	cout <<result<<endl;
-
 	return 0;
 }

@@ -15,9 +15,9 @@ O(r) time, r is the repeating part length
 #include<string>
 using namespace std;
 
-string getDecimals(int A, int B){
+string getDecimals(int A, int B) {
 
-	//assume A < B
+    //assume A < B
     string integer = "0" + A/B; 
     long long rest = A % B;
     map<int, int> remain;
@@ -45,11 +45,7 @@ string getDecimals(int A, int B){
 
 int main () {
 
-
-	cout<<getDecimals(2,4)<<endl;
-	cout<<getDecimals(1,6)<<endl;
-
-	return 0;
-
-
+    cout<<getDecimals(2,4)<<endl;
+    cout<<getDecimals(1,6)<<endl;
+    return 0;
 }

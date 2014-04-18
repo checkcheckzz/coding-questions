@@ -64,18 +64,14 @@ bool transformString(string str1, string str2) {
 
 int main() {
 
-	
 	string str1 = "cat", str2 = "cot";
 	string str3 = "cat", str4 = "cat";
 	string str5 = "cat", str6 = "cast";
 	string str7 = "cat", str8 = "at";
-
 	cout<<transformString(str1, str2)<<endl;
     cout<<transformString(str3, str4)<<endl;
 	cout<<transformString(str5, str6)<<endl;
 	cout<<transformString(str7, str8)<<endl;
-
 	return 0;
-
 
 }

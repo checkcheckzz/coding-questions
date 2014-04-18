@@ -1,7 +1,5 @@
 /*
-
 Given a string£¬delete all char A£¬and double all char B.
-
 */
 
 /*
@@ -14,8 +12,7 @@ O(n) time, O(1) space
 using namespace std;
 
 
-char *stringRemoveADoubleB(char *str)
-{
+char *stringRemoveADoubleB(char *str) {
     if (!str) return NULL;
 
     char *orgiter = str;
@@ -33,7 +30,7 @@ char *stringRemoveADoubleB(char *str)
         } else {
             orgiter++;  // Remove A
         }
-	}
+    }
 
 	
     if(len) {
@@ -54,20 +51,18 @@ char *stringRemoveADoubleB(char *str)
 
             *orgiter = 'B';
 
-		}
+        }
     }
     return str;
 }
 
-int main(){
+int main() {
 
-	char *str1 = "CAABD";
-	char *str2 = "ACAABDB";
-	char *str3 = "BACAABDBA";
-
-	cout<<stringRemoveADoubleB(str1)<<endl;
-	cout<<stringRemoveADoubleB(str2)<<endl;
-	cout<<stringRemoveADoubleB(str3)<<endl;
-
-	return 0;
+    char *str1 = "CAABD";
+    char *str2 = "ACAABDB";
+    char *str3 = "BACAABDBA";
+    cout<<stringRemoveADoubleB(str1)<<endl;
+    cout<<stringRemoveADoubleB(str2)<<endl;
+    cout<<stringRemoveADoubleB(str3)<<endl;
+    return 0;
 }

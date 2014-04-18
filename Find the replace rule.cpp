@@ -1,26 +1,21 @@
 /*
-
 Given a list of strings l1, the string follow the lexicographical order.
 Now we do a one to one mapping for the chars, such as a->e, p->d, l->f, e->o,
 b->...We get another list of strings l2.
 
 Suppose we only know l2, find the mapping rule.
-
 */
 
 /*
-
-
 solution: 
 O(n*len) time, O(26) space, n is the number of strings, and len is the average length of each string. 
-
 */
 
 #include<iostream>
 #include<unordered_map>
 using namespace std;
 
-void findMapRule(string s[], int len){
+void findMapRule(string s[], int len) {
 
     unordered_map<char, char> rule;
 
@@ -45,12 +40,10 @@ void findMapRule(string s[], int len){
     }
 }
 
-int main(){
+int main() {
 
-
-	string s[] = {"erg", "wrf", "er", "ett", "rftt","te","ba","bw","fw"};
+    string s[] = {"erg", "wrf", "er", "ett", "rftt","te","ba","bw","fw"};
     findMapRule(s, 9);
-
-	return 0;
+    return 0;
 
 }

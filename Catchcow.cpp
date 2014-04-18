@@ -16,8 +16,7 @@ using namespace std;
 
 
 
-struct Point
-{
+struct Point {
 	int value, step;
 };
 
@@ -66,11 +65,8 @@ int minimalOperations(int start, int end, bool visit[]) {
 int main(){
 
 	int n = 5, k = 80;
-
 	bool visit[10000] = {0};
-
 	cout<<minimalOperations(n, k, visit)<<endl;
-
 	return 0;
 
 }

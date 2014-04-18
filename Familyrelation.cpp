@@ -16,24 +16,21 @@ O(nlogn+qlogn) time, O(1) space, n is the number of total relatives, q is the nu
 using namespace std;
 
 
-
-
 int n,m,p;
 int fa[5010];
 
-int find(int a){
+int find(int a) {
 	//this optimization makes the tree as flat as possible
     if(fa[a] != a) fa[a] = find(fa[a]);
     return fa[a];
 }
 
-void merge(int a,int b){
+void merge(int a,int b) {
 
     fa[find(a)] = find(b);
 }
 
-void queryRelatives(int n, pair<int, int> relatives[], int r,  pair<int, int> query[], int q)
-{
+void queryRelatives(int n, pair<int, int> relatives[], int r,  pair<int, int> query[], int q) {
    
     for(int i = 1; i <= n; i++) {
         fa[i] = i;
@@ -55,22 +52,18 @@ void queryRelatives(int n, pair<int, int> relatives[], int r,  pair<int, int> qu
     }
 }
 
-int main(){
+int main() {
 
-	pair<int, int> pair1 = make_pair(2,3);
-	pair<int, int> pair2 = make_pair(5,6);
-	
-	pair<int, int> pair3 = make_pair(1,2);
-	pair<int, int> pair4 = make_pair(1,5);
-	pair<int, int> pair5 = make_pair(3,4);
-	pair<int, int> pair6 = make_pair(5,2);
-	pair<int, int> pair7 = make_pair(1,3);
-
-	pair<int, int> relatives[] = {pair3, pair4, pair5, pair6, pair7};
-	pair<int, int> query[] = {pair1, pair2};
-
-	queryRelatives(6,relatives, 5, query, 2);
-
-	return 0;
+    pair<int, int> pair1 = make_pair(2,3);
+    pair<int, int> pair2 = make_pair(5,6);
+    pair<int, int> pair3 = make_pair(1,2);
+    pair<int, int> pair4 = make_pair(1,5);
+    pair<int, int> pair5 = make_pair(3,4);
+    pair<int, int> pair6 = make_pair(5,2);
+    pair<int, int> pair7 = make_pair(1,3);
+    pair<int, int> relatives[] = {pair3, pair4, pair5, pair6, pair7};
+    pair<int, int> query[] = {pair1, pair2};
+    queryRelatives(6,relatives, 5, query, 2);
+    return 0;
 }
 

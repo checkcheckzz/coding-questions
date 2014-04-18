@@ -16,8 +16,7 @@ O(n) time
 using namespace std;
 
 
-struct NODE 
-{
+struct NODE  {
     int val;
     NODE* pLft;
     NODE* pRgt;
@@ -26,8 +25,7 @@ struct NODE
 };
 
  
-int getLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstroot, int& maxbstnum)
-{
+int getLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstroot, int& maxbstnum) {
     
     assert(Node);
  
@@ -78,8 +76,7 @@ int getLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstro
 }
  
 //Input root of a BT and return the root of largest BST 
-NODE* getLargestBST(NODE* root)
-{
+NODE* getLargestBST(NODE* root) {
     
     if (root == NULL) return NULL;
  
@@ -91,8 +88,7 @@ NODE* getLargestBST(NODE* root)
     return result;
 }
 
-void inOrderTravel(NODE* root)
-{
+void inOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -118,16 +114,15 @@ void inOrderTravel(NODE* root)
     }
 }
 
-int main()
-{
-	NODE *root = new NODE(5);
-	root->pLft = new NODE(3);
-	root->pRgt = new NODE(6);
-	root->pLft->pRgt = new NODE(4);
-	root->pLft->pLft = new NODE(2);
-	root->pRgt->pRgt = new NODE(8);
-	inOrderTravel(getLargestBST(root));
-	return 0;
+int main() {
+    NODE *root = new NODE(5);
+    root->pLft = new NODE(3);
+    root->pRgt = new NODE(6);
+    root->pLft->pRgt = new NODE(4);
+    root->pLft->pLft = new NODE(2);
+    root->pRgt->pRgt = new NODE(8);
+    inOrderTravel(getLargestBST(root));
+    return 0;
 	
 }
 

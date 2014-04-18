@@ -1,22 +1,15 @@
 /*
-
 Given a positive number and  k, delete k digits of this number to get the smallest number.
-
 Suppose the num is 42139, k is 1, the smallest number should be 2139.
-
 */
 
 /*
-
 solution1: change the int to string. Scan the string first k digits from left, get the minposition of the smallest digit. 
 Then, delete the first k digits and call the funciton again on the rest substring from minposition+1 to the end.
-
 O(n*k) time, O(1) space
-
 */
 
 /*
-
 solution2: use deque, very similar to the sliding minimal Window problem.
 O(n) time, O(k) space
 */
@@ -25,15 +18,13 @@ O(n) time, O(k) space
 #include<cassert>
 #include<string>
 #include<queue>
-
 using namespace std;
 
 typedef pair<int, int> Pair;
 
-string deleteKDigits1Inner(string num, int start, int end, int k){
+string deleteKDigits1Inner(string num, int start, int end, int k) {
 
-	if (end - start <= k || k <0)
-		return "";
+	if (end - start <= k || k <0) return "";
 
 	int minDigit = 10;
 	int minPosition = -1;
@@ -84,7 +75,7 @@ int deleteKDigits1(int num, int k) {
 
 
 
-string deleteKDigits2Inner(string num, int k){
+string deleteKDigits2Inner(string num, int k) {
 
 	deque<pair<int, char>> q;
 
@@ -149,16 +140,11 @@ int deleteKDigits2(int num, int k) {
 
 }
 
-
-
 int main(){
-
 
   int num = 42139;
   int k = 3;
-
   cout<<deleteKDigits1(num, k)<<endl;
   cout<<deleteKDigits2(num, k)<<endl;
-
   return 0;
 }

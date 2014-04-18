@@ -1,22 +1,17 @@
 /*
-
 Implement copy on write string class in c++ 
+*/
 
+/*
+Because we want to implement copy on write class, we define copy constructor, assignment operator.
+In real application, we should disallow copy constructor and assignment operator.
 */
 
 #include<iostream>
 using namespace std;
 
-/*
 
-Because we want to implement copy on write class, we define copy constructor, assignment operator.
-In real application, we should disallow copy constructor and assignment operator.
-
-*/
-
-
-class CopyOWString
-{
+class CopyOWString {
 public:
     CopyOWString(const char* str) { newStr(str); }
     CopyOWString(CopyOWString& cowStr) { incRef(cowStr); }
@@ -41,8 +36,7 @@ private:
 /*
 Increase the reference count to string
 */
-void CopyOWString::incRef(CopyOWString& cowStr)
-{
+void CopyOWString::incRef(CopyOWString& cowStr) {
     referencecount = cowStr.referencecount;
     strcontent = cowStr.strcontent;
     (*referencecount)++;
@@ -51,55 +45,43 @@ void CopyOWString::incRef(CopyOWString& cowStr)
 /*
 Decrease the reference count to string
 */
-void CopyOWString::decRef()
-{
+void CopyOWString::decRef() {
     (*referencecount)--;
-    if (*referencecount <= 0)
-    {
+    if (*referencecount <= 0) {
         delete []strcontent;
         delete referencecount;
     }
 }
  
-void CopyOWString::newStr(const char* str)
-{
+void CopyOWString::newStr(const char* str) {
     strcontent= new char[strlen(str) + 1];
     strcpy(strcontent, str);
     referencecount = new int(1);
 }
  
-CopyOWString& CopyOWString::operator = (CopyOWString& cowStr)
-{
-    if (this != &cowStr)
-    {
+CopyOWString& CopyOWString::operator = (CopyOWString& cowStr) {
+    if (this != &cowStr) {
         decRef();
         incRef(cowStr);
     }
- 
     return *this;
 }
  
-CopyOWString& CopyOWString::operator = (const char* str)
-{
+CopyOWString& CopyOWString::operator = (const char* str) {
     decRef();
     newStr(str);
- 
     return *this;
 }
 
 int main(){
 
-	CopyOWString a("abc");
-	
-
-        cout<<*a.getStr()<<endl;
-	cout<<*a.getCount()<<endl;
-	CopyOWString b(a);
-	cout<<*a.getCount()<<endl;
-	a.~CopyOWString();
-	cout<<*a.getCount()<<endl;
-	int tt;
-	cin>>tt;
-	return 0;
+    CopyOWString a("abc");
+    cout<<*a.getStr()<<endl;
+    cout<<*a.getCount()<<endl;
+    CopyOWString b(a);
+    cout<<*a.getCount()<<endl;
+    a.~CopyOWString();
+    cout<<*a.getCount()<<endl;
+    return 0;
 }
 

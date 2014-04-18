@@ -6,8 +6,7 @@ Program an iterator for a List which may include nodes or List, i.e., {0,
 */
 
 
-class Collection
-{
+class Collection {
     public:
         T next() {
             

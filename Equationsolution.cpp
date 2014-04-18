@@ -22,11 +22,11 @@ using namespace std;
 
 int table[MAX * 2 + 400];
 
-int findSolutions(int coeff[]){
+int findSolutions(int coeff[]) {
 
-	int lefteq = 0;
-	int righteq = 0;
-	int sum = 0;
+    int lefteq = 0;
+    int righteq = 0;
+    int sum = 0;
 
     for(int  i = -30 ; i <= 30; i++) {
 
@@ -65,8 +65,7 @@ int findSolutions(int coeff[]){
 
 int main() {
 
-	int coeff[] = {10, 20, 21, 17,8};
-	cout<<findSolutions(coeff)<<endl;
-
-	return 0;
+    int coeff[] = {10, 20, 21, 17,8};
+    cout<<findSolutions(coeff)<<endl;
+    return 0;
 }

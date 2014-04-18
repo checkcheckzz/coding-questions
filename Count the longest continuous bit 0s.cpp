@@ -1,7 +1,5 @@
 /*
-
 count the longest continuous bit 0s in array
-
 */
 
 
@@ -11,16 +9,9 @@ O(n) time, O(1) space
 
 */
 
-/*
-Input: 
-Output:
-*/
-
  
-int getLongestZeroBit(int array[], int len)
-{
-    
- 
+int getLongestZeroBit(int array[], int len) {
+     
     int result = 0;
     int curbitlength = 0;
     for (int i = 0; i < len; i++) {

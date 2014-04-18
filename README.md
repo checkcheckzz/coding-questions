@@ -8,7 +8,7 @@ original work. But I also don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
 
-Total Number (not including the problem in the special topics at last): about 199 (118 done).
+Total Number (not including the problem in the special topics at last): about 175 (121 done).
 
 Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
@@ -123,7 +123,7 @@ Construct a tree by a list of pairs
 
 [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/Vertical%20sum%20in%20a%20binary%20tree.cpp)
 
-Maximal path sum of n-way tree
+[Maximal path sum of n-way tree](https://github.com/checkcheckzz/coding-problem/blob/master/Maximalpathsum.cpp)
 
 
 
@@ -213,13 +213,13 @@ Pair with largest common words
 
 [Isomorphic Strings](https://github.com/checkcheckzz/coding-problem/blob/master/Mapstring.cpp)
 
-Implementate string.split()
+Implement string.split()
 
-Ordered mininum window substring
+[Ordered minimum window substring](https://github.com/checkcheckzz/coding-problem/blob/master/Orderedminimumwindowsubstring.cpp)
 
-Find all the possible interleavings of two input strings
+[Find all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/Allinterleaves.cpp)
 
-Given a string s and a dictionary , find the a word break way with minimal number of words 
+[Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/Minimalwordbreakc.pp)
 
 Implement regular expression
 

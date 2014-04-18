@@ -22,8 +22,7 @@ using namespace std;
 string multiply(string num1, string num2) {
         int N = num1.length(), M = num2.length();
         string res(N+M, '0');
-        for (int i = N - 1; i >= 0; --i)
-        {
+        for (int i = N - 1; i >= 0; --i) {
             int carry = 0;
             int j;
             for (j = M - 1; j >= 0; --j)
@@ -35,55 +34,48 @@ string multiply(string num1, string num2) {
             }
             res[i+j+1] += carry;
         }
-        while (res.length() > 1 && res[0] == '0')
+        while (res.length() > 1 && res[0] == '0') {
             res.erase(res.begin());
+        }			
         return res;
 }
 
 string factorialDigitSumInner(string num){
-
+	  	  
+    int iter = 0;
+    int temp = 0;
+    while (iter < num.length()) {
+        temp += temp * 10 + num[iter]-'0';
+        iter++;
+    }
 	  
-	  
-	  int iter = 0;
-	  int temp = 0;
-	  while (iter < num.length()) {
-		  temp += temp * 10 + num[iter]-'0';
-		  iter++;
-	  }
-	  
-	  if (temp == 0) return "1";
-
-	  temp --;
-	  char p[32];
-	  itoa(temp, p, 10);
-
-	  string numdecrease = p;
-
-	  return  multiply(num, factorialDigitSumInner(numdecrease));
-
+    if (temp == 0) return "1";
+    temp --;
+    char p[32]; 
+    itoa(temp, p, 10);
+    string numdecrease = p;
+    return  multiply(num, factorialDigitSumInner(numdecrease));
 }
 
 int factorialDigitSum(int num){
 
-	assert(num > 0);
-	char p[32];
-	itoa(num, p, 10);
-	string numstr = p;
-
+    assert(num > 0);
+    char p[32];
+    itoa(num, p, 10);
+    string numstr = p;
     string result = factorialDigitSumInner(numstr);
-	int iter = 0;
-	int sum = 0;
-	while (iter < result.length()) {
+    int iter = 0;
+    int sum = 0;
+    while (iter < result.length()) {
 
-		sum += result[iter] - '0';
-		iter++;
+        sum += result[iter] - '0';
+        iter++;
 	}
-	return sum;
+    return sum;
 }
 
 int main() {
 
-
-	cout<<factorialDigitSum(7)<<endl;
-	return 0;
+    cout<<factorialDigitSum(7)<<endl;
+    return 0;
 }

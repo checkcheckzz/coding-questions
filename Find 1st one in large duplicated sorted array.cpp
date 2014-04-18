@@ -13,8 +13,7 @@ O(logn) time, O(1) space
 */
 
 
-int getFirstPosition(int arr[], int len, int target)
-{
+int getFirstPosition(int arr[], int len, int target) {
     assert(arr && len > 0);
  
     int beg = 0;

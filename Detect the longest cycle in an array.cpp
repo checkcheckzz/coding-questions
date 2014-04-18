@@ -21,8 +21,7 @@ O(n) time, O(n) space
 #include<cassert>
 using namespace std;
 
-void detectLongestCycleInner(int start, int idx, int arr[], vector<bool>& visited, int &len) 
-{
+void detectLongestCycleInner(int start, int idx, int arr[], vector<bool>& visited, int &len) {
      visited[idx] = true;
      len++;
      
@@ -45,8 +44,7 @@ Output: the length of longest cycle.
 
 */
 
-int detectLongestCycle(int arr[], int len)
-{
+int detectLongestCycle(int arr[], int len) {
 
 	int maxlen=0;
 	int curlen=0;
@@ -71,12 +69,9 @@ int detectLongestCycle(int arr[], int len)
 
 }
 
-int main()
-{
-	int a[]={3, 2, 1, 4, 0};
-
-	cout<<detectLongestCycle(a, 5)<<endl;
-
-	return 0;
-
+int main() {
+	int a[] = {3, 2, 1, 4, 0};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    cout<<detectLongestCycle(a, len)<<endl;
+    return 0;
 }

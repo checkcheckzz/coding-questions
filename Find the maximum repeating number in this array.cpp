@@ -23,8 +23,8 @@ O(n) time, O(1) space
 #include<iostream>
 using namespace std;
 
-int maxRepeat(int arr[], int len)
-{
+int maxRepeat(int arr[], int len) {
+
     for(int i = 0; i < len; i++) {
     
          int num = arr[i]%len;
@@ -37,10 +37,8 @@ int maxRepeat(int arr[], int len)
     for(int i = 0; i <len; i++) {
     
         if(arr[i]/len > maxcount) {  
-        
-	  maxcount = arr[i]/len;
-          result = i;
-          
+            maxcount = arr[i]/len;
+            result = i;        
         }
     }
    
@@ -53,10 +51,9 @@ int maxRepeat(int arr[], int len)
 	 
 }
 
-int main()
-{
-	int a[]={1, 3, 3, 2, 0, 2, 0, 2, 3, 8, 2, 9, 2, 3};
-	cout<<maxRepeat(a,14)<<endl;
-
-	return 0;
+int main() {
+    int arr[]={1, 3, 3, 2, 0, 2, 0, 2, 3, 8, 2, 9, 2, 3};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    cout<<maxRepeat(arr, len)<<endl;
+    return 0;
 }

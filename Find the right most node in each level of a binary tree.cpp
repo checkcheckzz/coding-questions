@@ -13,8 +13,7 @@ O(n) time
 #include<vector>
 using namespace std;
 
-struct NODE
-{
+struct NODE {
     int val;
     NODE* pLft;
     NODE* pRgt;
@@ -22,17 +21,14 @@ struct NODE
     NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
 };
 
-void getRightMostBTInner(NODE* Node, vector<NODE*> &vec, int Lev)
-{
-    if (Node == NULL) {
-    
-        return;
-    }    
- 
+void getRightMostBTInner(NODE* Node, vector<NODE*> &vec, int Lev) {
+
+    if (Node == NULL) return;
+      
     if (Lev >= vec.size()) {
     
         vec.push_back(Node);
-	cout<<Node->val;
+        cout<<Node->val;
     }
 	
  
@@ -40,23 +36,21 @@ void getRightMostBTInner(NODE* Node, vector<NODE*> &vec, int Lev)
     getRightMostBTInner(Node->pLft, vec, Lev+1);
 }
  
-vector<NODE*> getRightMostBT(NODE* root)
-{
+vector<NODE*> getRightMostBT(NODE* root) {
+
     vector<NODE*> vec;
     getRightMostBThelp(root, vec, 0);
- 
+
     return vec;
 }
 
 int main(){
 
-	NODE *head=new NODE(2);
-	head->pLft=new NODE(3);
-	head->pRgt=new NODE(5);
-	head->pRgt->pRgt=new NODE(7);
-
-	getRightMostBT(head);
-	
+    NODE *head=new NODE(2);
+    head->pLft=new NODE(3);
+    head->pRgt=new NODE(5);
+    head->pRgt->pRgt=new NODE(7);
+    getRightMostBT(head);
 	return 0;
 }
 

@@ -35,8 +35,7 @@ void generateMatchStringInner(string s, int index, vector<string> &result) {
         string temp2 = s;
         temp2[index] = '1';
         generateMatchStringInner(temp2, index+1, result);
-    }
-    else {
+    } else {
         generateMatchStringInner(s, index+1, result);
     }
 }
@@ -55,15 +54,11 @@ vector<string> generateMatchString(const string &s) {
 
 int main() {
 
-	string str ="1??";
-
+    string str ="1??";
     vector<string> result = generateMatchString(str);
+    for (size_t i = 0; i < result.size(); ++i) {
 
-	
-	for (size_t i = 0; i < result.size(); ++i) {
-
-		cout<<result[i]<<endl;
-	}
-
-	return 0;
+        cout<<result[i]<<endl;
+    }
+    return 0;
 }

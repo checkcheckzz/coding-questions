@@ -19,7 +19,7 @@ O(n^2logn) time, O(1) space
 #include<algorithm>
 using namespace std;
 
-void qsort(int a[], int s, int e){
+void qsort(int a[], int s, int e) {
 
   int i = s, j = e, temp = a[s];
   
@@ -40,8 +40,7 @@ void qsort(int a[], int s, int e){
 }
 
 
-bool graphExist(int graph[], int len)
-{
+bool graphExist(int graph[], int len) {
 	
 	for (int i = len-1; i >= 0; --i) {
 	
@@ -75,8 +74,7 @@ bool graphExist(int graph[], int len)
 
 }
 
-int main()
-{
+int main() {
 	const int len = 5;
 	int graph[len] = {2,4,2,3,3};
 	

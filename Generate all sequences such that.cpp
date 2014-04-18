@@ -28,30 +28,24 @@ O(n) time, O(1) space
 
 using namespace std;
 
-void oneInterleaveSeq(int arr[], int len)
-{
-   if(len<=1) {
+void oneInterleaveSeq(int arr[], int len) {
+
+   if(len <= 1) return;
   
-     return;
-  
-   }
-  
- 
    for(int i = 0 ; i < len-1 ; ++i) {
    
-    if((i % 2 == 0 && arr[i] > arr[i+1]) ||(i % 2 == 1 && arr[i] < arr[i+1])) {
+        if((i % 2 == 0 && arr[i] > arr[i+1]) ||(i % 2 == 1 && arr[i] < arr[i+1])) {
     
-       swap(arr[i],arr[i+1]);
+        swap(arr[i],arr[i+1]);
    }
 
 }
 
-void printarr(int arr[], int len)
-{
-	for(int i=0; i<len; i++) {
+void printarr(int arr[], int len) {
+    for(int i=0; i<len; i++) {
 	
-		cout<<arr[i]<<" ";
-        }		
+        cout<<arr[i]<<" ";
+    }		
 	cout<<endl;
 }
 
@@ -68,10 +62,7 @@ solution: backtracking
 
 */
 
-
-
-void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visited)
-{
+void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visited) {
 	if(cur.size() == nums.size()) {
 	
 		copy(cur.begin(), cur.end(), ostream_iterator<int>(cout," "));
@@ -126,15 +117,14 @@ void allInterleaveSeq(vector<int>& nums)
 
 int main()
 {
-	int a[]={1,2,4,5,6};
-	oneInterleaveSeq(a,5);
-	printarr(a,5);
+	int arr[] = {1,2,4,5,6};
+    int len = sizeof(arr)/sizeof(arr[0]);
+	oneInterleaveSeq(arr, len);
+	printarr(arr,5);
 
 	vector<int> b(5,0);
 	b[0]=1,b[1]=2, b[2]=4, b[3]=5, b[4]=6;
 	allInterleaveSeq(b);
 
-	int tt;
-	cin>>tt;
 	return 0;
 }
