@@ -123,9 +123,9 @@ void freeEvents(vector<Event*>& events) {
 int main() {
 
     vector<Event*> events;
-	//gatherEvents(events);
-	//Input:
-	//1 11 5, 2 6 7, 3 13 9, 12 7 16, 14 3 25, 19 18 22, 23 13 29, 24 2 28
+    //gatherEvents(events);
+    //Input:
+    //1 11 5, 2 6 7, 3 13 9, 12 7 16, 14 3 25, 19 18 22, 23 13 29, 24 2 28
     events.push_back(new Event(11, 1, Event::START));
     events.push_back(new Event(11, 5, Event::END));
     events.push_back(new Event(6, 2, Event::START));
@@ -142,13 +142,12 @@ int main() {
     events.push_back(new Event(13, 29, Event::END));
     events.push_back(new Event(2, 24, Event::START));
     events.push_back(new Event(2, 28, Event::END));
-	sort(events.begin(), events.end(), cmpEvent);
-	skylineOutput(events);
+    sort(events.begin(), events.end(), cmpEvent);
+    skylineOutput(events);
 
-	//Output: 
-	//1 11 3 13 9 0 12 7 16 3 19 18 22 3 23 13 29 0
-	freeEvents(events);
-
+    //Output: 
+    //1 11 3 13 9 0 12 7 16 3 19 18 22 3 23 13 29 0
+    freeEvents(events);
     return 0;
 }
 

@@ -2,8 +2,7 @@
 Write an iterator for binary tree. 
 */
 
-struct NODE 
-{
+struct NODE {
     int val;
     NODE* pLft;
     NODE* pRgt;
@@ -15,18 +14,15 @@ struct NODE
 Here is the inorder iterator.
 */
 
-class BinaryTreeIterator
-{
+class BinaryTreeIterator {
 
 public:
-    void iterconstruct(NODE* root)
-    { 
+    void iterconstruct(NODE* root) { 
        buildIter(root);
      
     }
  
-    NODE *Next()
-    {
+    NODE *Next() {
         if (stk.empty()) return NULL;
  
         NODE* ret = stk.top();
@@ -38,8 +34,7 @@ public:
     }
  
 private:
-    void buildIter(NODE* node)
-    {
+    void buildIter(NODE* node) {
         while (node != NULL) {
         
             stk.push(node);
@@ -50,5 +45,6 @@ private:
     stack<NODE*> stk;
    
 };
+
 
 

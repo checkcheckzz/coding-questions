@@ -79,10 +79,8 @@ void printEqualProduct(int num) {
 
 int main() {
 
-	int num = 4;
-
-	printEqualProduct(num);
-
-	return 0;
+    int num = 4;
+    printEqualProduct(num);
+    return 0;
 
 }

@@ -35,43 +35,37 @@ using namespace std;
 
 
 
-int sumDigits(int num){
+int sumDigits(int num) {
 
-	int sum = 0;
-	while (num) {
+    int sum = 0;
+    while (num) {
+        int digit = num % 10;
+        num = num / 10;
+        sum += digit * digit;
+    }
 
-	  int digit = num % 10;
-	  num = num / 10;
-	  sum += digit * digit;
-	}
-
-	return sum;
+    return sum;
 }
 
-bool isHappyNum(int num, set<int> &st ){
+bool isHappyNum(int num, set<int> &st ) {
 
-	while (num > 1 && st.find(num) == st.end()) {
+    while (num > 1 && st.find(num) == st.end()) {
 
-		st.insert(num);
-		num = sumDigits(num);
+        st.insert(num);
+        num = sumDigits(num);
 
-	}
+    }
 
-	if (num == 1) return true;
-
-	return false;
-
-
+   if (num == 1) return true;
+   return false;
 }
 
 int main() {
 
-	int num = 13;
-
-	set<int> st;
-	cout<<isHappyNum(num, st)<<endl;
-
-	return 0;
+    int num = 13;
+    set<int> st;
+    cout<<isHappyNum(num, st)<<endl;
+    return 0;
 
 }
 

@@ -10,8 +10,7 @@ solution1: iterate the end and begin position
 O(n^2) time, O(1) space
 */
 
-int findShortest1(vector<int>& num, int s)
-{
+int findShortest1(vector<int>& num, int s) {
 	int sum = 0;
 	int start = 0, end = 0;
 	int result = num.size() + 1;
@@ -36,8 +35,7 @@ solution2: use queue to store the subarray
 O(n^2) worst time, O(n) space
 */
 
-int findShortest2(vector<int>& num,int s)
-{
+int findShortest2(vector<int>& num,int s) {
 	int len = num.size();
 	queue<int> q;
 	int result = len + 1, sum = 0;
@@ -70,8 +68,7 @@ O(nlogn) time, O(logn) space
 #include<iostream>
 using namespace std;
 
-int searchSubarray(int arr[], int len, int k)
-{
+int searchSubarray(int arr[], int len, int k) {
 	//quicksort partition
 
     if (1 == len || 0 == len) return len;
@@ -110,8 +107,7 @@ int searchSubarray(int arr[], int len, int k)
     return searchSubarray(arr, partition, k);
 }
  
-int findShortest3(int arr[], int len, int k)
-{
+int findShortest3(int arr[], int len, int k) {
     if (k < 0) {  //k negative is a special case
     
         int maxnum = arr[0];
@@ -149,11 +145,12 @@ int findShortest3(int arr[], int len, int k)
     return searchSubarray(arr+i, len-i, k);   //search from positive element
 }
 
-int main()
-{
-	int a[4] = {1,2,3,4};
-	cout<<findShortest3(a,4,6)<<endl;
-	return 0;
+int main() {
+    int arr[] = {1,2,3,4};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    int k = 6;
+    cout<<findShortest3(arr, len, k)<<endl;
+    return 0;
 
 }
 

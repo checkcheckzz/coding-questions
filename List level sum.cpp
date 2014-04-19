@@ -10,8 +10,7 @@ Because C++ can not handle a list with either list or a number, the solution is 
 
 */
 
-public static int sum(List<Object> list, int level)
-{
+public static int sum(List<Object> list, int level) {
         int result = 0;
         for (Object obj:list) {
         

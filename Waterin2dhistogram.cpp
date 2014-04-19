@@ -20,7 +20,7 @@ O(n*n*logn) time, O(n*n) space
 #include<vector>
 using namespace std;
 
-struct Cell{
+struct Cell {
 
     int x;
     int y;
@@ -44,7 +44,7 @@ vector<vector<int> > mat(m, vector<int>(n, 0));
 
 
 
-void check(int x, int y, int lowest, int &result){
+void check(int x, int y, int lowest, int &result) {
 
     if(x < 0 || x >= m || y < 0 || y >= n || visited[x][y]) return;
     if(mat[x][y] < lowest) result += lowest - mat[x][y];
@@ -52,11 +52,11 @@ void check(int x, int y, int lowest, int &result){
     minheap.push(new Cell(x,y, max(lowest, mat[x][y])));
 }
 
-int waterin2DHistogram(){
+int waterin2DHistogram() {
 
 	int result = 0;
 	//push four borders at first
-    for(int i = 0; i < m; i++){
+    for(int i = 0; i < m; i++) {
         visited[i][0] = true;
         minheap.push(new Cell(i,0,mat[i][0]));
                 
@@ -64,7 +64,7 @@ int waterin2DHistogram(){
         minheap.push(new Cell(i,n-1,mat[i][n-1]));
     }
         
-    for(int j = 1; j< n - 1 ;j++){
+    for(int j = 1; j< n - 1 ;j++) {
         visited[0][j] = true;
         minheap.push(new Cell(0,j,mat[0][j]));
                 
@@ -72,7 +72,7 @@ int waterin2DHistogram(){
         minheap.push(new Cell(m-1,j,mat[m-1][j]));
     }
 
-    while(! minheap.empty()){
+    while(! minheap.empty()) {
         Cell *curr = minheap.top();
 		minheap.pop();
         check(curr->x -1,curr->y,curr->height,result);
@@ -85,16 +85,14 @@ int waterin2DHistogram(){
 }
 
 
-int main(){
+int main() {
 
-	for (int i = 0; i < m; i++)
-		for (int j = 0; j < n; j++)
-			 mat[i][j] = 3;
+    for (int i = 0; i < m; i++)
+        for (int j = 0; j < n; j++)
+            mat[i][j] = 3;
 
-	mat[m/2][n/2] = 1;
-    
+    mat[m/2][n/2] = 1;
     cout<<waterin2DHistogram()<<endl;
-
-	return 0;
+    return 0;
 }
 

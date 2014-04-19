@@ -18,34 +18,32 @@ using namespace std;
 
 int partition(int arr[], int len) {
 
-        assert(arr && len >0);
-
-        int sum = 0;
-        for (int i = 0; i < len; ++i) {
-            sum += arr[i];
-        }
-        int pos = -1;
-        int diff = INT_MAX;
-        int left = 0;
-        for (int i = 0; i < len; ++i) {
-            
-            int right = sum - left - arr[i];
-
-            if (abs(right - left) < diff) {
-                pos = i;
-				diff = abs(right - left);
-            }
-
-			left += arr[i];
-        }
-        return pos;
+    assert(arr && len >0);
+    int sum = 0;
+    for (int i = 0; i < len; ++i) {
+        sum += arr[i];
     }
+    int pos = -1;
+    int diff = INT_MAX;
+    int left = 0;
+    for (int i = 0; i < len; ++i) {
+            
+        int right = sum - left - arr[i];
+        if (abs(right - left) < diff) {
+            pos = i;
+            diff = abs(right - left);
+        }
+
+        left += arr[i];
+    }
+    return pos;
+}
 
 
 int main(){
 
-	int arr[]= {1, 5, 7, 12, 10, 11, 7, 5, 1};
+    int arr[]= {1, 5, 7, 12, 10, 11, 7, 5, 1};
     int len = sizeof(arr)/sizeof(arr[0]);
-	cout<<partition(arr, len)<<endl;
-	return 0;
+    cout<<partition(arr, len)<<endl;
+    return 0;
 }

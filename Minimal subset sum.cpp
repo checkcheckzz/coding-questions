@@ -24,8 +24,7 @@ O(n*sum) time, O(n*sum) space
 using namespace std;
 
 
-int findPartiion(int arr[], int len)
-{
+int findPartiion(int arr[], int len) {
     int sum = 0;
     int i, j;
    
@@ -80,11 +79,11 @@ int findPartiion(int arr[], int len)
     return  sum - 2 * largest;
 }     
 
-int main()
-{
+int main() {
 
-	int a[5] = {3, 5, 7, 11, 13};
-	cout<<findPartiion(a,5)<<endl;
-	return 0;
+    int arr[5] = {3, 5, 7, 11, 13};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    cout<<findPartiion(arr,len)<<endl;
+    return 0;
 
 }

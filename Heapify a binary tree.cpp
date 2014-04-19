@@ -8,8 +8,7 @@ O(n) time
 #include<iostream>
 using namespace std;
 
-struct NODE 
-{
+struct NODE  {
     int val;
     NODE* plft;
     NODE* prgt;
@@ -69,22 +68,16 @@ void heapifyBinaryTree(NODE *root) {
 
 int main() {
 
-	NODE *root = new NODE(1);
-	root->plft = new NODE(2);
-	root->prgt = new NODE(3);
-	root->prgt->plft = new NODE(5);
-
-	heapifyBinaryTree(root);
-
-	cout<<root->val<<endl;
-
-	cout<<root->plft->val<<endl;
-
-	cout<<root->prgt->val<<endl;
-
-	cout<<root->prgt->plft->val<<endl;
-
-	return 0;
+    NODE *root = new NODE(1);
+    root->plft = new NODE(2);
+    root->prgt = new NODE(3);
+    root->prgt->plft = new NODE(5);
+    heapifyBinaryTree(root);
+    cout<<root->val<<endl;
+    cout<<root->plft->val<<endl;
+    cout<<root->prgt->val<<endl;
+    cout<<root->prgt->plft->val<<endl;
+    return 0;
 
 }
 

@@ -23,20 +23,18 @@ void *memStart; //the memory address which malloc searches from.
 void *lastAddr; //last effective memory address
 int hasInit;
 
-void init()
-{
+void init() {
     lastAddr = sbrk(0); //initialize the last effective memory address as the stack end
 
 memStart = lastAddr; 
 hasInit = 1;
 }
 
-void* malloc_mem(int num)
-{
+void* malloc_mem(int num) {
 	if (!hasInit) {
 	
 		init();
-        }
+    }
         
 	void *current = memStart; 
 	
@@ -77,8 +75,7 @@ void* malloc_mem(int num)
 free memory function
 */
 
-void free_mem(void *start)
-{
+void free_mem(void *start) {
     mcb *pmcb = (mcb *)(start - sizeof(mcb));
     pmcb->available = 1;
 }

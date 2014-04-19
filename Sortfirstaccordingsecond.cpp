@@ -28,25 +28,22 @@ unordered_map<string, int> mp;
 
 bool lessThan(string str1, string str2) {
 
-      int order1 = mp[str1];
-      int order2 = mp[str2];
+    int order1 = mp[str1];
+    int order2 = mp[str2];
            
-      if (order1 < order2) {
-		  return true;
-	  } else {
+    if (order1 < order2) {
+        return true;
+    } else {
 
-		  return false;
+        return false;
      
-	 }
-	 
-       
+    }
 }
 
 
-void sortTwoArray(vector<string> &arr1, vector<string> &arr2)
-{
+void sortTwoArray(vector<string> &arr1, vector<string> &arr2) {
     
-     for(size_t i = 0;i < arr2.size(); ++i){
+     for(size_t i = 0;i < arr2.size(); ++i) {
 
         mp[arr2[i]] = i;
      }
@@ -55,27 +52,23 @@ void sortTwoArray(vector<string> &arr1, vector<string> &arr2)
 }
 
 
-int main(){
+int main() {
 
-	vector<string> arr1;
-	arr1.push_back("abc");
-	arr1.push_back("ddd");
-	arr1.push_back("ft");
+    vector<string> arr1;
+    arr1.push_back("abc");
+    arr1.push_back("ddd");
+    arr1.push_back("ft");
+    vector<string> arr2;
+    arr2.push_back("ddd");
+    arr2.push_back("wt");
+    arr2.push_back("ft");
+    arr2.push_back("zzt");
+    arr2.push_back("abc");
 
-	vector<string> arr2;
+    sortTwoArray(arr1, arr2);
+    for (size_t i = 0; i < arr1.size(); ++i) {
 
-	arr2.push_back("ddd");
-	arr2.push_back("wt");
-	arr2.push_back("ft");
-	arr2.push_back("zzt");
-	arr2.push_back("abc");
-
-	sortTwoArray(arr1, arr2);
-
-	for (size_t i = 0; i < arr1.size(); ++i){
-
-		cout<<arr1[i]<<endl;
-	}
-
-	return 0;
+        cout<<arr1[i]<<endl;
+    }
+    return 0;
 }

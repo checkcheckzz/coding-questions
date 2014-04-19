@@ -114,13 +114,12 @@ int calculateVovewlProduct(string str) {
 
 int main(){
 
-	string str1 = "Google Guy";
-	string str2 = "myopia";
-	string str3 = "I'm Feeling Yucky!";
-	cout<<calculateVovewlProduct(str1)<<endl;
-	cout<<calculateVovewlProduct(str2)<<endl;
-	cout<<calculateVovewlProduct(str3)<<endl;
- 
-	return 0;
+    string str1 = "Google Guy";
+    string str2 = "myopia";
+    string str3 = "I'm Feeling Yucky!";
+    cout<<calculateVovewlProduct(str1)<<endl;
+    cout<<calculateVovewlProduct(str2)<<endl;
+    cout<<calculateVovewlProduct(str3)<<endl;
+    return 0;
 
 }

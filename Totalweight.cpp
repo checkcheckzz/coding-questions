@@ -25,13 +25,12 @@ O(n) time, O(n) space
 #include<queue>
 using namespace std;
 
-void printSubTreeSum(vector<vector<int> > &relation, int node)
-{   
-	int size = relation.size();
+void printSubTreeSum(vector<vector<int> > &relation, int node) {   
+    int size = relation.size();
     if(node == 0 || size == 0) return;
     vector<int> outdegree(node, 0);
     vector<int> totalweight(node,0);
-	vector<int> orgweight(node,0);
+    vector<int> orgweight(node,0);
     vector<int> parentindex(node,-1);
 	
     for(int i = 0;i < size;i++) {
@@ -39,7 +38,7 @@ void printSubTreeSum(vector<vector<int> > &relation, int node)
         outdegree[relation[i][1]]++;
         totalweight[relation[i][0]] = relation[i][2];
         parentindex[relation[i][0]] = relation[i][1];
-		orgweight[relation[i][0]] = relation[i][2];
+        orgweight[relation[i][0]] = relation[i][2];
     }
 
     queue<int> q;

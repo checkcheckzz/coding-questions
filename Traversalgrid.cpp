@@ -17,14 +17,12 @@ solution: backtracking
 #include<iostream>
 using namespace std;
 
-void probLive(int xdim, int ydim, int startx, int starty, float &alive, float &death, int step, int N)
-{    
+void probLive(int xdim, int ydim, int startx, int starty, float &alive, float &death, int step, int N) {    
     if(step==N && startx>=0 && starty>=0 && startx<xdim && starty<ydim) {
     
         alive++;
         return;
-    }
-    else if((step<=N) && (startx<0 || starty<0 || startx>=xdim || starty>=ydim)) {
+    } else if((step<=N) && (startx<0 || starty<0 || startx>=xdim || starty>=ydim)) {
     
         death++;
         return;
@@ -37,16 +35,14 @@ void probLive(int xdim, int ydim, int startx, int starty, float &alive, float &d
     }
 }
 
-int main()
-{
-	int xdim = 5, ydim = 4;
-	int startx = 3, starty = 2;
-	float alive = 0.0, death = 0.0;
-	int N = 8;
-	probLive(xdim, ydim, startx, starty, alive, death, 0, N);
-	cout<<a/(a+b);
-
-	return 0;
+int main() {
+    int xdim = 5, ydim = 4;
+    int startx = 3, starty = 2;
+    float alive = 0.0, death = 0.0;
+    int N = 8;
+    probLive(xdim, ydim, startx, starty, alive, death, 0, N);
+    cout<<a/(a+b);
+    return 0;
 }
 
 

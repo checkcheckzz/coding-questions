@@ -87,7 +87,6 @@ void verticalSum(Node *root) {
 
 int main() {
 
-
 	Node *root = new Node(1);
 	root->plft = new Node(2);
 	root->prgt = new Node(3);

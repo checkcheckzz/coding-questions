@@ -13,15 +13,15 @@ O(num/2) time, O(1) space
 #include<math.h>
 using namespace std;
 
-void findSquareSum(int num){
+void findSquareSum(int num) {
 
-	for (int a = 1, lena = (int)sqrt((double)num); a < lena ;++a){
+	for (int a = 1, lena = (int)sqrt((double)num); a < lena ;++a) {
 
 		for (int b = 1, lenb = (int)sqrt((double)num); b < lenb && b <= a ;++b) {
 
-			if(a * a + b * b <=num){
+			if(a * a + b * b <=num) {
 
-			cout<<"the number is "<<a * a<<"+"<<b * b<<" = "<<a * a + b * b<<endl;
+			    cout<<"the number is "<<a * a<<"+"<<b * b<<" = "<<a * a + b * b<<endl;
 
 			}
 
@@ -35,8 +35,7 @@ void findSquareSum(int num){
 int main() {
     
     int num = 16
-	findSquareSum(num);
-
-	return 0;
+    findSquareSum(num);
+    return 0;
 
 }

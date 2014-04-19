@@ -33,12 +33,11 @@ O(n^3) time, O(n^3) space
 #include<algorithm>
 using namespace std;
 
-//For simpicilty, we declare the matrix with fixed size at the beginning
+//For simplicity, we declare the matrix with fixed size at the beginning
 int dp[100][50][50];
 int map[50][50];
 
-int maxFour(int a, int b, int c, int d)
-{
+int maxFour(int a, int b, int c, int d) {
     int maxab, maxcd;
     
     maxab = max(a, b);
@@ -48,7 +47,7 @@ int maxFour(int a, int b, int c, int d)
 }
 
 
-int maximalPathGain(int map[][9], int m, int n){
+int maximalPathGain(int map[][9], int m, int n) {
 
     for (int k = 2; k <= m + n; k ++) { //maximal step is m+n, we decreae m, n by one here.
 
@@ -73,10 +72,7 @@ int maximalPathGain(int map[][9], int m, int n){
 
 int main(){
 
-	
-
-
-	int map[9][9]={
+    int map[9][9]={
 
         {1,2,3,0,4,1,5,7,0},
         {1,0,1,1,1,1,1,0,2},
@@ -86,14 +82,11 @@ int main(){
         {1,4,1,3,0,0,1,1,1},
         {1,5,1,0,4,0,9,6,1},
         {5,1,1,6,0,0,1,1,1},
-		{1,1,1,2,3,0,2,3,1}
+        {1,1,1,2,3,0,2,3,1}
     };
-	memset(dp, 0, sizeof(dp)); 
-
-	cout<<maximalPathGain(map, 8, 8)<<endl;
-
-
-	return 0;
+    memset(dp, 0, sizeof(dp)); 
+    cout<<maximalPathGain(map, 8, 8)<<endl;
+    return 0;
 
 }
 

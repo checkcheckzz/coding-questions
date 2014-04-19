@@ -32,8 +32,7 @@ O(n) time, O(n) space
 #include<iostream>
 using namespace std;
 
-int longSubarrayEq(const vector<int>& a,const vector<int>& b)
-{
+int longSubarrayEq(const vector<int>& a,const vector<int>& b) {
 	int na = a.size(), nb = b.size();
 	assert(na == nb);
 	vector<int> c(na,0);

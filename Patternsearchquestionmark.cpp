@@ -50,21 +50,17 @@ vector<string> wordsMatch(vector<string> &words, string pattern) {
 
 int main(){
 
-
-	vector<string> words;
-	words.push_back("rbadd");
-	words.push_back("rb c ");
-	words.push_back("rbfw ");
-	words.push_back("rb ca");
-	words.push_back("rbfce");
-
-	string pattern = "rb?c?";
-
-	vector<string> result = wordsMatch(words, pattern);
-	for(size_t i =0; i < result.size(); ++i) {
-		cout<<result[i]<<endl;
-	}
-
-	return 0;
+    vector<string> words;
+    words.push_back("rbadd");
+    words.push_back("rb c ");
+    words.push_back("rbfw ");
+    words.push_back("rb ca");
+    words.push_back("rbfce");
+    string pattern = "rb?c?";
+    vector<string> result = wordsMatch(words, pattern);
+    for(size_t i =0; i < result.size(); ++i) {
+        cout<<result[i]<<endl;
+    }
+    return 0;
 }
 

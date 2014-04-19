@@ -45,7 +45,7 @@ int findIdWithMostPosts(int arr[], int len) {
 
 	 }
 
-	return id;
+    return id;
 }
 
 /*
@@ -55,8 +55,7 @@ O(n) time, O(1) space
 
 */
 
-void findIdWithMoreThanQuarterPosts(int arr[], int len, int Ids[])
-{
+void findIdWithMoreThanQuarterPosts(int arr[], int len, int Ids[]) {
     int Id = -1;
     int nTimes[3], i;
     nTimes[0] = nTimes[1] = nTimes[2] = 0;
@@ -101,20 +100,19 @@ void findIdWithMoreThanQuarterPosts(int arr[], int len, int Ids[])
 }
 
 
-int main(){
+int main() {
 
-
-	int arr[] = {5, 0, 1, 5, 3, 5, 5, 4, 5, 2, 0, 5, 5, 5};
-	cout<<findIdWithMostPosts(arr, 14)<<endl;
-	int arr1[] = {1, 2, 3, 5, 3, 2, 1};
-	int Ids[3] = {-1, -1, -1};
-	findIdWithMoreThanQuarterPosts(arr1, 7, Ids);
-	for (int i = 0; i <= 2; ++i){
-
-		cout<<Ids[i]<<endl;
-	}
-
-	return 0;
+    int arr[] = {5, 0, 1, 5, 3, 5, 5, 4, 5, 2, 0, 5, 5, 5};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    cout<<findIdWithMostPosts(arr, len)<<endl;
+    int arr1[] = {1, 2, 3, 5, 3, 2, 1};
+    int len = sizeof(arr1)/sizeof(arr1[0]);
+    int Ids[3] = {-1, -1, -1};
+    findIdWithMoreThanQuarterPosts(arr1, len, Ids);
+    for (int i = 0; i <= 2; ++i) {
+        cout<<Ids[i]<<endl;
+    }
+    return 0;
 
 }
 

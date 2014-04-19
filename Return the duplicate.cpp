@@ -65,11 +65,10 @@ int maxDupEqual(int arr[], int len) {
 
 int main() {
 
-	int arr[] = {3,7,4,3,6,1,3,6};
-
-	cout<<maxDupEqual(arr, 8)<<endl;
-
-	return 0;
+    int arr[] = {3,7,4,3,6,1,3,6};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    cout<<maxDupEqual(arr, len)<<endl;
+    return 0;
 }
 
 

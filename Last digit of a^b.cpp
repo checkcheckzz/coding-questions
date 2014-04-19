@@ -36,8 +36,8 @@ unsigned int lastDigit(unsigned int a, unsigned int b, map<unsigned int, unsigne
 
 int main(){
 	
-	map<unsigned int, unsigned int> mp;
-	mp[1]=1;
+    map<unsigned int, unsigned int> mp;
+    mp[1]=1;
     mp[2]=4;
     mp[3]=9;
     mp[4]=6;
@@ -47,6 +47,6 @@ int main(){
     mp[8]=4;
     mp[9]=1;
 
-	cout<<lastDigit(2, 35, mp)<<endl;
-	return 0;
+    cout<<lastDigit(2, 35, mp)<<endl;
+    return 0;
 }

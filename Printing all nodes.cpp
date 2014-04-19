@@ -5,14 +5,11 @@ Print all Nodes at a given distance from a starting Node in a binary tree
 */
 
 
-
 #include<iostream>
 #include<vector>
 #include<unordered_set>
 #include<queue>
 using namespace std;
-
-
 
 
 //The binary tree has parent link.
@@ -27,8 +24,7 @@ O(n) time, O(1) space
 
 */
 
-struct TNode
-{
+struct TNode {
     int val;
     TNode* plft;
     TNode* prgt;
@@ -50,23 +46,17 @@ void printDown(TNode * node, int k) {
 	}
 }
 //print above node from given node 
-void printAbove(TNode* node, int k) 
-{
+void printAbove(TNode* node, int k) {
+
 	if(node == NULL || k < 0) return;
 
 	TNode *parent = NULL;
-   
-	parent = node->parent;
-
-	
-
-	while(parent != NULL)
-	{
+    parent = node->parent;
+    while(parent != NULL) {
 	    k--;
 		if(k == 0)
 			cout<<parent->val<<endl;
-		else if(node == parent->plft)
-		{
+		else if(node == parent->plft) {
 			printDown(parent->prgt, k-1);
 		}
 		else {
@@ -75,24 +65,18 @@ void printAbove(TNode* node, int k)
 		
 		node = parent;
         parent  = parent->parent;
-		
-
-		
-	}
-
-
+    }
 }
 
 
-void printDistancekNodeP(TNode *start, int k){
+void printDistancekNodeP(TNode *start, int k) {
 
 	if (start == NULL || k < 0) return;
 
 	if (start->parent != NULL) {
 	  printAbove(start, k);
 	}
-
-	printDown(start, k);
+    printDown(start, k);
 
 }
 
@@ -105,10 +89,7 @@ solution:
 
 */
 
-
-
-struct Node
-{
+struct Node {
     int val;
     Node* plft;
     Node* prgt;

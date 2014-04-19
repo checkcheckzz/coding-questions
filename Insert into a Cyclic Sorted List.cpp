@@ -10,24 +10,22 @@ O(n) time, O(1) space
 
 */
  
-struct NODE 
-{
+struct NODE {
     int val;
     NODE* next;
  
     NODE(int x) : val(x), next(NULL) {}
 };
- 
-void insert(NODE* p, int x) //insert x after p
-{
+
+//insert x after p
+void insert(NODE* p, int x) {
     NODE* tmp = p->next;
     NODE* newnode = new NODE(x);
     p->next = newnode;
     newnode->next = tmp;
 }
  
-void insertToCycleLink(NODE* node, int x)
-{
+void insertToCycleLink(NODE* node, int x) {
     assert(node != NULL);
  
     NODE* iter = node;

@@ -64,10 +64,8 @@ int getMSD2(unsigned int num) {
 
 int main() {
 
-
-	unsigned int num=32;
-	cout<<getMSD1(num)<<endl;
-	cout<<getMSD2(num)<<endl;
-	return 0;
-
+    unsigned int num = 32;
+    cout<<getMSD1(num)<<endl;
+    cout<<getMSD2(num)<<endl;
+    return 0;
 }

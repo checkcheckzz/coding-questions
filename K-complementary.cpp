@@ -34,12 +34,12 @@ O(n) time, O(n) space
 using namespace std;
 
 
-int twoSumExtension(int arr[], int len, int k){
+int twoSumExtension(int arr[], int len, int k) {
 
         unordered_map<int, int> mp;
 
         int count = 0;
-        for(int i = 0; i < len; i++){
+        for(int i = 0; i < len; i++) {
 
             if(mp.find(arr[i]) == mp.end()){
                 mp[arr[i]] = 1;
@@ -49,7 +49,7 @@ int twoSumExtension(int arr[], int len, int k){
 			}
         }
 
-        for(int i = 0; i < len; i++){
+        for(int i = 0; i < len; i++) {
 
             if(mp.find(k - arr[i]) != mp.end() && mp[k - arr[i]] > 0){
                 if(arr[i] == k - arr[i]){
@@ -64,7 +64,7 @@ int twoSumExtension(int arr[], int len, int k){
             }
         }
         return count;
-    }
+}
 
 
 
@@ -72,9 +72,7 @@ int main(){
 
     int arr[]= {1, 8, -3, 0, 1, 3, -2, 4, 5};
     int len = sizeof(arr)/sizeof(arr[0]);
-	int k = 6;
-
-	cout<<twoSumExtension(arr, len, k)<<endl;
-
-	return 0;
+    int k = 6;
+    cout<<twoSumExtension(arr, len, k)<<endl;
+    return 0;
 }

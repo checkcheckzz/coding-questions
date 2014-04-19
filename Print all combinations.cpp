@@ -27,7 +27,7 @@ the result when sum == 0. In order to remove duplicates such as 1 + 2 and
 using namespace std;
 
 
-void printcombination(vector<int> vec){
+void printcombination(vector<int> vec) {
 
 	vector<int>::iterator it = vec.begin();
 
@@ -40,8 +40,7 @@ void printcombination(vector<int> vec){
 }
 
 
-void search(vector<int>& comb, int num, int target)
-{
+void search(vector<int>& comb, int num, int target) {
 	if ( num ==0 ) {
 
 		printcombination(comb);
@@ -60,17 +59,13 @@ void search(vector<int>& comb, int num, int target)
 	}
 }
 
-int main()
-{
-	
-	
-	vector<int> vec;
-	int num = 6;
-	int target = num;
+int main() {
 
-	search(vec, num, target);
-	
-	return 0;
+    vector<int> vec;
+    int num = 6;
+    int target = num;
+    search(vec, num, target);
+    return 0;
 }
 
 

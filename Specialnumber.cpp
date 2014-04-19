@@ -16,7 +16,7 @@ O(n^2/3) time, O(n) space
 #include<vector>
 using namespace std;
 
-void taxiCub(int n){
+void taxiCub(int n) {
 
     int limit = n; 
     vector<int> factor(n+1,0);
@@ -46,7 +46,6 @@ void taxiCub(int n){
 
 int main(){
 
-	taxiCub(10000);
-
-	return 0;
+    taxiCub(10000);
+    return 0;
 }

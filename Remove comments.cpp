@@ -7,8 +7,7 @@ Remove the comments in a string, comments are the chars after "//" or between "/
 #include<iostream>
 using namespace std;
 
-const char* removeComment(const char* org, char str[])
-{
+const char* removeComment(const char* org, char str[]) {
     if (org == NULL || str == NULL) return strN;
  
     const char* iter = org;
@@ -63,16 +62,14 @@ const char* removeComment(const char* org, char str[])
     return str;
 }
 
-int main()
-{
-	const char text[] = "fsdf /*teert */ afdsaf";
-	char res[] = "";
-	char *p = res;
-	removeComment(text, p);
-	
-	cout<<res<<endl;
-	
-	return 0;
+int main() {
+
+    const char text[] = "fsdf /*teert */ afdsaf";
+    char res[] = "";
+    char *p = res;
+    removeComment(text, p);
+    cout<<res<<endl;
+    return 0;
 
 }
 

@@ -70,22 +70,20 @@ Node* rightNeighbor(Node *node ){
 
 int main(){
 
-	Node *root = new Node(0);
-	root->left = new Node(1);
-	root->left->parent = root;
-	root->right = new Node(2);
-	root->right->parent = root;
-	root->left->left = new Node(3);
-	root->left->left->parent = root->left;
-	root->left->right = new Node(4);
-	root->left->right->parent = root->left;
-	root->right->right = new Node(5);
-	root->right->right->parent = root->right;
-	Node *p1 = root->left->left; //3
-	Node *p2 = root->left->right; //4
-	cout<<rightNeighbor(p1)->val<<endl;
-	cout<<rightNeighbor(p2)->val<<endl;
-
-
-	return 0;
+    Node *root = new Node(0);
+    root->left = new Node(1);
+    root->left->parent = root;
+    root->right = new Node(2);
+    root->right->parent = root;
+    root->left->left = new Node(3);
+    root->left->left->parent = root->left;
+    root->left->right = new Node(4);
+    root->left->right->parent = root->left;
+    root->right->right = new Node(5);
+    root->right->right->parent = root->right;
+    Node *p1 = root->left->left; //3
+    Node *p2 = root->left->right; //4
+    cout<<rightNeighbor(p1)->val<<endl;
+    cout<<rightNeighbor(p2)->val<<endl;
+    return 0;
 }

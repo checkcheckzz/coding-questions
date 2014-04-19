@@ -33,15 +33,15 @@ int dpMax[N][N] , dpMin[N][N];
 
 void stoneMinMaxScores(int num[], int len) {
 
-	int sum[N];
-	memset(sum , 0 , sizeof(sum));
-    for(int i = 1 ; i <= 2 * len ; i++){
+    int sum[N];
+    memset(sum , 0 , sizeof(sum));
+    for(int i = 1 ; i <= 2 * len ; i++) {
         dpMax[i][i] = dpMin[i][i] = 0;
         sum[i] = sum[i-1] + num[i];
     }
 
-    for(int k = 1 ; k < len ; k++){
-        for(int i = 1 ; i <= 2*len-k ; i++){
+    for(int k = 1 ; k < len ; k++) {
+        for(int i = 1 ; i <= 2*len-k ; i++) {
 			//k is the interval length
 			//i is the interval begin point
 			//j is the interval end point
@@ -59,7 +59,7 @@ void stoneMinMaxScores(int num[], int len) {
     }
     int minSco = INT_MAX;
     int maxSco = INT_MIN;
-    for(int i = 1 ; i <= len ; i++){ // note the index range here
+    for(int i = 1 ; i <= len ; i++) { // note the index range here
         minSco = min(minSco , dpMin[i][i+len-1]); 
         maxSco = max(maxSco , dpMax[i][i+len-1]); 
     }
@@ -69,17 +69,16 @@ void stoneMinMaxScores(int num[], int len) {
 
 int main(){
 
-	int org[] = {-1, 4, 4, 5, 9}; //does not use index 0
-	int len = 4;
-	int num[N];
-	for (int i = 1; i <=len; i++){
-		num[i] = org[i];
-	}
-    for (int i = 1; i <=len; i++){
-		num[i+len] = org[i];
-	}
-	stoneMinMaxScores(num, len);
-
+    int org[] = {-1, 4, 4, 5, 9}; //does not use index 0
+    int len = sizeof(org)/sizeof(org[0]);
+    int num[N];
+    for (int i = 1; i <=len; i++) {
+        num[i] = org[i];
+    }
+    for (int i = 1; i <=len; i++) {
+        num[i+len] = org[i];
+    }
+        stoneMinMaxScores(num, len);
     return 0;
 }
 

@@ -29,9 +29,7 @@ O(n) time, O(1) space
 #include <iostream>
 using namespace std;
 
-
-int rotateMinStep(int k, int len)
-{
+int rotateMinStep(int k, int len) {
   int p = k + 1;
   if (p < len - p) return p;
   return len - p;
@@ -69,13 +67,12 @@ int rotationDistance(int arr[], int len) {
 
 int main() {
 
-
-	 int arr[]= {4, 5, 6, 1, 2, 3};
-	 int arr1[]= {1, 2, 3, 4, 5, 6};
-	 int arr2[]= {2, 3, 4, 5, 6, 1};
-     int len = sizeof(arr)/sizeof(arr[0]);
-	 cout<<rotationDistance(arr, len)<<endl; //3
-	 cout<<rotationDistance(arr1, len)<<endl; //0
-	 cout<<rotationDistance(arr2, len)<<endl; //1
-	 return 0;
+    int arr[]= {4, 5, 6, 1, 2, 3};
+    int arr1[]= {1, 2, 3, 4, 5, 6};
+    int arr2[]= {2, 3, 4, 5, 6, 1};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    cout<<rotationDistance(arr, len)<<endl; //3
+    cout<<rotationDistance(arr1, len)<<endl; //0
+    cout<<rotationDistance(arr2, len)<<endl; //1
+    return 0;
 }

@@ -30,8 +30,7 @@ NULL), upperRight(NULL), downRight(NULL){}
 };
 
 TreeNode* copy( TreeNode* root) {
-    if( !root)
-        return NULL;
+    if( !root) return NULL;
     TreeNode* r = new TreeNode( root->pixel, root->size);
     r->upperLeft = copy( root->upperLeft);
     r->upperRight = copy( root->upperRight);
@@ -47,8 +46,7 @@ children. Thus we can only check whether root!=NULL.
 // count all the black pixels of this image
 
 int getBlackPixels( TreeNode* root) {
-    if(!root) 
-        return 0;
+    if(!root) return 0;
     if( !root->upperLeft) { //only need check one
         if( root->pixel)
             return root->size * root->size;
@@ -65,10 +63,10 @@ int getBlackPixels( TreeNode* root) {
 
 TreeNode* mergeHelper( TreeNode* image1, TreeNode* image2) {
         
-        if( !image1->pixel) {
-            return new TreeNode(image1->pixel, image1->size);
-        }
-        return copy(image2);
+    if( !image1->pixel) {
+        return new TreeNode(image1->pixel, image1->size);
+    } 
+    return copy(image2);
 }
 
 TreeNode* merge( const TreeNode* image1, const TreeNode* image2) {

@@ -24,7 +24,7 @@ using namespace std;
 
 
 
-bool isDuplicate(const string str){
+bool isDuplicate(const string str) {
 
 	int strlen = str.size();
 
@@ -54,25 +54,18 @@ bool isDuplicate(const string str){
 }
 
 
-
-
-
 int main(){
 
-
-	const string str1 = "xyzxy";
-	const string str2 = "bcdbcdbcde";
-	const string str3 = "aaaaaaaa";
-	const string str4 = "abcabcabcab";
-	const string str5 = "abaaabaa";
-
-	cout<<isDuplicate(str1)<<endl;
-	cout<<isDuplicate(str2)<<endl;
-	cout<<isDuplicate(str3)<<endl;
-	cout<<isDuplicate(str4)<<endl;
-	cout<<isDuplicate(str5)<<endl;
-
-
-	return 0;
+    const string str1 = "xyzxy";
+    const string str2 = "bcdbcdbcde";
+    const string str3 = "aaaaaaaa";
+    const string str4 = "abcabcabcab";
+    const string str5 = "abaaabaa";
+    cout<<isDuplicate(str1)<<endl;
+    cout<<isDuplicate(str2)<<endl;
+    cout<<isDuplicate(str3)<<endl;
+    cout<<isDuplicate(str4)<<endl;
+    cout<<isDuplicate(str5)<<endl;
+    return 0;
 }
 

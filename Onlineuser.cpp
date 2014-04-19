@@ -47,29 +47,24 @@ O(n) time, O(n) space
 #include<map>
 using namespace std;
 
-struct Log
-{
+struct Log {
     int login_time;
     int logout_time;
     Log(int in, int out): login_time(in), logout_time(out)
     {}
 };
 
-void online_user(vector<Log> &logs){
+void online_user(vector<Log> &logs) {
     if (logs.empty()) return;
-
-	
     map<float, int> mp;
-
     for (vector<Log>::const_iterator it = logs.begin(); 
-            it != logs.end(); ++it){
+            it != logs.end(); ++it) {
         mp[it->login_time]++;
         mp[it->logout_time]--;
     }
 
     float prevtime = mp.begin()->first;
     int usernum = mp.begin()->second;
-
     for (map<float, int>::const_iterator it = ++mp.begin();
     it != mp.end(); ++it) {
         if (it->second!=0) {
@@ -81,13 +76,11 @@ void online_user(vector<Log> &logs){
     cout << "[" << prevtime << " - " << "infinite) : 0 " << endl;
 }
 
-int main()
-{
+int main() {
     vector<Log> logs;
     logs.push_back(Log(0, 1));
     logs.push_back(Log(0, 2));
     logs.push_back(Log(1, 3));
     online_user(logs);
-
     return 0;
 }

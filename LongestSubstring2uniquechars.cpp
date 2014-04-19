@@ -18,8 +18,7 @@ O(n) time, O(n) space
 #include<string>
 using namespace std;
 
-string longestSubstringWithTwoUniqueChars(string &s)
-{
+string longestSubstringWithTwoUniqueChars(string &s) {
         if(s.size() <= 2) return s;
 
         size_t max_start = 0;
@@ -61,7 +60,7 @@ string longestSubstringWithTwoUniqueChars(string &s)
             ++i;
         }
 
-		return s;
+        return s;
 }
 
 int main() {

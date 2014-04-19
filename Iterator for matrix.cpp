@@ -4,15 +4,13 @@ iterator for a matrix
 
 */
 
-class MatrixIter
-{
+class MatrixIter {
  
 public:
 
   MatrixIter (vector<vector<int>>& matrix) : vecvec(matrix), ni(0), nj(0), Inited(false){}
  
-  bool hasNext()
-  {
+  bool hasNext() {
     // not last row
     if (i < vecvec.size()-1) return true;
 	// last row, but not last column
@@ -38,8 +36,7 @@ public:
  
 private:
 
-  void prob(int& i, int& j) //by reference
-  {
+  void prob(int& i, int& j) {//by reference
     i = ni;
     j = nj;
      
@@ -60,7 +57,5 @@ private:
   vector<vector<int>> &vecvec;
   int ni;
   int nj;
-
-
 };
 

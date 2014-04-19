@@ -1,6 +1,6 @@
 /*
 
-Preorder, Inorder, Postorder traversal of bT with stack
+Iterative Preorder, Inorder, Postorder traversal of binary tree
 
 */
 
@@ -17,8 +17,7 @@ O(n) time, O(n) space
 #include<iostream>
 using namespace std;
 
-struct NODE
-{
+struct NODE {
     int val;
     NODE* pLft;
     NODE* pRgt;
@@ -27,8 +26,7 @@ struct NODE
 };
 
 //postorder
-void postOrderTravel(NODE* root)
-{
+void postOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -65,8 +63,7 @@ void postOrderTravel(NODE* root)
 }
  
 //preorder
-void prevOrderTravel(NODE* root)
-{
+void prevOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -87,8 +84,7 @@ void prevOrderTravel(NODE* root)
  
 //inorder
 
-void inOrderTravel(NODE* root)
-{
+void inOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -117,12 +113,12 @@ void inOrderTravel(NODE* root)
 
 int main(){
 
-	NODE *head = new NODE(2);
-	head->pLft = new NODE(1);
-	head->pRgt = new NODE(3);
-	prevOrderTravel(head);
-	inOrderTravel(head);
-	postOrderTravel(head);
-	return 0;
+    NODE *head = new NODE(2);
+    head->pLft = new NODE(1);
+    head->pRgt = new NODE(3);
+    prevOrderTravel(head);
+    inOrderTravel(head);
+    postOrderTravel(head);
+    return 0;
 }
 

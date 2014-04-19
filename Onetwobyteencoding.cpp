@@ -28,17 +28,12 @@ O(n) time, O(1)space
 
 string function(string str) {
 
-
-    
     string res;
-   
     int len = str.size();
-
     if (firstBit(str[len - 1]) == 1) {
 
         res = "two-byte char";
     }
-
     for (i = len - 2; i >= 0 && firstBit(str[i]) == 1; i--) {
 
 

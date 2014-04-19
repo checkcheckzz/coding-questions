@@ -21,7 +21,7 @@ O(n) time, O(1) space
 #include<algorithm>
 using namespace std;
 
-void nextGreaterElement(int arr[], int len, int result[]){
+void nextGreaterElement(int arr[], int len, int result[]) {
 
     if (len <= 0) return;
 
@@ -50,17 +50,15 @@ void nextGreaterElement(int arr[], int len, int result[]){
 
 }
 
-int main(){
+int main() {
   
-	int arr[]= {11, 13, 21, 3};
+    int arr[]= {11, 13, 21, 3};
     int len = sizeof(arr)/sizeof(arr[0]);
-	int result[] = {-1, -1, -1, -1};
-
-	nextGreaterElement(arr, len, result);
-	for(int i = 0; i< len; ++i){
-		cout<<result[i]<<" ";
-	}
-	cout<<endl;
-
-	return 0;
+    int result[] = {-1, -1, -1, -1};
+    nextGreaterElement(arr, len, result);
+    for(int i = 0; i< len; ++i) {
+        cout<<result[i]<<" ";
+    }
+    cout<<endl;
+    return 0;
 }

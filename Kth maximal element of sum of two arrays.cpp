@@ -19,8 +19,7 @@ then push a[i-1]+b[j] and  a[i]+b[j-1] into heap.
 O(mlogm)+O(nlogn)+O(klogk) time, O(k) space
 */
 
-struct node
-{
+struct node{
     int a,b,val; //element index and their value sum
     node(int _a,int _b,int v): a(_a),b(_b),val(v) {}
 	
@@ -33,8 +32,7 @@ struct greater_note {
     }
 };
 
-int findKthSum1(int A[],int m,int B[],int n,int k)
-{
+int findKthSum1(int A[],int m,int B[],int n,int k) {
 	priority_queue<node,vector<node>,greater_note > Q; //build the max heap
 	Q.push(node(0,0,A[0]+B[0]));
 	set<pair<int,int> > visited;
@@ -72,8 +70,7 @@ O(mlogm)+O(nlogn) + O(log(maxsum-minsum))*O(m+n) time, O(1) space
 
 */
 
-int countSmaller(int A[],int m,int B[],int n,int piv)
-{
+int countSmaller(int A[],int m,int B[],int n,int piv) {
 	int pa = 0,pb = n - 1;
 	int cnt = 0;
 	for(; pa < m; ++pa) {
@@ -90,8 +87,7 @@ int countSmaller(int A[],int m,int B[],int n,int piv)
 	
 	return cnt;
 }
-int findKthSum2(int A[],int m,int B[],int n,int k)
-{
+int findKthSum2(int A[],int m,int B[],int n,int k) {
 	int l = A[0] + B[0];
 	int r = A[m-1] + B[n-1];
 	int ans = -1;

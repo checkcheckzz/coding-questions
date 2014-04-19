@@ -38,33 +38,31 @@ const int m = 5;
 const int n = 5;
 int dp[K][K];
 
-int minimalBlood(const int grid[m][n]){
+int minimalBlood(const int grid[m][n]) {
 
-	dp[m-1][n-1] = 0;
-	for (int i = m-2; i >= 0; i--)
-		dp[i][n-1] = max(dp[i+1][n-1]-grid[i+1][n-1], 0);
+    dp[m-1][n-1] = 0;
+    for (int i = m-2; i >= 0; i--)
+        dp[i][n-1] = max(dp[i+1][n-1]-grid[i+1][n-1], 0);
     for (int j = n-2; j >= 0; j--)
-		dp[m-1][j] = max(dp[m-1][j+1]-grid[m-1][j+1], 0);
+        dp[m-1][j] = max(dp[m-1][j+1]-grid[m-1][j+1], 0);
 	for (int i= m-2; i >= 0; i--) {
 		for (int j = n-2; j >= 0; j--) {
 
 			dp[i][j] = min(max(dp[i+1][j]-grid[i+1][j], 0), max(dp[i][j+1]-grid[i][j+1], 0));
 		}
 	}
-	return dp[0][0];
+    return dp[0][0];
 
 }
 
-int main(){
+int main() {
 
+    const int grid[m][n] = {{0, -2, 2, 1, 0},
+                            {-2, -3, -2, 1, 2},
+                            {-2, -1, -1, -1, -1},
+                            {-3, -3, 2, 1, -2},
+                            {1, 2, -3, -1, 1}};
 
-	const int grid[m][n] = {{0, -2, 2, 1, 0},
-	                        {-2, -3, -2, 1, 2},
-	                        {-2, -1, -1, -1, -1},
-	                        {-3, -3, 2, 1, -2},
-	                        {1, 2, -3, -1, 1}};
-
-	cout<<minimalBlood(grid)<<endl;
-
-	return 0;
+    cout<<minimalBlood(grid)<<endl;
+    return 0;
 }

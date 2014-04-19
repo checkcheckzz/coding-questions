@@ -28,28 +28,26 @@ using namespace std;
 
 void readALine(FILE *file) {
 
-	
 	char linebuffer[MAX_LINE_LEN];
-	char selection[MAX_LINE_LEN];
-	int i = 1;
-	while(fgets(linebuffer, MAX_LINE_LEN, file) != NULL){
-		if(rand()%i == 0) {
-			strcpy(selection, linebuffer);
-		}
-		++i;
-	}
-
-	puts(selection);
+    char selection[MAX_LINE_LEN];
+    int i = 1;
+    while(fgets(linebuffer, MAX_LINE_LEN, file) != NULL) {
+        if(rand()%i == 0) {
+            strcpy(selection, linebuffer);
+        }
+        ++i;
+    }
+    puts(selection);
 
 }
 
 
-int main(){
+int main() {
 
-	srand(time(0));
-	FILE *file = fopen("test.txt", "r");
+    srand(time(0));
+    FILE *file = fopen("test.txt", "r");
     readALine(file);
-	fclose(file);
-	return 0;
+    fclose(file);
+    return 0;
 
 }

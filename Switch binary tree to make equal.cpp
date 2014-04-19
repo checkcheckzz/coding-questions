@@ -17,8 +17,7 @@ O(n) time
 #include<cassert>
 using namespace std;
 
-struct NODE
-{
+struct NODE {
     int val;
     NODE* Lft;
     NODE* Rgt;
@@ -26,8 +25,7 @@ struct NODE
     NODE(int n) : val(n), Lft(NULL), Rgt(NULL) {}
 };
  
-bool binTreeSwitchEqualInner(NODE* node1, NODE* node2, int& switch)
-{
+bool binTreeSwitchEqualInner(NODE* node1, NODE* node2, int& switch) {
     switch = 0;
 	
     if (node1 == NULL || node2 == NULL) return node1 == NULL && node2 == NULL;
@@ -53,8 +51,7 @@ bool binTreeSwitchEqualInner(NODE* node1, NODE* node2, int& switch)
     return false;
 }
  
-int binTreeSwitchEqual(NODE* root1, NODE* root2)
-{
+int binTreeSwitchEqual(NODE* root1, NODE* root2) {
     assert(root2 && root1);
  
     int switch = 0;
@@ -63,26 +60,25 @@ int binTreeSwitchEqual(NODE* root1, NODE* root2)
     return result ? switch : -1;
 }
 
-int main()
-{
-	NODE *root1 = new NODE(5);
-	root1->Lft = new NODE(1);
-	root1->Rgt = new NODE(2);
-	root1->Lft->Lft = new NODE(0);
-	root1->Lft->Rgt = new NODE(7);
-	root1->Rgt->Lft = new NODE(3);
-	root1->Rgt->Rgt = new NODE(4);
+int main() {
+    NODE *root1 = new NODE(5);
+    root1->Lft = new NODE(1);
+    root1->Rgt = new NODE(2);
+    root1->Lft->Lft = new NODE(0);
+    root1->Lft->Rgt = new NODE(7);
+    root1->Rgt->Lft = new NODE(3);
+    root1->Rgt->Rgt = new NODE(4);
 
-        NODE *root2 = new NODE(5);
-	root2->Lft = new NODE(2);
-	root2->Rgt = new NODE(1);
-	root2->Lft->Lft = new NODE(4);
-	root2->Lft->Rgt = new NODE(3);
-	root2->Rgt->Lft = new NODE(7);
-	root2->Rgt->Rgt = new NODE(0);
+    NODE *root2 = new NODE(5);
+    root2->Lft = new NODE(2);
+    root2->Rgt = new NODE(1);
+    root2->Lft->Lft = new NODE(4);
+    root2->Lft->Rgt = new NODE(3);
+    root2->Rgt->Lft = new NODE(7);
+    root2->Rgt->Rgt = new NODE(0);
 
-	cout<<binTreeSwitchEqual(root1, root2)<<endl;
+    cout<<binTreeSwitchEqual(root1, root2)<<endl;
 
-	return 0;
+    return 0;
 }
 

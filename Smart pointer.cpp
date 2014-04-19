@@ -3,16 +3,14 @@ implement smart pointer in C++
 */
 
 template <class T> 
-class SmartP
-{
+class SmartP {
 public:
     SmartP(const SmartP<T>& p) { incRef(p); }
     SmartP(T* p) { assign(p); }
     ~SmartP() { decRef(); }
  
 
-    SmartP<T>& operator = (const SmartP<T>& p)
-    {
+    SmartP<T>& operator = (const SmartP<T>& p) {
         if (this != &p)
         {
             decRef();
@@ -26,8 +24,7 @@ public:
     T& operator *() const  { return *val; }
  
 private:
-    void decRef()
-    {
+    void decRef() s{
         (*ref)--;
  
         if (0 == *ref)
@@ -37,15 +34,13 @@ private:
         }
     }
  
-    void incRef(const SmartP<T>& ptr)
-    {
+    void incRef(const SmartP<T>& ptr) {
         ref = ptr.ref;
         val = ptr.val;
         (*ref)++; 
     }
  
-    void assign(T* p)
-    {
+    void assign(T* p) {
         val = p;
         ref = new int(1);
     }

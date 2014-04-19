@@ -20,51 +20,46 @@ It is similar when we want  to return true with probability larger than 0.5
 #include<time.h>
 using namespace std;
 
+bool prob() {
 
+    int i = rand();
+    if (i % 2 == 0) {
 
+        return true;
 
-bool prob(){
+    } else {
 
-	int i = rand();
-	if (i % 2 == 0) {
+        return false;
 
-		return true;
-
-	} else {
-
-       return false;
-
-	}
+    }
 }
 
 bool probAny(double probability, bool value ) {
 
-	if (probability < 0.5) {
+    if (probability < 0.5) {
+	
         return probAny(1.0 - probability,!value);
 
-	} else if (prob() == value) {
+    } else if (prob() == value) {
 
-		return value;
+        return value;
 
-	} else {
+    } else {
 
         return probAny((probability  - 0.5) * 2, value);
 
-	}
+    }
 
 }
 
 int main() {
 
-	
 	srand (time(NULL));
 	
     for (int i = 0; i< 20; ++i) {
 
 	    cout<<probAny(0.3, true)<<endl;
-
-	}
-
-	return 0;
+    }
+    return 0;
 
 }

@@ -13,18 +13,15 @@ char buffer[k];
 int preSize = 0; //valid data size in buffer, this value will be set within funciton block_reader(char *buf)
 int block_reader(char *buf);
 
-void moveToBuf(char*& pW, int n)
-{
-    if (n <= 0 || pW == NULL || preSize < n) return;
-     
+void moveToBuf(char*& pW, int n) {
+    if (n <= 0 || pW == NULL || preSize < n) return;     
     memcpy(pW, buffer, n);
     preSize -= n;
     memcpy(buffer, buffer+n, preSize);
     pW += n;
 }
 
-int anysize_reader(char *buf, int size)
-{
+int anysize_reader(char *buf, int size) {
     if (buf == NULL || size <= 0) return 0;
 
     char* pw = buf;

@@ -4,9 +4,9 @@ but you can't move the pointer. The constructor is defined, as PeekIterator(Iter
 
 */
 
-public class PeekIterator<T> 
-{
-    public:
+class PeekIterator<T> {
+
+public:
     
     PeekIterator(Iterator<T> iter) {
         it = iter;
@@ -27,7 +27,7 @@ public class PeekIterator<T>
         return data;
     }
 	
-    private:
+private:
 	
 	Iterator<T> it;
 	T data;

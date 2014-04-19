@@ -30,9 +30,7 @@ otherwise, return its partent sibling
 */
 
 
-
-Node* getNextNode(Node *node)
-{
+Node* getNextNode(Node *node) {
    assert(node != NULL);
 
    Node* next = node->getFirstChild();

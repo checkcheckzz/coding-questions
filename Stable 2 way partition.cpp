@@ -15,8 +15,7 @@ O(nlogn) time
 using namespace std;
 
 //swap the elements in array from beg to end
-void swapRa(int arr[], int beg, int end)
-{ 
+void swapRa(int arr[], int beg, int end) { 
     
     assert(arr && beg <= end);
  
@@ -28,8 +27,7 @@ void swapRa(int arr[], int beg, int end)
 }
  
 
-void reSort(int arr[], int len)
-{
+void reSort(int arr[], int len) {
     assert(arr && len > 0);
  
     if (len <= 1) return;
@@ -63,24 +61,21 @@ void reSort(int arr[], int len)
     swapRa(arr, begrgt, rgtiter);
 }
 
-void print(int arr[], int len)
-{
+void print(int arr[], int len) {
 	for (int i = 0; i < len; ++i) {
 	
-		cout<<arr[i]<<",";
-        }
+        cout<<arr[i]<<",";
+    }
 	cout<<endl;
 
 }
 
-int main(){
+int main() {
 
-	int a[6] = {1, 3, -7, 8, -1, 4};
-	
-	print(a,6);
-	reSort(a,6);
-	print(a,6);
-	
-	return 0;
+    int a[6] = {1, 3, -7, 8, -1, 4};
+    print(a,6);
+    reSort(a,6);
+    print(a,6);
+    return 0;
 }
 
