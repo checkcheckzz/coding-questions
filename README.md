@@ -405,15 +405,21 @@ Here is a summary of special topics in my blog:
 
 [Shortest Path](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
 
-[String Pattern Match1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
+[String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
 
-[String Pattern Match2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
-
-[Advanced Data Structures](http://itgeekworkhard.com/study/2014/03/15/coding-advanced-data-structures/)
+[String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
 
 [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
 
 [Knapsack Problem](http://itgeekworkhard.com/notes/2014/02/27/coding-knapsack/)
+
+[Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
+
+[Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
+
+[Suffix Array](http://itgeekworkhard.com/study/2014/03/22/coding-suffix-array/)
+
+[Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
 
 
 
