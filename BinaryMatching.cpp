@@ -12,7 +12,7 @@ output: {100, 101, 110, 111}.
 
 /*
 
-solution: backtracking. 
+solution1: backtracking. 
 O(k^2*(n-k)) time, O(1) space, k is the number of ? in string with size n.
 */
 
@@ -62,3 +62,12 @@ int main() {
     }
     return 0;
 }
+
+/*
+
+Solution2: iterative method using stack
+
+
+*/
+
+
