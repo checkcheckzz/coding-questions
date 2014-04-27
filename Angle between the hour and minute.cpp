@@ -17,8 +17,8 @@ Input:  time format in 24 hour: hour and minute
 Output: the angle between the hour and minute hands
 
 */
-int calulateAngle(int hour, int minute)
-{
+int calulateAngle(int hour, int minute) {
+
     assert(hour >= 0 && hour < 24);
     assert(minute >= 0 && minute < 60);
  
@@ -28,7 +28,7 @@ int calulateAngle(int hour, int minute)
     return abs(hourdegree - minutedegree);
 }
 
-int main(){
+int main() {
     
     int hour1 = 12, minute1 = 0;
     int hour2 = 18, minute2 = 0;

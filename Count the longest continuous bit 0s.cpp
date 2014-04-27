@@ -1,12 +1,10 @@
 /*
-count the longest continuous bit 0s in array
+count the longest continuous 0 bits in  an array
 */
 
-
 /*
-solution: for each number, check its  all digits
+solution: for each number, check its digit one by one
 O(n) time, O(1) space
-
 */
 
  

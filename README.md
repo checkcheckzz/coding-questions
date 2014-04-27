@@ -4,16 +4,16 @@ Coding-Problem
 Statement
 ---
 The coding problem comes from interview, discussion from mitbbs and blogs I read. Some codes are NOT my
-original work. But I also don't know who write them.
+original work, but I don't know who write them.
 
-Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml#Local_Variables).
+Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics at last): about 175 (121 done).
+Total Number (not including the problem in the special topics): about 175 (121 done).
 
-Although I try to run every program, bugs may still exist because the test cases are usually not enough. Welcome to find bugs. 
+Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
 
-The time complexity is usually the worst time and space complexity does not include stack space.
+By default, the time complexity is the worst time and space complexity does not include stack space.
 
 Problem
 ---
@@ -217,7 +217,7 @@ Implement string.split()
 
 [Ordered minimum window substring](https://github.com/checkcheckzz/coding-problem/blob/master/Orderedminimumwindowsubstring.cpp)
 
-[Find all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/Allinterleaves.cpp)
+[Generate all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/Allinterleaves.cpp)
 
 [Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/Minimalwordbreakc.pp)
 
@@ -328,29 +328,31 @@ Calculate the number of all 0s submatrix
 
 Implement a recommendation function
 
----
 
-[Angle between the hour and minute](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute.cpp)
+
+
+
+[Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute.cpp)
 
 Boggle puzzle
 
 [Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/Build%20b%5Bi%5D.cpp)
 
-[Count the longest continuous bit 0s in array](https://github.com/checkcheckzz/coding-problems/blob/master/Count%20the%20longest%20continuous%20bit%200s.cpp)
+[Count the longest continuous 0 bits in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Count%20the%20longest%20continuous%20bit%200s.cpp)
 
-[Design class support insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
+[Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
 
-[Find 1st one in large duplicated sorted array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
+[Find first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
 
-[Find none duplicate elements in two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
+[Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
 
 [Find the largest BST subtree in Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20largest%20BST%20sub%20tree%20in%20BT.cpp)
 
 [Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/Remove%20comments.cpp)
 
-[Find the max item A[i], such that A[i]=A[x]+A[y]](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
+[Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
 
-[Find the right most node in each level](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree.cpp)
+[Find the right most node in each level of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree.cpp)
 
 [Get original number including digit 7](https://github.com/checkcheckzz/coding-problems/blob/master/Get%20original%20number%20including%20digit%207.cpp)
 
@@ -358,9 +360,9 @@ Boggle puzzle
 
 [Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
 
-[Length of First continuous subarray that sums to 0](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
+[Length of first subarray that sums to zero](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
 
-[Moririsl traversal of Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Moririsl%20traversal%20of%20Binary%20Tree.cpp)
+[Morris traversal of Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Moririsl%20traversal%20of%20Binary%20Tree.cpp)
 
 [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
 
@@ -386,9 +388,9 @@ Boggle puzzle
 
 [Smart pointer](https://github.com/checkcheckzz/coding-problems/blob/master/Smart%20pointer.cpp)
 
-[Iterator for binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20binary%20tree.cpp)
+[Binary tree Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20binary%20tree.cpp)
 
-[Iterator for matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix.cpp)
+[Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix.cpp)
 
 [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20malloc%20and%20free.cpp)
 

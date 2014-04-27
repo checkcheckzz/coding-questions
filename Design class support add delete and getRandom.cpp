@@ -1,5 +1,5 @@
 /*
-Given a collection of integer, design a class that supports:
+Given a collection of integer, design a structure that supports:
  
 insert(data) - insert an element
 delete(data) - delete an element

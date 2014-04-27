@@ -19,7 +19,7 @@ then push a[i-1]+b[j] and  a[i]+b[j-1] into heap.
 O(mlogm)+O(nlogn)+O(klogk) time, O(k) space
 */
 
-struct node{
+struct node {
     int a,b,val; //element index and their value sum
     node(int _a,int _b,int v): a(_a),b(_b),val(v) {}
 	
@@ -107,8 +107,7 @@ int findKthSum2(int A[],int m,int B[],int n,int k) {
 }
 
 
-int main()
-{
+int main() {
 	
 	 int A[4] = {4,3,2,1};
 	 int B[2] = {3,2};
