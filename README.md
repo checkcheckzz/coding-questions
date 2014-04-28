@@ -3,12 +3,12 @@ Coding-Problem
 
 Statement
 ---
-The coding problem comes from interview, discussion from mitbbs and blogs I read. Some codes are NOT my
+The problem comes from interview, discussion from mitbbs and blogs I read. Some codes are NOT my
 original work, but I don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics): about 175 (121 done).
+Total Number (not including the problem in the special topics): about 183 (121 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
@@ -84,6 +84,33 @@ Kth element in two sorted array
 
 [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/Minimalelementinleftsortedarray.cpp)
 
+[Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/Build%20b%5Bi%5D.cpp)
+
+[Count the longest continuous 0 bits in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Count%20the%20longest%20continuous%20bit%200s.cpp)
+
+[Find first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
+
+[Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
+
+[Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/Remove%20comments.cpp)
+
+[Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
+
+[Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20memmove%20and%20memcopy.cpp)
+
+[Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
+
+[Length of first subarray that sums to zero](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
+
+[Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/Minimal%20subset%20sum.cpp)
+
+[Stable 2 way partition](https://github.com/checkcheckzz/coding-problems/blob/master/Stable%202%20way%20partition.cpp)
+
+[Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix.cpp)
+
+Find Kth element in young tableau
+
+
 
 
 
@@ -125,7 +152,29 @@ Construct a tree by a list of pairs
 
 [Maximal path sum of n-way tree](https://github.com/checkcheckzz/coding-problem/blob/master/Maximalpathsum.cpp)
 
+[Find the largest BST subtree in Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20largest%20BST%20sub%20tree%20in%20BT.cpp)
 
+[Find the right most node in each level of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree.cpp)
+
+[Morris traversal of Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Moririsl%20traversal%20of%20Binary%20Tree.cpp)
+
+[PreInPostorder travel of binary tree with stack](https://github.com/checkcheckzz/coding-problems/blob/master/PreInPostorder%20travel%20of%20bT%20with%20stack.cpp)
+
+[SerializeDeSerialize a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/SerializeDeSerialize%20a%20binary%20tree.cpp)
+
+[SerializeDeSerialize an arbitrary nodes tree](https://github.com/checkcheckzz/coding-problems/blob/master/SerializeDeSerialize%20an%20arbitrary%20nodes%20tree.cpp)
+
+[Statistical binary search tree](https://github.com/checkcheckzz/coding-problems/blob/master/Statistical%20binary%20search%20tree.cpp)
+
+[Switch binary tree to make equal](https://github.com/checkcheckzz/coding-problems/blob/master/Switch%20binary%20tree%20to%20make%20equal.cpp)
+
+[Binary tree Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20binary%20tree.cpp)
+
+Binary search tree Iterator
+
+SerializeDeSerialize a binary search tree
+
+Generate all binary trees according to preorder traversal
 
 
 
@@ -172,8 +221,17 @@ Print all numbers including digit 5 smaller than number N
 
 Find the next higher number with the same digits
 
+[Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute.cpp)
 
+[Get original number including digit 7](https://github.com/checkcheckzz/coding-problems/blob/master/Get%20original%20number%20including%20digit%207.cpp)
 
+[Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers.cpp)
+
+Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x
+
+String of digits, insert add operator in between to make sum to be a value
+
+Water flow path
 
 
 
@@ -224,6 +282,12 @@ Implement string.split()
 Implement regular expression
 
 Permutation array of strings
+
+[Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
+
+Find the first anagram of a given string in another string
+
+
 
 
 
@@ -328,59 +392,9 @@ Calculate the number of all 0s submatrix
 
 Implement a recommendation function
 
-
-
-
-
-[Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute.cpp)
-
-Boggle puzzle
-
-[Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/Build%20b%5Bi%5D.cpp)
-
-[Count the longest continuous 0 bits in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Count%20the%20longest%20continuous%20bit%200s.cpp)
-
 [Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
 
-[Find first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
-
-[Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
-
-[Find the largest BST subtree in Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20largest%20BST%20sub%20tree%20in%20BT.cpp)
-
-[Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/Remove%20comments.cpp)
-
-[Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
-
-[Find the right most node in each level of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree.cpp)
-
-[Get original number including digit 7](https://github.com/checkcheckzz/coding-problems/blob/master/Get%20original%20number%20including%20digit%207.cpp)
-
-[Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20memmove%20and%20memcopy.cpp)
-
-[Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
-
-[Length of first subarray that sums to zero](https://github.com/checkcheckzz/coding-problems/blob/master/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
-
-[Morris traversal of Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/Moririsl%20traversal%20of%20Binary%20Tree.cpp)
-
-[Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
-
-[Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/Minimal%20subset%20sum.cpp)
-
-[PreInPostorder travel of binary tree with stack](https://github.com/checkcheckzz/coding-problems/blob/master/PreInPostorder%20travel%20of%20bT%20with%20stack.cpp)
-
-[SerializeDeSerialize a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/SerializeDeSerialize%20a%20binary%20tree.cpp)
-
-[SerializeDeSerialize an arbitrary nodes tree](https://github.com/checkcheckzz/coding-problems/blob/master/SerializeDeSerialize%20an%20arbitrary%20nodes%20tree.cpp)
-
-[Stable 2 way partition](https://github.com/checkcheckzz/coding-problems/blob/master/Stable%202%20way%20partition.cpp)
-
-[Statistical binary search tree](https://github.com/checkcheckzz/coding-problems/blob/master/Statistical%20binary%20search%20tree.cpp)
-
-[Switch binary tree to make equal](https://github.com/checkcheckzz/coding-problems/blob/master/Switch%20binary%20tree%20to%20make%20equal.cpp)
-
-[Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers.cpp)
+Boggle puzzle
 
 [Readk() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Readk().cpp)
 
@@ -388,11 +402,8 @@ Boggle puzzle
 
 [Smart pointer](https://github.com/checkcheckzz/coding-problems/blob/master/Smart%20pointer.cpp)
 
-[Binary tree Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20binary%20tree.cpp)
-
-[Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix.cpp)
-
 [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20malloc%20and%20free.cpp)
+
 
 Special Topics
 ---
