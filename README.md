@@ -8,7 +8,7 @@ original work, but I don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics): about 183 (121 done).
+Total Number (not including the problem in the special topics): about 183 (127 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. 
@@ -110,6 +110,13 @@ Kth element in two sorted array
 
 Find Kth element in young tableau
 
+[Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x](https://github.com/checkcheckzz/coding-problems/blob/master/Reversealternatelist.cpp)
+
+[String of digits, insert addition operator in between to make sum to be a value](https://github.com/checkcheckzz/coding-problems/blob/master/Makesum.cpp)
+
+Water flow path
+
+
 
 
 
@@ -179,6 +186,8 @@ Generate all binary trees according to preorder traversal
 
 
 
+
+
 [Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/Calculate%20(m%5En)%25(10%5Ek).cpp)
 
 [For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N](https://github.com/checkcheckzz/coding-problems/blob/master/Print%20all%20the%20solutions.cpp)
@@ -227,11 +236,7 @@ Find the next higher number with the same digits
 
 [Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers.cpp)
 
-Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x
 
-String of digits, insert add operator in between to make sum to be a value
-
-Water flow path
 
 
 
@@ -277,7 +282,7 @@ Implement string.split()
 
 [Generate all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/Allinterleaves.cpp)
 
-[Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/Minimalwordbreakc.pp)
+[Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/Minimalwordbreak.cpp)
 
 Implement regular expression
 
@@ -348,9 +353,9 @@ Total area multiple rectangles cover
 
 Turn off lights
 
-[Two dimension top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk)
+[Two dimension top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk.cpp)
 
-[Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram)
+[Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram.cpp)
 
 Dividing a plane of points into two equal halves
 
@@ -362,7 +367,7 @@ Print all lines in a file reversely
 
 Query relationship
 
-[Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber)
+[Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/Getanumber.cpp)
 
 [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/Mergestones.cpp)
 
@@ -403,7 +408,6 @@ Boggle puzzle
 [Smart pointer](https://github.com/checkcheckzz/coding-problems/blob/master/Smart%20pointer.cpp)
 
 [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/Implement%20malloc%20and%20free.cpp)
-
 
 Special Topics
 ---

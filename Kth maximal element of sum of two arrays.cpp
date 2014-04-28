@@ -33,28 +33,28 @@ struct greater_note {
 };
 
 int findKthSum1(int A[],int m,int B[],int n,int k) {
-	priority_queue<node,vector<node>,greater_note > Q; //build the max heap
-	Q.push(node(0,0,A[0]+B[0]));
+	priority_queue<node,vector<node>,greater_note > q; //build the max heap
+	q.push(node(0,0,A[0]+B[0]));
 	set<pair<int,int> > visited;
 	visited.insert(pair<int,int>(0,0));
-	while(!Q.empty()) {
+	while(!q.empty()) {
 	
-		node t=Q.top();
-		Q.pop();
+		node t = q.top();
+		q.pop();
 		k--;
-		if(k==0) return t.val;
+		if(k == 0) return t.val;
 		
 		set<pair<int,int> >::iterator it;
 		if(t.a+1<m&&(it=visited.find(pair<int,int>(t.a+1,t.b)))==visited.end()) { 
 		
 			visited.insert(it,pair<int,int>(t.a+1,t.b));
-			Q.push(node(t.a+1,t.b,A[t.a+1]+B[t.b])); //push A[a+1]+B[b]
+			q.push(node(t.a+1,t.b,A[t.a+1]+B[t.b])); //push A[a+1]+B[b]
 		}
 		
 		if(t.b+1<n&&(it=visited.find(pair<int,int>(t.a,t.b+1)))==visited.end()) {
 		
 			visited.insert(it,pair<int,int>(t.a,t.b+1));
-			Q.push(node(t.a,t.b+1,A[t.a]+B[t.b+1])); //push A[a]+B[b+1]
+			q.push(node(t.a,t.b+1,A[t.a]+B[t.b+1])); //push A[a]+B[b+1]
 		}
 	}
 	
