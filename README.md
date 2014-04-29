@@ -11,7 +11,7 @@ Most code style follows [Google C++ Style Guide](http://google-styleguide.google
 Total Number (not including the problem in the special topics): about 183 (127 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
-The solution may not be optimal, welcome to give your advice. 
+The solution may not be optimal, welcome to give your advice. I don't write too many comments to explain every function.
 
 By default, the time complexity is the worst time and space complexity does not include stack space.
 
@@ -80,7 +80,7 @@ Find the longest consecutive increasing subarray in a grid
 
 [Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/GenerateParentheseswithdiffkinds.cpp)
 
-Kth element in two sorted array
+Kth element in two sorted arrays
 
 [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/Minimalelementinleftsortedarray.cpp)
 
@@ -353,7 +353,7 @@ Total area multiple rectangles cover
 
 Turn off lights
 
-[Two dimension top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk.cpp)
+[Two dimensional top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk.cpp)
 
 [Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram.cpp)
 
