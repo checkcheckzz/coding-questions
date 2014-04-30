@@ -15,9 +15,9 @@ solution: dynamical programming. Because there is a cycle, we change the cycle t
 to the end of first cycle.
 dpMin[i][j] denotes the minimal score by merging stack i to stack j, dpMax[i][j] denotes the maximal score by merging
 stack i to stack j.
-Transition funciton:
-dpMin[i][j] = min(dp[i][j] , dp[i][k]+dp[k+1][j]+sum[j]-sum[i-1]);
-dpMax[i][j] = max(dp[i][j] , dp[i][k]+dp[k+1][j]+sum[j]-sum[i-1]);
+Transition function:
+dpMin[i][j] = min(dpMin[i][j] , dp[i][k]+dp[k+1][j]+sum[j]-sum[i-1]);
+dpMax[i][j] = max(dpMax[i][j] , dp[i][k]+dp[k+1][j]+sum[j]-sum[i-1]);
 here sum[] is the num[] prefix sum array.
 O((2*n)^3) time, O((2n)^2) space
 */

@@ -65,18 +65,18 @@ void calExpression(double num[], double target, int n, string expr[]) {
 }
 
 
-int main(){
+int main() {
 
-	//string "897" to array num should be easy
-	double num[] ={8, 9, 7};
-	int len = sizeof(num)/sizeof(num[0]);
-	string *expr = new string[len];
+    //string "897" to array num should be easy
+    double num[] = {8, 9, 7};
+    int len = sizeof(num)/sizeof(num[0]);
+    string *expr = new string[len];
     for (int i = 0; i < len; ++i){
         expr[i] = (int)num[i] + '0';
-	}
-	double target = 24;
+    }
+    double target = 24;
     calExpression(num, target, len, expr);
-	delete [] expr;
+    delete [] expr;
     return 0;
 }
 
