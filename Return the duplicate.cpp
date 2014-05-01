@@ -19,46 +19,46 @@ using namespace std;
 
 int maxDupEqual(int arr[], int len) {
 
-  int maxoccur = 0;
-  int num = 0 ;
-  int maxnum = 0;
-  int result=0;
-  unordered_map<int , int> occurmap;
-  unordered_map<int , int> randompickmap;
-  for(int i = 0 ; i < len ; ++i) {
+    int maxoccur = 0;
+    int num = 0 ;
+    int maxnum = 0;
+    int result=0;
+    unordered_map<int , int> occurmap;
+    unordered_map<int , int> randompickmap;
+    for(int i = 0 ; i < len ; ++i) {
 
-     num = arr[i];
-     if(occurmap.count(num)) {
+        num = arr[i];
+        if(occurmap.count(num)) {
 
-         occurmap[num] += 1;
+            occurmap[num] += 1;
 
-	 } else {
+        } else {
 
-       occurmap[num] = 1;
+        occurmap[num] = 1;
 
-	 }
+        }
 
-	if(occurmap[num] > maxoccur) {
+        if(occurmap[num] > maxoccur) {
 
-       maxoccur = occurmap[num];
-       maxnum = randompickmap[num];
+        maxoccur = occurmap[num];
+        maxnum = randompickmap[num]; 
+        }
+
+    }
+   
+    int occur = 0;
+
+    for(int i = 0 ; i < len ; ++i) {
+  
+        if(arr[i] == maxnum) {
+
+        occur++;
+
+        if(rand() % occur == 0)  result = i;
+        }
     }
 
-   }
-   
-  int occur = 0;
-
-   for(int i = 0 ; i < len ; ++i) {
-  
-     if(arr[i] == maxnum) {
-
-       occur++;
-
-       if(rand() % occur == 0)  result = i;
-     }
-   }
-
-   return result;
+    return result;
 }
 
 

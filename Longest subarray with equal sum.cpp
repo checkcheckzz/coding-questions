@@ -72,8 +72,7 @@ int longSubarrayEq(const vector<int>& a,const vector<int>& b) {
 }
 
 
-int main()
-{
+int main() {
 	int n = 11;
 	vector<int> a(n,0);  
         vector<int> b(n,0);  

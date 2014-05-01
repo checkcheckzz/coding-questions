@@ -54,11 +54,11 @@ bool probAny(double probability, bool value ) {
 
 int main() {
 
-	srand (time(NULL));
+    srand (time(NULL));
 	
     for (int i = 0; i< 20; ++i) {
 
-	    cout<<probAny(0.3, true)<<endl;
+        cout<<probAny(0.3, true)<<endl;
     }
     return 0;
 

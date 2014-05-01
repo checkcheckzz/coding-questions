@@ -35,7 +35,7 @@ int firstContZero(int arr[], int len) {
  
     return result;
 }
-int main(){
+int main() {
 
     int arr[6] = {1, -1, 2, -2, 1, 0};
     int len = sizeof(arr)/sizeof(arr[0]);

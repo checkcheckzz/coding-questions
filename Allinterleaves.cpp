@@ -44,6 +44,6 @@ int main() {
     string output(len, ' ');
     int index = 0; 
     allInterleaves(str1,str2,output,0,0,index);
-	return 0;
+    return 0;
 }
 

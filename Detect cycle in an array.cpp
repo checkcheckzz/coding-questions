@@ -12,7 +12,8 @@ Thus, the element may be negative or out of range[0,n-1]
 solution1:
 
 For a particular index, use two pointers, one pointer moves one step each time, the other pointer move two steps each time.
-If the pointers ever meet together (besides the start point) before one of the pointer reaches the end, then there is a loop. Otherwise, there isn't.
+If the pointers ever meet together (besides the start point) before one of the pointer reaches the end, then there is a loop. 
+Otherwise, there isn't.
 
 O(n) time, O(1) space
 

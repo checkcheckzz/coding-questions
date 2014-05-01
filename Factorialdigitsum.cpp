@@ -25,8 +25,7 @@ string multiply(string num1, string num2) {
         for (int i = N - 1; i >= 0; --i) {
             int carry = 0;
             int j;
-            for (j = M - 1; j >= 0; --j)
-            {
+            for (j = M - 1; j >= 0; --j) {
                 int sum = carry + (res[i+j+1] - '0') + 
                           (num1[i] - '0') * (num2[j] - '0');
                 res[i+j+1] = sum % 10 + '0';

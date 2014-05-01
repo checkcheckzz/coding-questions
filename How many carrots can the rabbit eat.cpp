@@ -20,6 +20,7 @@ O(n^2) time, O(1) space
 using namespace std;
 
 int numCarrot(int x, int y, int len) {
+
 	int result = 0;
 
 	for(int i = 0; i < len; ++i) {

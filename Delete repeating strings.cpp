@@ -36,50 +36,50 @@ using namespace std;
 
 string getKey(string str) {
 
-	string temp = str;
+    string temp = str;
 
-	for (int i = 0; i < str.size(); ++i) {
+    for (int i = 0; i < str.size(); ++i) {
 
-		if (isupper(temp[i])){
+        if (isupper(temp[i])){
 
-			temp[i] = tolower(temp[i]);
+            temp[i] = tolower(temp[i]);
 
-		}
-     }
-	sort(temp.begin(), temp.end());
-	return temp;
+        }
+    }
+    sort(temp.begin(), temp.end());
+    return temp;
 }
 
 
 
 vector<string> delReapting(const string str[], int len, unordered_set<string> &mp ) {
 
-	vector<string> res;
+    vector<string> res;
 
 	for(int i = len - 1; i >= 0; --i) {
 
-		string key = getKey(str[i]);
-		if (mp.find(key) == mp.end()) {
+        string key = getKey(str[i]);
+        if (mp.find(key) == mp.end()) {
 
-			mp.insert(key);
-			res.push_back(str[i]);
-		}
+            mp.insert(key);
+            res.push_back(str[i]);
+        }
 
-	}
+    }
 
-	reverse(res.begin(), res.end());
+    reverse(res.begin(), res.end());
 
-	return res;
+    return res;
 
 }
 
 int main() {
 
-	string str[5] = {"apple Orange", "ORANGE apple", "APPLe oRange", "HI There", "THERE hI"};
-	unordered_set<string> mp;
-	vector<string> result = delReapting(str, 5, mp);
-	for (int i = 0; i < result.size(); ++i) {
-		cout<<result[i]<<endl;
+    string str[5] = {"apple Orange", "ORANGE apple", "APPLe oRange", "HI There", "THERE hI"};
+    unordered_set<string> mp;
+    vector<string> result = delReapting(str, 5, mp);
+    for (int i = 0; i < result.size(); ++i) {
+        cout<<result[i]<<endl;
     }
-	return 0;
+    return 0;
 }

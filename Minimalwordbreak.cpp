@@ -26,7 +26,7 @@ string minimalWordBreak(string text, set<string> dict) {
     memset(dp, 0, sizeof(dp));
     dp[n] = n;
         
-    for(int i = n-1;i >= 0;i--) {
+    for (int i = n-1;i >= 0;i--) {
 
         int j = i + 1;
             

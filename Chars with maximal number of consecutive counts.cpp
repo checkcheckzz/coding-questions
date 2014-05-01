@@ -89,8 +89,8 @@ void maxRepCount2(char *sen) {
    
 
     // second pass to output each max alphabet only once
-    p=sen;
-    index=0;
+    p = sen;
+    index = 0;
     cout<<"[";
     while (*p) {
         
@@ -107,8 +107,7 @@ void maxRepCount2(char *sen) {
 }
 
 
-int main()
-{
+int main() {
     //char s[]="this is a sentence";
     //char s[]="thiis iss a senntencee";
     char s[]="thiisss iss a senntttenceee";

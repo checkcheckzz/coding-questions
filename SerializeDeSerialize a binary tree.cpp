@@ -44,11 +44,11 @@ void serializeInner(char * &p, NODE* node) {
 	
 }
 char* serialize(char mem[], NODE* root) {
-	char *p = mem;
-	serializeInner(p, root);
-	p++;
-	*p = '\0';
-	return mem;
+    char *p = mem;
+    serializeInner(p, root);
+    p++;
+    *p = '\0';
+    return mem;
 }
 
 /////////////////////////////////////////// 

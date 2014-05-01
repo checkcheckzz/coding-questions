@@ -19,57 +19,55 @@ using namespace std;
 
 string longestsubstringtwounique(const string str) {
 
-	int len = str.size();
-	int i = 0, j = 0;
-	int maxstart = 0, maxlength = 0;
-	unordered_map<char, int> mp;
+    int len = str.size();
+    int i = 0, j = 0;
+    int maxstart = 0, maxlength = 0;
+    unordered_map<char, int> mp;
 
-	while (j < len) {
+    while (j < len) {
 
-	  if (mp.find(str[j]) == mp.end()) {
+        if (mp.find(str[j]) == mp.end()) {
 
-		  mp[str[j]] = 1;
+            mp[str[j]] = 1;
 
-	  } else {
+        } else {
 
-		  mp[str[j]]++;
+            mp[str[j]]++;
 			  
-	  }
+        }
 	 
-	  char tmp = str[i];
-	  while (i <j && mp[tmp] > 1) {
+        char tmp = str[i];
+        while (i <j && mp[tmp] > 1) {
 
-		  --mp[tmp];
+            --mp[tmp];
 
-		  tmp =  str[++i];
+            tmp =  str[++i];
 
-	  }
+        }
 
-	  if (i < j && mp[tmp] == 1 && mp[str[j]] == 1 && j - i >= maxlength)
-            {
-                maxstart = i;
-                maxlength = j - i + 1;
-            }
-      ++j;
+        if (i < j && mp[tmp] == 1 && mp[str[j]] == 1 && j - i >= maxlength) {
+            maxstart = i;
+            maxlength = j - i + 1;
+        }
+        ++j;
 
-	}
+    }
 
-	return str.substr(maxstart, maxlength);
+    return str.substr(maxstart, maxlength);
 }
 
 
 int main() {
 	
-	const string str1 = "a";
-	const string str2 = "abc";
-	const string str3 = "abbc";
-	const string str4 = "bcccccaaacc";
+    const string str1 = "a";
+    const string str2 = "abc";
+    const string str3 = "abbc";
+    const string str4 = "bcccccaaacc";
 
-	cout<<longestsubstringtwounique(str1)<<endl;
-	cout<<longestsubstringtwounique(str2)<<endl;
-	cout<<longestsubstringtwounique(str3)<<endl;
-	cout<<longestsubstringtwounique(str4)<<endl;
-
-	return 0;
+    cout<<longestsubstringtwounique(str1)<<endl;
+    cout<<longestsubstringtwounique(str2)<<endl;
+    cout<<longestsubstringtwounique(str3)<<endl;
+    cout<<longestsubstringtwounique(str4)<<endl;
+    return 0;
 
 }

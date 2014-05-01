@@ -28,16 +28,16 @@ void taxiCub(int n) {
 
         for(int j  = i; j * j * j <= n;j++){
            
-                int sum = factor[i] + factor[j];
-                if(sum > limit) continue;
+            int sum = factor[i] + factor[j];
+            if(sum > limit) continue;
 
-                if( visited[sum] < 2 ) visited[sum]++;
+            if( visited[sum] < 2 ) visited[sum]++;
 
-				if (visited[sum] == 2) {
+            if (visited[sum] == 2) {
 
-					cout<<sum<<endl;
+                cout<<sum<<endl;
                
-				}
+            }
         }
         
     }

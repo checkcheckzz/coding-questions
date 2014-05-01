@@ -41,7 +41,7 @@ int twoSumExtension(int arr[], int len, int k) {
         int count = 0;
         for(int i = 0; i < len; i++) {
 
-            if(mp.find(arr[i]) == mp.end()){
+            if(mp.find(arr[i]) == mp.end()) {
                 mp[arr[i]] = 1;
             } else {
 
@@ -51,7 +51,7 @@ int twoSumExtension(int arr[], int len, int k) {
 
         for(int i = 0; i < len; i++) {
 
-            if(mp.find(k - arr[i]) != mp.end() && mp[k - arr[i]] > 0){
+            if(mp.find(k - arr[i]) != mp.end() && mp[k - arr[i]] > 0) {
                 if(arr[i] == k - arr[i]){
                     count += 1;					
                     mp[arr[i]]--;

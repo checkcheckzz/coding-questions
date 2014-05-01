@@ -12,16 +12,15 @@ using namespace std;
 
 unsigned int lastDigit(unsigned int a, unsigned int b, map<unsigned int, unsigned int> &mp){
 
-	if (a == 1) return 1;
-	unsigned int digit = a %10;
-	digit = mp[a]; //a^2;
+    if (a == 1) return 1;
+    unsigned int digit = a %10;
+    digit = mp[a]; //a^2;
 
-	unsigned int time = 2;
-	for (; time * 2 <= b; time = time * 2){
+    unsigned int time = 2;
+    for (; time * 2 <= b; time = time * 2){
 
-		digit = mp[digit];
-
-   }
+        digit = mp[digit];
+    }
    
    time = time / 2;
 

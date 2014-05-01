@@ -33,6 +33,7 @@ struct greater_note {
 };
 
 int findKthSum1(int A[],int m,int B[],int n,int k) {
+
 	priority_queue<node,vector<node>,greater_note > q; //build the max heap
 	q.push(node(0,0,A[0]+B[0]));
 	set<pair<int,int> > visited;
@@ -71,6 +72,7 @@ O(mlogm)+O(nlogn) + O(log(maxsum-minsum))*O(m+n) time, O(1) space
 */
 
 int countSmaller(int A[],int m,int B[],int n,int piv) {
+
 	int pa = 0,pb = n - 1;
 	int cnt = 0;
 	for(; pa < m; ++pa) {
@@ -88,6 +90,7 @@ int countSmaller(int A[],int m,int B[],int n,int piv) {
 	return cnt;
 }
 int findKthSum2(int A[],int m,int B[],int n,int k) {
+
 	int l = A[0] + B[0];
 	int r = A[m-1] + B[n-1];
 	int ans = -1;

@@ -17,10 +17,11 @@ using namespace std;
 
 
 int n,m,p;
+//a large number for simplicity
 int fa[5010];
 
 int find(int a) {
-	//this optimization makes the tree as flat as possible
+    //this optimization makes the tree as flat as possible
     if(fa[a] != a) fa[a] = find(fa[a]);
     return fa[a];
 }
@@ -34,7 +35,7 @@ void queryRelatives(int n, pair<int, int> relatives[], int r,  pair<int, int> qu
    
     for(int i = 1; i <= n; i++) {
         fa[i] = i;
-	}
+    }
     
     for (int i = 0; i < r; i++) {
 		
@@ -43,11 +44,11 @@ void queryRelatives(int n, pair<int, int> relatives[], int r,  pair<int, int> qu
     for (int i = 0; i < q; i++) {
        
         if(find(query[i].first) == find(query[i].second)) {
-			cout<<"They are relatives"<<endl;
-		} else {
-			cout<<"They are not relatives"<<endl;
+            cout<<"They are relatives"<<endl;
+        } else {
+            cout<<"They are not relatives"<<endl;
 
-		}     
+        }     
 
     }
 }

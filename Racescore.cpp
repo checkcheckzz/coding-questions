@@ -62,37 +62,35 @@ int getScore(deque<int> &ranks, int startrank) {
 	int score;
 
     if (ranks.size() == 0) {
-	    score = 0;
-		ranks.push_back(startrank);
-		return score;
-	}
+        score = 0;
+        ranks.push_back(startrank);
+        return score;
+    }
 
 
 
-	if (startrank < *ranks.begin()){
+    if (startrank < *ranks.begin()){
+        score = ranks.size();
+        ranks.push_front(startrank);
+    }  else if (startrank > *(ranks.end()-1)) {
 
-       score = ranks.size();
-	   ranks.push_front(startrank);
-    } else if (startrank > *(ranks.end()-1)) {
+       score = 0;
+       ranks.push_back(startrank);
 
-	   score = 0;
-	   ranks.push_back(startrank);
-
-	} else {
+    } else {
        score = ranks.size() - (it-ranks.begin()+1);
        //insert before 
        ranks.insert(it, startrank);
     
-	}
+    }
 
     return score;
 }
 
-void RankRacers(vector<Racer> &racers)
-{
+void RankRacers(vector<Racer> &racers) {
     sort(racers.begin(), racers.end(), CompareRacer1);
 		
-    for (size_t i = 0; i < racers.size(); ++i){
+    for (size_t i = 0; i < racers.size(); ++i) {
 
        racers[i].startrank = i;
     }
@@ -126,10 +124,10 @@ int main() {
     racers.push_back(r4);
     racers.push_back(r5);
     racers.push_back(r6);
-	RankRacers(racers);
+    RankRacers(racers);
     for (size_t i = 0 ; i < racers.size(); i++) {
-		cout<<racers[i].id<<":"<<racers[i].score<<endl;
-	}
-	return 0;
+        cout<<<"ID: "<<racers[i].id<<" Score: "<<racers[i].score<<endl;
+    }
+    return 0;
 
 }

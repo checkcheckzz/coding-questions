@@ -37,8 +37,8 @@ void calExpression(double num[], double target, int n, string expr[]) {
         return;
     }
     int i, j;
-    for (i = 0; i < n; ++i){
-        for (j = i + 1; j < n; ++j){
+    for (i = 0; i < n; ++i) {
+        for (j = i + 1; j < n; ++j) {
             a = num[i];
             b = num[j];
             num[j] = num[n-1];

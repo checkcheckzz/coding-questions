@@ -17,6 +17,7 @@ Given a number in such rule, calculate the original one.
 using namespace std;
 
 unsigned int orignalNumber(unsigned int num) {
+
     int extra = 0;
     int b = 0;
     int a = 0;

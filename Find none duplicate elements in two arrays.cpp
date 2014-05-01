@@ -15,8 +15,8 @@ O(nlogn+mlogm) time, O(1) space
 void findUniqueArray(int arr1[], int arr1len, int arr2[], int arr2len) {
     assert(arr1 && arr2 && arr1len > 0 && arr2len > 0);
  
-    sort(arr1, arr1+arr1len);
-    sort(arr2, arr2+arr2len);
+    sort(arr1, arr1 + arr1len);
+    sort(arr2, arr2 + arr2len);
  
     int iterarr1 = 0;
     int iterarr2 = 0;

@@ -28,7 +28,7 @@ using namespace std;
 
 void readALine(FILE *file) {
 
-	char linebuffer[MAX_LINE_LEN];
+    char linebuffer[MAX_LINE_LEN];
     char selection[MAX_LINE_LEN];
     int i = 1;
     while(fgets(linebuffer, MAX_LINE_LEN, file) != NULL) {

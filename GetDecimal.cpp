@@ -21,9 +21,9 @@ string getDecimals(int A, int B) {
     string integer = "0" + A/B; 
     long long rest = A % B;
     map<int, int> remain;
-	string result = "";
+    string result = "";
     string d = "";
-    while(1){
+    while(1) {
         remain[rest] = d.length();
         rest *= 10;
         d += '0' + rest / B;

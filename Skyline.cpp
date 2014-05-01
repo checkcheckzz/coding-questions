@@ -13,7 +13,7 @@ is the height. So, here we have a skyline starts from 1 to 3 with height 11, fro
 */
 
 /*
-Solution: the idea for solving skyline problem is from this [Chinese post](http://dp2.me/interviews/?p=5).
+Solution: the idea for solving skyline problem is from this Chinese post(http://dp2.me/interviews/?p=5).
 We split each building to two events: start and end, where we record the height and x axis value. We use 
 a map to record the ordered collection of heights. Sort the events by x axis value. When a start event
 occurs, insert it into the map, and if the largest height increases, output. When a end event occurs, delete
@@ -108,7 +108,7 @@ void skylineOutput(vector<Event*>& events) {
             }
         }
     }
-    cout << endl;
+ 
 }
 
 void freeEvents(vector<Event*>& events) {

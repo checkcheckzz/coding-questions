@@ -22,7 +22,7 @@ using namespace std;
 //just for simplicity
 int dp[20][20];
 
-void minWindows(string s, string t){
+void minWindows(string s, string t) {
 
     int m = s.size();
     int n = t.size();
@@ -60,10 +60,10 @@ void minWindows(string s, string t){
 
 int main() {
 
-	string s("ADOBECODEBANC");
-	string t("ABC");
-	minWindows(s, t);
-	return 0;
+    string s("ADOBECODEBANC");
+    string t("ABC");
+    minWindows(s, t);
+    return 0;
 
 }
 

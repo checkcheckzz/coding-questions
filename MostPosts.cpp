@@ -29,21 +29,20 @@ int findIdWithMostPosts(int arr[], int len) {
 
         if(nTimes == 0)  {
 
-             id = arr[i], nTimes = 1;  
-        }  
-        else {  
+            id = arr[i], nTimes = 1;  
+        } else {  
 
-	      if(id == arr[i]) {
+            if(id == arr[i]) {
 
-	          nTimes++; 
+                nTimes++; 
 
-		  } else {  
+            } else {  
 
-	         nTimes--;  
-          }  
+                nTimes--;  
+            }  
 	    }
 
-	 }
+    }
 
     return id;
 }

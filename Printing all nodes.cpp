@@ -28,42 +28,41 @@ struct TNode {
     int val;
     TNode* plft;
     TNode* prgt;
-	TNode* parent;
+    TNode* parent;
 
-	TNode(int v) : val(v), plft(NULL), prgt(NULL), parent(NULL)  {}
+    TNode(int v) : val(v), plft(NULL), prgt(NULL), parent(NULL)  {}
 };
 
 //print node below given node 
 void printDown(TNode * node, int k) {
 
-	if(node == NULL || k < 0) return;
+    if(node == NULL || k < 0) return;
 
-	if(k == 0) {
-		cout<<node->val<<endl;
-	} else {
-		printDown(node->plft, k -1);
-		printDown(node->prgt, k -1);	
-	}
+    if(k == 0) {
+        cout<<node->val<<endl;
+    } else {
+        printDown(node->plft, k -1);
+        printDown(node->prgt, k -1);	
+    }
 }
 //print above node from given node 
 void printAbove(TNode* node, int k) {
 
-	if(node == NULL || k < 0) return;
+    if(node == NULL || k < 0) return;
 
-	TNode *parent = NULL;
+    TNode *parent = NULL;
     parent = node->parent;
     while(parent != NULL) {
-	    k--;
-		if(k == 0)
-			cout<<parent->val<<endl;
-		else if(node == parent->plft) {
+        k--;
+		if(k == 0) {
+            cout<<parent->val<<endl;
+        } else if(node == parent->plft) {
 			printDown(parent->prgt, k-1);
-		}
-		else {
-			printDown(parent->plft,k-1);
-		}
+        } else {
+            printDown(parent->plft,k-1);
+        }
 		
-		node = parent;
+        node = parent;
         parent  = parent->parent;
     }
 }

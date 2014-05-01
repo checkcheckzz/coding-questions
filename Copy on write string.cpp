@@ -73,7 +73,7 @@ CopyOWString& CopyOWString::operator = (const char* str) {
     return *this;
 }
 
-int main(){
+int main() {
 
     CopyOWString a("abc");
     cout<<*a.getStr()<<endl;

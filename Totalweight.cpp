@@ -72,33 +72,30 @@ void printSubTreeSum(vector<vector<int> > &relation, int node) {
 }
 
 
-int main(){
+int main() {
 
-	vector<vector<int> > relation;
-	vector<int> a;
-	vector<int> b;
-	vector<int> c;
-	vector<int> d;
-	a.push_back(1);
-	a.push_back(0);
-	a.push_back(3);
-	relation.push_back(a);
-	b.push_back(2);
-	b.push_back(0);
-	b.push_back(4);
-	relation.push_back(b);
-	c.push_back(3);
-	c.push_back(0);
-	c.push_back(5);
-	relation.push_back(c);
-	d.push_back(4);
-	d.push_back(1);
-	d.push_back(3);
-	relation.push_back(d);
-	int node = 5;
-	printSubTreeSum(relation, node);
-
+    vector<vector<int> > relation;
+    vector<int> a;
+    vector<int> b;
+    vector<int> c;
+    vector<int> d;
+    a.push_back(1);
+    a.push_back(0);
+    a.push_back(3);
+    relation.push_back(a);
+    b.push_back(2);
+    b.push_back(0);
+    b.push_back(4);
+    relation.push_back(b);
+    c.push_back(3);
+    c.push_back(0);
+    c.push_back(5);
+    relation.push_back(c);
+    d.push_back(4);
+    d.push_back(1);
+    d.push_back(3);
+    relation.push_back(d);
+    int node = 5;
+    printSubTreeSum(relation, node);
 	return 0;
-
-
 }

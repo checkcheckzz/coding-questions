@@ -29,33 +29,34 @@ using namespace std;
 
 void printcombination(vector<int> vec) {
 
-	vector<int>::iterator it = vec.begin();
+    vector<int>::iterator it = vec.begin();
 
-	for (; it != vec.end(); ++it) {
+    for (; it != vec.end(); ++it) {
 
-		cout<<*it<<" ";
+        cout<<*it<<" ";
 
-	}
-	cout<<endl;
+    }
+	
+    cout<<endl;
 }
 
 
 void search(vector<int>& comb, int num, int target) {
-	if ( num ==0 ) {
 
-		printcombination(comb);
-		return;
-	}
+    if ( num ==0 ) {
 
-	if ( num < 0  )  return;
+        printcombination(comb);
+        return;
+    }
 
-	int i = num == target?1 : comb.back(); //always iterate from the factor larger than previous one
+    if ( num < 0  )  return;
 
-	for(; i <= num; ++i)
-	{
-		comb.push_back(i);
-		search(comb,num - i, target);
-		comb.pop_back();
+    int i = num == target?1 : comb.back(); //always iterate from the factor larger than previous one
+
+    for(; i <= num; ++i) {
+        comb.push_back(i);
+        search(comb,num - i, target);
+        comb.pop_back();
 	}
 }
 

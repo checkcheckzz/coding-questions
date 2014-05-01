@@ -26,13 +26,14 @@ struct Node {
 };
 
 
-Node *findNeighbor( Node *node, int level ){
+Node *findNeighbor( Node *node, int level ) {
 
     if( node == NULL ) return NULL;
     if( level == 0 )  return node;
 
     Node *left = findNeighbor(node->left,level+1);
-    if( left )  { //always return left child at first such that this node is the immediate right neighbor
+    //always return left child at first such that this node is the immediate right neighbor
+    if( left )  { 
 		return left;
 	} else  {  
 		return findNeighbor(node->right,level+1);
@@ -42,20 +43,19 @@ Node *findNeighbor( Node *node, int level ){
 Node* rightNeighbor(Node *node ){
 
     Node *parent = node->parent;
-
-    int level = 0; //records the level of node in order to find the same level neighbor
-
-    while(parent){
-
-        while( parent && parent->left != node ){ //find the lowest parent for node and the its immediate right neighbor
+    //records the level of node in order to find the same level neighbor
+    int level = 0; 
+    while(parent) {
+        //find the lowest parent for node and the its immediate right neighbor
+        while( parent && parent->left != node ) { 
             node = parent;
             parent = node->parent;
             level--;
         }
         if( parent == NULL )
             return NULL;
-
-        Node *local = findNeighbor( parent->right, level); //find the neighbor node with level 0
+        //find the neighbor node with level 0
+        Node *local = findNeighbor( parent->right, level); 
 
         if(local) {
             return local;

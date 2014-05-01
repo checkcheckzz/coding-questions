@@ -34,70 +34,69 @@ O(n) time, O(n) space
 using namespace std;
 
 struct Node {
-  int val;
-  Node *plft;
-  Node *prgt;
+   int val;
+   Node *plft;
+   Node *prgt;
   
-  Node(int v) : val(v), plft(NULL), prgt(NULL) {}
+   Node(int v) : val(v), plft(NULL), prgt(NULL) {}
 };
 
 
 void getHorizontalDistance(Node *root, int hd, unordered_map<int, int> &hdmp) { 
 
         
-        if (root == NULL) {  return; }
+    if (root == NULL) return;
   
         
-		getHorizontalDistance(root->plft, hd - 1, hdmp);
+    getHorizontalDistance(root->plft, hd - 1, hdmp);
   
         
-		int prevsum = (hdmp.find(hd) == hdmp.end()) ? 0 : hdmp.find(hd)->second;
+    int prevsum = (hdmp.find(hd) == hdmp.end()) ? 0 : hdmp.find(hd)->second;
 
-		if (hdmp.find(hd) == hdmp.end()) {
+    if (hdmp.find(hd) == hdmp.end()) {
 
-           hdmp.insert(make_pair<int,int>(hd, prevsum + root->val));
+        hdmp.insert(make_pair<int,int>(hd, prevsum + root->val));
   
-		} else {
+    } else {
 
-			hdmp[hd] = prevsum + root->val;
-		}
-
+        hdmp[hd] = prevsum + root->val;
+    }
 
         getHorizontalDistance(root->prgt, hd + 1, hdmp);
     }
 
 void verticalSum(Node *root) {
 
-	if (root == NULL) return;
+    if (root == NULL) return;
 
-	unordered_map<int, int> hdmp;
-	getHorizontalDistance(root, 0, hdmp);
+    unordered_map<int, int> hdmp;
+    getHorizontalDistance(root, 0, hdmp);
 
-	if (!hdmp.empty()) {
+    if (!hdmp.empty()) {
 
-		for (unordered_map<int, int>::iterator it = hdmp.begin(); it != hdmp.end(); ++it ) {
+        for (unordered_map<int, int>::iterator it = hdmp.begin(); it != hdmp.end(); ++it ) {
 
-			cout<< it->second <<" "<<endl;
+            cout<< it->second <<" "<<endl;
 
-		}
+        }
 
-	}
+   }
 
 }
 
 int main() {
 
-	Node *root = new Node(1);
-	root->plft = new Node(2);
-	root->prgt = new Node(3);
-	root->plft->plft = new Node(4);
-	root->plft->prgt = new Node(5);
-	root->prgt->plft = new Node(6);
-	root->prgt->prgt = new Node(7);
+    Node *root = new Node(1);
+    root->plft = new Node(2);
+    root->prgt = new Node(3);
+    root->plft->plft = new Node(4);
+    root->plft->prgt = new Node(5);
+    root->prgt->plft = new Node(6);
+    root->prgt->prgt = new Node(7);
 
-	verticalSum(root);
+    verticalSum(root);
 
-	return 0;
+    return 0;
 
 }
 

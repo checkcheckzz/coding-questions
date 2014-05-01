@@ -72,7 +72,7 @@ TreeNode* mergeHelper( TreeNode* image1, TreeNode* image2) {
 TreeNode* merge( const TreeNode* image1, const TreeNode* image2) {
     if( !image1->upperLeft && !image2->upperLeft) {
         return new TreeNode(image1->pixel && image2->pixel, image1->size);
-}
+    }
     if( !image1->upperLeft) {
         return mergeHelper(image1, image2);
     }

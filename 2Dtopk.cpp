@@ -32,8 +32,8 @@ struct node {
     node(): _x(0.0), _y(0.0){}
 };
 
-double distance(node x, node target){
-	return pow(x._x - target._x, 2)+pow(x._y - target._y,2);
+double distance(node x, node target) {
+	return pow(x._x - target._x, 2) + pow(x._y - target._y,2);
 }
 
 node target(0,0);
@@ -48,7 +48,7 @@ struct greater_note {
 
 
 vector<node> getKClosestNode(vector<node> nodes, int k) {
-    priority_queue<node,vector<node>,greater_note > q; //build the max heap
+    priority_queue<node, vector<node>, greater_note > q; //build the max heap
     size_t size = nodes.size();
     if (size <= k) return nodes;
     for (size_t i = 0; i < k; i++ ){
@@ -58,7 +58,7 @@ vector<node> getKClosestNode(vector<node> nodes, int k) {
 	
     while (num < size) {
         node top = q.top();
-        if (distance(nodes[num], target)< distance(top, target)) {
+        if (distance(nodes[num], target) < distance(top, target)) {
             q.pop();
             q.push(nodes[num]);
 			

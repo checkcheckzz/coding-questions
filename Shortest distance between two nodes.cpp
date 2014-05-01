@@ -23,14 +23,14 @@ O(n) time, O(n) space
 using namespace std;
 
 struct Node {
-	int val;
-	Node* plft;
-	Node* prgt;
-	Node(int v) : val(v), plft(NULL), prgt(NULL) {}
+    int val;
+    Node *plft;
+    Node *prgt;
+    Node(int v) : val(v), plft(NULL), prgt(NULL) {}
 
 };
 
-bool getNodePath(Node* root, Node* node, list<Node*>& path) {
+bool getNodePath(Node *root, Node *node, list<Node*>& path) {
     if(root == node) return true;
  
     path.push_back(root);
@@ -52,7 +52,7 @@ Node* lastCommonNode(const list<Node*>& path1, const list<Node*>& path2) {
     list<Node*>::const_iterator iterator1 = path1.begin();
     list<Node*>::const_iterator iterator2 = path2.begin();
    
-    Node* last = NULL;
+    Node *last = NULL;
  
     while(iterator1 != path1.end() && iterator2 != path2.end())
     {
@@ -66,9 +66,10 @@ Node* lastCommonNode(const list<Node*>& path1, const list<Node*>& path2) {
     return last;
 }
 
-Node* lastCommonAncestor(Node* root, Node* node1, Node* node2) {
+Node *lastCommonAncestor(Node* root, Node* node1, Node* node2) {
+
     if(root == NULL || node1 == NULL || node2 == NULL) return NULL;
-s
+
     list<Node*> path1;
     getNodePath(root, node1, path1);
  
@@ -118,7 +119,7 @@ int height(Node *lca, Node *node,bool &found) {
 
 int shortestDistance(Node *node1, Node* node2, Node *lca) {
 
-    if(lca)
+    if (lca)
     {
         bool found = false;
         int dist1 = height(lca, node1, found);
@@ -152,7 +153,7 @@ int main() {
     Node* node2 = root->prgt->plft;
     Node* lca = lastCommonAncestor(root, node1, node2);
 
-    if(lca) {
+    if (lca) {
         cout<<"Least Common Ancestor: "<<lca->val<<endl;
     }
     cout<<"Total distance: "<<shortestDistance(node1, node2, lca)<<endl;

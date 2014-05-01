@@ -16,12 +16,10 @@ using namespace std;
 string multiplyArrays(string num1, string num2, int k) {
         int N = num1.length(), M = num2.length();
         string res(N+M, '0');
-        for (int i = N - 1; i >= 0; --i)
-        {
+        for (int i = N - 1; i >= 0; --i) {
             int carry = 0;
             int j;
-            for (j = M - 1; j >= 0; --j)
-            {
+            for (j = M - 1; j >= 0; --j) {
 				//only keep res[0....k-1]
                 if((N-i) + (M-j) -1 > k) break;
                 int sum = carry + (res[i+j+1] - '0') + 
@@ -32,24 +30,23 @@ string multiplyArrays(string num1, string num2, int k) {
             res[i+j+1] += carry;
         }
 	
-		while (res.length() > 1 && res[0] == '0'){
+        while (res.length() > 1 && res[0] == '0'){
 
             res.erase(res.begin());
-		}
+        }
 
         if (res.length() <= k) return res;
 
-		int iter = 0;
-		while(iter < res.length() - k) {
-
-			res.replace(iter, iter + 1, "0");
-			iter++;
-		}
-		while (res.length() > 1 && res[0] == '0'){
+        int iter = 0;
+        while(iter < res.length() - k) {
+            res.replace(iter, iter + 1, "0");
+            iter++;
+        }
+        while (res.length() > 1 && res[0] == '0') {
 
             res.erase(res.begin());
-		}
-		return res;
+        }
+        return res;
 
 }
 
@@ -57,20 +54,20 @@ string multiplyArrays(string num1, string num2, int k) {
 string calculate(long m, long n, int k) {
 
 	
-	assert (m > 0 && n >=0  && k >= 0 );
+    assert (m > 0 && n >=0  && k >= 0 );
 
     if(n == 1) {
 
-		char p[32];
+        char p[32];
         itoa(m, p, 10);
-		string tmp = p;
+        string tmp = p;
         return tmp;
 
     } else if (n % 2) { // odd number
 
-		char p[32];
+        char p[32];
         itoa(m, p, 10);
-		string tmp = p;
+        string tmp = p;
         string result1 = calculate(m, n-1, k);
         return multiplyArrays(result1, tmp, k);
 

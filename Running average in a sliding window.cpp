@@ -29,22 +29,22 @@ void runningAverageWindow(int arr[], int len, int windowsize) {
 
 		cout<<sum / (float)len<<" ";
 
-	} else {
+    } else {
 
-       for (int i = 0; i < windowsize ; ++i) {
+        for (int i = 0; i < windowsize ; ++i) {
 
-		    sum += arr[i];
-	   }
+            sum += arr[i];
+        }
 
-	   cout<<sum / (float)windowsize<<" ";
+        cout<<sum / (float)windowsize<<" ";
 
-	   for (int i = windowsize; i < len; ++i) {
+        for (int i = windowsize; i < len; ++i) {
 
 		   
-		   sum = sum - arr[i-windowsize] + arr [i];
+            sum = sum - arr[i-windowsize] + arr [i];
 
-		   cout<<sum / (float)windowsize<<" ";
-	   }
+            cout<<sum / (float)windowsize<<" ";
+        }
 
 	}
 
@@ -53,7 +53,7 @@ void runningAverageWindow(int arr[], int len, int windowsize) {
 int main() {
 
     int arr[]={1,2,3,4,5,6};
-	int windowsize = 4;
+    int windowsize = 4;
     int len = sizeof(arr)/sizeof(arr[0]);
     runningAverageWindow(arr, len, windowsize);
     return 0;

@@ -71,6 +71,7 @@ bool findMaxItem(int arr[], int len, int& result) {
  
     return found;
 }
+
 int main() {
 
     int arr[] = {1,3,2,4,5,7,-3,-2,13};

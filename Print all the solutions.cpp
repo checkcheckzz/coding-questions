@@ -73,7 +73,7 @@ void printEqualProduct(int num) {
                     cout<< it1->second.first <<" * "<<it1->second.second<<" = "<< it2->second.first <<" * "<<it2->second.second <<endl;
                 }
             }
-        }
+    }
 
 }
 

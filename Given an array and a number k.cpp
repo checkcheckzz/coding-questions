@@ -46,13 +46,12 @@ bool hasDupk(int arr[], int len, int k) {
 	return false;
 }
 
-int main()
-{
+int main() {
 
-	int arr[]={3, 1, 2, 1, 2, 3, 9, 1};
-	int k = 2;
+    int arr[]={3, 1, 2, 1, 2, 3, 9, 1};
+    int k = 2;
     int len = sizeof(arr)/sizeof(arr[0]);
-	cout<<hasDupk(arr, len, k)<<endl;
-	return 0;
+    cout<<hasDupk(arr, len, k)<<endl;
+    return 0;
 }
 

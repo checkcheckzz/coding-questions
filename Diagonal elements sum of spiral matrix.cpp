@@ -31,7 +31,7 @@ O(n) time, O(1) space
 
 int diagSum(int maxtrixdim) {
    if (maxtrixdim < 1) return 0;
-   int curelement = (maxtrixdim-1)*maxtrixdim + 1;
+   int curelement = (maxtrixdim - 1) * maxtrixdim + 1;
    int result = curelement;
    while (--maxtrixdim > 0) {
    

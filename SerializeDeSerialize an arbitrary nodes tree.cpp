@@ -102,16 +102,16 @@ int main() {
     root1->vec.push_back(p3);
     char str[] = "";
     serialize(root1,str);
-	cout<<str<<endl;
+    cout<<str<<endl;
     
     const char mem1[] = "3 3 1 0 2 0 4 0";
     NODE *root = deSerialize(mem1);
     cout<<root->val<<endl;
     for (vector<NODE*>::iterator it = root->vec.begin(); it != root->vec.end(); it++) {
 	
-	     cout<<(*it)->val<<endl;
+        cout<<(*it)->val<<endl;
 		
-	}	
+    }	
     return 0;	
 
 }

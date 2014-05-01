@@ -33,9 +33,9 @@ int main() {
     int hour1 = 12, minute1 = 0;
     int hour2 = 18, minute2 = 0;
     int hour3 = 12, minute3 = 30;    
-    cout<<calAngle(hour1,minute1)<<endl;
-    cout<<calAngle(hour2,minute2)<<endl;
-    cout<<calAngle(hour3,minute3)<<endl;
+    cout<<calAngle(hour1, minute1)<<endl;
+    cout<<calAngle(hour2, minute2)<<endl;
+    cout<<calAngle(hour3, minute3)<<endl;
     return 0;
 
 }

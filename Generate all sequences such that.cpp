@@ -46,7 +46,7 @@ void printarr(int arr[], int len) {
 	
         cout<<arr[i]<<" ";
     }		
-	cout<<endl;
+    cout<<endl;
 }
 
 
@@ -70,7 +70,7 @@ void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visi
 		return;
 	}
 	
-	int curlen  =cur.size() + 1;
+	int curlen = cur.size() + 1;
 	
 	for(size_t i = 0 ; i < nums.size(); ++i) {
 	
@@ -100,31 +100,28 @@ void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visi
 	}
 }
 
-void allInterleaveSeq(vector<int>& nums)
-{
-	if(nums.empty()) {
-	
-	   return;
+void allInterleaveSeq(vector<int>& nums) {
+
+    if(nums.empty()) return;
 	   
-	}
 	
-	sort(nums.begin(),nums.end());
-	vector<int> cur;
-	vector<int> visited(nums.size(),0);
-	allInterleaveSeqInner(nums,cur,visited);
+    sort(nums.begin(),nums.end());
+    vector<int> cur;
+    vector<int> visited(nums.size(),0);
+    allInterleaveSeqInner(nums,cur,visited);
 }
 
 
-int main()
-{
-	int arr[] = {1,2,4,5,6};
+int main() {
+
+    int arr[] = {1,2,4,5,6};
     int len = sizeof(arr)/sizeof(arr[0]);
-	oneInterleaveSeq(arr, len);
-	printarr(arr,5);
+    oneInterleaveSeq(arr, len);
+    printarr(arr,5);
 
-	vector<int> b(5,0);
-	b[0]=1,b[1]=2, b[2]=4, b[3]=5, b[4]=6;
-	allInterleaveSeq(b);
+    vector<int> b(5,0);
+    b[0]=1,b[1]=2, b[2]=4, b[3]=5, b[4]=6;
+    allInterleaveSeq(b);
 
-	return 0;
+    return 0;
 }

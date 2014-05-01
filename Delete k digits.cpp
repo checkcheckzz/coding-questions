@@ -38,10 +38,10 @@ string deleteKDigits1Inner(string num, int start, int end, int k) {
 			minDigit = tmp;
 			minPosition = i;
 
-		}
+        }
     }
 
-	return num[minPosition] + deleteKDigits1Inner(num, minPosition + 1, end, k - (minPosition-start) );
+    return num[minPosition] + deleteKDigits1Inner(num, minPosition + 1, end, k - (minPosition-start) );
 
 }
 
@@ -105,7 +105,7 @@ string deleteKDigits2Inner(string num, int k) {
 		}
 		q.push_back(Pair(i, num[i]));
 	
-   }
+    }
 
 
     return res;
@@ -140,7 +140,7 @@ int deleteKDigits2(int num, int k) {
 
 }
 
-int main(){
+int main() {
 
   int num = 42139;
   int k = 3;

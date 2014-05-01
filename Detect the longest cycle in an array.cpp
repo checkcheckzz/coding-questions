@@ -22,17 +22,17 @@ O(n) time, O(n) space
 using namespace std;
 
 void detectLongestCycleInner(int start, int idx, int arr[], vector<bool>& visited, int &len) {
-     visited[idx] = true;
-     len++;
+    visited[idx] = true;
+    len++;
      
-     if (!visited[arr[idx]]) {
+    if (!visited[arr[idx]]) {
      
-           detectLongestCycleInner(start, arr[idx], arr, visited, len);
+        detectLongestCycleInner(start, arr[idx], arr, visited, len);
             
-     } else {
+    } else {
      
-           assert(start != idx);   //a cycle
-     }
+        assert(start != idx);   //a cycle
+    }
      
 }
 
@@ -46,23 +46,23 @@ Output: the length of longest cycle.
 
 int detectLongestCycle(int arr[], int len) {
 
-	int maxlen=0;
-	int curlen=0;
-	vector<bool> visited(n, false);
+    int maxlen = 0;
+    int curlen = 0;
+    vector<bool> visited(n, false);
 	
-        for (int i = 0; i <len; ++i) {
+    for (int i = 0; i <len; ++i) {
            
-          if (!visited[i]) {
+        if (!visited[i]) {
           
-             detectLongestCycleInner(i, i, arr, visited, len);
+            detectLongestCycleInner(i, i, arr, visited, len);
           
-             if (curlen > maxlen) {
-                maxlen = curlen;
-             }
-          }
+            if (curlen > maxlen) {
+               maxlen = curlen;
+            }
         }
+    }
 
-        return maxlen;
+    return maxlen;
 }
 
 
@@ -70,7 +70,7 @@ int detectLongestCycle(int arr[], int len) {
 }
 
 int main() {
-	int a[] = {3, 2, 1, 4, 0};
+    int a[] = {3, 2, 1, 4, 0};
     int len = sizeof(arr)/sizeof(arr[0]);
     cout<<detectLongestCycle(a, len)<<endl;
     return 0;

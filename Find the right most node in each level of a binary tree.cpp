@@ -44,14 +44,14 @@ vector<NODE*> getRightMostBT(NODE* root) {
     return vec;
 }
 
-int main(){
+int main() {
 
     NODE *head=new NODE(2);
     head->pLft=new NODE(3);
     head->pRgt=new NODE(5);
     head->pRgt->pRgt=new NODE(7);
     getRightMostBT(head);
-	return 0;
+    return 0;
 }
 
 

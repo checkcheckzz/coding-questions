@@ -7,7 +7,7 @@ Program an iterator for a List which may include nodes or List, i.e., {0,
 
 
 class Collection {
-    public:
+public:
         T next() {
             
             if (_type == 0)
@@ -55,7 +55,7 @@ class Collection {
             }
         }
 
-    private:
+private:
         std::vector<Collection> _buckets;
         T _value;
         int _type; // 0: value 1: buckets

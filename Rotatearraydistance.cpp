@@ -37,32 +37,31 @@ int rotateMinStep(int k, int len) {
 
 int rotationDistance(int arr[], int len) {
 
-  if (len == 1) return 0;
+    if (len == 1) return 0;
 
-  int maxdiff = abs(arr[0] - arr[1]);
-  int maxpos = 0;
+    int maxdiff = abs(arr[0] - arr[1]);
+    int maxpos = 0;
 
-  for (int i = 1; i < len; ++i)
-  {
-    int diff = abs(arr[i] - arr[(i + 1) % len]);
+    for (int i = 1; i < len; ++i) {
+  
+        int diff = abs(arr[i] - arr[(i + 1) % len]);
 
-    if (diff > maxdiff) {
-      maxdiff = diff;
-      maxpos = i;
-	} else if (diff == maxdiff) {
-      // equals
-      int len1 = rotateMinStep(maxpos,len);
-      int len2 = rotateMinStep(i, len);
+        if (diff > maxdiff) {
+            maxdiff = diff;
+            maxpos = i;
+	    } else if (diff == maxdiff) {
+            // equals
+            int len1 = rotateMinStep(maxpos,len);
+            int len2 = rotateMinStep(i, len);
 
-      if (len2 < len1)
-      {
-        maxdiff = diff;
-        maxpos = i;
-      }
+            if (len2 < len1) {
+                maxdiff = diff;
+                maxpos = i;
+            }
+        }
     }
-  }
 
-  return rotateMinStep(maxpos, len);
+    return rotateMinStep(maxpos, len);
 }
 
 int main() {

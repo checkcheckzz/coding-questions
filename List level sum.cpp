@@ -11,19 +11,19 @@ Because C++ can not handle a list with either list or a number, the solution is 
 */
 
 public static int sum(List<Object> list, int level) {
-        int result = 0;
-        for (Object obj:list) {
+    int result = 0;
+    for (Object obj:list) {
         
-            if (obj instanceof Integer) {
+        if (obj instanceof Integer) {
             
-                result += level * (Integer)obj;
+            result += level * (Integer)obj;
                 
-            } else if(obj instanceof List) {
+        } else if(obj instanceof List) {
                 
-                result += sum((List)obj, level + 1);
-            }
+            result += sum((List)obj, level + 1);
         }
-        
-        return result;
     }
+        
+    return result;
+    
 }

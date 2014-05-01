@@ -21,9 +21,9 @@ int count = 0;
 
 
 string rightPart(string left) {
-        if (left == "(") return ")";
-        if (left == "[") return "]";
-        return "}";
+    if (left == "(") return ")";
+    if (left == "[") return "]";
+    return "}";
 }
 
 void generateParenthesesInner(int n1, int n2, int n3, string result, string stack) {

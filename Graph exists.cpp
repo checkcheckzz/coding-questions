@@ -75,6 +75,7 @@ bool graphExist(int graph[], int len) {
 }
 
 int main() {
+
 	const int len = 5;
 	int graph[len] = {2,4,2,3,3};
 	

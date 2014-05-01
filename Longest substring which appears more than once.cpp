@@ -65,8 +65,7 @@ void findLongestDup(const char* str) {
     cout<<endl;
 }
 
-int main()
-{
+int main() {
     char s[] = "abcdfscdfbc";
     findLongestDup(s);
     return 0;

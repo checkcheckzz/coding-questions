@@ -26,15 +26,15 @@ using namespace std;
 
 bool isDuplicate(const string str) {
 
-	int strlen = str.size();
+    int strlen = str.size();
 
     if(strlen < 4) return false;
 
     int len = 1; //length of the duplicate substring
     int start = 0;
-    for(int i = 1; i< strlen; ++i){
+    for (int i = 1; i< strlen; ++i) {
 
-        if(str[start] == str[i]){
+        if (str[start] == str[i]) {
 
             start++;
             if(start >= len) start = 0; //reach an end of a duplicate substring, back to beginning
@@ -46,7 +46,7 @@ bool isDuplicate(const string str) {
             start = 0;  //back to beginning
         }
 
-        if(len > strlen / 2) return false;            
+        if (len > strlen / 2) return false;            
     }
 
     return len != 1 && (strlen % len == 0);
