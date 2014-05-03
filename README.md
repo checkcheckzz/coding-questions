@@ -8,7 +8,7 @@ original work, but I don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics): about 183 (127 done).
+Total Number (not including the problem in the special topics): about 182 (127 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. I don't write too many comments to explain every function.
@@ -108,7 +108,7 @@ Kth element in two sorted arrays
 
 [Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Iterator%20for%20matrix.cpp)
 
-Find Kth element in young tableau
+Kth element in young tableau
 
 [Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x](https://github.com/checkcheckzz/coding-problems/blob/master/Reversealternatelist.cpp)
 
@@ -125,7 +125,7 @@ Water flow path
 
 [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
 
-Number of closed rectangles in a matrix
+[Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/Numberclosedrectangles.cpp)
 
 [Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/Graph%20exists.cpp)
 
@@ -200,7 +200,7 @@ Generate all binary trees according to preorder traversal
 
 [Given a positive integer N, print all combinations of non-negative integer sum to N](https://github.com/checkcheckzz/coding-problems/blob/master/Print%20all%20combinations.cpp)
 
-How to find largest triangle in convex hull aside from brute force search
+Find largest triangle in convex hull aside from brute force search
 
 [Factorial digit sum](https://github.com/checkcheckzz/coding-problems/blob/master/Factorialdigitsum.cpp)
 
@@ -216,19 +216,17 @@ Nearest greater palindrome
 
 [GetDecimal](https://github.com/checkcheckzz/coding-problems/blob/master/GetDecimal.cpp)
 
-Smallest positive number can not be represented
+Smallest positive number that can not be represented
 
 [Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)](https://github.com/checkcheckzz/coding-problems/blob/master/Number%20k%3Da%5E2%20%2Bb%5E2.cpp)
 
-Change a m base number to a n base number
+[Change a m base number to a n base number](https://github.com/checkcheckzz/coding-problems/blob/master/MbasetoNbase.cpp)
 
-Impletement the cancall() function
+[Impletement the cancall() function](https://github.com/checkcheckzz/coding-problems/blob/master/Cancallfunction.cpp)
 
 Find the longest 0s surrounded by 1s in a binary expression
 
-Print all numbers including digit 5 smaller than number N
-
-Find the next higher number with the same digits
+[Print all numbers including digit 5 smaller than number N](https://github.com/checkcheckzz/coding-problems/blob/master/Printallnumwithdigit5.cpp)
 
 [Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/Angle%20between%20the%20hour%20and%20minute.cpp)
 
@@ -290,7 +288,7 @@ Permutation array of strings
 
 [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
 
-Find the first anagram of a given string in another string
+[Find the first anagram of a given string in another string](https://github.com/checkcheckzz/coding-problems/blob/master/Firstanagram.cpp)
 
 
 
@@ -307,7 +305,7 @@ Find the first anagram of a given string in another string
 
 [Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/Deepiterator.cpp)
 
-Divide integers
+[Divide integers](https://github.com/checkcheckzz/coding-problems/blob/master/Divideinteger.cpp)
 
 [Equation solution](https://github.com/checkcheckzz/coding-problems/blob/master/Equationsolution.cpp)
 
@@ -353,11 +351,11 @@ Total area multiple rectangles cover
 
 Turn off lights
 
-[Two dimensional top k](https://github.com/checkcheckzz/coding-problems/blob/master/2Dtopk.cpp)
+[Two dimensional top k](https://github.com/checkcheckzz/coding-problems/blob/master/TwoDtopk.cpp)
 
 [Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/Waterin2dhistogram.cpp)
 
-Dividing a plane of points into two equal halves
+Divide a plane of points into two equal halves
 
 Find largest triangle in convex hull
 
@@ -383,7 +381,7 @@ Quack class
 
 [Find the ID with most posts](https://github.com/checkcheckzz/coding-problems/blob/master/MostPosts.cpp)
 
-How to test a random shuffle program
+Test a random shuffle program
 
 Producing 64bit digest
 
@@ -399,7 +397,7 @@ Implement a recommendation function
 
 [Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
 
-Boggle puzzle
+[Boggle puzzle](https://github.com/checkcheckzz/coding-problems/blob/master/Bogglegame.cpp)
 
 [Readk() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/Readk().cpp)
 
@@ -412,7 +410,7 @@ Boggle puzzle
 Special Topics
 ---
 
-Here is a summary of special topics in my blog:
+Special topics in my blog:
 
 [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
 

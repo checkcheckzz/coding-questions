@@ -12,8 +12,8 @@ The time complexity should be o(nlgn).
 /*
 
 solution: sort the racers by start time and get their startranks. sort the racers by end time, and visit each
-racer to calculate the score. The score is the number of processed racers (ended earlier)
-whose startrank is higher than current racer. Note: we need to use deque. 
+racer to calculate the score. The score is the number of processed racers
+whose startrank is higher than current racer. Note: we need to use deque to store the processed racers. 
 O(nlogn) time, O(n) space
 */
 
