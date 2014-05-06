@@ -8,7 +8,7 @@ original work, but I don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics): about 182 (127 done).
+Total Number (not including the problem in the special topics): about 182 (135 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. I don't write too many comments to explain every function.
@@ -181,7 +181,7 @@ Binary search tree Iterator
 
 SerializeDeSerialize a binary search tree
 
-Generate all binary trees according to preorder traversal
+[Generate all binary trees according to preorder traversal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Generatebts.cpp)
 
 
 
