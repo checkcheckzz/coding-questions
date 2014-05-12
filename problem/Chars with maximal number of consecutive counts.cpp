@@ -2,10 +2,13 @@
 
 Given a string, print out the chars with maximal number of consecutive counts
 
-"this is a sentence" => [t, h, i, s, i, s, a, s, e, n, t, e, n, c, e]
-"thiis iss a senntencee" => [i, s, n, e]
-"thiisss iss a senntttenceee" => [s, t, e]
-"thiisss iss a sennnntttenceee" => [n]
+For example:
+Input: "this is a sentence"
+Output: [t, h, i, s, i, s, a, s, e, n, t, e, n, c, e]
+Input: "thiisss iss a senntttenceee"
+Output: [s, t, e]
+Input:"thiisss iss a sennnntttenceee"
+Output: [n]
 
 */
 

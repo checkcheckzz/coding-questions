@@ -1,11 +1,13 @@
 /*
 Given a positive number and  k, delete k digits of this number to get the smallest number.
-Suppose the num is 42139, k is 1, the smallest number should be 2139.
+For example:
+Input: num = 42130, k =1
+Output: 2139
 */
 
 /*
 solution1: change the int to string. Scan the string first k digits from left, get the minposition of the smallest digit. 
-Then, delete the first k digits and call the funciton again on the rest substring from minposition+1 to the end.
+Then, delete the first k digits and call the function again on the rest substring from minposition+1 to the end.
 O(n*k) time, O(1) space
 */
 

@@ -2,8 +2,9 @@
 
 Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate).
 
-
-Ex: {2,3,1,5,4,6,3} //should return 3.
+For example:
+Input: {2,3,1,5,4,6,3}
+Output: 3
 
 
 */

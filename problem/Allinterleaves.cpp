@@ -1,6 +1,11 @@
 /*
 
-Find all the possible interleaves of two input strings
+Find all the possible interleaves of two input strings.
+
+For example:
+
+input: ab, c
+output: abc, acb, cab
 
 */
 

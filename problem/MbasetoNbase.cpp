@@ -21,7 +21,7 @@ O(n) time, O(1) space
 
 void mbaseToNbase1(char *numbasem, unsigned int m,  char *numbasen, unsigned int n) {
 
-	assert(numbasem && m>0 && numbasen && n>0 );
+    assert(numbasem && m>0 && numbasen && n>0 );
     int i = 0;
     char c, *p = numbasen;
  
@@ -29,7 +29,6 @@ void mbaseToNbase1(char *numbasem, unsigned int m,  char *numbasen, unsigned int
     while (*numbasem != '\0')
         i = i*m + *numbasem++ - '0';
      
-    
     while (i) {
         *p++ = i % n + '0';
         i /= n;
@@ -52,14 +51,11 @@ the m base nunber to n base number directly.
 
 */
 
-
-
-int main(){
-
-	char *a = "10111";
-	char b[20] = {"           "};
-	mbaseToNbase1(a, 2, b, 8);
-	cout<<b<<endl;
-	return 0;
+int main() {
+    char *a = "10111";
+    char b[20] = {"           "};
+    mbaseToNbase1(a, 2, b, 8);
+    cout<<b<<endl;
+    return 0;
 }
 

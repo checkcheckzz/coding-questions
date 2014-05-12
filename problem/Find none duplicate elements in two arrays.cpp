@@ -1,6 +1,6 @@
 /*
 
-Given two arrays, find which number in first array is not present in the second array
+Given two arrays, find the numbers in first array but not in the second array
 
 */
  

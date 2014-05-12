@@ -1,5 +1,5 @@
 /*
-Find the last 1000 digits of  5^1234566789893943.
+Find the last k digits of m^n, where m, n is positive integer, n may be very large.
 */
 
 /*

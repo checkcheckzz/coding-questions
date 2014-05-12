@@ -1,5 +1,8 @@
 /*
 Given a string£¬delete all char A£¬and double all char B.
+For example:
+Input: ACAABDB
+Output: CBBDBB
 */
 
 /*

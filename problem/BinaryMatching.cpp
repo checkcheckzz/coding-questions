@@ -5,8 +5,8 @@ Char ? can match 0 and 1.
 
 For example:
 
-input : 1?? 
-output: {100, 101, 110, 111}.
+Input : 1?? 
+Output: {100, 101, 110, 111}.
 
 */
 

@@ -3,12 +3,12 @@ Given two strings, check whether once string can be transformed to another strin
 by insert, delete , or replace one char.
 
 For example:
-
-cat cast True    // by insert
-cat at True      // by delete
-cat cot True    // by replace
-cat dog False   // no way
-cat cat False  // the same, no way
+Input     Output
+cat cast  True    // by insert
+cat at    True      // by delete
+cat cot   True    // by replace
+cat dog   False   // no way
+cat cat   False  // the same, no way
 
 */
 

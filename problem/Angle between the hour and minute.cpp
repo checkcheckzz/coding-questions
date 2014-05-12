@@ -1,5 +1,8 @@
 /*
 Given a time in 24 hour format, calculate the angle between the hour and minute hands
+For example"
+Input: hour = 18, minute = 0
+Output: 180
 */
 
 /*

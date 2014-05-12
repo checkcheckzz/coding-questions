@@ -8,7 +8,7 @@ original work, but I don't know who write them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics): about 182 (135 done).
+Total Number (not including the problem in the special topics): about 195 (135 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. I don't write too many comments to explain every function.
@@ -116,9 +116,19 @@ Kth element in young tableau
 
 Water flow path
 
+Form an ascending sequence by removing elements
 
+Celebrity problem
 
+Matrix Region Sum
 
+Recover the queue
+
+Flatten a list
+
+Find a rectangle with four corners  1
+
+Search a target in an array with unknown length
 
 
 [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Traversalgrid.cpp)
@@ -183,7 +193,7 @@ SerializeDeSerialize a binary search tree
 
 [Generate all binary trees according to preorder traversal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Generatebts.cpp)
 
-
+Trim binary search tree
 
 
 
@@ -234,7 +244,9 @@ Find the longest 0s surrounded by 1s in a binary expression
 
 [Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers.cpp)
 
+Climb ladder
 
+Flip bits
 
 
 
@@ -290,8 +302,9 @@ Permutation array of strings
 
 [Find the first anagram of a given string in another string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Firstanagram.cpp)
 
+Reverse index search
 
-
+Valid Phone Number
 
 
 
@@ -407,6 +420,9 @@ Implement a recommendation function
 
 [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20malloc%20and%20free.cpp)
 
+Random generator with blacklist
+
+
 Special Topics
 ---
 
@@ -432,7 +448,7 @@ Special topics in my blog:
 
 [Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
 
-[Suffix Array](http://itgeekworkhard.com/study/2014/03/22/coding-suffix-array/)
+[Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
 
 [Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
 

@@ -1,5 +1,5 @@
 /*
-count the longest continuous 0 bits in  an array
+count the longest continuous 0 bits of all integers in an array
 */
 
 /*

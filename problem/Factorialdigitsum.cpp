@@ -2,7 +2,9 @@
 
 Sum the digits of a number's factorial.
 
-For example, input 10£¬because 10£¡= 3628800£¬return sum = 3+6+2+8+8+0+0 = 27
+For example:
+Input: 10
+Output: 27 (27 = 3+6+2+8+8+0+0, 10£¡= 3628800)
 
 */
 
