@@ -1,6 +1,6 @@
 /*
 
-Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays
+Kth maximal element of array c, where c[k] = a[i] + b[j], a, b are another two arrays
 
 */
 
@@ -112,16 +112,16 @@ int findKthSum2(int A[],int m,int B[],int n,int k) {
 
 int main() {
 	
-	 int A[4] = {4,3,2,1};
-	 int B[2] = {3,2};
+    int A[4] = {4,3,2,1};
+    int B[2] = {3,2};
 		
-	 int AA[4] = {1,2,3,4};
-	 int BB[2] = {2,3};
+    int AA[4] = {1,2,3,4};
+    int BB[2] = {2,3};
 	 
-	 int res1 = findKthSum1(A,4,B,2,3);
-	 int res2 = findKthSum2(AA,4,BB,2,3);
-	 cout<<res1<<endl;
-	 cout<<res2<<endl;
-	 return 0;	
+    int res1 = findKthSum1(A,4,B,2,3);
+    int res2 = findKthSum2(AA,4,BB,2,3);
+    cout<<res1<<endl;
+    cout<<res2<<endl;
+    return 0;	
 }
 

@@ -3,8 +3,8 @@ Coding-Problem
 
 Statement
 ---
-The problem comes from interview, discussion from mitbbs and blogs I read. Some codes are NOT my
-original work, but I don't know who write them.
+The problem comes from interview, discussion from some bbs and blogs I read. Some codes are NOT my
+original work, but I don't know who wrote them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
