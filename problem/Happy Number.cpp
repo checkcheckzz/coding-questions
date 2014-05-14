@@ -1,9 +1,10 @@
 /*
 
+Check whether a number is a happy number, and print the first k hapyy numbers from this number.
+
 A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, 
 and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. 
 Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers.
-
 
 If a number is happy, then all members of its sequence are happy; if a number is unhappy, all members of the sequence are unhappy.
 
@@ -12,8 +13,8 @@ If a number is happy, then all members of its sequence are happy; if a number is
 
 /*
 
-solution:  if we get 1£¬ return true£¬ cache the middel num, if we get certain previously, 
-return false (because a cycle occurs£¬and you can't get to 1 forever.)
+solution:  if we get 1ï¼Œ return trueï¼Œ cache the middel num, if we get certain previously, 
+return false (because a cycle occursï¼Œand you can't get to 1 forever.)
 
 Proof for the sequence must get smaller.
 Suppose the number gets to n digits, next number is less than
@@ -33,39 +34,66 @@ no possible to overflow
 #include<set>
 using namespace std;
 
+int sumDigits(int num){
 
+	int sum = 0;
+	while (num) {
 
-int sumDigits(int num) {
+	  int digit = num % 10;
+	  num = num / 10;
+	  sum += digit * digit;
+	}
 
-    int sum = 0;
-    while (num) {
-        int digit = num % 10;
-        num = num / 10;
-        sum += digit * digit;
-    }
-
-    return sum;
+	return sum;
 }
 
-bool isHappyNum(int num, set<int> &st ) {
+bool isHappyNum(int num, set<int> &st ){
 
-    while (num > 1 && st.find(num) == st.end()) {
+	while (num > 1 && st.find(num) == st.end()) {
 
-        st.insert(num);
-        num = sumDigits(num);
+		st.insert(num);
+		num = sumDigits(num);
 
-    }
+	}
 
-   if (num == 1) return true;
-   return false;
+	if (num == 1) return true;
+
+	return false;
+
+
+}
+void printFirstk(int num, int k) { 
+
+    set<int> stt;
+    int count = 0;
+    while (count < k) {
+        if (isHappyNum(num, stt)) { 
+            count++;
+			cout<<num<<endl;
+        }
+        num++;
+        stt.clear();
+	}
+
+
 }
 
 int main() {
 
-    int num = 13;
-    set<int> st;
-    cout<<isHappyNum(num, st)<<endl;
+    int num;
+    cin>>num;
+
+	set<int> st;
+	bool res = isHappyNum(num, st);
+    if (res) {
+        cout<<num<<" is a happy number"<<endl;
+    } else {
+        cout<<num<<" is not a happy number"<<endl;
+    }
+    int k = 8;
+    cout<<"The next " << k<<" happy number from "<<num<<" is:"<<endl;
+    printFirstk(num, k);
+
     return 0;
 
 }
-
