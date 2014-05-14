@@ -111,10 +111,10 @@ void maxRepCount2(char *sen) {
 
 
 int main() {
-    //char s[]="this is a sentence";
-    //char s[]="thiis iss a senntencee";
-    char s[]="thiisss iss a senntttenceee";
-    //char s[]="thiisss iss a sennnntttenceee";
+    //char s[] = "this is a sentence";
+    //char s[] = "thiis iss a senntencee";
+    char s[] = "thiisss iss a senntttenceee";
+    //char s[] = "thiisss iss a sennnntttenceee";
     maxRepCount1(s);
     maxRepCount2(s);
     return 0;

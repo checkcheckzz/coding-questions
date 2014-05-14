@@ -149,9 +149,9 @@ int main() {
     root->prgt->prgt->plft = new Node(8);
     root->prgt->prgt->prgt = new Node(9);
 
-    Node* node1 = root->prgt->prgt->plft;
-    Node* node2 = root->prgt->plft;
-    Node* lca = lastCommonAncestor(root, node1, node2);
+    Node *node1 = root->prgt->prgt->plft;
+    Node *node2 = root->prgt->plft;
+    Node *lca = lastCommonAncestor(root, node1, node2);
 
     if (lca) {
         cout<<"Least Common Ancestor: "<<lca->val<<endl;

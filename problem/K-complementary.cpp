@@ -39,24 +39,23 @@ int twoSumExtension(int arr[], int len, int k) {
         unordered_map<int, int> mp;
 
         int count = 0;
-        for(int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
 
             if(mp.find(arr[i]) == mp.end()) {
                 mp[arr[i]] = 1;
             } else {
-
                 mp[arr[i]]++;
-			}
+            }
         }
 
-        for(int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
 
-            if(mp.find(k - arr[i]) != mp.end() && mp[k - arr[i]] > 0) {
-                if(arr[i] == k - arr[i]){
+            if (mp.find(k - arr[i]) != mp.end() && mp[k - arr[i]] > 0) {
+                if(arr[i] == k - arr[i]) {
                     count += 1;					
                     mp[arr[i]]--;
                 }
-                else{
+                else {
                     count += 2 * mp.count(arr[i]) * mp.count(k - arr[i]);
                     mp[arr[i]]--;
                     mp[k-arr[i]]--;
@@ -68,9 +67,9 @@ int twoSumExtension(int arr[], int len, int k) {
 
 
 
-int main(){
+int main() {
 
-    int arr[]= {1, 8, -3, 0, 1, 3, -2, 4, 5};
+    int arr[] = {1, 8, -3, 0, 1, 3, -2, 4, 5};
     int len = sizeof(arr)/sizeof(arr[0]);
     int k = 6;
     cout<<twoSumExtension(arr, len, k)<<endl;

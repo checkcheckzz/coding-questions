@@ -46,8 +46,8 @@ int minDiff(int arrA[],int arrAlen, int arrB[], int arrBlen) {
 
 int main() {
 
-  int a[2]={0,3};
-  int b[3]={2,7,9};
+  int a[2] = {0,3};
+  int b[3] = {2,7,9};
   cout<<minDiff(a,2,b,3)<<endl;
   return 0;
 

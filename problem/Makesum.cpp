@@ -1,7 +1,9 @@
 /*
 
-String of digits, insert ¡°+¡± in between to make sum to be a value
-For example, input "897", target = 24 output "8+9+7"
+String of digits, insert + in between to make sum to be a value
+For example:
+Input: string = "897", target = 24 
+Output: "8+9+7"
 
 */
 

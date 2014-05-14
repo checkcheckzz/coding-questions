@@ -1,8 +1,11 @@
 /*
+Given a binary tree with integers, heapify the binary tree.
+*/
 
+
+/*
 solution: recursive call to the leaf, and shiftup.
 O(n) time
-
 */
 
 #include<iostream>
@@ -47,20 +50,19 @@ void shiftUp(NODE *node) {
 
 void heapifyBinaryTree(NODE *root) {
 
-     if (!root) return;
+    if (!root) return;
 
-     if (root->plft) {
+    if (root->plft) {
+        heapifyBinaryTree(root->plft); 
+    }    
 
-         heapifyBinaryTree(root->plft); 
-     }    
+    if (root->prgt) {
 
-     if (root->prgt) {
-
-         heapifyBinaryTree(root->prgt);
+        heapifyBinaryTree(root->prgt);
      
-     }
+    }
 
-     shiftUp(root);
+    shiftUp(root);
 
 }
 
