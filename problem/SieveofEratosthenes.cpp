@@ -20,16 +20,16 @@ void flagMultiples(bool arr[], int a, unsigned int num) {
     while ( temp <= num ) {
         arr[ temp-1 ] = true; 
         ++i;
-		temp = i * a;
+        temp = i * a;
     }
 }
  
 
 void sieveOfEratosthenesAlg(unsigned int num) {
 
-	if (num < 2) {
+    if (num < 2) {
         return;  
-	} else {
+    } else {
         bool *visited = new bool[num];
         for (int k = 0; k < num; k++) {
             visited[k] = false;
@@ -43,9 +43,8 @@ void sieveOfEratosthenesAlg(unsigned int num) {
             }
         }
 
-		delete [] visited;
+        delete [] visited;
     }
-	
 	
 }
  
