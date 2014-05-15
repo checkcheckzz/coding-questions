@@ -1,6 +1,6 @@
 /*
 
-Check whether a number is a happy number, and print the first k hapyy numbers from this number.
+Check whether a number is a happy number, and print the first k happy numbers from this number.
 
 A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, 
 and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. 
@@ -13,8 +13,8 @@ If a number is happy, then all members of its sequence are happy; if a number is
 
 /*
 
-solution:  if we get 1， return true， cache the middel num, if we get certain previously, 
-return false (because a cycle occurs，and you can't get to 1 forever.)
+solution:  if we get 1，return true, cache the middle number, if we get previous visited number, 
+return false (because a cycle occurs, and you can't get to 1 forever.)
 
 Proof for the sequence must get smaller.
 Suppose the number gets to n digits, next number is less than
