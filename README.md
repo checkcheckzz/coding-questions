@@ -130,9 +130,9 @@ Find a rectangle with four corners  1
 
 Search a target in an array with unknown length
 
-Sorting
+[Sorting](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Sorting.cpp)
 
-Name numbers
+[Name numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Namenumbers.cpp)
 
 Closest pair problem
 
