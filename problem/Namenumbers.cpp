@@ -1,10 +1,10 @@
 /*
 
-Spell out a number in English.
+Spell out an integer number in English.
 For example:
 Input: 1000234
 Output: One Thousand, Two Hundred and Thirty Four
-
+Note: support negative integer.
 */
 
 
@@ -42,7 +42,7 @@ string underHundred(int num) {
 
     if (num >= 1 && num <= 9) {
         output += lastdigit[num] + " ";
-	}
+    }
 
     return output;
 }
@@ -50,9 +50,9 @@ string underHundred(int num) {
 string translateNumber(long long num) {
     if (num == 0) {
         return "Zero";
-	} else if ( num < 0) {
+    } else if ( num < 0) {
         return "Negative " + translateNumber(-1 * num);
-	}
+    }
     int index = 0;
     string output = "";
 
