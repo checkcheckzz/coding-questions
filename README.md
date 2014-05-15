@@ -8,7 +8,7 @@ original work, but I don't know who wrote them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics): about 200 (140 done).
+Total Number (not including the problem in the special topics): about 202 (142 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
 The solution may not be optimal, welcome to give your advice. I don't write too many comments to explain every function.
@@ -150,6 +150,8 @@ Closest pair problem
 
 Calculate the distance from each empty room to nearest guard
 
+[Graph Components](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graphcomponents.cpp)
+
 Construct a xml tree
 
 [Heapify a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heapify%20a%20binary%20tree.cpp)
@@ -260,9 +262,9 @@ Climb ladder
 
 Flip bits
 
-Sieve of Eratosthenes
+[Sieve of Eratosthenes algorithm](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SieveofEratosthenes.cpp)
 
-
+[Print prime factors of a given number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Primefactors.cpp)
 
 
 
