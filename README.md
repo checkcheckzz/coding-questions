@@ -11,9 +11,9 @@ Most code style follows [Google C++ Style Guide](http://google-styleguide.google
 Total Number (not including the problem in the special topics): about 202 (142 done).
 
 Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
-The solution may not be optimal, welcome to give your advice. I don't write too many comments to explain every function.
+The solution may not be optimal, welcome to give your better solution. You can send the corresponding pull request. 
 
-By default, the time complexity is the worst time and space complexity does not include stack space.
+By default, the time complexity is the worst time and space complexity does not include the stack space.
 
 Problem
 ---
