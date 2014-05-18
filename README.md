@@ -11,7 +11,8 @@ Coding-Problem
 
 ---
 Most problems come from IT company interview. Some solutions are NOT my
-original work, but I don't know who wrote them.
+original work, but I don't know who wrote them. Some problems are
+difficult, and the special topics include some advanced ones.  
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
@@ -20,27 +21,19 @@ Total Number (not including the problem in the special topics) of Problems: abou
 Although I try to execute every program, bugs may still exist because the test cases are not enough, welcome to find bugs. 
 The solution may not be optimal, welcome to give your better solution. You can send the corresponding pull request. 
 
-By default, the time complexity is the worst time and the space complexity doesn't include the stack space. Some problems are
-difficult.  
+By default, the time complexity is the worst time and the space complexity doesn't include the stack space. 
 
 ####[[⬆]](#toc) <a name='prob'>Problem:</a>
 ---
 
-[Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20cycle%20in%20an%20array.cpp)
-
-[Detect the longest cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20the%20longest%20cycle%20in%20an%20array.cpp)
-
-[List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/List%20level%20sum.cpp)
-
-[Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays.cpp)
-
-[Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Generate%20all%20sequences%20such%20that.cpp)
-
-[Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Replaced%20by%20k.cpp)
-
-[Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Max%20production%20subarray.cpp)
-
-[Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Diagonal%20elements%20sum%20of%20spiral%20matrix.cpp)
+* [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20cycle%20in%20an%20array.cpp)
+* [Detect the longest cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20the%20longest%20cycle%20in%20an%20array.cpp)
+* [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/List%20level%20sum.cpp)
+* [Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays.cpp)
+* [Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Generate%20all%20sequences%20such%20that.cpp)
+* [Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Replaced%20by%20k.cpp)
+* [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Max%20production%20subarray.cpp)
+* [Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Diagonal%20elements%20sum%20of%20spiral%20matrix.cpp)
 
 [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
 
@@ -457,29 +450,18 @@ Random generator with blacklist
 
 Special topics in my blog:
 
-[Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
-
-[Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
-
-[Graph Search](http://itgeekworkhard.com/study/2014/02/14/coding-graph-search/)
-
-[Shortest Path](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
-
-[String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
-
-[String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
-
-[Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
-
-[Knapsack Problem](http://itgeekworkhard.com/notes/2014/02/27/coding-knapsack/)
-
-[Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
-
-[Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
-
-[Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
-
-[Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
+* [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
+* [Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
+* [Graph Search](http://itgeekworkhard.com/study/2014/02/14/coding-graph-search/)
+* [Shortest Path](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
+* [String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
+* [String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
+* [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
+* [Knapsack Problem](http://itgeekworkhard.com/notes/2014/02/27/coding-knapsack/)
+* [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
+* [Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
+* [Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
+* [Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
 
 
 
