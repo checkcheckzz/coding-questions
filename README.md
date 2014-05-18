@@ -3,24 +3,25 @@ Coding-Problem
 
 ## <a name='toc'>Table of Contents</a>
 
- 1. [Statement](#stat)
- 1. [Problem](#prob)
- 1. [Special Topics](#st)
+* [Statement](#stat)
+* [Problem](#prob)
+* [Special Topics](#st)
 
 ####[[⬆]](#toc) <a name='stat'>Statement:</a>
 
 ---
-The problem comes from interview, discussion from some bbs and blogs I read. Some codes are NOT my
+Most problems come from IT company interview. Some solutions are NOT my
 original work, but I don't know who wrote them.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics): about 202 (142 done).
+Total Number (not including the problem in the special topics) of Problems: about 202 (142 done).
 
-Although I try to execute every program, bugs may still exist because the test cases are not enough. Welcome to find bugs. 
+Although I try to execute every program, bugs may still exist because the test cases are not enough, welcome to find bugs. 
 The solution may not be optimal, welcome to give your better solution. You can send the corresponding pull request. 
 
-By default, the time complexity is the worst time and space complexity does not include the stack space.
+By default, the time complexity is the worst time and the space complexity doesn't include the stack space. Some problems are
+difficult.  
 
 ####[[⬆]](#toc) <a name='prob'>Problem:</a>
 ---
