@@ -98,24 +98,6 @@ h1 {
   position: absolute;
 }
 
-/* Social
-   ========================================================================== */
-
-.social-buttons{
-  list-style: none;
-  margin: 1em auto 2em;
-  text-align: center;
-}
-
-.social-buttons li{
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.fb-btn {
-	width: 82px;
-}
-
 
 /* Font-face */
 
