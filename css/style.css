@@ -6,7 +6,7 @@ body {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #0000FF;
+  color: #FF0000;
 }
 
 p {
@@ -67,6 +67,53 @@ h1 {
   width: 700px;
   margin: 0 auto;
   padding: 30px;
+}
+
+/* list
+   ========================================================================== */
+
+.list div {
+  width: 500px;
+  margin: 10px
+}
+ 
+.list ol {
+  color: #ccc;
+  list-style-type: none;
+}
+ 
+.list ol li {
+  position: relative;
+  font: bold italic 45px/1.5 Helvetica, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+ 
+.list li p {
+  font: 16px/1.5 Helvetica, sans-serif;
+  padding-left: 60px;
+  color: #555;
+}
+ 
+.list span {
+  position: absolute;
+}
+
+/* Social
+   ========================================================================== */
+
+.social-buttons{
+  list-style: none;
+  margin: 1em auto 2em;
+  text-align: center;
+}
+
+.social-buttons li{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.fb-btn {
+	width: 82px;
 }
 
 
