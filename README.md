@@ -1,4 +1,4 @@
-Coding-Problem
+Coding Questions
 ===============
 
 ## <a name='toc'>Table of Contents</a>
@@ -6,13 +6,14 @@ Coding-Problem
 * [Statement](#stat)
 * [Problem](#prob)
     * [Array](#array)
-	* [String]()
-	* [Linked List]()
-	* [Tree]()
-	* [Math]()
-	* [Graph]()
-	* [Sortiing]()
-	* [Dynamic Programming]()
+	* [String](#str)
+	* [Linked List](#list)
+	* [Heap](#heap)
+	* [Tree](#tree)
+	* [Math](#math)
+	* [Graph](#graph)
+	* [Sortiing](#sorting)
+	* [Dynamic Programming](#dp)
 * [Special Topics](#st)
 
 ###[[⬆]](#toc) <a name='stat'>Statement:</a>
@@ -35,18 +36,54 @@ By default, the time complexity is the worst time and the space complexity doesn
 
 ####[[⬆]](#toc) <a name='array'>Array:</a>
 
-
 * [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20cycle%20in%20an%20array.cpp)
 * [Detect the longest cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20the%20longest%20cycle%20in%20an%20array.cpp)
-* [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/List%20level%20sum.cpp)
-* [Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays.cpp)
 * [Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Generate%20all%20sequences%20such%20that.cpp)
 * [Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Replaced%20by%20k.cpp)
-* [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Max%20production%20subarray.cpp)
 * [Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Diagonal%20elements%20sum%20of%20spiral%20matrix.cpp)
-* [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
 * [Given an array of size n, the array contains numbers in range from 0 to k-1 where k is a positive integer and k <= n. Find the maximum repeating number in this array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20maximum%20repeating%20number%20in%20this%20array.cpp)
+
+
+
+--
+####[[⬆]](#toc) <a name='str'>String:</a>
+
+* [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
+
+
+--
+####[[⬆]](#toc) <a name='list'>Linked List:</a>
+
+* [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/List%20level%20sum.cpp)
+
+--
+####[[⬆]](#toc) <a name='heap'>Heap:</a>
+
+* [Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays.cpp)
+
+--
+####[[⬆]](#toc) <a name='tree'>Tree:</a>
+
+
+--
+####[[⬆]](#toc) <a name='math'>Math:</a>
+
 * [Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20duplicate%20element.cpp)
+
+--
+####[[⬆]](#toc) <a name='graph'>Graph:</a>
+
+--
+####[[⬆]](#toc) <a name='sorting'>Sorting:</a>
+
+--
+####[[⬆]](#toc) <a name='dp'>Dynamic Programming:</a>
+
+* [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Max%20production%20subarray.cpp)
+
+
+--
+
 * [Find the minimal difference between two sorted arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20minimal%20difference%20between%20two%20sorted%20arrays.cpp)
 * [Sliding Window Maximum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Sliding%20Window%20Maximum.cpp)
 * Jump the river
