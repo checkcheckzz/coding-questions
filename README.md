@@ -5,10 +5,17 @@ Coding-Problem
 
 * [Statement](#stat)
 * [Problem](#prob)
+    * [Array](#array)
+	* [String]()
+	* [Linked List]()
+	* [Tree]()
+	* [Math]()
+	* [Graph]()
+	* [Sortiing]()
+	* [Dynamic Programming]()
 * [Special Topics](#st)
 
-####[[⬆]](#toc) <a name='stat'>Statement:</a>
-
+###[[⬆]](#toc) <a name='stat'>Statement:</a>
 ---
 Most problems come from IT company interview. Some solutions are NOT my
 original work, but I don't know who wrote them. Some problems are
@@ -23,8 +30,11 @@ The solution may not be optimal, welcome to give your better solution. You can s
 
 By default, the time complexity is the worst time and the space complexity doesn't include the stack space. 
 
-####[[⬆]](#toc) <a name='prob'>Problem:</a>
+###[[⬆]](#toc) <a name='prob'>Problem:</a>
 ---
+
+####[[⬆]](#toc) <a name='array'>Array:</a>
+
 
 * [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20cycle%20in%20an%20array.cpp)
 * [Detect the longest cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Detect%20the%20longest%20cycle%20in%20an%20array.cpp)
@@ -233,7 +243,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 * Random generator with blacklist
 
 
-####[[⬆]](#toc) <a name='st'>Special Topics:</a>
+###[[⬆]](#toc) <a name='st'>Special Topics:</a>
 ---
 
 Special topics in my blog:
