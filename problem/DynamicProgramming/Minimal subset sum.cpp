@@ -12,7 +12,7 @@ output 1
 
 /*
 
-solution: dynamic programming.The problem transfers to partition the array to two parts such that their difference is as close as possible.
+solution: dynamic programming. The problem transfers to partition the array to two parts such that their difference is as close as possible.
 
 part[i][j]:true if a subset of {arr[0], arr[1], ..arr[j-1]} has sum equal to i, otherwise false
 

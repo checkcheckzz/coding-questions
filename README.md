@@ -15,6 +15,7 @@ Coding Questions
   - [ ] [Graph](#graph)
   - [ ] [Sortiing and Search](#sortsearch)
   - [ ] [Dynamic Programming](#dp)
+  - [ ] [Other](#other)
 - [ ] [Special Topics](#st)
 
 ###[[⬆]](#toc) <a name='stat'>Statement:</a>
@@ -25,9 +26,9 @@ difficult, and the special topics include some advanced ones.
 
 Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 
-Total Number (not including the problem in the special topics) of Problems: about 202 (142 done).
+Total Number (not including the problem in the special topics) of Problems: about 201 (142 done).
 
-Although I try to execute every program, bugs may still exist because the test cases are not enough, welcome to find bugs. 
+Although I try to execute every program, bugs may still exist because I didn't run enough tests, welcome to find bugs. 
 The solution may not be optimal, welcome to give your better solution. You can send the corresponding pull request. 
 
 By default, the time complexity is the worst time and the space complexity doesn't include the stack space. 
@@ -57,19 +58,34 @@ By default, the time complexity is the worst time and the space complexity doesn
 * Find independent parts in an array
 * Find the longest consecutive increasing subarray in a grid
 * [Calculate the rotation distance for a sorted rotated array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Rotatearraydistance.cpp)
-* [Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Build%20b%5Bi%5D.cpp)
+* [Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Array/Build%20b%5Bi%5D.cpp)
+* [Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
+* [Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
+* [Length of first subarray that sums to zero](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
+* [Stable 2 way partition](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Stable%202%20way%20partition.cpp)
+* Water flow path
+* Form an ascending sequence by removing elements
+* Celebrity problem
+* Matrix Region Sum
+* Recover the queue
+* Find a rectangle with four corners  1
 
 --
 ####[[⬆]](#toc) <a name='str'>String:</a>
 
 * [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
 * [Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/GenerateParentheseswithdiffkinds.cpp)
-
+* [Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Remove%20comments.cpp)
+* [String of digits, insert addition operator in between to make sum to be a value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Makesum.cpp)
+* [Name numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Namenumbers.cpp)
 
 --
 ####[[⬆]](#toc) <a name='list'>Linked List:</a>
 
 * [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/List%20level%20sum.cpp)
+* [Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
+* [Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Reversealternatelist.cpp)
+* Flatten a list
 
 --
 ####[[⬆]](#toc) <a name='heap'>Heap:</a>
@@ -97,6 +113,13 @@ By default, the time complexity is the worst time and the space complexity doesn
 --
 ####[[⬆]](#toc) <a name='graph'>Graph:</a>
 
+* [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
+* [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
+* [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Numberclosedrectangles.cpp)
+* [Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graph%20exists.cpp)
+* Calculate the distance from each empty room to nearest guard
+* [Graph Components](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graphcomponents.cpp)
+
 --
 ####[[⬆]](#toc) <a name='sortsearch'>Sorting and Search:</a>
 
@@ -104,47 +127,31 @@ By default, the time complexity is the worst time and the space complexity doesn
 * Kth element in two sorted arrays
 * [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Minimalelementinleftsortedarray.cpp)
 * [Find first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
+* Search a target in an array with unknown length
+* [Sorting](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Sorting.cpp)
 
 --
 ####[[⬆]](#toc) <a name='dp'>Dynamic Programming:</a>
 
 * [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Max%20production%20subarray.cpp)
 * Jump the river
+* [Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Minimal%20subset%20sum.cpp)
 
+--
+
+####[[⬆]](#toc) <a name='other'>Other:</a>
+
+* [Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20memmove%20and%20memcopy.cpp)
+
+* [Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Iterator%20for%20matrix.cpp)
 --
 
 
 
-
-* [Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
-* [Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Remove%20comments.cpp)
-* [Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
-* [Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20memmove%20and%20memcopy.cpp)
-* [Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
-* [Length of first subarray that sums to zero](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
-* [Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Minimal%20subset%20sum.cpp)
-* [Stable 2 way partition](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Stable%202%20way%20partition.cpp)
-* [Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Iterator%20for%20matrix.cpp)
-* Kth element in young tableau
-* [Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Reversealternatelist.cpp)
-* [String of digits, insert addition operator in between to make sum to be a value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Makesum.cpp)
-* Water flow path
-* Form an ascending sequence by removing elements
-* Celebrity problem
-* Matrix Region Sum
-* Recover the queue
-* Flatten a list
-* Find a rectangle with four corners  1
-* Search a target in an array with unknown length
-* [Sorting](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Sorting.cpp)
-* [Name numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Namenumbers.cpp)
 * Closest pair problem
-* [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Traversalgrid.cpp)
-* [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/problem/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
-* [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Numberclosedrectangles.cpp)
-* [Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph%20exists.cpp)
-* Calculate the distance from each empty room to nearest guard
-* [Graph Components](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graphcomponents.cpp)
+
+
+
 * Construct a xml tree
 * [Heapify a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heapify%20a%20binary%20tree.cpp)
 * [Immediate right neighbor of given node (parent links, no root) in binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Immediate%20right%20neighbor.cpp)
