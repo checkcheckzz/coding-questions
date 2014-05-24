@@ -11,8 +11,9 @@ Coding Questions
 	* [Heap](#heap)
 	* [Tree](#tree)
 	* [Math](#math)
+	* [Bit Manipulation](#bit)
 	* [Graph](#graph)
-	* [Sortiing](#sorting)
+	* [Sortiing and Search](#sortsearch)
 	* [Dynamic Programming](#dp)
 * [Special Topics](#st)
 
@@ -39,22 +40,30 @@ By default, the time complexity is the worst time and the space complexity doesn
 * [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Detect%20cycle%20in%20an%20array.cpp)
 * [Detect the longest cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Detect%20the%20longest%20cycle%20in%20an%20array.cpp)
 * [Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Generate%20all%20sequences%20such%20that.cpp)
-* [Given an unsigned int array with size n，the sum of array equals a，calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Replaced%20by%20k.cpp)
+* [Given an unsigned int array with size n, the sum of array equals a, calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Replaced%20by%20k.cpp)
 * [Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Diagonal%20elements%20sum%20of%20spiral%20matrix.cpp)
 * [Given an array of size n, the array contains numbers in range from 0 to k-1 where k is a positive integer and k <= n. Find the maximum repeating number in this array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20maximum%20repeating%20number%20in%20this%20array.cpp)
 * [Find the minimal difference between two sorted arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20minimal%20difference%20between%20two%20sorted%20arrays.cpp)
 * [Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Minimize%20max(a-b,b-c,c-a).cpp)
 * Given m sets, generate a new array arr (size m), where a[i] comes from set i, output all possible array arr
-* [Given 2 binary arrays A and B i.e. containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Longest%20subarray%20with%20equal%20sum.cpp)
+* [Given 2 binary arrays A and B, i.e., containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Longest%20subarray%20with%20equal%20sum.cpp)
 * Given an integer array and a range, find all subarray such that its sum is in the range
-* [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k],return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Given%20an%20array%20and%20a%20number%20k.cpp)
+* [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k], return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Given%20an%20array%20and%20a%20number%20k.cpp)
 * [Find the largest sum of 3 integers in a row in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20largest%20sum.cpp)
 * [Running average in a sliding window](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Running%20average%20in%20a%20sliding%20window.cpp)
+* [Nearest greatest element](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Neargreatestelement.cpp)
+* [Print all K-complementary in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/K-complementary.cpp)
+* [Find a partition in an array to minimize the sum of two parts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Partitionnarray.cpp)
+* Find independent parts in an array
+* Find the longest consecutive increasing subarray in a grid
+* [Calculate the rotation distance for a sorted rotated array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Rotatearraydistance.cpp)
+* [Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Build%20b%5Bi%5D.cpp)
 
 --
 ####[[⬆]](#toc) <a name='str'>String:</a>
 
 * [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
+* [Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/GenerateParentheseswithdiffkinds.cpp)
 
 
 --
@@ -77,12 +86,24 @@ By default, the time complexity is the worst time and the space complexity doesn
 ####[[⬆]](#toc) <a name='math'>Math:</a>
 
 * [Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Find%20the%20duplicate%20element.cpp)
+* [Return the duplicate indexs with equal probability](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Return%20the%20duplicate.cpp)
+* Find the complement domino pairs
+
+--
+####[[⬆]](#toc) <a name='bit'>Bit Manipulation:</a>
+
+* [Count the longest continuous 0 bits in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Bit/Count%20the%20longest%20continuous%20bit%200s.cpp)
 
 --
 ####[[⬆]](#toc) <a name='graph'>Graph:</a>
 
 --
-####[[⬆]](#toc) <a name='sorting'>Sorting:</a>
+####[[⬆]](#toc) <a name='sortsearch'>Sorting and Search:</a>
+
+* [Find the smallest missing number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Smallestmissingnumber.cpp)
+* Kth element in two sorted arrays
+* [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Minimalelementinleftsortedarray.cpp)
+* [Find first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
 
 --
 ####[[⬆]](#toc) <a name='dp'>Dynamic Programming:</a>
@@ -95,22 +116,6 @@ By default, the time complexity is the worst time and the space complexity doesn
 
 
 
-
-* [Return the duplicate indexs with equal probability](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Return%20the%20duplicate.cpp)
-* Find the complement domino pairs
-* [Nearest greatest element](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Neargreatestelement.cpp)
-* [Print all K-complementary in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/K-complementary.cpp)
-* [Find a partition in an array to minimize the sum of two parts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Partitionnarray.cpp)
-* Find independent parts in an array
-* Find the longest consecutive increasing subarray in a grid
-* [Calculate the rotation distance for a sorted rotated array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Rotatearraydistance.cpp)
-* [Find the smallest missing number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Smallestmissingnumber.cpp)
-* [Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/problem/GenerateParentheseswithdiffkinds.cpp)
-* Kth element in two sorted arrays
-* [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Minimalelementinleftsortedarray.cpp)
-* [Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Build%20b%5Bi%5D.cpp)
-* [Count the longest continuous 0 bits in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Count%20the%20longest%20continuous%20bit%200s.cpp)
-* [Find first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
 * [Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
 * [Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Remove%20comments.cpp)
 * [Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)

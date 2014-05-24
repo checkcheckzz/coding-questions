@@ -20,8 +20,8 @@ output:
 
 /*
 
-solution: Find the maximal difference of concecutive two elements, and record the position.
-Pay attention to the situation that new difference is the same as up to now maximal difference. 
+solution: Find the maximal difference of consecutive two elements, and record the position.
+Pay attention to the situation that new difference is the same as current maximal difference. 
 O(n) time, O(1) space
 
 */
@@ -66,9 +66,9 @@ int rotationDistance(int arr[], int len) {
 
 int main() {
 
-    int arr[]= {4, 5, 6, 1, 2, 3};
-    int arr1[]= {1, 2, 3, 4, 5, 6};
-    int arr2[]= {2, 3, 4, 5, 6, 1};
+    int arr[] = {4, 5, 6, 1, 2, 3};
+    int arr1[] = {1, 2, 3, 4, 5, 6};
+    int arr2[] = {2, 3, 4, 5, 6, 1};
     int len = sizeof(arr)/sizeof(arr[0]);
     cout<<rotationDistance(arr, len)<<endl; //3
     cout<<rotationDistance(arr1, len)<<endl; //0

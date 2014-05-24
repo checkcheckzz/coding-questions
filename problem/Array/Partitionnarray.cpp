@@ -7,7 +7,7 @@ left part sum and right part sum, not including the integer, return the position
 
 /*
 
-solution: Calculate the sum of array. Scan the array, maintain a left sum and right sum, and record the mimimal difference.
+solution: Calculate the sum of array. Scan the array, maintain a left sum and right sum, and record the minimal difference.
 O(n) time, O(1) space
 
 */
