@@ -205,84 +205,86 @@ By default, the time complexity is the worst time and the space complexity doesn
 --
 ####[[⬆]](#toc) <a name='graph'>Graph:</a>
 
-* [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
-* [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
-* [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Numberclosedrectangles.cpp)
-* [Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graph%20exists.cpp)
-* Calculate the distance from each empty room to nearest guard
-* [Graph Components](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graphcomponents.cpp)
 * [Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Blackwhitereversegame.cpp)
+* [Boggle puzzle](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Bogglegame.cpp)
+* Calculate the distance from each empty room to nearest guard
+* Calculate the number of all 0s submatrix 
 * [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Catchcow.cpp)
+* [Graph Components](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graphcomponents.cpp)
+* [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
+* Largest X structure in a grid
+* [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Numberclosedrectangles.cpp)
 * [Spreadsheet Calculation](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Spreedsheet.cpp)
 * [Total Shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Mergestones.cpp)
-* Largest X structure in a grid
-* Calculate the number of all 0s submatrix 
-* [Boggle puzzle](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Bogglegame.cpp)
+* [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
+* [Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graph%20exists.cpp)
+
 
 --
 ####[[⬆]](#toc) <a name='sortsearch'>Sorting and Search:</a>
 
+* [Find the first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
+* [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Minimalelementinleftsortedarray.cpp)
 * [Find the smallest missing number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Smallestmissingnumber.cpp)
 * Kth element in two sorted arrays
-* [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Minimalelementinleftsortedarray.cpp)
-* [Find first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
 * Search a target in an array with unknown length
 * [Sorting](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Sorting.cpp)
 
 --
 ####[[⬆]](#toc) <a name='dp'>Dynamic Programming:</a>
 
-* [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Max%20production%20subarray.cpp)
-* Jump the river
-* [Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Minimal%20subset%20sum.cpp)
 * Climb ladder
 * [Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Harryporterinmaze.cpp)
+* Jump the river
 * [Maximal path gain of two persons on board](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Maximalpathgain.cpp)
+* [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Max%20production%20subarray.cpp)
+* [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Mergestones.cpp)
+* [Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Minimal%20subset%20sum.cpp)
+* Paint K houses
 * [Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Pizzapick.cpp)
 * Thief Problem
-* [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Mergestones.cpp)
-* Paint K houses
+
 
 --
 
 ####[[⬆]](#toc) <a name='other'>Other:</a>
 
-* [Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20memmove%20and%20memcopy.cpp)
-* [Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Iterator%20for%20matrix.cpp)
 * Closest pair problem
-* [Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Deepiterator.cpp)
-* [Group contact by email list](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Groupcontact.cpp)
+* [Copy on write string](Copy on write string.cpp)
 * [Cover board with tile](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Coverboardwithtiles.cpp)
+* [Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Deepiterator.cpp)
+* [Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
 * [Divide integers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Divideinteger.cpp)
 * [Equation solution](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Equationsolution.cpp)
 * [Family relation](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Familyrelation.cpp)
 * Final perimeter multiple rectangles cover
 * Find the latest version
+* [Group contact by email list](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Groupcontact.cpp)
+* Implement a recommendation function
+* [Implement iterator interface](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Interface.cpp)
+* [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20malloc%20and%20free.cpp)
+* [Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20memmove%20and%20memcopy.cpp)
 * Last n lines of a file
+* [Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Iterator%20for%20matrix.cpp)
 * [Number of online user](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Onlineuser.cpp)
 * Number of squares
+* Number of subsequence
+* Operation number with limited functional deque
+* Print all lines in a file reversely
+* Producing 64bit digest
 * [Password lock](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Passwordlock.cpp)
 * [Present black and white graph with quadtree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Quadtree.cpp)
-* Operation number with limited functional deque
+* Quack class
+* Query relationship
 * [Racer score](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Racescore.cpp)
 * Random algorithm
+* Read and Write UTF8
+* [Readk() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Readk().cpp)
 * [Skyline](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Skyline.cpp)
+* [Smart pointer](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Smart%20pointer.cpp)
+* Test a random shuffle program
 * Total area multiple rectangles cover
 * Turn off lights
-* Print all lines in a file reversely
-* Query relationship
-* Number of subsequence
-* [Implement iterator interface](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Interface.cpp)
-* Quack class
-* Test a random shuffle program
-* Producing 64bit digest
-* Read and Write UTF8
-* Implement a recommendation function
-* [Readk() to implement int read(int size,char* buffer)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Readk().cpp)
-* [Copy on write string](Copy on write string.cpp)
-* [Smart pointer](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Smart%20pointer.cpp)
-* [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20malloc%20and%20free.cpp)
-* [Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
 
 --
 
