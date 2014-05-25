@@ -38,39 +38,39 @@ By default, the time complexity is the worst time and the space complexity doesn
 
 ####[[⬆]](#toc) <a name='array'>Array:</a>
 
+* [Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Array/Build%20b%5Bi%5D.cpp)
+* [Calculate the rotation distance for a sorted rotated array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Rotatearraydistance.cpp)
+* Celebrity problem
 * [Detect cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Detect%20cycle%20in%20an%20array.cpp)
 * [Detect the longest cycle in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Detect%20the%20longest%20cycle%20in%20an%20array.cpp)
+* [Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Diagonal%20elements%20sum%20of%20spiral%20matrix.cpp)
+* [Find a partition in an array to minimize the sum of two parts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Partitionnarray.cpp)
+* Find a rectangle with four corners  1
+* [Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
+* Find independent parts in an array
+* [Find the ID with most posts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/MostPosts.cpp)
+* [Find the largest sum of 3 integers in a row in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20largest%20sum.cpp)
+* Find the longest consecutive increasing subarray in a grid
+* [Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
+* [Find the minimal difference between two sorted arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20minimal%20difference%20between%20two%20sorted%20arrays.cpp)
+* Form an ascending sequence by removing elements
+* [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k], return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Given%20an%20array%20and%20a%20number%20k.cpp)
+* [Given an array of size n, the array contains numbers in range from 0 to k-1 where k is a positive integer and k <= n. Find the maximum repeating number in this array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20maximum%20repeating%20number%20in%20this%20array.cpp)
+* Given an integer array and a range, find all subarray such that its sum is in the range
 * [Given an integer sequence, generate all sequences such that s1 < s2 >s3 < s4 >s5 <s6 ...](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Generate%20all%20sequences%20such%20that.cpp)
 * [Given an unsigned int array with size n, the sum of array equals a, calculate a number k such that the sum of array becomes b when all numbers in the array greater than k is replaced by k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Replaced%20by%20k.cpp)
-* [Diagonal elements sum of spiral matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Diagonal%20elements%20sum%20of%20spiral%20matrix.cpp)
-* [Given an array of size n, the array contains numbers in range from 0 to k-1 where k is a positive integer and k <= n. Find the maximum repeating number in this array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20maximum%20repeating%20number%20in%20this%20array.cpp)
-* [Find the minimal difference between two sorted arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20minimal%20difference%20between%20two%20sorted%20arrays.cpp)
-* [Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Minimize%20max(a-b,b-c,c-a).cpp)
 * Given m sets, generate a new array arr (size m), where a[i] comes from set i, output all possible array arr
-* [Given 2 binary arrays A and B, i.e., containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Longest%20subarray%20with%20equal%20sum.cpp)
-* Given an integer array and a range, find all subarray such that its sum is in the range
-* [Given an array and a number k, if there exists an element arr[i] such that its duplicates lies in arr[i-k] and arr[i+k], return true, else return false](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Given%20an%20array%20and%20a%20number%20k.cpp)
-* [Find the largest sum of 3 integers in a row in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20largest%20sum.cpp)
-* [Running average in a sliding window](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Running%20average%20in%20a%20sliding%20window.cpp)
+* [Given three arrays, select each number a, b, c from each array to minimize max(a-b,b-c,c-a)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Minimize%20max(a-b,b-c,c-a).cpp)
+* [Given two binary arrays A and B, i.e., containing only 0s and 1s each of size N. Find indices i,j such that Sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Longest%20subarray%20with%20equal%20sum.cpp)
+* [Length of first subarray that sums to zero](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
+* [Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S.cpp)
+* Matrix Region Sum
 * [Nearest greatest element](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Neargreatestelement.cpp)
 * [Print all K-complementary in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/K-complementary.cpp)
-* [Find a partition in an array to minimize the sum of two parts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Partitionnarray.cpp)
-* Find independent parts in an array
-* Find the longest consecutive increasing subarray in a grid
-* [Calculate the rotation distance for a sorted rotated array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Rotatearraydistance.cpp)
-* [Build b[i] = a[0]a[1]…a[n-1]/a[i]](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Array/Build%20b%5Bi%5D.cpp)
-* [Find elements in first array but not in second array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20none%20duplicate%20elements%20in%20two%20arrays.cpp)
-* [Find the maximal item A[i], such that A[i]=A[x]+A[y] in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Find%20the%20max%20item%20A%5Bi%5D,%20such%20that%20A%5Bi%5D=A%5Bx%5D+A%5By%5D.cpp)
-* [Length of first subarray that sums to zero](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
+* Recover the queue
+* [Running average in a sliding window](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Running%20average%20in%20a%20sliding%20window.cpp)
 * [Stable 2 way partition](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Stable%202%20way%20partition.cpp)
 * Water flow path
-* Form an ascending sequence by removing elements
-* Celebrity problem
-* Matrix Region Sum
-* Recover the queue
-* Find a rectangle with four corners  1
-* [Length of shortest subarray with sum larger than S](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S.cpp)
-* [Find the ID with most posts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/MostPosts.cpp)
 
 --
 ####[[⬆]](#toc) <a name='str'>String:</a>
@@ -113,10 +113,10 @@ By default, the time complexity is the worst time and the space complexity doesn
 --
 ####[[⬆]](#toc) <a name='list'>Linked List:</a>
 
-* [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/List%20level%20sum.cpp)
-* [Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
-* [Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Reversealternatelist.cpp)
 * Flatten a list
+* [Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Reversealternatelist.cpp)
+* [Insert into a Cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
+* [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/List%20level%20sum.cpp)
 
 --
 ####[[⬆]](#toc) <a name='heap'>Heap:</a>
@@ -175,7 +175,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 * [Factorial digit sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Factorialdigitsum.cpp)
 * [Last digit of a^b](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Last%20digit%20of%20a%5Eb.cpp)
 * [Form a triangle](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Form%20a%20triangle.cpp)
-* [Happy Number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Happy%20Number.cpp)
+* [Happy Number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Happy%20Number.cpp)
 * Magic Number
 * Nearest greater palindrome
 * [GetDecimal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/GetDecimal.cpp)
@@ -292,18 +292,19 @@ By default, the time complexity is the worst time and the space complexity doesn
 
 Special topics in my blog:
 
-* [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
-* [Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
+* [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
+* [Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
 * [Graph Search](http://itgeekworkhard.com/study/2014/02/14/coding-graph-search/)
+* [Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
+* [Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
+* [Knapsack Problem](http://itgeekworkhard.com/notes/2014/02/27/coding-knapsack/)
 * [Shortest Path](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
+* [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
 * [String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
 * [String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
-* [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
-* [Knapsack Problem](http://itgeekworkhard.com/notes/2014/02/27/coding-knapsack/)
-* [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
-* [Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
 * [Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
-* [Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
+* [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
+
 
 ###License
 
