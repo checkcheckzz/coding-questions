@@ -162,39 +162,38 @@ By default, the time complexity is the worst time and the space complexity doesn
 --
 ####[[⬆]](#toc) <a name='math'>Math:</a>
 
-* [Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Find%20the%20duplicate%20element.cpp)
-* [Return the duplicate indexs with equal probability](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Return%20the%20duplicate.cpp)
-* Find the complement domino pairs
-* [Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Math/Calculate%20(m%5En)%25(10%5Ek).cpp)
-* [For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Print%20all%20the%20solutions.cpp)
-* [Highest 1 position of binary expression](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Highest%201%20position%20of%20binary%20expression.cpp)
+* [Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Angle%20between%20the%20hour%20and%20minute.cpp)
+* [Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Math/Calculate%20(m%5En)%25(10%5Ek).cpp
+* [Change a m base number to a n base number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/MbasetoNbase.cpp)
 * [Delete k digits from a number to get minimal number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Delete%20k%20digits.cpp)
-* [Output true with probability 1/2^N given a function outputing true with probability 0.5](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Output%20true.cpp)
-* [Given a positive integer N, print all combinations of non-negative integer sum to N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Print%20all%20combinations.cpp)
-* Find largest triangle in convex hull aside from brute force search
+* Divide a plane of points into two equal halves
 * [Factorial digit sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Factorialdigitsum.cpp)
-* [Last digit of a^b](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Last%20digit%20of%20a%5Eb.cpp)
+* [Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Specialnumber.cpp)
+* [Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Number%20k%3Da%5E2%20%2Bb%5E2.cpp)
+* Find largest triangle in convex hull aside from brute force search
+* Find the complement domino pairs
+* [Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers.cpp)
+* Find the longest 0s surrounded by 1s in a binary expression
 * [Form a triangle](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Form%20a%20triangle.cpp)
+* [For some N, print all the solutions of A*B = C*D where A, B, C, D are all 1~N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Print%20all%20the%20solutions.cpp)
+* [GetDecimal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/GetDecimal.cpp)
+* [Get original number including digit 7](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Get%20original%20number%20including%20digit%207.cpp)
+* [Given a list of integers of length n in the range of 1 to n-1, find the duplicate element (only one duplicate)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Find%20the%20duplicate%20element.cpp)
+* [Given a positive integer N, print all combinations of non-negative integer sum to N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Print%20all%20combinations.cpp)
 * [Happy Number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Happy%20Number.cpp)
+* [Highest 1 position of binary expression](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Highest%201%20position%20of%20binary%20expression.cpp)
+* [Impletement the cancall() function](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Cancallfunction.cpp)
+* [Last digit of a^b](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Last%20digit%20of%20a%5Eb.cpp)
 * Magic Number
 * Nearest greater palindrome
-* [GetDecimal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/GetDecimal.cpp)
-* Smallest positive number that can not be represented
-* [Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Number%20k%3Da%5E2%20%2Bb%5E2.cpp)
-* [Change a m base number to a n base number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/MbasetoNbase.cpp)
-* [Impletement the cancall() function](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Cancallfunction.cpp)
-* Find the longest 0s surrounded by 1s in a binary expression
+* [Output true with probability 1/2^N given a function outputing true with probability 0.5](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Output%20true.cpp)
 * [Print all numbers including digit 5 smaller than number N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Printallnumwithdigit5.cpp)
-* [Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Angle%20between%20the%20hour%20and%20minute.cpp)
-* [Get original number including digit 7](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Get%20original%20number%20including%20digit%207.cpp)
-* [Find the LCM and GCD of two numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Find%20the%20LCM%20and%20GCD%20of%20two%20numbers.cpp)
-* [Sieve of Eratosthenes algorithm](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SieveofEratosthenes.cpp)
 * [Print prime factors of a given number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Primefactors.cpp)
-* Divide a plane of points into two equal halves
-* Find largest triangle in convex hull
-* [Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Specialnumber.cpp)
 * Random generator with blacklist
 * [Read a line from a file randomly](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Readaline.cpp)
+* [Return the duplicate indexs with equal probability](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Return%20the%20duplicate.cpp)
+* [Sieve of Eratosthenes algorithm](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SieveofEratosthenes.cpp)
+* Smallest positive number that can not be represented
 
 --
 ####[[⬆]](#toc) <a name='bit'>Bit Manipulation:</a>
