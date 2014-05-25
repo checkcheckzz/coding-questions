@@ -305,7 +305,9 @@ Special topics in my blog:
 * [Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
 * [Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
 
-
+###License
+--
+coding questions is licensed under the terms of the MIT License. See the LICENSE file for details.
 
 
 
