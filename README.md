@@ -1,5 +1,5 @@
-Coding Questions
-===============
+#Coding Questions
+
 
 ## <a name='toc'>Table of Contents</a>
 
@@ -288,7 +288,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 
 
 ###[[⬆]](#toc) <a name='st'>Special Topics:</a>
----
+--
 
 Special topics in my blog:
 
@@ -306,7 +306,7 @@ Special topics in my blog:
 * [Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
 
 ###License
---
+
 coding questions is licensed under the terms of the MIT License. See the LICENSE file for details.
 
 
