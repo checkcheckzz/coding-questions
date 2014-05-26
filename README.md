@@ -75,40 +75,38 @@ By default, the time complexity is the worst time and the space complexity doesn
 --
 ####[[⬆]](#toc) <a name='str'>String:</a>
 
-* [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
-* [Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/GenerateParentheseswithdiffkinds.cpp)
-* [Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Remove%20comments.cpp)
-* [String of digits, insert addition operator in between to make sum to be a value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Makesum.cpp)
-* [Name numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Namenumbers.cpp)
 * [BinaryMatching](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/BinaryMatching.cpp)
 * [Check whether two strings match by insertdeletereplace one char of any one of string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Edit%20Distance%20one.cpp)
-* [Two Words](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Twowords.cpp)
 * [Delete repeating strings](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Delete%20repeating%20strings.cpp)
 * [Find a vowel product sum of an ASCII string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Vowel%20product.cpp)
-* [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20replace%20rule.cpp)
-* [Given a list of words and a string pattern including question mark, find all match words](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Patternsearchquestionmark.cpp)
-* Given a dictionary and a char set, find all words in the dictionary where all chars come from the char set
-* [Given a string, delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/problem/DeleteAdoubleB.cpp)
-* [Given two string arrays, sort the string in first array according to the string order in second array](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Sortfirstaccordingsecond.cpp)
-* [Longest substring containing just two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/LongestSubstring2uniquechars.cpp)
-* [Longest substring which begins and ends with two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/LongestSubstringbeginend2uniquechars.cpp)
-* String encode and decode
-* [Given a string s, check whether it is k duplicates of a string t](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Kduplicates.cpp)
-* Given a dictionary and a word, find all words with edit distance<=1 in this dictionary
-* [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Onetwobyteencoding.cpp)
-* Pair with largest common words
-* [Isomorphic Strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Mapstring.cpp)
-* Implement string.split()
-* [Ordered minimum window substring](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Orderedminimumwindowsubstring.cpp)
-* [Generate all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Allinterleaves.cpp)
-* [Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Minimalwordbreak.cpp)
-* Implement regular expression
-* Permutation array of strings
-* [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
 * [Find the first anagram of a given string in another string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Firstanagram.cpp)
-* Reverse index search
-* Valid Phone Number
+* [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20replace%20rule.cpp)
+* [Generate all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Allinterleaves.cpp)
+* [Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/GenerateParentheseswithdiffkinds.cpp)
+* Given a dictionary and a word, find all words with edit distance<=1 in this dictionary
+* [Given a string, delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/problem/DeleteAdoubleB.cpp)
+* [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
+* [Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Minimalwordbreak.cpp)
+* [Given a string s, check whether it is k duplicates of a string t](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Kduplicates.cpp)
 * [Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Getanumber.cpp)
+* [Given two string arrays, sort the string in first array according to the string order in second array](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Sortfirstaccordingsecond.cpp)
+* Implement regular expression
+* Implement string.split()
+* [Isomorphic Strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Mapstring.cpp)
+* [Longest substring containing just two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/LongestSubstring2uniquechars.cpp)
+* [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
+* [Longest substring which begins and ends with two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/LongestSubstringbeginend2uniquechars.cpp)
+* [Name numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Namenumbers.cpp)
+* [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Onetwobyteencoding.cpp)
+* [Ordered minimum window substring](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Orderedminimumwindowsubstring.cpp)
+* Pair with largest common words
+* Permutation array of strings
+* [Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Remove%20comments.cpp)
+* Reverse index search
+* String encode and decode
+* [String of digits, insert addition operator in between to make sum to be a value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Makesum.cpp)
+* [Two Words](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Twowords.cpp)
+* Valid Phone Number
 
 --
 ####[[⬆]](#toc) <a name='list'>Linked List:</a>
@@ -129,36 +127,35 @@ By default, the time complexity is the worst time and the space complexity doesn
 --
 ####[[⬆]](#toc) <a name='tree'>Tree:</a>
 
-* Construct a xml tree
-* [Heapify a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Heapify%20a%20binary%20tree.cpp)
-* [Immediate right neighbor of given node (parent links, no root) in binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Immediate%20right%20neighbor.cpp)
-* [Longest distance between two nodes of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Longest%20distance%20between%20two%20nodes.cpp)
-* [Printing all nodes at a given distance from a starting node in a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Printing%20all%20nodes.cpp)
-* [Second largest node in BST](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Second%20largest%20node%20in%20BST.cpp)
-* [Shortest distance between two nodes of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Shortest%20distance%20between%20two%20nodes.cpp)
-* Size of the largest complete subtree in a binary tree
-* [Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Implement%20getNextNode().cpp)
-* Large tree preorder travsersal
+* Binary search tree Iterator
+* [Binary tree Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Iterator%20for%20binary%20tree.cpp)
 * Check whether a tree exists
 * Construct a tree by a list of pairs
-* [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Tree/Vertical%20sum%20in%20a%20binary%20tree.cpp)
-* [Maximal path sum of n-way tree](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Tree/Maximalpathsum.cpp)
+* Construct a xml tree
 * [Find the largest BST subtree in Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Find%20the%20largest%20BST%20sub%20tree%20in%20BT.cpp)
 * [Find the right most node in each level of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Find%20the%20right%20most%20node%20in%20each%20level%20of%20a%20binary%20tree.cpp)
+* Flip a binary tree
+* [Generate all binary trees according to preorder traversal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Generatebts.cpp)
+* [Heapify a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Heapify%20a%20binary%20tree.cpp)
+* [Immediate right neighbor of given node (parent links, no root) in binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Immediate%20right%20neighbor.cpp)
+* [Implement getNextNode()](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Implement%20getNextNode().cpp)
+* Large tree preorder travsersal
+* [Longest distance between two nodes of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Longest%20distance%20between%20two%20nodes.cpp)
+* [Maximal path sum of n-way tree](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Tree/Maximalpathsum.cpp)
 * [Morris traversal of Binary Tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Moririsl%20traversal%20of%20Binary%20Tree.cpp)
 * [PreInPostorder travel of binary tree with stack](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/PreInPostorder%20travel%20of%20bT%20with%20stack.cpp)
+* [Printing all nodes at a given distance from a starting node in a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Printing%20all%20nodes.cpp)
+* [Second largest node in BST](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Second%20largest%20node%20in%20BST.cpp)
+* SerializeDeSerialize a binary search tree
 * [SerializeDeSerialize a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/SerializeDeSerialize%20a%20binary%20tree.cpp)
 * [SerializeDeSerialize an arbitrary nodes tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/SerializeDeSerialize%20an%20arbitrary%20nodes%20tree.cpp)
+* [Shortest distance between two nodes of binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Shortest%20distance%20between%20two%20nodes.cpp)
+* Size of the largest complete subtree in a binary tree
 * [Statistical binary search tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Statistical%20binary%20search%20tree.cpp)
 * [Switch binary tree to make equal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Switch%20binary%20tree%20to%20make%20equal.cpp)
-* [Binary tree Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Iterator%20for%20binary%20tree.cpp)
-* Binary search tree Iterator
-* SerializeDeSerialize a binary search tree
-* [Generate all binary trees according to preorder traversal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Generatebts.cpp)
 * Trim binary search tree
-* Flip a binary tree
 * [Total weight of a subtree below this node](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Totalweight.cpp)
-
+* [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Tree/Vertical%20sum%20in%20a%20binary%20tree.cpp)
 --
 ####[[⬆]](#toc) <a name='math'>Math:</a>
 
@@ -287,9 +284,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 
 --
 
-
 ###[[⬆]](#toc) <a name='st'>Special Topics:</a>
---
 
 Special topics in my blog:
 
@@ -306,6 +301,7 @@ Special topics in my blog:
 * [Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
 * [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
 
+--
 
 ###License
 
