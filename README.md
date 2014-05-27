@@ -18,8 +18,10 @@
   - [ ] [Other](#other)
 - [ ] [Special Topics](#st)
 
-###[[⬆]](#toc) <a name='stat'>Statement:</a>
 ---
+
+###[[⬆]](#toc) <a name='stat'>Statement:</a>
+
 Most problems come from IT company interview. Some solutions are NOT my
 original work, but I don't know who wrote them. Some problems are
 difficult, and the special topics include some advanced ones.  
@@ -33,8 +35,10 @@ The solution may not be optimal, welcome to give your better solution. You can s
 
 By default, the time complexity is the worst time and the space complexity doesn't include the stack space. 
 
-###[[⬆]](#toc) <a name='prob'>Problem:</a>
 ---
+
+###[[⬆]](#toc) <a name='prob'>Problem:</a>
+
 
 ####[[⬆]](#toc) <a name='array'>Array:</a>
 
@@ -78,27 +82,27 @@ By default, the time complexity is the worst time and the space complexity doesn
 * [BinaryMatching](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/BinaryMatching.cpp)
 * [Check whether two strings match by insertdeletereplace one char of any one of string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Edit%20Distance%20one.cpp)
 * [Delete repeating strings](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Delete%20repeating%20strings.cpp)
-* [Find a vowel product sum of an ASCII string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Vowel%20product.cpp)
-* [Find the first anagram of a given string in another string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Firstanagram.cpp)
-* [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Find%20the%20replace%20rule.cpp)
-* [Generate all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Allinterleaves.cpp)
+* [Find a vowel product sum of an ASCII string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Vowel%20product.cpp)
+* [Find the first anagram of a given string in another string](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Firstanagram.cpp)
+* [Find the replace rule](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Find%20the%20replace%20rule.cpp)
+* [Generate all possible interleaves of two input strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/Allinterleaves.cpp)
 * [Generate parentheses with different types](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/GenerateParentheseswithdiffkinds.cpp)
 * Given a dictionary and a word, find all words with edit distance<=1 in this dictionary
-* [Given a string, delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/problem/DeleteAdoubleB.cpp)
+* [Given a string, delete all char A，and double all char B](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/DeleteAdoubleB.cpp)
 * [Given a string, print out the chars with maximal number of consecutive counts](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Chars%20with%20maximal%20number%20of%20consecutive%20counts.cpp)
-* [Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Minimalwordbreak.cpp)
-* [Given a string s, check whether it is k duplicates of a string t](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Kduplicates.cpp)
-* [Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Getanumber.cpp)
-* [Given two string arrays, sort the string in first array according to the string order in second array](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Sortfirstaccordingsecond.cpp)
+* [Given a string s and a dictionary, find the word break way with minimal number of words](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/Minimalwordbreak.cpp)
+* [Given a string s, check whether it is k duplicates of a string t](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/Kduplicates.cpp)
+* [Given k numbers, get a target with certain operators](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Getanumber.cpp)
+* [Given two string arrays, sort the string in first array according to the string order in second array](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/Sortfirstaccordingsecond.cpp)
 * Implement regular expression
 * Implement string.split()
-* [Isomorphic Strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Mapstring.cpp)
-* [Longest substring containing just two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/LongestSubstring2uniquechars.cpp)
-* [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
-* [Longest substring which begins and ends with two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/LongestSubstringbeginend2uniquechars.cpp)
+* [Isomorphic Strings](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/Mapstring.cpp)
+* [Longest substring containing just two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/LongestSubstring2uniquechars.cpp)
+* [Longest substring which appears more than once](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Longest%20substring%20which%20appears%20more%20than%20once.cpp)
+* [Longest substring which begins and ends with two unique chars](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/LongestSubstringbeginend2uniquechars.cpp)
 * [Name numbers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Namenumbers.cpp)
-* [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Onetwobyteencoding.cpp)
-* [Ordered minimum window substring](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Orderedminimumwindowsubstring.cpp)
+* [One-byte or two-byte encoding](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/Onetwobyteencoding.cpp)
+* [Ordered minimum window substring](https://github.com/checkcheckzz/coding-problem/blob/master/problem/String/Orderedminimumwindowsubstring.cpp)
 * Pair with largest common words
 * Permutation array of strings
 * [Remove comments](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Remove%20comments.cpp)
@@ -121,8 +125,8 @@ By default, the time complexity is the worst time and the space complexity doesn
 
 * [Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heap/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays.cpp)
 * [Sliding Window Maximum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heap/Sliding%20Window%20Maximum.cpp)
-* [Two dimensional top k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/TwoDtopk.cpp)
-* [Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Waterin2dhistogram.cpp)
+* [Two dimensional top k](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heap/TwoDtopk.cpp)
+* [Water in two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heap/Waterin2dhistogram.cpp)
 
 --
 ####[[⬆]](#toc) <a name='tree'>Tree:</a>
@@ -283,7 +287,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 * Total area multiple rectangles cover
 * Turn off lights
 
---
+---
 
 ###[[⬆]](#toc) <a name='st'>Special Topics:</a>
 
@@ -302,7 +306,7 @@ Special topics in my blog:
 * [Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
 * [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
 
---
+---
 
 ###License
 

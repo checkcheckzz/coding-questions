@@ -61,39 +61,26 @@ void findIdWithMoreThanQuarterPosts(int arr[], int len, int Ids[]) {
     Ids[0] = Ids[1] = Ids[2] = -1;
     for(i = 0; i < len; i++) {
 
-        if(arr[i] == Ids[0])
-        {
+        if(arr[i] == Ids[0]) {
              nTimes[0]++;
-        }
-        else if(arr[i] == Ids[1])
-        {
+        } else if(arr[i] == Ids[1]) {
              nTimes[1]++;
-        }
-        else if(arr[i] == Ids[2])
-        {
+        } else if(arr[i] == Ids[2]) {
              nTimes[2]++;
-        }
-        else if(nTimes[0] == 0)
-        {
+        } else if(nTimes[0] == 0) {
              nTimes[0] = 1;
              Ids[0] = arr[i];
-        }
-        else if(nTimes[1]==0)
-        {
+        } else if(nTimes[1]==0) {
              nTimes[1] = 1;
              Ids[1] = arr[i];
-        }
-        else if(nTimes[2]==0)
-        {
+        } else if(nTimes[2]==0) {
              nTimes[2] = 1;
              Ids[2] = arr[i];
-        }
-        else
-        {
+        } else {
              nTimes[0]--;
              nTimes[1]--;
              nTimes[2]--;
-         }
+        }
     }
 
 }
