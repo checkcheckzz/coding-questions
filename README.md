@@ -158,7 +158,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 * [Statistical binary search tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Statistical%20binary%20search%20tree.cpp)
 * [Switch binary tree to make equal](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Switch%20binary%20tree%20to%20make%20equal.cpp)
 * Trim binary search tree
-* [Total weight of a subtree below this node](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Totalweight.cpp)
+* [Total weight of a subtree below this node](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Totalweight.cpp)
 * [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Tree/Vertical%20sum%20in%20a%20binary%20tree.cpp)
 
 --
@@ -170,7 +170,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 * [Delete k digits from a number to get minimal number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Delete%20k%20digits.cpp)
 * Divide a plane of points into two equal halves
 * [Factorial digit sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Factorialdigitsum.cpp)
-* [Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Specialnumber.cpp)
+* [Find all numbers less than N, such that n = a^3 + b^3 = c^3 + d^3](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Specialnumber.cpp)
 * [Find k from 1~n such that k=a^2 +b^2 (a, b positive integer)](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Number%20k%3Da%5E2%20%2Bb%5E2.cpp)
 * Find largest triangle in convex hull aside from brute force search
 * Find the complement domino pairs
@@ -192,7 +192,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 * [Print all numbers including digit 5 smaller than number N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Printallnumwithdigit5.cpp)
 * [Print prime factors of a given number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Primefactors.cpp)
 * Random generator with blacklist
-* [Read a line from a file randomly](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Readaline.cpp)
+* [Read a line from a file randomly](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Readaline.cpp)
 * [Return the duplicate indexs with equal probability](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Return%20the%20duplicate.cpp)
 * [Sieve of Eratosthenes algorithm](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SieveofEratosthenes.cpp)
 * Smallest positive number that can not be represented
@@ -206,17 +206,17 @@ By default, the time complexity is the worst time and the space complexity doesn
 --
 ####[[⬆]](#toc) <a name='graph'>Graph:</a>
 
-* [Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Blackwhitereversegame.cpp)
-* [Boggle puzzle](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Bogglegame.cpp)
+* [Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Blackwhitereversegame.cpp)
+* [Boggle puzzle](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Bogglegame.cpp)
 * Calculate the distance from each empty room to nearest guard
 * Calculate the number of all 0s submatrix 
-* [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Catchcow.cpp)
+* [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Catchcow.cpp)
 * [Graph Components](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graphcomponents.cpp)
 * [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
 * Largest X structure in a grid
 * [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Numberclosedrectangles.cpp)
-* [Spreadsheet Calculation](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Spreedsheet.cpp)
-* [Total Shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Mergestones.cpp)
+* [Spreadsheet Calculation](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Spreadsheet.cpp)
+* [Total Shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Totalshortestpath.cpp)
 * [Traversal a Grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
 * [Valid whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graph%20exists.cpp)
 
@@ -235,14 +235,14 @@ By default, the time complexity is the worst time and the space complexity doesn
 ####[[⬆]](#toc) <a name='dp'>Dynamic Programming:</a>
 
 * Climb ladder
-* [Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Harryporterinmaze.cpp)
+* [Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Harryporterinmaze.cpp)
 * Jump the river
-* [Maximal path gain of two persons on board](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Maximalpathgain.cpp)
+* [Maximal path gain of two persons on board](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Maximalpathgain.cpp)
 * [Max production subarray](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Max%20production%20subarray.cpp)
-* [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Mergestones.cpp)
+* [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Mergestones.cpp)
 * [Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Minimal%20subset%20sum.cpp)
 * Paint K houses
-* [Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Pizzapick.cpp)
+* [Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Pizzapick.cpp)
 * Thief Problem
 
 
