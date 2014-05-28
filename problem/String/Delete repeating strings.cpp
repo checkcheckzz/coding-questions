@@ -34,7 +34,7 @@ O(n*len) time, O(n) space, n is the length of string array, len is the average l
 #include<unordered_set>
 using namespace std;
 
-string getKey(string str) {
+string GetKey(string str) {
 
     string temp = str;
 
@@ -52,13 +52,13 @@ string getKey(string str) {
 
 
 
-vector<string> delReapting(const string str[], int len, unordered_set<string> &mp ) {
+vector<string> DelReapting(const string str[], int len, unordered_set<string> &mp ) {
 
     vector<string> res;
 
 	for(int i = len - 1; i >= 0; --i) {
 
-        string key = getKey(str[i]);
+        string key = GetKey(str[i]);
         if (mp.find(key) == mp.end()) {
 
             mp.insert(key);
@@ -77,7 +77,7 @@ int main() {
 
     string str[5] = {"apple Orange", "ORANGE apple", "APPLe oRange", "HI There", "THERE hI"};
     unordered_set<string> mp;
-    vector<string> result = delReapting(str, 5, mp);
+    vector<string> result = DelReapting(str, 5, mp);
     for (int i = 0; i < result.size(); ++i) {
         cout<<result[i]<<endl;
     }

@@ -42,11 +42,11 @@ bool checkBasicVowel(char c) {
    }
 }
 
-bool checkVowel(string str, int index) {
+bool CheckVowel(string str, int index) {
 
     char c = str[index];
 
-    if (checkBasicVowel(c))
+    if (CheckBasicVowel(c))
         return true;
     
     if (index == 0)
@@ -70,7 +70,7 @@ bool checkVowel(string str, int index) {
 }
 
 
-int getValue(char c) {
+int GetValue(char c) {
 
     int value = c - 'a' + 1;
     if (value >= 0) return value;
@@ -78,25 +78,25 @@ int getValue(char c) {
 }
 
 
-int calculateVovewlProduct(string str) {
+int CalculateVovewlProduct(string str) {
     bool continous = false;
 
     int result = 0, lastvalue = -1;
 
-    for(int i = 0; i < str.length(); i++) {
+    for (int i = 0; i < str.length(); i++) {
 
         if (checkVowel(str, i)) {
 
 
-            if(continous) {
+            if (continous) {
                 result -= lastvalue;
-                lastvalue *= getValue(str[i]);
+                lastvalue *= GetValue(str[i]);
                 result += lastvalue;
 
             } else {
 
-               result += getValue(str[i]);
-               lastvalue = getValue(str[i]);
+               result += GetValue(str[i]);
+               lastvalue = GetValue(str[i]);
 
 			}
 
@@ -117,9 +117,9 @@ int main(){
     string str1 = "Google Guy";
     string str2 = "myopia";
     string str3 = "I'm Feeling Yucky!";
-    cout<<calculateVovewlProduct(str1)<<endl;
-    cout<<calculateVovewlProduct(str2)<<endl;
-    cout<<calculateVovewlProduct(str3)<<endl;
+    cout<<CalculateVovewlProduct(str1)<<endl;
+    cout<<CalculateVovewlProduct(str2)<<endl;
+    cout<<CalculateVovewlProduct(str3)<<endl;
     return 0;
 
 }

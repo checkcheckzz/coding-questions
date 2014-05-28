@@ -25,20 +25,20 @@ if the count is equal to larger than current maximal count, otherwise, just rese
 
 
 
-void maxRepCount1(char *sen) {
+void MaxRepCount1(char *sen) {
   if (!sen || !(*sen)) return;
   int maxcount = 0;
   int curcount = 0;
   string result;
 
-  char prechar=*sen;
+  char prechar = *sen;
   do {
        if (*sen!=prechar) {
        
           if(curcount >=  maxcount && isalpha(prechar)) {
-              if(curcount> maxcount) result.clear();
-              result+=prechar;
-              maxcount=curcount;
+              if (curcount> maxcount) result.clear();
+              result += prechar;
+              maxcount = curcount;
           }
           
           prechar=*sen;
@@ -62,7 +62,7 @@ O(n) time, O(1) space
 
 */
 
-void maxRepCount2(char *sen) {
+void MaxRepCount2(char *sen) {
     if (!sen || !(*sen)) return;
     int table[256] = {0};
     char *p = sen;
@@ -76,7 +76,7 @@ void maxRepCount2(char *sen) {
     while (*p) {
         c = *p;
         curcount = 0;
-        while(*p == c) {
+        while (*p == c) {
         
             curcount++;
             p++;
@@ -97,8 +97,8 @@ void maxRepCount2(char *sen) {
     cout<<"[";
     while (*p) {
         
-        c=*p;
-        if((table[index]==max)&&(isalpha(c))) {
+        c = *p;
+        if ((table[index] == max) && (isalpha(c))) {
         
             cout<<c<<",";
         }    
@@ -115,8 +115,8 @@ int main() {
     //char s[] = "thiis iss a senntencee";
     char s[] = "thiisss iss a senntttenceee";
     //char s[] = "thiisss iss a sennnntttenceee";
-    maxRepCount1(s);
-    maxRepCount2(s);
+    MaxRepCount1(s);
+    MaxRepCount2(s);
     return 0;
 }
 

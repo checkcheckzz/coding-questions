@@ -18,7 +18,7 @@ O(n) time, O(n) space
 #include<string>
 using namespace std;
 
-string longestSubstringWithTwoUniqueChars(string &s) {
+string LongestSubstringWithTwoUniqueChars(string &s) {
         if(s.size() <= 2) return s;
 
         size_t max_start = 0;
@@ -29,17 +29,17 @@ string longestSubstringWithTwoUniqueChars(string &s) {
 
         unordered_map<char, int> mp;
 
-        while(i <= j && j< s.size()) {
+        while (i <= j && j< s.size()) {
 
-            while(mp.size() <= 2 && j < s.size()) {
+            while (mp.size() <= 2 && j < s.size()) {
 
-                if(mp.count(s[j]) == 0) {
+                if (mp.count(s[j]) == 0) {
                     mp[s[j]] = 1;
 				} else {
 
                     ++mp[s[j]];
 				}
-                if(mp.size() <= 2 && (j-i+1) > max_len) { //update the max_len if necessary
+                if (mp.size() <= 2 && (j-i+1) > max_len) { //update the max_len if necessary
 
                     max_start = i;
                     max_len = j-i+1;
@@ -47,9 +47,9 @@ string longestSubstringWithTwoUniqueChars(string &s) {
                 ++j;
             }
 
-            if(j == s.size()) return s.substr(max_start, max_len);
+            if (j == s.size()) return s.substr(max_start, max_len);
 
-            if(mp[s[i]] == 1) { //erase the record of s[i] in mp
+            if (mp[s[i]] == 1) { //erase the record of s[i] in mp
 
                 mp.erase(s[i]);
 
@@ -70,9 +70,9 @@ int main() {
 	string str2 = "abbccd";
 	string str3 = "abbccddd";
 
-	cout<<longestSubstringWithTwoUniqueChars(str1)<<endl;
-	cout<<longestSubstringWithTwoUniqueChars(str2)<<endl;
-	cout<<longestSubstringWithTwoUniqueChars(str3)<<endl;
+	cout<<LongestSubstringWithTwoUniqueChars(str1)<<endl;
+	cout<<LongestSubstringWithTwoUniqueChars(str2)<<endl;
+	cout<<LongestSubstringWithTwoUniqueChars(str3)<<endl;
 
 	return 0;
 

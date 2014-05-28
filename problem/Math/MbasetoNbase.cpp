@@ -19,7 +19,7 @@ Issue: the range is limited by the 10 base number, i.e., the int type.
 O(n) time, O(1) space
 */
 
-void mbaseToNbase1(char *numbasem, unsigned int m,  char *numbasen, unsigned int n) {
+void MbaseToNbase1(char *numbasem, unsigned int m,  char *numbasen, unsigned int n) {
 
     assert(numbasem && m>0 && numbasen && n>0 );
     int i = 0;
@@ -54,7 +54,7 @@ the m base nunber to n base number directly.
 int main() {
     char *a = "10111";
     char b[20] = {"           "};
-    mbaseToNbase1(a, 2, b, 8);
+    MbaseToNbase1(a, 2, b, 8);
     cout<<b<<endl;
     return 0;
 }

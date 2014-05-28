@@ -22,20 +22,20 @@ using namespace std;
 
 #define EPS (1e-9)
 
-int cmpTwoNumber(const double &a, const double &b) {
+int CmpTwoNumber(const double &a, const double &b) {
     if (fabs(a - b) < EPS) return 0;
     if(a - b > 0) return 1;
     return -1;
 }
 
-void calExpression(double num[], double target, int n, string expr[]) {
+void CalExpression(double num[], double target, int n, string expr[]) {
 
     double a, b;
 
     string expa, expb;
 
-    if(n == 1) {
-        if(cmpTwoNumber(num[0], target) == 0) {
+    if (n == 1) {
+        if (CmpTwoNumber(num[0], target) == 0) {
             cout << expr[0] << " = " << num[0] << endl;
 
         }
@@ -43,7 +43,7 @@ void calExpression(double num[], double target, int n, string expr[]) {
     }
     int i, j;
     i = 0;
-    j = i+1;
+    j = i + 1;
     a = num[i];
     b = num[j];
     int k = j;
@@ -54,7 +54,7 @@ void calExpression(double num[], double target, int n, string expr[]) {
     expa = expr[i];
     expb = expr[j];
     k = j;
-    while(k < n -1) {
+    while (k < n -1) {
         expr[k] = expr[k+1];
         k++;
     }
@@ -62,7 +62,7 @@ void calExpression(double num[], double target, int n, string expr[]) {
     //a + b
     num[i] = a + b;
     expr[i] = expa + "+" + expb;
-    calExpression(num, target, n - 1, expr);
+    CalExpression(num, target, n - 1, expr);
 
 }
 
@@ -77,7 +77,7 @@ int main() {
         expr[i] = (int)num[i] + '0';
     }
     double target = 24;
-    calExpression(num, target, len, expr);
+    CalExpression(num, target, len, expr);
     delete [] expr;
     return 0;
 }

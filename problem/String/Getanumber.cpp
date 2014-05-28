@@ -18,19 +18,19 @@ using namespace std;
 
 #define EPS (1e-9)
 
-int cmpTwoNumber(const double &a, const double &b) {
+int CmpTwoNumber(const double &a, const double &b) {
     if (fabs(a - b) < EPS) return 0;
     if(a - b > 0) return 1;
     return -1;
 }
 
-void calExpression(double num[], double target, int n, string expr[]) {
+void CalExpression(double num[], double target, int n, string expr[]) {
 
     double a, b;
 
     string expa, expb;
 
-    if(n == 1){
+    if (n == 1){
         if(cmpTwoNumber(num[0], target) == 0) {
             cout << expr[0] << " = " << num[0] << endl;
         }
@@ -49,33 +49,33 @@ void calExpression(double num[], double target, int n, string expr[]) {
             //a + b
             num[i] = a + b;
             expr[i] = "(" + expa + "+" + expb + ")";
-            calExpression(num, target, n - 1, expr);
+            CalExpression(num, target, n - 1, expr);
 
             //a - b
             num[i] = a - b;
             expr[i] = "(" + expa + "-" + expb + ")";
-            calExpression(num, target, n - 1, expr);
+            CalExpression(num, target, n - 1, expr);
             //b - a
             num[i] = b - a;
             expr[i] = "(" + expb + "-" + expa + ")";
-            calExpression(num, target, n - 1, expr);
+            CalExpression(num, target, n - 1, expr);
 
             //a * b
             num[i] = a * b;
             expr[i] = "(" + expa + "*" + expb + ")";
-            calExpression(num, target, n - 1, expr);
+            CalExpression(num, target, n - 1, expr);
 
             //a / b
-            if(cmpTwoNumber(b, 0) != 0){
+            if (CmpTwoNumber(b, 0) != 0){
                 num[i] = a / b;
                 expr[i] = "(" + expa + "/" + expb + ")";
                 calExpression(num, target, n - 1, expr);
             }
             //b / a
-            if(cmpTwoNumber(a, 0) != 0){
+            if (CmpTwoNumber(a, 0) != 0){
                 num[i] = b / a;
                 expr[i] = "(" + expb + "/" + expa + ")";
-                calExpression(num, target, n - 1, expr);
+                CalExpression(num, target, n - 1, expr);
 			}
 
             //backtracking
@@ -97,7 +97,7 @@ int main() {
         expr[i] = (int)num[i] + '0';
     }
     double target = 24;
-    calExpression(num, target, len, expr);
+    CalExpression(num, target, len, expr);
     delete [] expr;
     return 0;
 }

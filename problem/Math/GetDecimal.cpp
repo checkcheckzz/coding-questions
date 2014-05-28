@@ -15,7 +15,7 @@ O(r) time, r is the repeating part length
 #include<string>
 using namespace std;
 
-string getDecimals(int A, int B) {
+string GetDecimals(int A, int B) {
 
     //assume A < B
     string integer = "0" + A/B; 
@@ -23,20 +23,20 @@ string getDecimals(int A, int B) {
     map<int, int> remain;
     string result = "";
     string d = "";
-    while(1) {
+    while (1) {
         remain[rest] = d.length();
         rest *= 10;
         d += '0' + rest / B;
         rest %= B;
-        if(!rest){
+        if (!rest) {
             return integer + "." + d;
         }
-        if(remain.count(rest)){ //repeating digit occurs
+        if (remain.count(rest)) { //repeating digit occurs
             break;
         }
     }
     int start = remain[rest]; //repeating digits length
-    if(start != 0){
+    if (start != 0) {
         result += string(d, 0, start);
     }
     result += "(" + string(d, start, d.length() - start) + ")";
@@ -45,7 +45,7 @@ string getDecimals(int A, int B) {
 
 int main () {
 
-    cout<<getDecimals(2,4)<<endl;
-    cout<<getDecimals(1,6)<<endl;
+    cout<<GetDecimals(2,4)<<endl;
+    cout<<GetDecimals(1,6)<<endl;
     return 0;
 }

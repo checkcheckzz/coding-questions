@@ -16,7 +16,7 @@ Given a number in such rule, calculate the original one.
 #include<algorithm>
 using namespace std;
 
-unsigned int orignalNumber(unsigned int num) {
+unsigned int OrignalNumber(unsigned int num) {
 
     int extra = 0;
     int b = 0;
@@ -47,9 +47,9 @@ unsigned int orignalNumber(unsigned int num) {
 
 int main() {
 
-    cout<<orignalNumber(26)<<endl;
-    cout<<orignalNumber(19)<<endl;
-    cout<<orignalNumber(28)<<endl;
+    cout<<OrignalNumber(26)<<endl;
+    cout<<OrignalNumber(19)<<endl;
+    cout<<OrignalNumber(28)<<endl;
     return 0;
 }
 

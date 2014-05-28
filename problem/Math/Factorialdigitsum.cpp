@@ -21,7 +21,7 @@ if we do not consider the big number issue, then O(n) time, O(1) space.
 #include<string>
 using namespace std;
 
-string multiply(string num1, string num2) {
+string Multiply(string num1, string num2) {
         int N = num1.length(), M = num2.length();
         string res(N+M, '0');
         for (int i = N - 1; i >= 0; --i) {
@@ -41,7 +41,7 @@ string multiply(string num1, string num2) {
         return res;
 }
 
-string factorialDigitSumInner(string num){
+string FactorialDigitSumInner(string num){
 	  	  
     int iter = 0;
     int temp = 0;
@@ -55,16 +55,16 @@ string factorialDigitSumInner(string num){
     char p[32]; 
     itoa(temp, p, 10);
     string numdecrease = p;
-    return  multiply(num, factorialDigitSumInner(numdecrease));
+    return  Multiply(num, FactorialDigitSumInner(numdecrease));
 }
 
-int factorialDigitSum(int num){
+int FactorialDigitSum(int num){
 
     assert(num > 0);
     char p[32];
     itoa(num, p, 10);
     string numstr = p;
-    string result = factorialDigitSumInner(numstr);
+    string result = FactorialDigitSumInner(numstr);
     int iter = 0;
     int sum = 0;
     while (iter < result.length()) {
@@ -77,6 +77,6 @@ int factorialDigitSum(int num){
 
 int main() {
 
-    cout<<factorialDigitSum(7)<<endl;
+    cout<<FactorialDigitSum(7)<<endl;
     return 0;
 }

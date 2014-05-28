@@ -26,13 +26,13 @@ O(n) time, O(k*len) space
 using namespace std;
 #define MAX_LINE_LEN 4096
 
-void readALine(FILE *file) {
+void ReadALine(FILE *file) {
 
     char linebuffer[MAX_LINE_LEN];
     char selection[MAX_LINE_LEN];
     int i = 1;
-    while(fgets(linebuffer, MAX_LINE_LEN, file) != NULL) {
-        if(rand()%i == 0) {
+    while (fgets(linebuffer, MAX_LINE_LEN, file) != NULL) {
+        if (rand()%i == 0) {
             strcpy(selection, linebuffer);
         }
         ++i;
@@ -46,7 +46,7 @@ int main() {
 
     srand(time(0));
     FILE *file = fopen("test.txt", "r");
-    readALine(file);
+    ReadALine(file);
     fclose(file);
     return 0;
 

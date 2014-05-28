@@ -22,7 +22,7 @@ using namespace std;
 //just for simplicity
 int dp[20][20];
 
-void minWindows(string s, string t) {
+void MinWindows(string s, string t) {
 
     int m = s.size();
     int n = t.size();
@@ -31,27 +31,27 @@ void minWindows(string s, string t) {
 	memset(dp, -1, sizeof(dp));
      
 	//always match empty string
-    for(int i = 0; i <= m; i++) {
+    for (int i = 0; i <= m; i++) {
         dp[i][n] = 0;
     }
       
-    for(int i = m-1;i >= 0; i--) {
-        for(int j = n-1;j >= max(0, n-(m-i)); j--) {
+    for (int i = m-1;i >= 0; i--) {
+        for (int j = n-1;j >= max(0, n-(m-i)); j--) {
             //match and increase length by one
-            if(s[i] == t[j] && dp[i+1][j+1]>=0) {
-                    dp[i][j] = dp[i+1][j+1]+1;
+            if (s[i] == t[j] && dp[i+1][j+1]>=0) {
+                dp[i][j] = dp[i+1][j+1]+1;
             //check if previous i position matches
 			} else if (dp[i+1][j] >= 0) {
-                    dp[i][j] = dp[i+1][j]+1;
+                dp[i][j] = dp[i+1][j]+1;
 			}
 		}
 		//match all chars in t & update minimal length
-        if(dp[i][0] >= 0 && (minindex == -1 || dp[i][0] < dp[minindex][0])) {
-                minindex = i;
+        if (dp[i][0] >= 0 && (minindex == -1 || dp[i][0] < dp[minindex][0])) {
+            minindex = i;
 		}
     }
 
-    if(minindex>=0) {
+    if (minindex>=0) {
         cout<<"start: "<<minindex<<" ";
         cout<<"len: "<<dp[minindex][0]<<endl;
     }
@@ -62,7 +62,7 @@ int main() {
 
     string s("ADOBECODEBANC");
     string t("ABC");
-    minWindows(s, t);
+    MinWindows(s, t);
     return 0;
 
 }

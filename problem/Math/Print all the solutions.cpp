@@ -41,7 +41,7 @@ O(n^2) time, O(n^2) space
 #include<vector>
 using namespace std;
 
-void printEqualProduct(int num) {
+void PrintEqualProduct(int num) {
 
     typedef unordered_multimap<int, pair<int, int> > MultiMap;
     typedef unordered_map<int, int> ProductMap;
@@ -62,13 +62,13 @@ void printEqualProduct(int num) {
     MultiMap::const_iterator it2;
     ProductMap::const_iterator it;
 
-    for(it = productMap.begin();it != productMap.end(); ++it) {
+    for (it = productMap.begin(); it != productMap.end(); ++it) {
 
             eqRange = resultMap.equal_range(it->second);  //search value i*j in resultMap first element, return a range pairs 
 
-            for(it1 = eqRange.first; it1 != eqRange.second; ++it1) {
+            for (it1 = eqRange.first; it1 != eqRange.second; ++it1) {
 
-                for(it2 = eqRange.first; it2 != eqRange.second; ++it2) {
+                for (it2 = eqRange.first; it2 != eqRange.second; ++it2) {
 
                     cout<< it1->second.first <<" * "<<it1->second.second<<" = "<< it2->second.first <<" * "<<it2->second.second <<endl;
                 }
@@ -80,7 +80,7 @@ void printEqualProduct(int num) {
 int main() {
 
     int num = 4;
-    printEqualProduct(num);
+    PrintEqualProduct(num);
     return 0;
 
 }

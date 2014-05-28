@@ -17,7 +17,7 @@ O(n) time, O(n) space
 #include<unordered_map>
 using namespace std;
 
-string longestsubstringtwounique(const string str) {
+string Longestsubstringtwounique(const string str) {
 
     int len = str.size();
     int i = 0, j = 0;
@@ -64,10 +64,10 @@ int main() {
     const string str3 = "abbc";
     const string str4 = "bcccccaaacc";
 
-    cout<<longestsubstringtwounique(str1)<<endl;
-    cout<<longestsubstringtwounique(str2)<<endl;
-    cout<<longestsubstringtwounique(str3)<<endl;
-    cout<<longestsubstringtwounique(str4)<<endl;
+    cout<<Longestsubstringtwounique(str1)<<endl;
+    cout<<Longestsubstringtwounique(str2)<<endl;
+    cout<<Longestsubstringtwounique(str3)<<endl;
+    cout<<Longestsubstringtwounique(str4)<<endl;
     return 0;
 
 }

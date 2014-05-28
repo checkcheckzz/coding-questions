@@ -13,7 +13,7 @@ O(nlogn) time, O(1) space
 using namespace std;
 
 
-bool findTriangle(vector<int> arr) {
+bool FindTriangle(vector<int> arr) {
 
 	if (arr.size() <3) return false;
 
@@ -38,7 +38,7 @@ int main() {
 	int arr2[] = {1, 2, 1, 3};
 	vector<int> arr1v(arr1, arr1 + sizeof(arr1) / sizeof(int));
 	vector<int> arr2v(arr2, arr2 + sizeof(arr2) / sizeof(int));
-	cout<<findTriangle(arr1v)<<endl;
-	cout<<findTriangle(arr2v)<<endl;
+	cout<<FindTriangle(arr1v)<<endl;
+	cout<<FindTriangle(arr2v)<<endl;
 	return 0;
 }

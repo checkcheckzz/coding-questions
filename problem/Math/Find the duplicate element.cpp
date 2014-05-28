@@ -24,7 +24,7 @@ O(n) time, O(1) space
 
 */
 
-int findDuplication(int A[], int n) {
+int FindDuplication(int A[], int n) {
 
     for (int i = 0; i < n; ++i) {
    
@@ -53,7 +53,7 @@ O(n) time, O(1) space.
 
 */
 
-int duplicate(int A[], int n) {
+int Duplicate(int A[], int n) {
         
     int XOR1 = 1;
     for (int i = 2; i <= n-1; ++i) {

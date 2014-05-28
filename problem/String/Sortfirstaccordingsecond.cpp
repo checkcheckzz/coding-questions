@@ -26,7 +26,7 @@ using namespace std;
 
 unordered_map<string, int> mp;
 
-bool lessThan(string str1, string str2) {
+bool LessThan(string str1, string str2) {
 
     int order1 = mp[str1];
     int order2 = mp[str2];
@@ -41,14 +41,14 @@ bool lessThan(string str1, string str2) {
 }
 
 
-void sortTwoArray(vector<string> &arr1, vector<string> &arr2) {
+void SortTwoArray(vector<string> &arr1, vector<string> &arr2) {
     
      for(size_t i = 0;i < arr2.size(); ++i) {
 
         mp[arr2[i]] = i;
      }
 
-     sort(arr1.begin(), arr1.end(), lessThan);
+     sort(arr1.begin(), arr1.end(), LessThan);
 }
 
 
@@ -65,7 +65,7 @@ int main() {
     arr2.push_back("zzt");
     arr2.push_back("abc");
 
-    sortTwoArray(arr1, arr2);
+    SortTwoArray(arr1, arr2);
     for (size_t i = 0; i < arr1.size(); ++i) {
 
         cout<<arr1[i]<<endl;

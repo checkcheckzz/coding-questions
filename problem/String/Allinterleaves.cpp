@@ -19,9 +19,9 @@ O(n1+n2) space
 #include<string>
 using namespace std;
 
-void allInterleaves(string str1, string str2, string output,int index1,int index2, int &index) {
+void AllInterleaves(string str1, string str2, string output,int index1,int index2, int &index) {
 
-    if(index == str1.size() + str2.size()) {
+    if (index == str1.size() + str2.size()) {
 
         cout<<output<<endl;
         return;
@@ -31,12 +31,12 @@ void allInterleaves(string str1, string str2, string output,int index1,int index
         if(index1 < str1.size()) {
             output[index] = str1[index1];
 			int temp = index+1;
-            allInterleaves(str1,str2,output,index1+1,index2, temp);
+            AllInterleaves(str1,str2,output,index1 + 1,index2, temp);
         }
         if(index2 < str2.size()) {
             output[index] = str2[index2];
 			int temp = index+1;
-            allInterleaves(str1,str2,output,index1,index2+1, temp);
+            AllInterleaves(str1,str2,output,index1,index2 + 1, temp);
         }
     }
 }
@@ -48,7 +48,7 @@ int main() {
     int len = str1.size() + str2.size();
     string output(len, ' ');
     int index = 0; 
-    allInterleaves(str1,str2,output,0,0,index);
+    AllInterleaves(str1,str2,output,0,0,index);
     return 0;
 }
 

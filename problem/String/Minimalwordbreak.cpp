@@ -19,7 +19,7 @@ O(n) time, O(n) space
 #include<set>
 using namespace std;
 
-string minimalWordBreak(string text, set<string> dict) {
+string MinimalWordBreak(string text, set<string> dict) {
 
     int n = text.size();
     int *dp = new int[n+1];

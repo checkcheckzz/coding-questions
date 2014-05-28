@@ -10,7 +10,7 @@ O(logb) time, O(10) space
 #include<math.h>
 using namespace std;
 
-unsigned int lastDigit(unsigned int a, unsigned int b, map<unsigned int, unsigned int> &mp){
+unsigned int LastDigit(unsigned int a, unsigned int b, map<unsigned int, unsigned int> &mp){
 
     if (a == 1) return 1;
     unsigned int digit = a %10;
@@ -46,6 +46,6 @@ int main(){
     mp[8]=4;
     mp[9]=1;
 
-    cout<<lastDigit(2, 35, mp)<<endl;
+    cout<<LastDigit(2, 35, mp)<<endl;
     return 0;
 }

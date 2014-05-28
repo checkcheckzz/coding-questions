@@ -23,14 +23,14 @@ O(n) time, O(1) space
 #include<string>
 using namespace std;
 
-bool transformString(string str1, string str2) {
+bool TransformString(string str1, string str2) {
 
     int len1 = str1.size();
     int len2 = str2.size();
 
     if (abs(len1 - len2) > 1) return false;
 
-    if (len1 > len2) return transformString(str2, str1);
+    if (len1 > len2) return TransformString(str2, str1);
 
 	//replace	
     if (len1 == len2) {
@@ -68,10 +68,10 @@ int main() {
     string str3 = "cat", str4 = "cat";
     string str5 = "cat", str6 = "cast";
     string str7 = "cat", str8 = "at";
-    cout<<transformString(str1, str2)<<endl;
-    cout<<transformString(str3, str4)<<endl;
-    cout<<transformString(str5, str6)<<endl;
-    cout<<transformString(str7, str8)<<endl;
+    cout<<TransformString(str1, str2)<<endl;
+    cout<<TransformString(str3, str4)<<endl;
+    cout<<TransformString(str5, str6)<<endl;
+    cout<<TransformString(str7, str8)<<endl;
     return 0;
 
 }

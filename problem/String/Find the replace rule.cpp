@@ -15,16 +15,16 @@ O(n*len) time, O(26) space, n is the number of strings, and len is the average l
 #include<unordered_map>
 using namespace std;
 
-void findMapRule(string s[], int len) {
+void FindMapRule(string s[], int len) {
 
     unordered_map<char, char> rule;
 
     char begin = s[0][0];
-    for(int i = 0; i < len - 1; ++i) {
+    for (int i = 0; i < len - 1; ++i) {
         int j = i + 1;
         size_t k = 0;
 
-        while(k < s[i].length() && k < s[j].length() && s[i][k] == s[j][k]) {
+        while (k < s[i].length() && k < s[j].length() && s[i][k] == s[j][k]) {
 
             k++;
         }
@@ -34,7 +34,7 @@ void findMapRule(string s[], int len) {
         
     }
 
-    while(rule.find( begin ) != rule.end()) {
+    while (rule.find( begin ) != rule.end()) {
         cout<< begin << " ->" << rule[begin] <<endl;
         begin = rule[begin];
     }
@@ -43,7 +43,7 @@ void findMapRule(string s[], int len) {
 int main() {
 
     string s[] = {"erg", "wrf", "er", "ett", "rftt","te","ba","bw","fw"};
-    findMapRule(s, 9);
+    FindMapRule(s, 9);
     return 0;
 
 }

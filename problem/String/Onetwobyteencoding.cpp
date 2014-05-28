@@ -26,7 +26,7 @@ O(n) time, O(1)space
 
 //firstBit is a function, I omit the implementation.
 
-string function(string str) {
+string Function(string str) {
 
     string res;
     int len = str.size();

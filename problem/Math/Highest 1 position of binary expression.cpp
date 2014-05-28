@@ -24,29 +24,26 @@ O(log(bits)) time, O(1) space
 using namespace std;
 
 
-int getMSD1(unsigned int num) {
+int GetMSD1(unsigned int num) {
 
 	int result = -1;
-    while(num > 0) {
+    while (num > 0) {
 
          num = num>>1;
          result++;
     }
-   return result;
-
-
+    return result;
 }
 
-int getMSD2(unsigned int num) {
+int GetMSD2(unsigned int num) {
 
    int result = -1;
    int low = 0, high = sizeof(int) * 8-1; //31
-      while(low <= high) {
+      while (low <= high) {
 
            int mid = low + (high - low) / 2;
            unsigned int mask = 1 << mid;
-           if(mask & num)
-           {
+           if (mask & num) {
                 result = mid;
            }
            if (mask >= num) {
@@ -65,7 +62,7 @@ int getMSD2(unsigned int num) {
 int main() {
 
     unsigned int num = 32;
-    cout<<getMSD1(num)<<endl;
-    cout<<getMSD2(num)<<endl;
+    cout<<GetMSD1(num)<<endl;
+    cout<<GetMSD2(num)<<endl;
     return 0;
 }

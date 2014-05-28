@@ -11,7 +11,7 @@ solution: math
 #include<iostream>
 using namespace std;
 
-int getGCD(int a, int b) {
+int GetGCD(int a, int b) {
     int maxnum = max(a, b);
     int minnum = min(a, b);
  
@@ -25,7 +25,7 @@ int getGCD(int a, int b) {
     return minnum;
 }
  
-int getLCM(int a, int b) {
+int GetLCM(int a, int b) {
     int n1 = getGCD(a, b);
     int n2 = a/n1;
     int n3 = b/n1;
@@ -34,8 +34,8 @@ int getLCM(int a, int b) {
 }
 
 int main() {
-    cout<<getGCD(6,24)<<endl;
-    cout<<getLCM(8,12)<<endl;
+    cout<<GetGCD(6,24)<<endl;
+    cout<<GetLCM(8,12)<<endl;
     return 0;
 }
 

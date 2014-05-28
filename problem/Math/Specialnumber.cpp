@@ -16,22 +16,22 @@ O(n^2/3) time, O(n) space
 #include<vector>
 using namespace std;
 
-void taxiCub(int n) {
+void TaxiCub(int n) {
 
     int limit = n; 
     vector<int> factor(n+1,0);
     vector<int> visited(n+1,0);
-    for(int i = 1 ;i * i * i <= n; i++) {
+    for (int i = 1 ;i * i * i <= n; i++) {
         factor[i] = i*i*i; 
     }
-    for(int i = 1 ; i * i *i <= n;i++) {
+    for (int i = 1 ; i * i *i <= n;i++) {
 
-        for(int j  = i; j * j * j <= n;j++){
+        for (int j  = i; j * j * j <= n;j++){
            
             int sum = factor[i] + factor[j];
-            if(sum > limit) continue;
+            if (sum > limit) continue;
 
-            if( visited[sum] < 2 ) visited[sum]++;
+            if ( visited[sum] < 2 ) visited[sum]++;
 
             if (visited[sum] == 2) {
 
@@ -46,6 +46,6 @@ void taxiCub(int n) {
 
 int main(){
 
-    taxiCub(10000);
+    TaxiCub(10000);
     return 0;
 }

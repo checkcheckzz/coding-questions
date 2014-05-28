@@ -27,7 +27,7 @@ O(n) time, O(n) space
 #include<unordered_map>
 using namespace std;
 
-bool checkIsomorphicString(string str1, string str2) {
+bool CheckIsomorphicString(string str1, string str2) {
 
 	if(str1.size() != str2.size()) return false;
 	unordered_map<char, char>mp12;
@@ -38,13 +38,13 @@ bool checkIsomorphicString(string str1, string str2) {
 		char char2 = str2[i];
 		if (mp12.find(char1) !=  mp12.end()) {
 
-			   if (mp12[char1] != char2) return false;
+            if (mp12[char1] != char2) return false;
 
         }
 
 		if (mp21.find(char2) !=  mp21.end()) {
 
-			   if (mp21[char2] != char1) return false;
+            if (mp21[char2] != char1) return false;
         }
 
 		mp12[char1] =  char2;
@@ -66,9 +66,9 @@ int main() {
 	string str4 = "foo";
 	string str5 = "ab";
 	string str6 = "ca";
-	cout<<checkIsomorphicString(str1, str2)<<endl;
-	cout<<checkIsomorphicString(str3, str4)<<endl;
-	cout<<checkIsomorphicString(str5, str6)<<endl;
+	cout<<CheckIsomorphicString(str1, str2)<<endl;
+	cout<<CheckIsomorphicString(str3, str4)<<endl;
+	cout<<CheckIsomorphicString(str5, str6)<<endl;
 	return 0;
 
 }

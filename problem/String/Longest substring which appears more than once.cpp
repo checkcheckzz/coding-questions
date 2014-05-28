@@ -18,11 +18,11 @@ O(n^2) time, O(n) space
 #include<algorithm>
 using namespace std;
 
-bool lessThan(const char* p1, const char* p2) {
+bool LessThan(const char* p1, const char* p2) {
     return strcmp(p1, p2) < 0;
 }
  
-void findLongestDup(const char* str) {
+void FindLongestDup(const char* str) {
     assert(str);
  
     const char* p = str;
@@ -33,7 +33,7 @@ void findLongestDup(const char* str) {
         
     }    
  
-    sort(vec.begin(), vec.end(), lessThan);
+    sort(vec.begin(), vec.end(), LessThan);
  
     int curmax = 0;
     
@@ -67,7 +67,7 @@ void findLongestDup(const char* str) {
 
 int main() {
     char s[] = "abcdfscdfbc";
-    findLongestDup(s);
+    FindLongestDup(s);
     return 0;
 
 }

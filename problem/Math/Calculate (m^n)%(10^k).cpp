@@ -13,7 +13,7 @@ O((log n) * k * k) time, O(k*k) space
 #include<string>
 using namespace std;
 
-string multiplyArrays(string num1, string num2, int k) {
+string MultiplyArrays(string num1, string num2, int k) {
         int N = num1.length(), M = num2.length();
         string res(N+M, '0');
         for (int i = N - 1; i >= 0; --i) {
@@ -51,7 +51,7 @@ string multiplyArrays(string num1, string num2, int k) {
 }
 
 
-string calculate(long m, long n, int k) {
+string Calculate(long m, long n, int k) {
 
 	
     assert (m > 0 && n >=0  && k >= 0 );
@@ -69,12 +69,12 @@ string calculate(long m, long n, int k) {
         itoa(m, p, 10);
         string tmp = p;
         string result1 = calculate(m, n-1, k);
-        return multiplyArrays(result1, tmp, k);
+        return MultiplyArrays(result1, tmp, k);
 
     } else {
 
         string result1 = calculate(m, n/2, k);
-        return multiplyArrays(result1, result1, k);
+        return MultiplyArrays(result1, result1, k);
     }
 }
 
@@ -85,7 +85,7 @@ int main() {
     long m = 5;
     long n = 8;
     int k = 3;
-    string result = calculate(m, n, k);
+    string result = Calculate(m, n, k);
     cout<<result<<endl;
     return 0;
 }

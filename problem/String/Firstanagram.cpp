@@ -16,7 +16,7 @@ O(n) time, O(1) space, where n is the length of string we search.
 using namespace std;
  
 //src points to the target string, str points to the string we search
-int findFirstAnagram(char *str, char *src) {
+int FindFirstAnagram(char *str, char *src) {
 
     assert(str && src);
     int srcl = strlen(src);
@@ -72,6 +72,6 @@ int main() {
 
     char *l = "brafasfjknvasfasadsaraa";
     char *s = "asff";
-    cout<<findFirstAnagram(l,s)<<endl;
+    cout<<FindFirstAnagram(l,s)<<endl;
     return 0;
 }

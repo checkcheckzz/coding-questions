@@ -18,7 +18,7 @@ O(n*len) time, O(n) space, len is the average length of each word
 
 using namespace std;
 
-void allTwoWords(string words[], int len,  unordered_set<string> &mp) {
+void AllTwoWords(string words[], int len,  unordered_set<string> &mp) {
 
     for (int i = 0; i < len; ++i) {
 
@@ -51,9 +51,9 @@ void allTwoWords(string words[], int len,  unordered_set<string> &mp) {
 
 int main() {
 
-    string words[9]={"abv", "tfsdfa", "ab", "v", "tfs", "dfa", "abvtfsdfa", "abtfs", "vab"};
+    string words[9] = {"abv", "tfsdfa", "ab", "v", "tfs", "dfa", "abvtfsdfa", "abtfs", "vab"};
     unordered_set<string> mp;
-    allTwoWords(words, 9,  mp);
+    AllTwoWords(words, 9,  mp);
     return 0;
 }
 

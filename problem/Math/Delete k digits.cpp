@@ -24,7 +24,7 @@ using namespace std;
 
 typedef pair<int, int> Pair;
 
-string deleteKDigits1Inner(string num, int start, int end, int k) {
+string DeleteKDigits1Inner(string num, int start, int end, int k) {
 
 	if (end - start <= k || k <0) return "";
 
@@ -43,12 +43,12 @@ string deleteKDigits1Inner(string num, int start, int end, int k) {
         }
     }
 
-    return num[minPosition] + deleteKDigits1Inner(num, minPosition + 1, end, k - (minPosition-start) );
+    return num[minPosition] + DeleteKDigits1Inner(num, minPosition + 1, end, k - (minPosition-start) );
 
 }
 
 
-int deleteKDigits1(int num, int k) {
+int DeleteKDigits1(int num, int k) {
 
 	assert(num > 0 && k >=0 );
 
@@ -58,7 +58,7 @@ int deleteKDigits1(int num, int k) {
 
 	string str = p;
 
-	string result = deleteKDigits1Inner(str, 0, str.length(), k);
+	string result = DeleteKDigits1Inner(str, 0, str.length(), k);
 
 	int finalnum = 0;
 
@@ -77,7 +77,7 @@ int deleteKDigits1(int num, int k) {
 
 
 
-string deleteKDigits2Inner(string num, int k) {
+string DeleteKDigits2Inner(string num, int k) {
 
 	deque<pair<int, char>> q;
 
@@ -114,7 +114,7 @@ string deleteKDigits2Inner(string num, int k) {
 }
 
 
-int deleteKDigits2(int num, int k) {
+int DeleteKDigits2(int num, int k) {
 
 
 	assert(num > 0 && k >=0 );
@@ -125,7 +125,7 @@ int deleteKDigits2(int num, int k) {
 
 	string str = p;
 
-	string result = deleteKDigits2Inner(str, k);
+	string result = DeleteKDigits2Inner(str, k);
 
 	int finalnum = 0;
 
@@ -146,7 +146,7 @@ int main() {
 
   int num = 42139;
   int k = 3;
-  cout<<deleteKDigits1(num, k)<<endl;
-  cout<<deleteKDigits2(num, k)<<endl;
+  cout<<DeleteKDigits1(num, k)<<endl;
+  cout<<DeleteKDigits2(num, k)<<endl;
   return 0;
 }

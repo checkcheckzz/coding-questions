@@ -15,19 +15,19 @@ O(n) time, O(1) space
 using namespace std;
 
 
-char *stringRemoveADoubleB(char *str) {
+char *StringRemoveADoubleB(char *str) {
     if (!str) return NULL;
 
     char *orgiter = str;
     char *newiter = orgiter;
     int countb = 0;
-    int len=0;
+    int len = 0;
 
 	
-    while(*orgiter) {
+    while (*orgiter) {
 
         if (*orgiter == 'B') countb++; // Count B
-        if(*orgiter != 'A') {
+        if (*orgiter != 'A') {
 			*newiter++= *orgiter++;
             len++;
         } else {
@@ -36,13 +36,13 @@ char *stringRemoveADoubleB(char *str) {
     }
 
 	
-    if(len) {
+    if (len) {
 
         orgiter = str+(len+countb); //new string length
         *orgiter = '\0';
         orgiter--;
         newiter--;
-        while(newiter != str) {
+        while (newiter != str) {
 
             if (*newiter == 'B') {
                 *orgiter-- = 'B';
@@ -64,8 +64,8 @@ int main() {
     char *str1 = "CAABD";
     char *str2 = "ACAABDB";
     char *str3 = "BACAABDBA";
-    cout<<stringRemoveADoubleB(str1)<<endl;
-    cout<<stringRemoveADoubleB(str2)<<endl;
-    cout<<stringRemoveADoubleB(str3)<<endl;
+    cout<<StringRemoveADoubleB(str1)<<endl;
+    cout<<StringRemoveADoubleB(str2)<<endl;
+    cout<<StringRemoveADoubleB(str3)<<endl;
     return 0;
 }

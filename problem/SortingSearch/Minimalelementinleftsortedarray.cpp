@@ -19,23 +19,23 @@ O(logn) time, O(1)
 #include<cassert>
 using namespace std;
 
-int minNumberRotatedArray(int arr[], int len) {
+int MinNumberRotatedArray(int arr[], int len) {
 
     assert(arr && len > 0);
         
     int beg = 0;
     int end = len - 1;
     int mid = beg;
-    while(arr[beg] >= arr[end]) {
+    while (arr[beg] >= arr[end]) {
 		//at last, end points to the first element in the second increasing subarray
 		//beg points to the last element in the first increasing subarray
-        if(end - beg == 1) {
+        if (end - beg == 1) {
             mid = end;
             break;
         }
         mid = (beg + end) / 2;
 		//smallest element should be after arr[mid]
-        if(arr[mid] >= arr[beg]) {
+        if (arr[mid] >= arr[beg]) {
             beg = mid;
 		} else if (arr[mid] <= arr[end]) {
             end = mid;
@@ -50,8 +50,8 @@ int main() {
     int arr1[]={1,2,3,4,5};
     int arr2[]={3,4,5,1,1};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<minNumberRotatedArray(arr,len)<<endl;
-    cout<<minNumberRotatedArray(arr1,len)<<endl;
-    cout<<minNumberRotatedArray(arr2,len)<<endl;
+    cout<<MinNumberRotatedArray(arr,len)<<endl;
+    cout<<MinNumberRotatedArray(arr1,len)<<endl;
+    cout<<MinNumberRotatedArray(arr2,len)<<endl;
     return 0;
 }

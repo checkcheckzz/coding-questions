@@ -17,7 +17,7 @@ O(n) time, O(n) space
 #include<unordered_map>
 using namespace std;
 
-int maxDupEqual(int arr[], int len) {
+int MaxDupEqual(int arr[], int len) {
 
     int maxoccur = 0;
     int num = 0 ;
@@ -25,10 +25,10 @@ int maxDupEqual(int arr[], int len) {
     int result=0;
     unordered_map<int , int> occurmap;
     unordered_map<int , int> randompickmap;
-    for(int i = 0 ; i < len ; ++i) {
+    for (int i = 0 ; i < len ; ++i) {
 
         num = arr[i];
-        if(occurmap.count(num)) {
+        if (occurmap.count(num)) {
 
             occurmap[num] += 1;
 
@@ -38,23 +38,23 @@ int maxDupEqual(int arr[], int len) {
 
         }
 
-        if(occurmap[num] > maxoccur) {
+        if (occurmap[num] > maxoccur) {
 
-        maxoccur = occurmap[num];
-        maxnum = randompickmap[num]; 
+            maxoccur = occurmap[num];
+            maxnum = randompickmap[num]; 
         }
 
     }
    
     int occur = 0;
 
-    for(int i = 0 ; i < len ; ++i) {
+    for (int i = 0 ; i < len ; ++i) {
   
-        if(arr[i] == maxnum) {
+        if (arr[i] == maxnum) {
 
-        occur++;
+            occur++;
 
-        if(rand() % occur == 0)  result = i;
+            if(rand() % occur == 0)  result = i;
         }
     }
 
@@ -67,7 +67,7 @@ int main() {
 
     int arr[] = {3,7,4,3,6,1,3,6};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<maxDupEqual(arr, len)<<endl;
+    cout<<MaxDupEqual(arr, len)<<endl;
     return 0;
 }
 
