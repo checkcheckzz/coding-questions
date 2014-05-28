@@ -1,4 +1,6 @@
-#Coding Questions
+[![logo](imgs/coding.jpg)](https://github.com/checkcheckzz/coding-questions)
+
+> Coding interview questions with solutions from top IT companies and hot startups
 
 
 ## <a name='toc'>Table of Contents</a>
