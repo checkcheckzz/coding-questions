@@ -312,7 +312,7 @@ Special topics in my blog:
 
 ###License
 
-coding questions is licensed under the terms of the MIT License. See the LICENSE file for details.
+coding questions is licensed under the terms of the MIT License. See the [LICENSE file](https://github.com/checkcheckzz/coding-questions/blob/master/LICENSE) for details.
 
 
 
