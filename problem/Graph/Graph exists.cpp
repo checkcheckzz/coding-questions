@@ -19,88 +19,87 @@ O(n^2logn) time, O(1) space
 #include<algorithm>
 using namespace std;
 
-void qsort(int a[], int s, int e) {
+void Qsort(int a[], int s, int e) {
 
-  int i = s, j = e, temp = a[s];
+    int i = s, j = e, temp = a[s];
   
-  if (s < e) {
+    if (s < e) {
   
-     while (i != j) {
+        while (i != j) {
      
-        while (a[j] > temp && i < j) j--;
-        if (i < j) a[i++] = a[j];
-        while (a[i] < temp && i < j)i++;
-        if(i < j) a[j--] = a[i];
-    }
+            while (a[j] > temp && i < j) j--;
+            if (i < j) a[i++] = a[j];
+            while (a[i] < temp && i < j)i++;
+            if(i < j) a[j--] = a[i];
+        }
     
-    a[i] = temp;
-    qsort(a, s, i-1);
-    qsort(a, i+1, e);
-  }
+        a[i] = temp;
+        Qsort(a, s, i-1);
+        Qsort(a, i+1, e);
+    }
 }
 
 
-bool graphExist(int graph[], int len) {
+bool GraphExist(int graph[], int len) {
 	
-	for (int i = len-1; i >= 0; --i) {
+    for (int i = len-1; i >= 0; --i) {
 	
-		if (graph[i] > i) {
+        if (graph[i] > i) {
 		
-		   return false;
+            return false;
 		   
-                } else {
+        } else {
                 
-		   int degree = graph[i];
-		   int iter = 0;
+            int degree = graph[i];
+            int iter = 0;
 		   
-		   while (iter < n) {
+            while (iter < n) {
 
-                      graph[i-iter-1]--;   // decrease th degree
+                graph[i-iter-1]--;   // decrease the degree
                       
-		      if (g[i-iter-1] < 0) return false;
+                if (g[i-iter-1] < 0) return false;
 		      
-	              iter++;
+                iter++;
 
-		   }
+            }
 
-		    qsort(g, 0, i-1);
+            Qsort(g, 0, i-1);
 
-                }
+        }
 
-	}
+    }
 
-	return true;
+    return true;
 
 
 }
 
 int main() {
 
-	const int len = 5;
-	int graph[len] = {2,4,2,3,3};
+    const int len = 5;
+    int graph[len] = {2,4,2,3,3};
+    int sumdegree = 0;
 	
-	int sumdegree = 0;
+    for (int i = 0; i < len; ++i) {
 	
-	for (int i = 0; i < len; ++i) {
-	
-		 sumdegree += graph[i];
-        }		 
+        sumdegree += graph[i];
+    }		 
 		 
-	if (sumdegree % 2 == 1) cout<<"Graph Not Exist"<<endl;
+    if (sumdegree % 2 == 1) cout<<"Graph Not Exist"<<endl;
 	
-	qsort(g, 0, len-1);
+    Qsort(g, 0, len-1);
 	
-	if (graphExist(graph,len)) {
+    if (GraphExist(graph,len)) {
 	
-	     cout<<"Graph Exist"<<endl;
+        cout<<"Graph Exist"<<endl;
 	     
-	} else {
+    } else {
 	
-	     cout<<"Graph Not Exist"<<endl;
+        cout<<"Graph Not Exist"<<endl;
 	     
-	}     
+    }     
 
-	return 0;
+    return 0;
 
 }
 

@@ -19,10 +19,10 @@ O(n) time, O(1) space
 #include<algorithm>
 using namespace std;
 
-int maxProductSubarray(int arr[], int len) {  
+int MaxProductSubarray(int arr[], int len) {  
     int minsofar = arr[0], maxsofar = arr[0], result = arr[0];  
     
-    for(int i = 1; i < len; ++i) {
+    for (int i = 1; i < len; ++i) {
     
        int maxhere = max(max(maxsofar * arr[i], minsofar * arr[i]), arr[i]);  
        int minhere = min(min(maxsofar * arr[i], minsofar * arr[i]), arr[i]);  
@@ -37,6 +37,6 @@ int maxProductSubarray(int arr[], int len) {
 int main() {
 
     int a[5] = {3,-4,-5,6,-2};
-    cout<<maxProductSubarray(a,5)<<endl;
+    cout<<MaxProductSubarray(a,5)<<endl;
     return 0;
 }

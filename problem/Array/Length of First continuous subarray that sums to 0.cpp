@@ -13,7 +13,7 @@ O(n) time, O(n) space
 #include<unsorted_map>
 using namespace std;
 
-int firstContZero(int arr[], int len) {
+int FirstContZero(int arr[], int len) {
     assert(arr && len > 0);
  
     unsorted_map<int, int> mp;
@@ -39,7 +39,7 @@ int main() {
 
     int arr[6] = {1, -1, 2, -2, 1, 0};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<firstContZero(arr, len)<<endl;
+    cout<<FirstContZero(arr, len)<<endl;
     return 0;
 
 }

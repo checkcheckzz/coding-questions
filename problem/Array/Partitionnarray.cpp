@@ -16,7 +16,7 @@ O(n) time, O(1) space
 #include<cassert>
 using namespace std;
 
-int partition(int arr[], int len) {
+int Partition(int arr[], int len) {
 
     assert(arr && len >0);
     int sum = 0;
@@ -44,6 +44,6 @@ int main(){
 
     int arr[]= {1, 5, 7, 12, 10, 11, 7, 5, 1};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<partition(arr, len)<<endl;
+    cout<<Partition(arr, len)<<endl;
     return 0;
 }

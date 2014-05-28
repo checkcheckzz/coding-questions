@@ -13,7 +13,7 @@ O(m+n) time, O(1) space
 #include<cassert>
 using namespace std;
 
-int minDiff(int arrA[],int arrAlen, int arrB[], int arrBlen) {
+int MinDiff(int arrA[],int arrAlen, int arrB[], int arrBlen) {
 
    assert(arrA && arrAlen > 0 && arrB && arrBlen > 0);
 
@@ -48,7 +48,7 @@ int main() {
 
   int a[2] = {0,3};
   int b[3] = {2,7,9};
-  cout<<minDiff(a,2,b,3)<<endl;
+  cout<<MinDiff(a,2,b,3)<<endl;
   return 0;
 
 }

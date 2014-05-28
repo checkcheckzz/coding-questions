@@ -8,7 +8,7 @@ O(n) time, O(1) space
 */
 
  
-int getLongestZeroBit(int array[], int len) {
+int GetLongestZeroBit(int array[], int len) {
      
     int result = 0;
     int curbitlength = 0;

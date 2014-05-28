@@ -15,7 +15,7 @@ O(n) time, O(1) space
 #include<cassert>
 using namespace std;
 
-void runningAverageWindow(int arr[], int len, int windowsize) {
+void RunningAverageWindow(int arr[], int len, int windowsize) {
 
     assert (arr && len > 0);
     float sum=0;
@@ -55,6 +55,6 @@ int main() {
     int arr[]={1,2,3,4,5,6};
     int windowsize = 4;
     int len = sizeof(arr)/sizeof(arr[0]);
-    runningAverageWindow(arr, len, windowsize);
+    RunningAverageWindow(arr, len, windowsize);
     return 0;
 }

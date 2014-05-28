@@ -29,13 +29,13 @@ O(n) time, O(1) space
 #include <iostream>
 using namespace std;
 
-int rotateMinStep(int k, int len) {
+int RotateMinStep(int k, int len) {
   int p = k + 1;
   if (p < len - p) return p;
   return len - p;
 }
 
-int rotationDistance(int arr[], int len) {
+int RotationDistance(int arr[], int len) {
 
     if (len == 1) return 0;
 
@@ -51,8 +51,8 @@ int rotationDistance(int arr[], int len) {
             maxpos = i;
 	    } else if (diff == maxdiff) {
             // equals
-            int len1 = rotateMinStep(maxpos,len);
-            int len2 = rotateMinStep(i, len);
+            int len1 = RotateMinStep(maxpos,len);
+            int len2 = RotateMinStep(i, len);
 
             if (len2 < len1) {
                 maxdiff = diff;
@@ -61,7 +61,7 @@ int rotationDistance(int arr[], int len) {
         }
     }
 
-    return rotateMinStep(maxpos, len);
+    return RotateMinStep(maxpos, len);
 }
 
 int main() {
@@ -70,8 +70,8 @@ int main() {
     int arr1[] = {1, 2, 3, 4, 5, 6};
     int arr2[] = {2, 3, 4, 5, 6, 1};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<rotationDistance(arr, len)<<endl; //3
-    cout<<rotationDistance(arr1, len)<<endl; //0
-    cout<<rotationDistance(arr2, len)<<endl; //1
+    cout<<RotationDistance(arr, len)<<endl; //3
+    cout<<RotationDistance(arr1, len)<<endl; //0
+    cout<<RotationDistance(arr2, len)<<endl; //1
     return 0;
 }

@@ -38,7 +38,7 @@ const int m = 5;
 const int n = 5;
 int dp[K][K];
 
-int minimalBlood(const int grid[m][n]) {
+int MinimalBlood(const int grid[m][n]) {
 
     dp[m-1][n-1] = 0;
     for (int i = m-2; i >= 0; i--)
@@ -63,6 +63,6 @@ int main() {
                             {-3, -3, 2, 1, -2},
                             {1, 2, -3, -1, 1}};
 
-    cout<<minimalBlood(grid)<<endl;
+    cout<<MinimalBlood(grid)<<endl;
     return 0;
 }

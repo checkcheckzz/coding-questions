@@ -32,7 +32,7 @@ O(nlogn) time, O(n) space
 
 typedef pair<int, int> Pair;
 
-void maxSlidingWindow2(int arr[], int len, int k, int window[]) {
+void MaxSlidingWindow2(int arr[], int len, int k, int window[]) {
     priority_queue<Pair> Q; 
     for (int i = 0; i < k; ++i) {
         Q.push(Pair(arr[i], i)); 
@@ -60,7 +60,7 @@ O(n) time, O(k) space
 
 */
 
-void maxSlidingWindow3(int arr[], int len, int k, int window[]) {
+void MaxSlidingWindow3(int arr[], int len, int k, int window[]) {
     deque<int> Q;
     for (int i = 0; i < k; ++i) {
   
@@ -97,8 +97,8 @@ int main() {
     int b[7];
     int c[7];
   
-    maxSlidingWindow2(a,9,3,b);
-    maxSlidingWindow3(a,9,3,c);
+    MaxSlidingWindow2(a,9,3,b);
+    MaxSlidingWindow3(a,9,3,c);
   
     for(int i = 0; i < 7; ++i) {
   

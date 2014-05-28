@@ -12,7 +12,7 @@ O(n+m+l) time, O(1) space
 #include<algorithm>
 using namespace std;
 
-int getMinDiff(int arr[], int arrlen, int barr[], int barrlen, int carr[], int carrlen) {
+int GetMinDiff(int arr[], int arrlen, int barr[], int barrlen, int carr[], int carrlen) {
 
    assert(arr && arrlen > 0 && barr && barrlen  >0 && carr && carrlen > 0);
 
@@ -50,10 +50,10 @@ int getMinDiff(int arr[], int arrlen, int barr[], int barrlen, int carr[], int c
 
 int main() {
 
-    int a[] = {7, 13, 25, 26, 31, 31, 50, 52, 52, 58, 58, 69, 71, 87, 96};
-    int b[] = {3, 28, 28, 33, 38, 45, 46, 49, 67, 69, 71, 78, 84, 87, 98};
-    int c[] = {17, 18, 21, 34, 36, 46, 53, 54, 65, 72, 79, 80, 82, 85, 93};   
+    int a[] = {92, 13, 25, 26, 31, 31, 50, 52, 52, 58, 58, 69, 71, 87, 96};
+    int b[] = {6, 28, 28, 33, 38, 45, 46, 49, 67, 69, 71, 78, 84, 87, 98};
+    int c[] = {10, 18, 21, 34, 36, 46, 53, 54, 65, 72, 79, 80, 82, 85, 93};   
     int len = sizeof(a)/sizeof(a[0]);
-    cout<<getMinDiff(a, len, b, len, c, len);
+    cout<<GetMinDiff(a, len, b, len, c, len);
     return 0;
 }

@@ -30,7 +30,7 @@ int Operation(int n,int choice) {
 	}
 }
 
-int minimalOperations(int start, int end, bool visit[]) {
+int MinimalOperations(int start, int end, bool visit[]) {
 
 	visit[start] = true;
 	queue <Point> q;
@@ -66,7 +66,7 @@ int main(){
 
 	int n = 5, k = 80;
 	bool visit[10000] = {0};
-	cout<<minimalOperations(n, k, visit)<<endl;
+	cout<<MinimalOperations(n, k, visit)<<endl;
 	return 0;
 
 }

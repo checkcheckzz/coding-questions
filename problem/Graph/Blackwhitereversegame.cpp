@@ -25,62 +25,55 @@ int visited[END+10];
 int step[END+10];
 
 
-void roll(int x,int y,int& grid) { 
+void Roll(int x,int y,int& grid) { 
 
-	if(x < 0||x >= HEIGHT||y < 0||y >= WIDTH) return;
+	if (x < 0||x >= HEIGHT||y < 0||y >= WIDTH) return;
 
 	int position = (x * WIDTH) + y;
 	//flip the bit
 	grid = grid ^ (1<<position);
 }
-int click(int x,int y,int grid) {
-	int a[] = {0,-1,+1,0,0};
-	int b[] = {0,0,0,-1,+1};
+int Click(int x,int y,int grid) {
+	int a[] = {0, -1, 1, 0, 0};
+	int b[] = {0, 0, 0, -1, 1};
 	//five cells
-	for(int i = 0; i < 5; i++) {
-		roll(x + a[i],y + b[i], grid);
+	for (int i = 0; i < 5; i++) {
+		Roll(x + a[i],y + b[i], grid);
 	}
 	return grid;
 }
 
-int init(vector<string> board) {
-	int k=0;
-	int grid=0;
-	for(int i = 0;i<4;i++)
-	{
+int Init(vector<string> board) {
+	int k = 0;
+	int grid = 0;
+	for (int i = 0; i<4; i++) {
 		string s = board[i];
-		for(int j=0;j<5;j++)
-		{
-			grid|=(s[j]-'0')<<k;
+		for (int j=0; j<5; j++) {
+			grid |= (s[j] - '0')<<k;
 			k++;
 		}
 	}
 	return grid;
 }
 
-int blackWriteReverse(vector<string> board) {
-	int grid = init(board);
+int BlackWriteReverse(vector<string> board) {
+	int grid = Init(board);
 	queue<int> Q;
 	Q.push(grid);
-	memset(visited,0,sizeof(visited));
-	visited[grid]=1;
-	memset(step,0,sizeof(step));
-	while(!Q.empty())
-	{
+	memset(visited, 0, sizeof(visited));
+	visited[grid] = 1;
+	memset(step, 0, sizeof(step));
+	while (!Q.empty()) {
 		int now = Q.front();
 		Q.pop();
-		if(now == END)
-		{
+		if (now == END) {
 			return step[now];
 		}
-		for(int x = 0; x < 4;x++)
-		{
-			for(int y = 0; y < 5;y++)
-			{
-				int state = click(x,y,now);
+		for (int x = 0; x < 4;x++) {
+			for (int y = 0; y < 5;y++) {
+				int state = Click(x, y, now);
 
-				if(!visited[state])
-				{
+				if (!visited[state]) {
 					visited[state] = 1;
 					step[state] = step[now] + 1;
 					Q.push(state);
@@ -97,7 +90,7 @@ int main() {
 	board.push_back("01111");
 	board.push_back("11110");
 	board.push_back("11100");
-	int result = blackWriteReverse(board);
+	int result = BlackWriteReverse(board);
 	cout <<result<<endl;
 	return 0;
 }

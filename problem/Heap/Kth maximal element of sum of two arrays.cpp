@@ -25,16 +25,16 @@ struct node {
 	
 };
 
-struct greater_note {
+struct GreaterNote {
 
     bool operator() (const node a, const node b) {
         return a.val < b.val;
     }
 };
 
-int findKthSum1(int A[],int m,int B[],int n,int k) {
+int FindKthSum1(int A[],int m,int B[],int n,int k) {
 
-	priority_queue<node,vector<node>,greater_note > q; //build the max heap
+	priority_queue<node, vector<node>, GreaterNote > q; //build the max heap
 	q.push(node(0,0,A[0]+B[0]));
 	set<pair<int,int> > visited;
 	visited.insert(pair<int,int>(0,0));
@@ -71,7 +71,7 @@ O(mlogm)+O(nlogn) + O(log(maxsum-minsum))*O(m+n) time, O(1) space
 
 */
 
-int countSmaller(int A[],int m,int B[],int n,int piv) {
+int CountSmaller(int A[],int m,int B[],int n,int piv) {
 
 	int pa = 0,pb = n - 1;
 	int cnt = 0;
@@ -89,7 +89,7 @@ int countSmaller(int A[],int m,int B[],int n,int piv) {
 	
 	return cnt;
 }
-int findKthSum2(int A[],int m,int B[],int n,int k) {
+int FindKthSum2(int A[],int m,int B[],int n,int k) {
 
 	int l = A[0] + B[0];
 	int r = A[m-1] + B[n-1];
@@ -97,7 +97,7 @@ int findKthSum2(int A[],int m,int B[],int n,int k) {
 	while (l <= r) {
 	
 		int mid=l+((r-l)>>1);
-		if( countSmaller(A,m,B,n,mid) >= k ) {
+		if (CountSmaller(A,m,B,n,mid) >= k ) {
 		
 			ans = mid;
 			r = mid - 1;
@@ -118,8 +118,8 @@ int main() {
     int AA[4] = {1,2,3,4};
     int BB[2] = {2,3};
 	 
-    int res1 = findKthSum1(A,4,B,2,3);
-    int res2 = findKthSum2(AA,4,BB,2,3);
+    int res1 = FindKthSum1(A,4,B,2,3);
+    int res2 = FindKthSum2(AA,4,BB,2,3);
     cout<<res1<<endl;
     cout<<res2<<endl;
     return 0;	

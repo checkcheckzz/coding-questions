@@ -31,17 +31,17 @@ int dpMax[N][N] , dpMin[N][N];
 
 
 
-void stoneMinMaxScores(int num[], int len) {
+void StoneMinMaxScores(int num[], int len) {
 
     int sum[N];
     memset(sum , 0 , sizeof(sum));
-    for(int i = 1 ; i <= 2 * len ; i++) {
+    for (int i = 1 ; i <= 2 * len ; i++) {
         dpMax[i][i] = dpMin[i][i] = 0;
         sum[i] = sum[i-1] + num[i];
     }
 
-    for(int k = 1 ; k < len ; k++) {
-        for(int i = 1 ; i <= 2*len-k ; i++) {
+    for (int k = 1 ; k < len ; k++) {
+        for (int i = 1 ; i <= 2*len-k ; i++) {
 			//k is the interval length
 			//i is the interval begin point
 			//j is the interval end point
@@ -49,7 +49,7 @@ void stoneMinMaxScores(int num[], int len) {
             dpMax[i][j] = INT_MIN;
             dpMin[i][j] = INT_MAX;
             //p is the inner interval points 
-            for(int p = i ; p < j ; p++){
+            for (int p = i ; p < j ; p++){
                 //score equals num[i] + num[i+1] + ... + num[j]			
                 int score = sum[j] - sum[i-1];
                 dpMax[i][j] = max(dpMax[i][j],dpMax[i][p] + dpMax[p+1][j]+score);
@@ -59,11 +59,11 @@ void stoneMinMaxScores(int num[], int len) {
     }
     int minSco = INT_MAX;
     int maxSco = INT_MIN;
-    for(int i = 1 ; i <= len ; i++) { // note the index range here
+    for (int i = 1 ; i <= len ; i++) { // note the index range here
         minSco = min(minSco , dpMin[i][i+len-1]); 
         maxSco = max(maxSco , dpMax[i][i+len-1]); 
     }
-   cout<<minSco<<" " <<maxSco<<endl;
+    cout<<minSco<<" " <<maxSco<<endl;
 
 }
 
@@ -78,7 +78,7 @@ int main(){
     for (int i = 1; i <=len; i++) {
         num[i+len] = org[i];
     }
-        stoneMinMaxScores(num, len);
+        StoneMinMaxScores(num, len);
     return 0;
 }
 

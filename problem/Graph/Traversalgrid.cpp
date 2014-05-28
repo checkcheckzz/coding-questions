@@ -17,8 +17,8 @@ solution: backtracking
 #include<iostream>
 using namespace std;
 
-void probLive(int xdim, int ydim, int startx, int starty, float &alive, float &death, int step, int N) {    
-    if(step==N && startx>=0 && starty>=0 && startx<xdim && starty<ydim) {
+void ProbLive(int xdim, int ydim, int startx, int starty, float &alive, float &death, int step, int N) {    
+    if (step==N && startx>=0 && starty>=0 && startx<xdim && starty<ydim) {
     
         alive++;
         return;
@@ -40,7 +40,7 @@ int main() {
     int startx = 3, starty = 2;
     float alive = 0.0, death = 0.0;
     int N = 8;
-    probLive(xdim, ydim, startx, starty, alive, death, 0, N);
+    ProbLive(xdim, ydim, startx, starty, alive, death, 0, N);
     cout<<a/(a+b);
     return 0;
 }

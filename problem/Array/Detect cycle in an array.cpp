@@ -29,7 +29,7 @@ O(n) time, O(n) space
 #include<unordered_set>
 using namespace std;
 
-bool detectCycle1(int arr[], int len) {
+bool DetectCycle1(int arr[], int len) {
     
     int slow = 0;
     int fast = 0;
@@ -76,7 +76,7 @@ bool detectCycle1(int arr[], int len) {
     return false;
 }
 
-bool detectCycle2(int arr[], int len) {
+bool DetectCycle2(int arr[], int len) {
     unordered_set<int> s, visited;
     
     for (int i = 0; i < len; ++i) {
@@ -108,12 +108,12 @@ int main() {
     int c[4] = {-1,2,3,1};
     int e[4] = {3,-2,-3,0};
     int f[3] = {-1,2,3};
-    cout<<sol2(c,4)<<endl;
-    cout<<sol2(e,4)<<endl;
-    cout<<sol2(f,3)<<endl;
-    cout<<sol1(c,4)<<endl;
-    cout<<sol1(e,4)<<endl;
-    cout<<sol1(f,3)<<endl;;
+    cout<<DetectCycle2(c,4)<<endl;
+    cout<<DetectCycle2(e,4)<<endl;
+    cout<<DetectCycle2(f,3)<<endl;
+    cout<<DetectCycle1(c,4)<<endl;
+    cout<<DetectCycle1(e,4)<<endl;
+    cout<<DetectCycle1(f,3)<<endl;;
     return 0;
 }
 

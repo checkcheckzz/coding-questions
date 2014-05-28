@@ -15,7 +15,7 @@ O(nlogn) time
 using namespace std;
 
 //swap the elements in array from beg to end
-void swapRa(int arr[], int beg, int end) { 
+void SwapRa(int arr[], int beg, int end) { 
     
     assert(arr && beg <= end);
  
@@ -27,13 +27,13 @@ void swapRa(int arr[], int beg, int end) {
 }
  
 
-void reSort(int arr[], int len) {
+void ReSort(int arr[], int len) {
     assert(arr && len > 0);
  
     if (len <= 1) return;
  
-    reSort(arr, len/2);
-    reSort(arr + len/2, len - len/2); 
+    ReSort(arr, len/2);
+    ReSort(arr + len/2, len - len/2); 
     
     //here, the numbers have this format: ---- "+++ --" ++++
  
@@ -49,7 +49,7 @@ void reSort(int arr[], int len) {
     if (rgtiter <= lftiter) return; //middle part has current order
 	
     //swap the middle part
-    swapRa(arr, lftiter, rgtiter);
+    SwapRa(arr, lftiter, rgtiter);
  
     int begrgt = lftiter;
     
@@ -57,11 +57,11 @@ void reSort(int arr[], int len) {
         
     //swap the two parts to make middle part retain the origin order
     
-    swapRa(arr, lftiter, begrgt-1);
-    swapRa(arr, begrgt, rgtiter);
+    SwapRa(arr, lftiter, begrgt-1);
+    SwapRa(arr, begrgt, rgtiter);
 }
 
-void print(int arr[], int len) {
+void Print(int arr[], int len) {
     for (int i = 0; i < len; ++i) {
 	
         cout<<arr[i]<<",";
@@ -73,9 +73,9 @@ void print(int arr[], int len) {
 int main() {
 
     int a[6] = {1, 3, -7, 8, -1, 4};
-    print(a,6);
-    reSort(a,6);
-    print(a,6);
+    Print(a,6);
+    ReSort(a,6);
+    Print(a,6);
     return 0;
 }
 

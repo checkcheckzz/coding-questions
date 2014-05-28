@@ -32,23 +32,23 @@ struct node {
     node(): _x(0.0), _y(0.0){}
 };
 
-double distance(node x, node target) {
+double Distance(node x, node target) {
 	return pow(x._x - target._x, 2) + pow(x._y - target._y,2);
 }
 
 node target(0,0);
 
-struct greater_note {
+struct GreaterNote {
 
     bool operator() (const node a, const node b) {
-        return distance(a, target) < distance(b, target);
+        return Distance(a, target) < Distance(b, target);
     }
 };
 
 
 
-vector<node> getKClosestNode(vector<node> nodes, int k) {
-    priority_queue<node, vector<node>, greater_note > q; //build the max heap
+vector<node> GetKClosestNode(vector<node> nodes, int k) {
+    priority_queue<node, vector<node>, GreaterNote > q; //build the max heap
     size_t size = nodes.size();
     if (size <= k) return nodes;
     for (size_t i = 0; i < k; i++ ){
@@ -58,7 +58,7 @@ vector<node> getKClosestNode(vector<node> nodes, int k) {
 	
     while (num < size) {
         node top = q.top();
-        if (distance(nodes[num], target) < distance(top, target)) {
+        if (Distance(nodes[num], target) < Distance(top, target)) {
             q.pop();
             q.push(nodes[num]);
 			
@@ -88,7 +88,7 @@ int main() {
     nodes.push_back(p4);
     nodes.push_back(p5);
     int k = 3;
-    vector<node> res = getKClosestNode(nodes,3);
+    vector<node> res = GetKClosestNode(nodes,3);
     for (size_t i = 0; i < res.size(); i++) {
     cout<<"("<<res[i]._x<<","<<res[i]._y<<")";
     }

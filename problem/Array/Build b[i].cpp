@@ -20,7 +20,7 @@ Input: array input[] is the input array, len is the size of array input[].
 Output: array output[] is the output array
 */
  
-void buildArray(int input[], int len, int output[]) {
+void BuildArray(int input[], int len, int output[]) {
     output[len-1] = 1;
     // output[i]=input[i+1]*intput[i]*......*input[n-1];
     for (int i = len-2; i >= 0; i--) {  

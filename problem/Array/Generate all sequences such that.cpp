@@ -28,11 +28,11 @@ O(n) time, O(1) space
 
 using namespace std;
 
-void oneInterleaveSeq(int arr[], int len) {
+void OneInterleaveSeq(int arr[], int len) {
 
-   if(len <= 1) return;
+   if (len <= 1) return;
   
-   for(int i = 0 ; i < len-1 ; ++i) {
+   for (int i = 0 ; i < len-1 ; ++i) {
    
         if((i % 2 == 0 && arr[i] > arr[i+1]) ||(i % 2 == 1 && arr[i] < arr[i+1])) {
     
@@ -41,8 +41,8 @@ void oneInterleaveSeq(int arr[], int len) {
 
 }
 
-void printarr(int arr[], int len) {
-    for(int i=0; i<len; i++) {
+void Printarr(int arr[], int len) {
+    for (int i=0; i<len; i++) {
 	
         cout<<arr[i]<<" ";
     }		
@@ -62,8 +62,8 @@ solution: backtracking
 
 */
 
-void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visited) {
-	if(cur.size() == nums.size()) {
+void AllInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visited) {
+	if (cur.size() == nums.size()) {
 	
 		copy(cur.begin(), cur.end(), ostream_iterator<int>(cout," "));
 		cout<<endl;
@@ -72,16 +72,16 @@ void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visi
 	
 	int curlen = cur.size() + 1;
 	
-	for(size_t i = 0 ; i < nums.size(); ++i) {
+	for (size_t i = 0 ; i < nums.size(); ++i) {
 	
-		if(visited[i]) {
+		if (visited[i]) {
 		
 		    continue;
 		
 		}    
 		
 		//even position	
-		if((curlen & 1) && (curlen == 1 || nums[i] < cur.back())) {  
+		if ((curlen & 1) && (curlen == 1 || nums[i] < cur.back())) {  
 		
 			visited[i] = 1;
 			cur.push_back(nums[i]);
@@ -100,15 +100,15 @@ void allInterleaveSeqInner(vector<int> &nums,vector<int> &cur, vector<int> &visi
 	}
 }
 
-void allInterleaveSeq(vector<int>& nums) {
+void AllInterleaveSeq(vector<int>& nums) {
 
-    if(nums.empty()) return;
+    if (nums.empty()) return;
 	   
 	
     sort(nums.begin(),nums.end());
     vector<int> cur;
     vector<int> visited(nums.size(),0);
-    allInterleaveSeqInner(nums,cur,visited);
+    AllInterleaveSeqInner(nums,cur,visited);
 }
 
 
@@ -116,12 +116,11 @@ int main() {
 
     int arr[] = {1,2,4,5,6};
     int len = sizeof(arr)/sizeof(arr[0]);
-    oneInterleaveSeq(arr, len);
-    printarr(arr,5);
+    OneInterleaveSeq(arr, len);
+    Printarr(arr,5);
 
     vector<int> b(5,0);
     b[0]=1,b[1]=2, b[2]=4, b[3]=5, b[4]=6;
-    allInterleaveSeq(b);
-
+    AllInterleaveSeq(b);
     return 0;
 }

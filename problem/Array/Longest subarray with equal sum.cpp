@@ -32,7 +32,7 @@ O(n) time, O(n) space
 #include<iostream>
 using namespace std;
 
-int longSubarrayEq(const vector<int>& a,const vector<int>& b) {
+int LongSubarrayEq(const vector<int>& a,const vector<int>& b) {
 	int na = a.size(), nb = b.size();
 	assert(na == nb);
 	vector<int> c(na,0);
@@ -40,13 +40,12 @@ int longSubarrayEq(const vector<int>& a,const vector<int>& b) {
 	for (int i = 0; i < na; ++i) {
 	
 		c[i] = a[i] - b[i];
-		
 	}
 	
 	for (int i = 1; i < na; ++i) {
 	
 		c[i] = c[i-1] + c[i];
-        }
+    }
         
 	int result = -1;
 
@@ -54,7 +53,7 @@ int longSubarrayEq(const vector<int>& a,const vector<int>& b) {
 	map<int,int>::iterator it;
 	exist.insert(pair<int,int>(0,-1));
 	
-	for (int i = 0;i < na; ++i) {
+	for (int i = 0; i < na; ++i) {
 	
 		it = exist.find(c[i]);	
 		
@@ -75,10 +74,10 @@ int longSubarrayEq(const vector<int>& a,const vector<int>& b) {
 int main() {
 	int n = 11;
 	vector<int> a(n,0);  
-        vector<int> b(n,0);  
+    vector<int> b(n,0);  
 	a[1] = 1, a[5] = 1, a[8] = 1;
 	b[0] = 1, b[2] = 1, b[3] = 1, b[4] = 1,b[6] = 1, b[7] = 1, b[9] = 1;
-	cout<<longSubarrayEq(a,b)<<endl;
+	cout<<LongSubarrayEq(a,b)<<endl;
 	
 	/*
 	int a[]={0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0};

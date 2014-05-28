@@ -28,8 +28,6 @@ Most problems come from IT company interview. Some solutions are NOT my
 original work, but I don't know who wrote them. Some problems are
 difficult, and the special topics include some advanced ones.  
 
-Most code style follows [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
-
 Total Number (not including the problem in the special topics) of Problems: about 201 (142 done).
 
 Although I try to execute every program, bugs may still exist because I didn't run enough tests, welcome to find bugs. 

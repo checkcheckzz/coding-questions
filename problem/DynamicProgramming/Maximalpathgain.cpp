@@ -37,7 +37,7 @@ using namespace std;
 int dp[100][50][50];
 int map[50][50];
 
-int maxFour(int a, int b, int c, int d) {
+int MaxFour(int a, int b, int c, int d) {
     int maxab, maxcd;
     
     maxab = max(a, b);
@@ -47,7 +47,7 @@ int maxFour(int a, int b, int c, int d) {
 }
 
 
-int maximalPathGain(int map[][9], int m, int n) {
+int MaximalPathGain(int map[][9], int m, int n) {
 
     for (int k = 2; k <= m + n; k ++) { //maximal step is m+n, we decreae m, n by one here.
 
@@ -57,7 +57,7 @@ int maximalPathGain(int map[][9], int m, int n) {
 
                if (k != m + n && i == j)   continue; //apart the destination, two person should never reach the same grid!
                     
-                dp[k][i][j] = maxFour(dp[k - 1][i - 1][j], dp[k - 1][i][j - 1], dp[k - 1][i][j], dp[k - 1][i - 1][j - 1]) + map[i][k - i] + map[j][k - j];
+                dp[k][i][j] = MaxFour(dp[k - 1][i - 1][j], dp[k - 1][i][j - 1], dp[k - 1][i][j], dp[k - 1][i - 1][j - 1]) + map[i][k - i] + map[j][k - j];
             }
         }
     }
@@ -85,7 +85,7 @@ int main(){
         {1,1,1,2,3,0,2,3,1}
     };
     memset(dp, 0, sizeof(dp)); 
-    cout<<maximalPathGain(map, 8, 8)<<endl;
+    cout<<MaximalPathGain(map, 8, 8)<<endl;
     return 0;
 
 }

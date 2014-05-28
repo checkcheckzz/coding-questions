@@ -44,7 +44,7 @@ Output: the length of longest cycle.
 
 */
 
-int detectLongestCycle(int arr[], int len) {
+int DetectLongestCycle(int arr[], int len) {
 
     int maxlen = 0;
     int curlen = 0;
@@ -72,6 +72,6 @@ int detectLongestCycle(int arr[], int len) {
 int main() {
     int a[] = {3, 2, 1, 4, 0};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<detectLongestCycle(a, len)<<endl;
+    cout<<DetectLongestCycle(a, len)<<endl;
     return 0;
 }

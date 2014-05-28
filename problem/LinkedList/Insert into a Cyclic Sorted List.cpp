@@ -18,14 +18,14 @@ struct NODE {
 };
 
 //insert x after p
-void insert(NODE* p, int x) {
+void Insert(NODE* p, int x) {
     NODE* tmp = p->next;
     NODE* newnode = new NODE(x);
     p->next = newnode;
     newnode->next = tmp;
 }
  
-void insertToCycleLink(NODE* node, int x) {
+void InsertToCycleLink(NODE* node, int x) {
     assert(node != NULL);
  
     NODE* iter = node;

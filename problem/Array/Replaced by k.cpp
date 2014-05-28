@@ -21,7 +21,7 @@ O(nlogn) time, O(1) space
 using namespace std;
 
 
-int replacNum(int arr[], int len, int b) {
+int ReplaceNum(int arr[], int len, int b) {
 
     assert(arr && len > 0 && b >= 0);
     
@@ -60,7 +60,7 @@ int replacNum(int arr[], int len, int b) {
 int main() {
 
     int a[] = {1,2,5,7,7,8};
-    cout<<replacNum(a,6,26)<<endl;
+    cout<<ReplaceNum(a,6,26)<<endl;
     return 0;
 
 }

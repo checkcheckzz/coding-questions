@@ -19,7 +19,7 @@ O(n^2) time, O(1) space
 #include<vector>
 using namespace std;
 
-int numCarrot(int x, int y, int len) {
+int NumCarrot(int x, int y, int len) {
 
 	int result = 0;
 
@@ -55,7 +55,7 @@ int numCarrot(int x, int y, int len) {
 int main() {
 
   int len = 5;	 
-  cout<<numCarrot(2,2, len)<<endl;
+  cout<<NumCarrot(2,2, len)<<endl;
   return 0;
   
 }
