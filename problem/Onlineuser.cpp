@@ -54,7 +54,7 @@ struct Log {
     {}
 };
 
-void online_user(vector<Log> &logs) {
+void OnlineUser(vector<Log> &logs) {
     if (logs.empty()) return;
     map<float, int> mp;
     for (vector<Log>::const_iterator it = logs.begin(); 
@@ -81,6 +81,6 @@ int main() {
     logs.push_back(Log(0, 1));
     logs.push_back(Log(0, 2));
     logs.push_back(Log(1, 3));
-    online_user(logs);
+    OnlineUser(logs);
     return 0;
 }

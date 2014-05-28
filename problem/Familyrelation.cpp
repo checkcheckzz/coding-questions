@@ -20,30 +20,30 @@ int n,m,p;
 //a large number for simplicity
 int fa[5010];
 
-int find(int a) {
+int Find(int a) {
     //this optimization makes the tree as flat as possible
-    if(fa[a] != a) fa[a] = find(fa[a]);
+    if(fa[a] != a) fa[a] = Find(fa[a]);
     return fa[a];
 }
 
-void merge(int a,int b) {
+void Merge(int a,int b) {
 
-    fa[find(a)] = find(b);
+    fa[Find(a)] = Find(b);
 }
 
-void queryRelatives(int n, pair<int, int> relatives[], int r,  pair<int, int> query[], int q) {
+void QueryRelatives(int n, pair<int, int> relatives[], int r,  pair<int, int> query[], int q) {
    
-    for(int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++) {
         fa[i] = i;
     }
     
     for (int i = 0; i < r; i++) {
 		
-        merge(relatives[i].first, relatives[i].second);
+        Merge(relatives[i].first, relatives[i].second);
     }
     for (int i = 0; i < q; i++) {
        
-        if(find(query[i].first) == find(query[i].second)) {
+        if (Find(query[i].first) == Find(query[i].second)) {
             cout<<"They are relatives"<<endl;
         } else {
             cout<<"They are not relatives"<<endl;
@@ -64,7 +64,7 @@ int main() {
     pair<int, int> pair7 = make_pair(1,3);
     pair<int, int> relatives[] = {pair3, pair4, pair5, pair6, pair7};
     pair<int, int> query[] = {pair1, pair2};
-    queryRelatives(6,relatives, 5, query, 2);
+    QueryRelatives(6,relatives, 5, query, 2);
     return 0;
 }
 

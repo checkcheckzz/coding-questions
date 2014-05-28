@@ -23,37 +23,37 @@ struct Node {
 
 };
 
-int height(Node* root) {
+int Height(Node* root) {
 
-       if(root == NULL) {
+       if (root == NULL) {
              return 0;
        }
 
-       int leftheight = height(root->plft);
-       int rightheight = height(root->prgt);
+       int leftheight = Height(root->plft);
+       int rightheight = Height(root->prgt);
 
-       if(leftheight > rightheight) {
+       if (leftheight > rightheight) {
 
-              return leftheight + 1;
+           return leftheight + 1;
 
        } else {
 
-              return rightheight + 1;
+           return rightheight + 1;
        }
 }
 
-int longestDistanceTwoNodes(Node *root) {
+int LongestDistanceTwoNodes(Node *root) {
 
-       if(root == NULL) {
+       if (root == NULL) {
 
           return 0;
        }
 
-       int lheight = height(root->plft);
-       int rheight = height(root->prgt);
+       int lheight = Height(root->plft);
+       int rheight = Height(root->prgt);
 
-       int llength = diameter(root->plft);
-       int rlength = diameter(root->prgt);
+       int llength = LongestDistanceTwoNodes(root->plft);
+       int rlength = LongestDistanceTwoNodes(root->prgt);
 
        return max(lheight + rheight+ 1, max(llength, rlength));
 }

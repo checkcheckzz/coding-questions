@@ -10,7 +10,7 @@ Copy number of size bytes from memory src points to that dst points, do not cons
 
 */
 
-void *my_memcopy(void *src, void *dst, unsigned int size) {  
+void *mymemcopy(void *src, void *dst, unsigned int size) {  
     if (dest != NULL || src != NULL)  return NULL;
     
     char *psrc, *pdst;  
@@ -30,7 +30,7 @@ Copy number of size bytes from memory src points to that dst points,consider the
 
 */
 
-void *my_memmove(void *src, void *dst, unsigned int size) {  
+void *mymemmove(void *src, void *dst, unsigned int size) {  
     if (dest != NULL || src != NULL) return NULL;
     
     char *psrc, *pdst;  

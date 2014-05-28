@@ -45,23 +45,23 @@ children. Thus we can only check whether root!=NULL.
 
 // count all the black pixels of this image
 
-int getBlackPixels( TreeNode* root) {
+int GetBlackPixels( TreeNode* root) {
     if(!root) return 0;
     if( !root->upperLeft) { //only need check one
         if( root->pixel)
             return root->size * root->size;
     }
     int sum = 0;
-    sum += getBlackPixels( root->upperLeft);
-    sum += getBlackPixels( root->downLeft);
-    sum += getBlackPixels( root->upperRight);
-    sum += getBlackPixels( root->downRight);
+    sum += GetBlackPixels( root->upperLeft);
+    sum += GetBlackPixels( root->downLeft);
+    sum += GetBlackPixels( root->upperRight);
+    sum += GetBlackPixels( root->downRight);
     return sum;
 }
 
 // merge two images with  same size
 
-TreeNode* mergeHelper( TreeNode* image1, TreeNode* image2) {
+TreeNode *MergeHelper( TreeNode *image1, TreeNode *image2) {
         
     if( !image1->pixel) {
         return new TreeNode(image1->pixel, image1->size);
@@ -69,21 +69,21 @@ TreeNode* mergeHelper( TreeNode* image1, TreeNode* image2) {
     return copy(image2);
 }
 
-TreeNode* merge( const TreeNode* image1, const TreeNode* image2) {
+TreeNode *Merge( const TreeNode *image1, const TreeNode *image2) {
     if( !image1->upperLeft && !image2->upperLeft) {
         return new TreeNode(image1->pixel && image2->pixel, image1->size);
     }
     if( !image1->upperLeft) {
-        return mergeHelper(image1, image2);
+        return MergeHelper(image1, image2);
     }
     if( !image2->upperLeft) {
-        return mergeHelper(image2, image1);
+        return MergeHelper(image2, image1);
     }
-    TreeNode* root = new TreeNode(image1->pixel && image2->pixel, image1->size);
-    root->upperLeft = merge( image1->upperLeft, image2->upperLeft);
-    root->upperRight = merge( image1->upperRight, image2->upperRight);
-    root->downLeft = merge( image1->downLeft, image2->downLeft);
-    root->downRight = merge( image1->downRight, image2->downRight);
+    TreeNode *root = new TreeNode(image1->pixel && image2->pixel, image1->size);
+    root->upperLeft = Merge( image1->upperLeft, image2->upperLeft);
+    root->upperRight = Merge( image1->upperRight, image2->upperRight);
+    root->downLeft = Merge( image1->downLeft, image2->downLeft);
+    root->downRight = Merge( image1->downRight, image2->downRight);
     return root;
 }
 

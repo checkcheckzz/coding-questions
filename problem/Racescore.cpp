@@ -54,7 +54,7 @@ bool CompareRacer2(Racer a, Racer b) {
 	return a.end < b.end;
 }
 
-int getScore(deque<int> &ranks, int startrank) {
+int GetScore(deque<int> &ranks, int startrank) {
 
     deque<int>::iterator it;
     //binary search
@@ -101,7 +101,7 @@ void RankRacers(vector<Racer> &racers) {
 
     for (size_t i = 0; i < racers.size(); i++) {
 
-       racers[i].score = getScore(startranks, racers[i].startrank);
+       racers[i].score = GetScore(startranks, racers[i].startrank);
     }
 	sort(racers.begin(), racers.end(), CompareRacer1);
 }

@@ -44,7 +44,7 @@ if both event are START, with larger height, or if both
 event are END, with smaller height. 
 
 */
-bool cmpEvent(const Event* lhs, const Event* rhs) {
+bool CmpEvent(const Event* lhs, const Event* rhs) {
     if (lhs->x == rhs->x) {
         if (lhs->type == rhs->type) {
             if (lhs->type == Event::START) {
@@ -57,7 +57,7 @@ bool cmpEvent(const Event* lhs, const Event* rhs) {
     return lhs->x < rhs->x;
 }
 
-void gatherEvents(vector<Event*>& events) {
+void GatherEvents(vector<Event*>& events) {
     while(true) {
         int l, h, r;
         cin >> l >> h >> r;
@@ -72,7 +72,7 @@ void gatherEvents(vector<Event*>& events) {
     }
 }
 
-void skylineOutput(vector<Event*>& events) {
+void SkylineOutput(vector<Event*>& events) {
     map<int, int> heightCount;
     int max = 0;
 
@@ -111,7 +111,7 @@ void skylineOutput(vector<Event*>& events) {
  
 }
 
-void freeEvents(vector<Event*>& events) {
+void FreeEvents(vector<Event*>& events) {
     for (int i = 0; i < events.size(); ++i) {
         delete events[i];
     }
@@ -123,7 +123,7 @@ void freeEvents(vector<Event*>& events) {
 int main() {
 
     vector<Event*> events;
-    //gatherEvents(events);
+    //GatherEvents(events);
     //Input:
     //1 11 5, 2 6 7, 3 13 9, 12 7 16, 14 3 25, 19 18 22, 23 13 29, 24 2 28
     events.push_back(new Event(11, 1, Event::START));
@@ -142,12 +142,12 @@ int main() {
     events.push_back(new Event(13, 29, Event::END));
     events.push_back(new Event(2, 24, Event::START));
     events.push_back(new Event(2, 28, Event::END));
-    sort(events.begin(), events.end(), cmpEvent);
-    skylineOutput(events);
+    sort(events.begin(), events.end(), CmpEvent);
+    SkylineOutput(events);
 
     //Output: 
     //1 11 3 13 9 0 12 7 16 3 19 18 22 3 23 13 29 0
-    freeEvents(events);
+    FreeEvents(events);
     return 0;
 }
 

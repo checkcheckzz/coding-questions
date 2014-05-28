@@ -30,33 +30,32 @@ struct Node {
 
 };
 
-bool getNodePath(Node *root, Node *node, list<Node*>& path) {
-    if(root == node) return true;
+bool GetNodePath(Node *root, Node *node, list<Node*>& path) {
+    if (root == node) return true;
  
     path.push_back(root);
     bool found = false;
-    if(root->plft != NULL)
+    if (root->plft != NULL)
         found = getNodePath(root->plft, node, path);
-    if(!found && root->prgt)
+    if (!found && root->prgt)
         found = getNodePath(root->prgt, node, path);
  
-    if(!found)
+    if (!found)
         path.pop_back();
  
     return found;
 }
 
 
-Node* lastCommonNode(const list<Node*>& path1, const list<Node*>& path2) {
+Node* LastCommonNode(const list<Node*>& path1, const list<Node*>& path2) {
 
     list<Node*>::const_iterator iterator1 = path1.begin();
     list<Node*>::const_iterator iterator2 = path2.begin();
    
     Node *last = NULL;
  
-    while(iterator1 != path1.end() && iterator2 != path2.end())
-    {
-        if(*iterator1 == *iterator2)
+    while (iterator1 != path1.end() && iterator2 != path2.end()) {
+        if (*iterator1 == *iterator2)
             last = *iterator1;
  
         iterator1++;
@@ -66,19 +65,19 @@ Node* lastCommonNode(const list<Node*>& path1, const list<Node*>& path2) {
     return last;
 }
 
-Node *lastCommonAncestor(Node* root, Node* node1, Node* node2) {
+Node *LastCommonAncestor(Node* root, Node* node1, Node* node2) {
 
     if(root == NULL || node1 == NULL || node2 == NULL) return NULL;
 
     list<Node*> path1;
-    getNodePath(root, node1, path1);
+    GetNodePath(root, node1, path1);
  
     list<Node*> path2;
-    getNodePath(root, node2, path2);
-    return lastCommonNode(path1, path2);
+    GetNodePath(root, node2, path2);
+    return LastCommonNode(path1, path2);
 }
 
-int height(Node *lca, Node *node,bool &found) {
+int Height(Node *lca, Node *node,bool &found) {
     int lheight = 0, rheight = 0;
     if (lca) {
 
@@ -89,12 +88,12 @@ int height(Node *lca, Node *node,bool &found) {
 
         } else if (found == false) {
 
-            lheight = height(lca->plft, node, found);
+            lheight = Height(lca->plft, node, found);
             rheight = 0;
 
             if(found == false) { //node is not in lca's left subtree
 
-                rheight = height(lca->prgt, node, found);
+                rheight = Height(lca->prgt, node, found);
             }
 
             if(found == true) { //node is in lca's left or right subtree
@@ -117,21 +116,18 @@ int height(Node *lca, Node *node,bool &found) {
     }
 }
 
-int shortestDistance(Node *node1, Node* node2, Node *lca) {
+int ShortestDistance(Node *node1, Node* node2, Node *lca) {
 
-    if (lca)
-    {
+    if (lca) {
         bool found = false;
-        int dist1 = height(lca, node1, found);
+        int dist1 = Height(lca, node1, found);
         cout<<"Distance of "<<node1->val<<": "<<dist1<<endl;
 
-        found=false;
-        int dist2 = height(lca,node2,found);
+        found = false;
+        int dist2 = Height(lca,node2,found);
         cout<<"Distance of "<<node2->val<<": "<<dist2<<endl;
         return dist1 + dist2;
-    }
-    else
-    {
+    } else {
         return 0;
     }
 }
@@ -151,12 +147,12 @@ int main() {
 
     Node *node1 = root->prgt->prgt->plft;
     Node *node2 = root->prgt->plft;
-    Node *lca = lastCommonAncestor(root, node1, node2);
+    Node *lca = LastCommonAncestor(root, node1, node2);
 
     if (lca) {
         cout<<"Least Common Ancestor: "<<lca->val<<endl;
     }
-    cout<<"Total distance: "<<shortestDistance(node1, node2, lca)<<endl;
+    cout<<"Total distance: "<<ShortestDistance(node1, node2, lca)<<endl;
     return 0;
 
 }

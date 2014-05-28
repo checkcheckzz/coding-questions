@@ -42,13 +42,13 @@ struct Node {
 };
 
 
-void getHorizontalDistance(Node *root, int hd, unordered_map<int, int> &hdmp) { 
+void GetHorizontalDistance(Node *root, int hd, unordered_map<int, int> &hdmp) { 
 
         
     if (root == NULL) return;
   
         
-    getHorizontalDistance(root->plft, hd - 1, hdmp);
+    GetHorizontalDistance(root->plft, hd - 1, hdmp);
   
         
     int prevsum = (hdmp.find(hd) == hdmp.end()) ? 0 : hdmp.find(hd)->second;
@@ -62,15 +62,15 @@ void getHorizontalDistance(Node *root, int hd, unordered_map<int, int> &hdmp) {
         hdmp[hd] = prevsum + root->val;
     }
 
-        getHorizontalDistance(root->prgt, hd + 1, hdmp);
+        GetHorizontalDistance(root->prgt, hd + 1, hdmp);
     }
 
-void verticalSum(Node *root) {
+void VerticalSum(Node *root) {
 
     if (root == NULL) return;
 
     unordered_map<int, int> hdmp;
-    getHorizontalDistance(root, 0, hdmp);
+    GetHorizontalDistance(root, 0, hdmp);
 
     if (!hdmp.empty()) {
 
@@ -94,7 +94,7 @@ int main() {
     root->prgt->plft = new Node(6);
     root->prgt->prgt = new Node(7);
 
-    verticalSum(root);
+    VerticalSum(root);
 
     return 0;
 

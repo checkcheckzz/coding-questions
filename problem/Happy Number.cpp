@@ -34,7 +34,7 @@ no possible to overflow
 #include<set>
 using namespace std;
 
-int sumDigits(int num) {
+int SumDigits(int num) {
 
     int sum = 0;
     while (num) {
@@ -47,12 +47,12 @@ int sumDigits(int num) {
     return sum;
 }
 
-bool isHappyNum(int num, set<int> &st ) {
+bool IsHappyNum(int num, set<int> &st ) {
 
     while (num > 1 && st.find(num) == st.end()) {
 
         st.insert(num);
-        num = sumDigits(num);
+        num = SumDigits(num);
 
     }
 
@@ -63,12 +63,12 @@ bool isHappyNum(int num, set<int> &st ) {
 
 }
 
-void printFirstk(int num, int k) { 
+void PrintFirstk(int num, int k) { 
 
     set<int> stt;
     int count = 0;
     while (count < k) {
-        if (isHappyNum(num, stt)) { 
+        if (IsHappyNum(num, stt)) { 
             count++;
             cout<<num<<endl;
         }
@@ -86,7 +86,7 @@ int main() {
     cin>>num;
 
     set<int> st;
-    bool res = isHappyNum(num, st);
+    bool res = IsHappyNum(num, st);
     if (res) {
         cout<<num<<" is a happy number"<<endl;
     } else {
@@ -94,7 +94,7 @@ int main() {
     }
     int k = 8;
     cout<<"The next " << k<<" happy number from "<<num<<" is:"<<endl;
-    printFirstk(num, k);
+    PrintFirstk(num, k);
 
     return 0;
 

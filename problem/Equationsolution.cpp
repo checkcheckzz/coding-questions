@@ -22,19 +22,19 @@ using namespace std;
 
 int table[MAX * 2 + 400];
 
-int findSolutions(int coeff[]) {
+int FindSolutions(int coeff[]) {
 
     int lefteq = 0;
     int righteq = 0;
     int sum = 0;
 
-    for(int  i = -30 ; i <= 30; i++) {
+    for (int  i = -30 ; i <= 30; i++) {
 
-       for( int j = -30; j <= 30; j++) {
+       for ( int j = -30; j <= 30; j++) {
 
-           for( int k = -30; k <= 30; k++) {
+           for ( int k = -30; k <= 30; k++) {
 
-               if( i != 0 && j != 0 && k != 0) {
+               if ( i != 0 && j != 0 && k != 0) {
                    lefteq = i*i*i*coeff[0] + j*j*j*coeff[1] + k*k*k*coeff[2];
                    lefteq += MAX;
                    table[lefteq]++;
@@ -66,6 +66,6 @@ int findSolutions(int coeff[]) {
 int main() {
 
     int coeff[] = {10, 20, 21, 17,8};
-    cout<<findSolutions(coeff)<<endl;
+    cout<<FindSolutions(coeff)<<endl;
     return 0;
 }

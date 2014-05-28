@@ -26,7 +26,7 @@ struct NODE {
 };
 
 //postorder
-void postOrderTravel(NODE* root) {
+void PostOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -63,7 +63,7 @@ void postOrderTravel(NODE* root) {
 }
  
 //preorder
-void prevOrderTravel(NODE* root) {
+void PrevOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -84,7 +84,7 @@ void prevOrderTravel(NODE* root) {
  
 //inorder
 
-void inOrderTravel(NODE* root) {
+void InOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -116,9 +116,9 @@ int main(){
     NODE *head = new NODE(2);
     head->pLft = new NODE(1);
     head->pRgt = new NODE(3);
-    prevOrderTravel(head);
-    inOrderTravel(head);
-    postOrderTravel(head);
+    PrevOrderTravel(head);
+    InOrderTravel(head);
+    PostOrderTravel(head);
     return 0;
 }
 

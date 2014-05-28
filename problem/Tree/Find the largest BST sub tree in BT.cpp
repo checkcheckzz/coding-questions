@@ -25,7 +25,7 @@ struct NODE  {
 };
 
  
-int getLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstroot, int& maxbstnum) {
+int GetLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstroot, int& maxbstnum) {
     
     assert(Node);
  
@@ -37,7 +37,7 @@ int getLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstro
     if (Node->pLft != NULL) {
     
         int lftmax, lftmin;
-        int numnodes = getLargestBSTInner(Node->pLft, lftmin, lftmax, maxbstroot, maxbstnum);
+        int numnodes = GetLargestBSTInner(Node->pLft, lftmin, lftmax, maxbstroot, maxbstnum);
         if (numnodes <= 0 || lftmax > pNode->val) { //check invalid
         
             bivalid = true; 
@@ -52,7 +52,7 @@ int getLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstro
     if (Node->pRgt != NULL) {
     
         int rgtmax, rgtmin;
-        int numnodes = getLargestBSTInner(Node->pRgt, rgtmin, rgtmax, maxbstroot, maxbstnum);
+        int numnodes = GetLargestBSTInner(Node->pRgt, rgtmin, rgtmax, maxbstroot, maxbstnum);
         if (numnodes <= 0 || rgtmin < pNode->val) {  //check invalid
         
             bivalid = true;
@@ -76,19 +76,19 @@ int getLargestBSTInner(NODE* Node, int& minbound, int& maxbound, NODE*& maxbstro
 }
  
 //Input root of a BT and return the root of largest BST 
-NODE* getLargestBST(NODE* root) {
+NODE *GetLargestBST(NODE *root) {
     
     if (root == NULL) return NULL;
  
-    NODE* result = NULL;
+    NODE *result = NULL;
     int maxbstnum = 0;
     int minbound, maxbound;
-    getLargestBSTInner(root, minbound, maxbound, result, maxbstnum);
+    GetLargestBSTInner(root, minbound, maxbound, result, maxbstnum);
  
     return result;
 }
 
-void inOrderTravel(NODE* root) {
+void InOrderTravel(NODE* root) {
     assert(root);
  
     stack<NODE*> stk;
@@ -121,7 +121,7 @@ int main() {
     root->pLft->pRgt = new NODE(4);
     root->pLft->pLft = new NODE(2);
     root->pRgt->pRgt = new NODE(8);
-    inOrderTravel(getLargestBST(root));
+    InOrderTravel(GetLargestBST(root));
     return 0;
 	
 }

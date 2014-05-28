@@ -14,7 +14,7 @@ print the first number q greater than p without mark if it exists, then repeat t
 using namespace std;
 
 
-void flagMultiples(bool arr[], int a, unsigned int num) {
+void FlagMultiples(bool arr[], int a, unsigned int num) {
     int i = 2;
     int temp = i * a;
     while ( temp <= num ) {
@@ -25,7 +25,7 @@ void flagMultiples(bool arr[], int a, unsigned int num) {
 }
  
 
-void sieveOfEratosthenesAlg(unsigned int num) {
+void SieveOfEratosthenesAlg(unsigned int num) {
 
     if (num < 2) {
         return;  
@@ -39,7 +39,7 @@ void sieveOfEratosthenesAlg(unsigned int num) {
 
             if ( visited[i] == 0 ) {
                 cout<<i+1<<" ";
-                flagMultiples(visited, i+1, num);
+                FlagMultiples(visited, i+1, num);
             }
         }
 
@@ -53,7 +53,7 @@ int main() {
     unsigned int num;
     cin>>num;
     cout<<"The primer numbers below number "<<num<<" are:"<<endl;
-    sieveOfEratosthenesAlg(num);
+    SieveOfEratosthenesAlg(num);
     cout<<endl;
     return 0;
 }

@@ -11,9 +11,9 @@ const int k = 1024; //suppose k=1024
 
 char buffer[k];
 int preSize = 0; //valid data size in buffer, this value will be set within funciton block_reader(char *buf)
-int block_reader(char *buf);
+int BlockReader(char *buf);
 
-void moveToBuf(char*& pW, int n) {
+void MoveToBuf(char*& pW, int n) {
     if (n <= 0 || pW == NULL || preSize < n) return;     
     memcpy(pW, buffer, n);
     preSize -= n;
@@ -21,20 +21,20 @@ void moveToBuf(char*& pW, int n) {
     pW += n;
 }
 
-int anysize_reader(char *buf, int size) {
+int AnysizeReader(char *buf, int size) {
     if (buf == NULL || size <= 0) return 0;
 
     char* pw = buf;
     int Lft = size;  //the size you want to read 
     int Mov = Lft > preSize ? preSize : Lft ;
-    moveToBuf(pW, Mov); //get the valid data from buffer last time left  
+    MoveToBuf(pW, Mov); //get the valid data from buffer last time left  
     Lft -= Mov;
      
     while (Lft > 0) {
     
-        int Read = block_reader(buffer); //read k bytes into buffer and set preSize
+        int Read = BlockReader(buffer); //read k bytes into buffer and set preSize
         Mov = Lft < Read ? Lft : Read;
-        moveToBuf(pW, Mov);
+        MoveToBuf(pW, Mov);
         Lft -= Mov;
          
         if (Read < k) break; //reach end of a file

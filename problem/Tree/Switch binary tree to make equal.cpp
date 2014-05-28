@@ -25,7 +25,7 @@ struct NODE {
     NODE(int n) : val(n), Lft(NULL), Rgt(NULL) {}
 };
  
-bool binTreeSwitchEqualInner(NODE* node1, NODE* node2, int& switch) {
+bool BinTreeSwitchEqualInner(NODE* node1, NODE* node2, int& switch) {
     switch = 0;
 	
     if (node1 == NULL || node2 == NULL) return node1 == NULL && node2 == NULL;
@@ -34,15 +34,15 @@ bool binTreeSwitchEqualInner(NODE* node1, NODE* node2, int& switch) {
  
     int leftswitch, rightswitch;
     
-    if (binTreeSwitchEqualInner(node1->Lft, node2->Lft, leftswitch) && 
-        binTreeSwitchEqualInner(node1->Rgt, node2->Rgt, rightswitch)) {
+    if (BinTreeSwitchEqualInner(node1->Lft, node2->Lft, leftswitch) && 
+        BinTreeSwitchEqualInner(node1->Rgt, node2->Rgt, rightswitch)) {
         
         switch = leftswitch + rightswitch;
         return true;
     }
  
-    if (binTreeSwitchEqualInner(node1->Lft, node2->Rgt, leftswitch) && 
-        binTreeSwitchEqualInner(node1->Rgt, node2->Lft, rightswitch)) {
+    if (BinTreeSwitchEqualInner(node1->Lft, node2->Rgt, leftswitch) && 
+        BinTreeSwitchEqualInner(node1->Rgt, node2->Lft, rightswitch)) {
         
         switch = leftswitch +rightswitch + 1;  //add 1 to count switch left and right part
         return true;
@@ -51,11 +51,11 @@ bool binTreeSwitchEqualInner(NODE* node1, NODE* node2, int& switch) {
     return false;
 }
  
-int binTreeSwitchEqual(NODE* root1, NODE* root2) {
+int BinTreeSwitchEqual(NODE* root1, NODE* root2) {
     assert(root2 && root1);
  
     int switch = 0;
-    bool result = binTreeSwitchEqualInner(root1, root2, switch);
+    bool result = BinTreeSwitchEqualInner(root1, root2, switch);
  
     return result ? switch : -1;
 }
@@ -77,7 +77,7 @@ int main() {
     root2->Rgt->Lft = new NODE(7);
     root2->Rgt->Rgt = new NODE(0);
 
-    cout<<binTreeSwitchEqual(root1, root2)<<endl;
+    cout<<BinTreeSwitchEqual(root1, root2)<<endl;
 
     return 0;
 }

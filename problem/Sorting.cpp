@@ -14,7 +14,7 @@ solution: bubble sort O(n^2) time, O(1) space, mergesort O(nlogn) average time, 
 using namespace std;
 
 
-void bubbleSort(int arr[], int len) {
+void BubbleSort(int arr[], int len) {
 
 	for (int i = len - 1; i > 0; i--) {
 		for (int j = 0; j < i; j++) {
@@ -23,7 +23,7 @@ void bubbleSort(int arr[], int len) {
 	}
 
 }
-int *mergeInner(int arr1[], int len1, int arr2[], int len2) {
+int *MergeInner(int arr1[], int len1, int arr2[], int len2) {
 	int *res = new int[len1 + len2];
 	int i = 0, j = 0, k = 0;
 	while (i < len1 && j < len2) {
@@ -43,7 +43,7 @@ int *mergeInner(int arr1[], int len1, int arr2[], int len2) {
 	return res;
 }
 
-void mergeSort(int arr[], int len) {
+void MergeSort(int arr[], int len) {
 	if (len <= 1) return;
 	int len1 = len / 2;
 	int len2 = len - len1;
@@ -56,10 +56,10 @@ void mergeSort(int arr[], int len) {
 	for (k = 0; i < len; i++)
 		arr2[k++] = arr[i];
 
-	mergeSort(arr1, len1);
-	mergeSort(arr2, len2);
+	MergeSort(arr1, len1);
+	MergeSort(arr2, len2);
 
-	int *res = mergeInner(arr1, len1, arr2, len2);
+	int *res = MergeInner(arr1, len1, arr2, len2);
 	for (int i = 0; i <len; i++)
 		arr[i] = res[i];
 
@@ -69,7 +69,7 @@ void mergeSort(int arr[], int len) {
 
 }
 
-void printArr(int arr[], int len) {
+void PrintArr(int arr[], int len) {
     for (int i = 0; i < len; i++) {
         cout<<arr[i]<<" ";
     }
@@ -81,13 +81,13 @@ int main() {
 	
     int a[6] = {-1, 2, -8, 7, 6, 4};
     int b[6] = {-1, 2, -8, 7, 6, 4};
-    printArr(a, 6);
+    PrintArr(a, 6);
     cout<<"After the bubblesort:"<<endl;
-    bubbleSort(a,6);
-    printArr(a, 6);
+    BubbleSort(a,6);
+    PrintArr(a, 6);
     cout<<"After the mergesort:"<<endl;
-    mergeSort(b,6);
-    printArr(b, 6);
+    MergeSort(b,6);
+    PrintArr(b, 6);
     return 0;
 
 }

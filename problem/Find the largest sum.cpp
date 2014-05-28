@@ -15,7 +15,7 @@ O(n-2) addition, O(1) space
 #include<cassert>
 using namespace std;
 
-int findLargest3Sum(int arr[], int len) {
+int FindLargest3Sum(int arr[], int len) {
 
 	assert(arr && len > 2);
 	
@@ -68,9 +68,9 @@ int findLargest3Sum(int arr[], int len) {
 
 int main() {
 
-	int arr[] = {1,3,1,5,2,-3,-1,4,5,2};
+	int arr[] = {1, 3, 1, 5, 2, -3, -1, 4, 5, 2};
 	int len = sizeof(arr)/sizeof(arr[0]);
-	cout<<findLargest3Sum(arr, len)<<endl;
+	cout<<FindLargest3Sum(arr, len)<<endl;
 	return 0;
 }
 

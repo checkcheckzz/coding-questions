@@ -24,7 +24,7 @@ struct Node {
 
 
 
-Node *secondLargestNode(NODE *root) {
+Node *SecondLargestNode(NODE *root) {
 
 
       if (root == NULL || root->plft == NULL && root->prgt == NULL) return NULL;

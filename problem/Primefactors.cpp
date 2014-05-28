@@ -15,7 +15,7 @@ Note: if we get visited primer factor, we skip it.
 using namespace std;
 
 
-void findPrimeFactors(unsigned int num) {
+void FindPrimeFactors(unsigned int num) {
     
     int pre = 0;
     while (num%2 == 0) {  
@@ -44,6 +44,6 @@ int main() {
     unsigned int num;
     cin>>num; 
     cout<<"The primer factors of "<<num<<" are:"<<endl;
-    findPrimeFactors(num);
+    FindPrimeFactors(num);
     return 0;
 }

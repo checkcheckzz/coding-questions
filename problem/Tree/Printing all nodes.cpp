@@ -34,32 +34,32 @@ struct TNode {
 };
 
 //print node below given node 
-void printDown(TNode * node, int k) {
+void PrintDown(TNode * node, int k) {
 
-    if(node == NULL || k < 0) return;
+    if (node == NULL || k < 0) return;
 
-    if(k == 0) {
+    if (k == 0) {
         cout<<node->val<<endl;
     } else {
-        printDown(node->plft, k -1);
-        printDown(node->prgt, k -1);	
+        PrintDown(node->plft, k -1);
+        PrintDown(node->prgt, k -1);	
     }
 }
 //print above node from given node 
-void printAbove(TNode* node, int k) {
+void PrintAbove(TNode* node, int k) {
 
     if(node == NULL || k < 0) return;
 
     TNode *parent = NULL;
     parent = node->parent;
-    while(parent != NULL) {
+    while (parent != NULL) {
         k--;
 		if(k == 0) {
             cout<<parent->val<<endl;
         } else if(node == parent->plft) {
-			printDown(parent->prgt, k-1);
+			PrintDown(parent->prgt, k-1);
         } else {
-            printDown(parent->plft,k-1);
+            PrintDown(parent->plft,k-1);
         }
 		
         node = parent;
@@ -68,14 +68,14 @@ void printAbove(TNode* node, int k) {
 }
 
 
-void printDistancekNodeP(TNode *start, int k) {
+void PrintDistancekNodeP(TNode *start, int k) {
 
 	if (start == NULL || k < 0) return;
 
 	if (start->parent != NULL) {
-	  printAbove(start, k);
+        PrintAbove(start, k);
 	}
-    printDown(start, k);
+    PrintDown(start, k);
 
 }
 
@@ -131,24 +131,22 @@ int main() {
 	TNode *start1 = root1->prgt->prgt;
 	TNode *start2 = root1->prgt;
 
-	printDistancekNodeP(root1, 1);
+	PrintDistancekNodeP(root1, 1);
 	cout<<endl;
-	printDistancekNodeP(root1, 2);
+	PrintDistancekNodeP(root1, 2);
 	cout<<endl;
-	printDistancekNodeP(start1, 1);
+	PrintDistancekNodeP(start1, 1);
 	cout<<endl;
-	printDistancekNodeP(start1, 2);
+	PrintDistancekNodeP(start1, 2);
 	cout<<endl;
-	printDistancekNodeP(start1, 3);
+	PrintDistancekNodeP(start1, 3);
 	cout<<endl;
-	printDistancekNodeP(start2, 1);
+	PrintDistancekNodeP(start2, 1);
 	cout<<endl;
-	printDistancekNodeP(start2, 2);
+	PrintDistancekNodeP(start2, 2);
 	cout<<endl;
-	printDistancekNodeP(start2, 3);
+	PrintDistancekNodeP(start2, 3);
 	cout<<endl;
-	
-
 	return 0;
 
 }

@@ -21,7 +21,7 @@ O(n) time, O(1) space
 #include<iostream>
 using namespace std;
 
-int findIdWithMostPosts(int arr[], int len) {  
+int FindIdWithMostPosts(int arr[], int len) {  
  
     int id = -1;  
     int nTimes, i;  
@@ -54,12 +54,12 @@ O(n) time, O(1) space
 
 */
 
-void findIdWithMoreThanQuarterPosts(int arr[], int len, int Ids[]) {
+void FindIdWithMoreThanQuarterPosts(int arr[], int len, int Ids[]) {
     int Id = -1;
     int nTimes[3], i;
     nTimes[0] = nTimes[1] = nTimes[2] = 0;
     Ids[0] = Ids[1] = Ids[2] = -1;
-    for(i = 0; i < len; i++) {
+    for (i = 0; i < len; i++) {
 
         if(arr[i] == Ids[0]) {
              nTimes[0]++;
@@ -90,11 +90,11 @@ int main() {
 
     int arr[] = {5, 0, 1, 5, 3, 5, 5, 4, 5, 2, 0, 5, 5, 5};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<findIdWithMostPosts(arr, len)<<endl;
+    cout<<FindIdWithMostPosts(arr, len)<<endl;
     int arr1[] = {1, 2, 3, 5, 3, 2, 1};
     int len = sizeof(arr1)/sizeof(arr1[0]);
     int Ids[3] = {-1, -1, -1};
-    findIdWithMoreThanQuarterPosts(arr1, len, Ids);
+    FindIdWithMoreThanQuarterPosts(arr1, len, Ids);
     for (int i = 0; i <= 2; ++i) {
         cout<<Ids[i]<<endl;
     }

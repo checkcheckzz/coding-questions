@@ -30,7 +30,7 @@ void init() {
     hasInit = 1;
 }
 
-void* malloc_mem(int num) {
+void *malloc_mem(int num) {
 
     if (!hasInit) {
 	

@@ -23,7 +23,7 @@ struct NODE {
     NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
 };
  
-void serializeInner(char * &p, NODE* node) {
+void SerializeInner(char * &p, NODE* node) {
     if (node == NULL) {
         *p++ = '#';
         *p++ = ' ';
@@ -39,13 +39,13 @@ void serializeInner(char * &p, NODE* node) {
     p += strlen(p);
     *p++ = ' ';
  
-    serializeInner(p, node->pLft);
-    serializeInner(p, node->pRgt);
+    SerializeInner(p, node->pLft);
+    SerializeInner(p, node->pRgt);
 	
 }
-char* serialize(char mem[], NODE* root) {
+char* Serialize(char mem[], NODE* root) {
     char *p = mem;
-    serializeInner(p, root);
+    SerializeInner(p, root);
     p++;
     *p = '\0';
     return mem;
@@ -58,7 +58,7 @@ struct TOKEN {
     TOKEN(bool b, int n) : bnull(b), val(n) {}
 };
  
-TOKEN getToken(const char* &p) {
+TOKEN GetToken(const char* &p) {
     while(*p == ' ') p++;
  
     if (*p < '0' || *p > '9') {
@@ -77,24 +77,24 @@ TOKEN getToken(const char* &p) {
     return TOKEN(false, val);
 }
  
-NODE*  deSerializeInner(const char* &p) {
-    TOKEN tk = getToken(p);
+NODE*  DeSerializeInner(const char* &p) {
+    TOKEN tk = GetToken(p);
 	
  
     if (tk.bnull) return NULL;
  
     NODE* result = new NODE(tk.val);
-    result->pLft = deSerializeInner(p);
-    result->pRgt = deSerializeInner(p);
+    result->pLft = DeSerializeInner(p);
+    result->pRgt = DeSerializeInner(p);
  
     return result;
 }
 
-NODE* deSerialize(const char mem[]) {
+NODE* DeSerialize(const char mem[]) {
     if (mem == NULL) return NULL;
  
     const char* p = mem;
-    return deSerializeInner(p);
+    return DeSerializeInner(p);
 }
 
 int main() {
@@ -103,10 +103,10 @@ int main() {
     root->pLft = new NODE(1);
     root->pRgt = new NODE(4);
     char str[] = "";
-    serialize(str, root);
+    Serialize(str, root);
     cout<<str<<endl;
     const char str1[] = "3 1 # # 4 # #";
-    NODE *r = deSerialize(str1);
+    NODE *r = DeSerialize(str1);
     cout<<r->val<<endl;
     cout<<r->pLft->val<<endl;
     cout<<r->pRgt->val<<endl;

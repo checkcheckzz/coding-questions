@@ -41,15 +41,15 @@ map<string,vector<int> > ht;
 vector<int> f;
 vector<int> ranks;
 
-int find(int x) {
+int Find(int x) {
     if (x == f[x]) return x;
 	//optimization
-    return f[x] = find(f[x]);
+    return f[x] = Find(f[x]);
 }
 
-void unite(int x, int y) {
-    x = find(x);
-    y = find(y);
+void Unite(int x, int y) {
+    x = Find(x);
+    y = Find(y);
     if (x == y) return;
 	//optimization
     if (ranks[x] < ranks[y]) {
@@ -63,7 +63,7 @@ void unite(int x, int y) {
     }    
 }
 
-vector<vector<string> > groupContact(vector<record> & input) {
+vector<vector<string> > GroupContact(vector<record> & input) {
     vector<vector<string> > res;
     size_t n = input.size();
     size_t k, i;
@@ -85,13 +85,13 @@ vector<vector<string> > groupContact(vector<record> & input) {
     for (it = ht.begin(); it != ht.end(); it++) {
         vector<int>  &v = it->second;
         for (i = 0; i < v.size()-1; i++) {
-            unite(v[i], v[i+1]);
+            Unite(v[i], v[i+1]);
         }
     }
     // group all names with the same father together
     map<int,vector<int> > mp;
     for (i = 0; i < n; i++) {
-        mp[find(i)].push_back(i);
+        mp[Find(i)].push_back(i);
     }
 	//transfer index to names
     map<int,vector<int> >::iterator it2;
@@ -127,7 +127,7 @@ int main() {
     input[4].emails.push_back("bob@gmail.com");    
 
  
-    vector<vector<string> > res = groupContact(input);
+    vector<vector<string> > res = GroupContact(input);
 
     for (size_t k = 0; k < res.size(); k++) {
         printf("group %d: ", k+1);

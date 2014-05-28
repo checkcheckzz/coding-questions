@@ -15,7 +15,7 @@ O(nlogk) time, O(k) space
 #include<set>
 using namespace std;
 
-bool hasDupk(int arr[], int len, int k) {
+bool HasDupk(int arr[], int len, int k) {
 
 	assert(arr && k >= 0 && k < len && len > 0);
 	set<int> checked;
@@ -51,7 +51,7 @@ int main() {
     int arr[]={3, 1, 2, 1, 2, 3, 9, 1};
     int k = 2;
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<hasDupk(arr, len, k)<<endl;
+    cout<<HasDupk(arr, len, k)<<endl;
     return 0;
 }
 

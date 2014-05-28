@@ -18,7 +18,7 @@ O(n) time, O(1) space
 #include<string>
 using namespace std;
 
-bool checkMatch(string str1, string str2) {
+bool CheckMatch(string str1, string str2) {
 
    if (str1.size() != str2.size()) {
       return false;
@@ -34,12 +34,12 @@ bool checkMatch(string str1, string str2) {
    return true;
 }
 
-vector<string> wordsMatch(vector<string> &words, string pattern) {
+vector<string> WordsMatch(vector<string> &words, string pattern) {
 
   vector<string> res;
   for (size_t i = 0 ; i < words.size(); i++) {
 
-    if (checkMatch(words[i], pattern)) {
+    if (CheckMatch(words[i], pattern)) {
 
        res.push_back(words[i]);
 
@@ -57,7 +57,7 @@ int main(){
     words.push_back("rb ca");
     words.push_back("rbfce");
     string pattern = "rb?c?";
-    vector<string> result = wordsMatch(words, pattern);
+    vector<string> result = WordsMatch(words, pattern);
     for(size_t i =0; i < result.size(); ++i) {
         cout<<result[i]<<endl;
     }

@@ -30,23 +30,23 @@ otherwise, return its partent sibling
 */
 
 
-Node* getNextNode(Node *node) {
+Node* GetNextNode(Node *node) {
    assert(node != NULL);
 
-   Node* next = node->getFirstChild();
+   Node* next = node->GetFirstChild();
    if(next) return next;
 
-   next = node->getSlibing();
+   next = node->GetSlibing();
 
    if(next) return next;
 
-   next = node->getParent();
+   next = node->GetParent();
 
    while (next) {
 
-      next = next->getSlibing();
+      next = next->GetSlibing();
       if(next) return next;
-      next = next->getParent();
+      next = next->GetParent();
    }
 
    return NULL;

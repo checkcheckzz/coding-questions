@@ -19,7 +19,7 @@ struct NODE  {
     NODE(int n) : val(n), plft(NULL), prgt(NULL) {}
 };
 
-void shiftUp(NODE *node) {
+void ShiftUp(NODE *node) {
 
      if(!node) return; 
      
@@ -45,24 +45,24 @@ void shiftUp(NODE *node) {
      node->val = largest->val;
      largest->val = tmp;    
 
-     shiftUp(largest);
+     ShiftUp(largest);
 }
 
-void heapifyBinaryTree(NODE *root) {
+void HeapifyBinaryTree(NODE *root) {
 
     if (!root) return;
 
     if (root->plft) {
-        heapifyBinaryTree(root->plft); 
+        HeapifyBinaryTree(root->plft); 
     }    
 
     if (root->prgt) {
 
-        heapifyBinaryTree(root->prgt);
+        HeapifyBinaryTree(root->prgt);
      
     }
 
-    shiftUp(root);
+    ShiftUp(root);
 
 }
 
@@ -74,7 +74,7 @@ int main() {
     root->plft = new NODE(2);
     root->prgt = new NODE(3);
     root->prgt->plft = new NODE(5);
-    heapifyBinaryTree(root);
+    HeapifyBinaryTree(root);
     cout<<root->val<<endl;
     cout<<root->plft->val<<endl;
     cout<<root->prgt->val<<endl;

@@ -20,28 +20,28 @@ struct TreeNode {
     TreeNode(int n) : val(n), children() {}
 };
 
-int maxPathSumInner(TreeNode *node, int &maxSoFar) {
+int MaxPathSumInner(TreeNode *node, int &maxSoFar) {
     if (node == NULL) return 0;
 	int maxPath = node->val;
 	int tempPath = INT_MIN;
 	vector<TreeNode*>::iterator it = node->children.begin();
-	for(; it != node->children.end(); it++) {
-		int maxchild = maxPathSumInner(*it, maxSoFar);
+	for (; it != node->children.end(); it++) {
+		int maxchild = MaxPathSumInner(*it, maxSoFar);
 		
 		if (maxchild > 0)  maxPath += maxchild;
 		if (maxchild > tempPath) tempPath = maxchild;
 	}
 	if (maxPath > maxSoFar) maxSoFar = maxPath;
 	int res = node->val;
-	return max(res, res+tempPath); //note path definition
+	return max(res, res + tempPath); //note path definition
 }
 
 
-int maxPathSum(TreeNode *root) {
+int MaxPathSum(TreeNode *root) {
 
     if (root == NULL) return 0;
     int maxSoFar = root->val;
-    maxPathSumInner(root, maxSoFar);
+    MaxPathSumInner(root, maxSoFar);
     return maxSoFar;
 }
 
@@ -62,7 +62,7 @@ int main() {
     p5->children.push_back(p6);
     TreeNode *p7 = new TreeNode(-1);
     p6->children.push_back(p7);
-    cout<<maxPathSum(root);
+    cout<<MaxPathSum(root);
 
     return 0;
 

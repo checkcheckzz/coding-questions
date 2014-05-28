@@ -25,15 +25,15 @@ O(n) time, O(n) space
 #include<queue>
 using namespace std;
 
-void printSubTreeSum(vector<vector<int> > &relation, int node) {   
+void PrintSubTreeSum(vector<vector<int> > &relation, int node) {   
     int size = relation.size();
-    if(node == 0 || size == 0) return;
+    if (node == 0 || size == 0) return;
     vector<int> outdegree(node, 0);
     vector<int> totalweight(node,0);
     vector<int> orgweight(node,0);
     vector<int> parentindex(node,-1);
 	
-    for(int i = 0;i < size;i++) {
+    for (int i = 0;i < size;i++) {
 
         outdegree[relation[i][1]]++;
         totalweight[relation[i][0]] = relation[i][2];
@@ -43,9 +43,9 @@ void printSubTreeSum(vector<vector<int> > &relation, int node) {
 
     queue<int> q;
 	
-    for(int i = 0;i < node;i++) {
+    for (int i = 0;i < node;i++) {
 
-        if(outdegree[i] == 0) q.push(i);
+        if (outdegree[i] == 0) q.push(i);
     }
 
     while(!q.empty()) {
@@ -64,10 +64,10 @@ void printSubTreeSum(vector<vector<int> > &relation, int node) {
 
         int parindex = parentindex[curindex];
 
-        if(parindex < 0) continue;
+        if (parindex < 0) continue;
         outdegree[parindex]--;
         totalweight[parindex] += totalweight[curindex];
-        if(outdegree[parindex] == 0) q.push(parindex);
+        if (outdegree[parindex] == 0) q.push(parindex);
     }
 }
 
@@ -96,6 +96,6 @@ int main() {
     d.push_back(3);
     relation.push_back(d);
     int node = 5;
-    printSubTreeSum(relation, node);
+    PrintSubTreeSum(relation, node);
 	return 0;
 }

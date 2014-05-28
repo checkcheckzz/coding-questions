@@ -21,7 +21,7 @@ struct NODE {
     NODE(int n) : val(n), pLft(NULL), pRgt(NULL) {}
 };
 
-void getRightMostBTInner(NODE* Node, vector<NODE*> &vec, int Lev) {
+void GetRightMostBTInner(NODE* Node, vector<NODE*> &vec, int Lev) {
 
     if (Node == NULL) return;
       
@@ -32,14 +32,14 @@ void getRightMostBTInner(NODE* Node, vector<NODE*> &vec, int Lev) {
     }
 	
  
-    getRightMostBTInnerNode->pRgt, vec, Lev+1);
-    getRightMostBTInner(Node->pLft, vec, Lev+1);
+    GetRightMostBTInnerNode->pRgt, vec, Lev+1);
+    GetRightMostBTInner(Node->pLft, vec, Lev+1);
 }
  
-vector<NODE*> getRightMostBT(NODE* root) {
+vector<NODE*> GetRightMostBT(NODE* root) {
 
     vector<NODE*> vec;
-    getRightMostBThelp(root, vec, 0);
+    GetRightMostBThelp(root, vec, 0);
 
     return vec;
 }
@@ -50,7 +50,7 @@ int main() {
     head->pLft=new NODE(3);
     head->pRgt=new NODE(5);
     head->pRgt->pRgt=new NODE(7);
-    getRightMostBT(head);
+    GetRightMostBT(head);
     return 0;
 }
 

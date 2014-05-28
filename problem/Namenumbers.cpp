@@ -25,7 +25,7 @@ string allteen[10] = { "", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"
 string allten[10] = { "", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };
 string more[6] = { "", "Thousand", "Million", "Billion", "Trillion", "Quadrillion" };
 
-string underHundred(int num) {
+string UnderHundred(int num) {
     string output = "";
 
     if (num >= 100) {
@@ -47,18 +47,18 @@ string underHundred(int num) {
     return output;
 }
 
-string translateNumber(long long num) {
+string TranslateNumber(long long num) {
     if (num == 0) {
         return "Zero";
     } else if ( num < 0) {
-        return "Negative " + translateNumber(-1 * num);
+        return "Negative " + TranslateNumber(-1 * num);
     }
     int index = 0;
     string output = "";
 
     while (num > 0) {
         if (num % 1000 != 0) {
-            output = underHundred(num % 1000) + more[index] + " " + output;
+            output = UnderHundred(num % 1000) + more[index] + " " + output;
         }
         num /= 1000;
         ++index;
@@ -72,6 +72,6 @@ int main() {
     cout<<"Input the number: ";
     long long num;
     cin>>num;
-    cout<<translateNumber(num)<<endl;
+    cout<<TranslateNumber(num)<<endl;
     return 0;
 }

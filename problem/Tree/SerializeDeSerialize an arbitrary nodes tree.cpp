@@ -23,7 +23,7 @@ struct NODE  {
     NODE(int n) : val(n), vec() {}
 };
  
-void serialInner(NODE* node, char*& p) {
+void SerialInner(NODE* node, char*& p) {
 
 	
     itoa(node->val, p, 10);
@@ -32,26 +32,26 @@ void serialInner(NODE* node, char*& p) {
     itoa(num, p, 10);
     p += strlen(p);
 	
-    if(node->vec.size() == 0) return;
-    s
+    if (node->vec.size() == 0) return;
+    
     for (vector<NODE*>::iterator it = node->vec.begin(); it != pNode->vec.end(); it++) {
     
-        serialInner(*it, p);
+        SerialInner(*it, p);
     }    
 }
  
-char* serialize(NODE* root, char mem[]) {
+char* Serialize(NODE* root, char mem[]) {
     if (NULL == mem || NULL == root) return NULL;
  
     char* p = mem;
-    serialInner(root, p);
+    SerialInner(root, p);
     p++;
     *p='\0';
     return mem;
 }
 
 
-int proc(const char*& p) {
+int Proc(const char*& p) {
     
     int val = 0;
     while (*p >= '0' && *p <= '9' && *p!=' ') {
@@ -63,32 +63,32 @@ int proc(const char*& p) {
     return val;
 }
  
-NODE* deserialInner(const char*& p) {
+NODE *DeserialInner(const char*& p) {
 	
     
-    int val = proc(p);
+    int val = Proc(p);
     
-    NODE* result = new NODE(val);
+    NODE *sresult = new NODE(val);
     
-    val = proc(p);
+    val = Proc(p);
 
     int childnum = val;
    
 
     for (int i = 0; i < childnum; ++i) {
     
-        result->vec.push_back(deserialInner(p));
+        result->vec.push_back(DeserialInner(p));
     
     }    
  
     return result;
 }
  
-NODE* deSerialize(const char mem[]) {
+NODE *DeSerialize(const char mem[]) {
     if (NULL == mem) return NULL;
  
     const char* p = mem;
-    return deserialInner(p);
+    return DeserialInner(p);
 }
 
 int main() {
@@ -101,11 +101,11 @@ int main() {
     root1->vec.push_back(p2);
     root1->vec.push_back(p3);
     char str[] = "";
-    serialize(root1,str);
+    Serialize(root1, str);
     cout<<str<<endl;
     
     const char mem1[] = "3 3 1 0 2 0 4 0";
-    NODE *root = deSerialize(mem1);
+    NODE *root = DeSerialize(mem1);
     cout<<root->val<<endl;
     for (vector<NODE*>::iterator it = root->vec.begin(); it != root->vec.end(); it++) {
 	

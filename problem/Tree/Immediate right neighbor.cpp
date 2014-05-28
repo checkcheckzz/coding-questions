@@ -26,26 +26,26 @@ struct Node {
 };
 
 
-Node *findNeighbor( Node *node, int level ) {
+Node *FindNeighbor( Node *node, int level ) {
 
     if( node == NULL ) return NULL;
     if( level == 0 )  return node;
 
-    Node *left = findNeighbor(node->left,level+1);
+    Node *left = FindNeighbor(node->left,level+1);
     //always return left child at first such that this node is the immediate right neighbor
     if( left )  { 
 		return left;
 	} else  {  
-		return findNeighbor(node->right,level+1);
+		return FindNeighbor(node->right,level+1);
 	}
 } 
 
-Node* rightNeighbor(Node *node ){
+Node *RightNeighbor(Node *node ){
 
     Node *parent = node->parent;
     //records the level of node in order to find the same level neighbor
     int level = 0; 
-    while(parent) {
+    while (parent) {
         //find the lowest parent for node and the its immediate right neighbor
         while( parent && parent->left != node ) { 
             node = parent;
@@ -55,7 +55,7 @@ Node* rightNeighbor(Node *node ){
         if( parent == NULL )
             return NULL;
         //find the neighbor node with level 0
-        Node *local = findNeighbor( parent->right, level); 
+        Node *local = FindNeighbor( parent->right, level); 
 
         if(local) {
             return local;
@@ -83,7 +83,7 @@ int main(){
     root->right->right->parent = root->right;
     Node *p1 = root->left->left; //3
     Node *p2 = root->left->right; //4
-    cout<<rightNeighbor(p1)->val<<endl;
-    cout<<rightNeighbor(p2)->val<<endl;
+    cout<<RightNeighbor(p1)->val<<endl;
+    cout<<RightNeighbor(p2)->val<<endl;
     return 0;
 }
