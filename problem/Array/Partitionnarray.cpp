@@ -1,7 +1,7 @@
 /*
 
-Given an array with integers,  find an integer to minimize the difference between 
-left part sum and right part sum, not including the integer, return the position of the integer.  
+Given an array with integers,  find the index to minimize the difference between 
+left part sum and right part sum, not including the index number itself, return the position of the integer.  
 
 */
 
