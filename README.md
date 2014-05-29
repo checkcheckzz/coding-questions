@@ -217,8 +217,9 @@ By default, the time complexity is the worst time and the space complexity doesn
 * Largest X structure in a grid
 * [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Numberclosedrectangles.cpp)
 * [Spreadsheet calculation](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Spreadsheet.cpp)
-* [Total shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Totalshortestpath.cpp)
+* [Total shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Totalshortestpath.cpp)  
 * [Travel a grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
+
 --
 ####[[⬆]](#toc) <a name='sortsearch'>Sorting and Search:</a>
 
@@ -263,7 +264,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 * [Implement malloc and free](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20malloc%20and%20free.cpp)
 * [Implement memmove and memcopy](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Implement%20memmove%20and%20memcopy.cpp)
 * Last n lines of a file
-* [Matrix Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Iterator%20for%20matrix.cpp)
+* [Matrix iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Iterator%20for%20matrix.cpp)
 * [Number of online user](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Onlineuser.cpp)
 * Number of squares
 * Number of subsequence
@@ -294,13 +295,11 @@ Special topics in my blog:
 * [Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
 * [Graph Search](http://itgeekworkhard.com/study/2014/02/14/coding-graph-search/)
 * [Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
-* [Interval Tree](http://itgeekworkhard.com/study/2014/03/26/coding-interval-tree/)
 * [Knapsack Problem](http://itgeekworkhard.com/notes/2014/02/27/coding-knapsack/)
 * [Shortest Path](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
 * [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
 * [String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
 * [String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
-* [Suffix Array](http://itgeekworkhard.com/study/2014/05/05/coding-suffix-array/)
 * [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
 
 ---
