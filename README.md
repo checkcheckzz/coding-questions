@@ -24,16 +24,15 @@
 
 ###[[⬆]](#toc) <a name='stat'>Statement:</a>
 
-Most problems come from IT company interview. Some solutions are NOT my
-original work, but I don't know who wrote them. Some problems are
-difficult, and the special topics include some advanced ones.  
+Most questions come from IT company interview. Some solutions are NOT my
+original work, but I don't know who wrote them. Difficulty of questions changes greatly, and the special topics include several advanced ones.  
 
 Total Number (not including the problem in the special topics) of Problems: about 201 (142 done).
 
 Although I try to execute every program, bugs may still exist because I didn't run enough tests, welcome to find bugs. 
 The solution may not be optimal, welcome to give your better solution. You can send the corresponding pull request. 
 
-By default, the time complexity is the worst time and the space complexity doesn't include the stack space. 
+By default, the time complexity indicates the worst time and the space complexity doesn't include the stack space. 
 
 ---
 
@@ -165,7 +164,7 @@ By default, the time complexity is the worst time and the space complexity doesn
 ####[[⬆]](#toc) <a name='math'>Math:</a>
 
 * [Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Angle%20between%20the%20hour%20and%20minute.cpp)
-* [Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Math/Calculate%20(m%5En)%25(10%5Ek).cpp
+* [Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Math/Calculate%20(m%5En)%25(10%5Ek).cpp)
 * [Change a m base number to a n base number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/MbasetoNbase.cpp)
 * [Delete k digits from a number to get minimal number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Delete%20k%20digits.cpp)
 * Divide a plane of points into two equal halves
