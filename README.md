@@ -27,7 +27,7 @@
 Most questions come from IT company interview. Some solutions are NOT my
 original work, but I don't know who wrote them. Difficulty of questions changes greatly, and the special topics include several advanced ones.  
 
-Total Number (not including the problem in the special topics) of Problems: about 201 (142 done).
+Total Number (not including the problem in the special topics) of Problems: about 200.
 
 Although I try to execute every program, bugs may still exist because I didn't run enough tests, welcome to find bugs. 
 The solution may not be optimal, welcome to give your better solution. You can send the corresponding pull request. 
@@ -67,7 +67,6 @@ By default, the time complexity indicates the worst time and the space complexit
 * [Given two binary arrays A and B, i.e., containing only 0s and 1s each of size N. Find indices i, j such that sum of elements from i to j in both arrays is equal and j-i (i.e. the length of the set i,j) is the maximum possible value](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Longest%20subarray%20with%20equal%20sum.cpp)
 * [Length of first subarray that sums to zero in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Length%20of%20First%20continuous%20subarray%20that%20sums%20to%200.cpp)
 * [Length of shortest subarray with sum greater than s in in array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Length%20of%20shortest%20subarray%20with%20sum%20larger%20than%20S.cpp)
-* Matrix Region Sum in a rectangle
 * [Nearest greatest element in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Neargreatestelement.cpp)
 * [Print all K-complementary in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/K-complementary.cpp)
 * Recover the queue
@@ -206,16 +205,16 @@ By default, the time complexity indicates the worst time and the space complexit
 ####[[⬆]](#toc) <a name='graph'>Graph:</a>
 
 * [Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Blackwhitereversegame.cpp)
-* [Boggle puzzle](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Bogglegame.cpp)
+* Boggle puzzle
 * Calculate the distance from each empty room to nearest guard
 * Calculate the number of all 0s submatrix 
 * [Catch that cow](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Catchcow.cpp)
 * [Check whether a graph exists](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graph%20exists.cpp)
-* [Graph components](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Graphcomponents.cpp)
+* Graph components
 * [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
 * Largest X structure in a grid
 * [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Numberclosedrectangles.cpp)
-* [Spreadsheet calculation](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Spreadsheet.cpp)
+* Spreadsheet calculation
 * [Total shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Totalshortestpath.cpp)  
 * [Travel a grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
 
@@ -240,7 +239,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * [Merge stack of stones](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Mergestones.cpp)
 * [Minimal subset sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Minimal%20subset%20sum.cpp)
 * Paint K houses
-* [Pizza picking problem](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Pizzapick.cpp)
+* Pizza picking problem
 * Thief Problem
 
 --
@@ -248,8 +247,8 @@ By default, the time complexity indicates the worst time and the space complexit
 ####[[⬆]](#toc) <a name='other'>Other:</a>
 
 * Closest pair problem
-* [Copy on write string](Copy on write string.cpp)
-* [Cover board with tile](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Coverboardwithtiles.cpp)
+* Copy on write string
+* Cover board with tile
 * [Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Deepiterator.cpp)
 * [Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
 * [Divide integers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Divideinteger.cpp)
@@ -270,7 +269,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * Operation number with limited functional deque
 * Print all lines in a file reversely
 * Producing 64bit digest
-* [Password lock](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Passwordlock.cpp)
+* Password lock
 * [Present black and white graph with quadtree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Quadtree.cpp)
 * Quack class
 * Query relationship
@@ -294,11 +293,11 @@ Special topics in my blog:
 * [Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
 * [Graph Search](http://itgeekworkhard.com/study/2014/02/14/coding-graph-search/)
 * [Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
-* [Knapsack Problem](http://itgeekworkhard.com/notes/2014/02/27/coding-knapsack/)
+* [Knapsack Problem](http://itgeekworkhard.com/study/2014/02/27/coding-knapsack/)
 * [Shortest Path](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
 * [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
-* [String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match/)
-* [String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match/)
+* [String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match1/)
+* [String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match2/)
 * [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
 
 ---
