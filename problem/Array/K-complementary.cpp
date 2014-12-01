@@ -1,4 +1,4 @@
-I was asked by github staff to remove the code because it SEEMS that the content is from codility.com.
+I was asked by github staff to remove the code because it SEEMS that the content is from some unknown code test website.
 
 If you google the K-complementary title, the code is everywhere. A lot of websites or personal blogs have this kind of code. 
 
