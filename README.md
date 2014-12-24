@@ -27,7 +27,7 @@
 Most questions come from IT company interview. Some solutions are NOT my
 original work, but I don't know who wrote them. Difficulty of questions changes greatly, and the special topics include several advanced ones.  
 
-Total Number (not including the problem in the special topics) of Problems: about 200.
+Total Number (not including the problem in the special topics) of Problems: about 210 (120 done).
 
 Although I try to execute every program, bugs may still exist because I didn't run enough tests, welcome to find bugs. 
 The solution may not be optimal, welcome to give your better solution. You can send the corresponding pull request. 
@@ -114,7 +114,7 @@ By default, the time complexity indicates the worst time and the space complexit
 ####[[⬆]](#toc) <a name='list'>Linked List:</a>
 
 * Flatten a list
-* [Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Reversealternatelist.cpp)
+* Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x
 * [Insert a node into a cyclic Sorted List](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/Insert%20into%20a%20Cyclic%20Sorted%20List.cpp)
 * [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/List%20level%20sum.cpp)
 
@@ -144,7 +144,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * Large tree preorder traversal
 * [Longest distance between two nodes of a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Longest%20distance%20between%20two%20nodes.cpp)
 * [Maximal path sum of a n-way tree](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Tree/Maximalpathsum.cpp)
-* [Morris traversal of a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Moririsl%20traversal%20of%20Binary%20Tree.cpp)
+* Morris traversal of a binary tree
 * [PreInPostorder travel of a binary tree with stack](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/PreInPostorder%20travel%20of%20bT%20with%20stack.cpp)
 * [Printing all nodes at a given distance from a starting node in a binary tree](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Printing%20all%20nodes.cpp)
 * [Second largest node in BST](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Second%20largest%20node%20in%20BST.cpp)
@@ -182,12 +182,12 @@ By default, the time complexity indicates the worst time and the space complexit
 * [Given a positive integer N, print all combinations of non-negative integer sum to N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Print%20all%20combinations.cpp)
 * [Happy Number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Happy%20Number.cpp)
 * [Highest 1 position of binary expression](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Highest%201%20position%20of%20binary%20expression.cpp)
-* [Implement the cancall() function](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Cancallfunction.cpp)
+* Implement the cancall() function
 * [Last digit of a^b](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Last%20digit%20of%20a%5Eb.cpp)
 * Magic Number
 * Nearest greater palindrome
 * [Output true with probability 1/2^N given a function outputing true with probability 0.5](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Output%20true.cpp)
-* [Print all numbers including digit 5 smaller than number N](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Printallnumwithdigit5.cpp)
+* Print all numbers including digit 5 smaller than number N
 * [Print prime factors of a given number](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Primefactors.cpp)
 * Random generator with blacklist
 * [Read a line from a file randomly](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Readaline.cpp)
@@ -213,17 +213,17 @@ By default, the time complexity indicates the worst time and the space complexit
 * Graph components
 * [How many carrots can the rabbit eat](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/How%20many%20carrots%20can%20the%20rabbit%20eat.cpp)
 * Largest X structure in a grid
-* [Number of closed rectangles in a matrix](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Numberclosedrectangles.cpp)
+* Number of closed rectangles in a matrix
 * Spreadsheet calculation
-* [Total shortest path](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Totalshortestpath.cpp)  
+* Total shortest path
 * [Travel a grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
 
 --
 ####[[⬆]](#toc) <a name='sortsearch'>Sorting and Search:</a>
 
-* [Find the first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
-* [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Minimalelementinleftsortedarray.cpp)
-* [Find the smallest missing number in a sorted array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortSearch/Smallestmissingnumber.cpp)
+* [Find the first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortingSearch/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
+* [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortingSearch/Minimalelementinleftsortedarray.cpp)
+* [Find the smallest missing number in a sorted array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortingSearch/Smallestmissingnumber.cpp)
 * Kth element in two sorted arrays
 * Search a target in an array with unknown length
 * [Sorting](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Sorting.cpp)
@@ -251,7 +251,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * Cover board with tile
 * [Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Deepiterator.cpp)
 * [Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
-* [Divide integers](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Divideinteger.cpp)
+* Divide integers
 * [Equation solution](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Equationsolution.cpp)
 * [Family relation](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Familyrelation.cpp)
 * Final perimeter multiple rectangles cover
@@ -300,11 +300,7 @@ Special topics in my blog:
 * [String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match2/)
 * [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
 
----
 
-###License
-
-coding questions is licensed under the terms of the MIT License. See the [LICENSE file](https://github.com/checkcheckzz/coding-questions/blob/master/LICENSE) for details.
 
 
 
