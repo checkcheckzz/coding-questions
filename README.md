@@ -18,7 +18,6 @@
   - [ ] [Sortiing and Search](#sortsearch)
   - [ ] [Dynamic Programming](#dp)
   - [ ] [Other](#other)
-- [ ] [Special Topics](#st)
 
 ---
 
@@ -283,22 +282,6 @@ By default, the time complexity indicates the worst time and the space complexit
 * Total area multiple rectangles cover
 * Turn off lights
 
----
-
-###[[⬆]](#toc) <a name='st'>Special Topics:</a>
-
-Special topics in my blog:
-
-* [Arithmetic Expression & Evaluation](http://itgeekworkhard.com/study/2014/02/26/coding-arithmetic-expression-and-evaluation/)
-* [Hash](http://itgeekworkhard.com/study/2014/03/25/Hash/)
-* [Graph Search](http://itgeekworkhard.com/study/2014/02/14/coding-graph-search/)
-* [Interval Series](http://itgeekworkhard.com/study/2014/02/13/coding-interval-series/)
-* [Knapsack Problem](http://itgeekworkhard.com/study/2014/02/27/coding-knapsack/)
-* [Shortest Path](http://itgeekworkhard.com/study/2014/02/15/coding-shortest-path/)
-* [Stream Series](http://itgeekworkhard.com/study/2014/01/24/coding-stream-series/)
-* [String Pattern Match-1](http://itgeekworkhard.com/study/2014/02/16/coding-pattern-match1/)
-* [String Pattern Match-2](http://itgeekworkhard.com/study/2014/02/18/coding-pattern-match2/)
-* [Trie](http://itgeekworkhard.com/study/2014/03/15/coding-trie/)
 
 
 
