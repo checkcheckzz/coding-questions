@@ -21,7 +21,7 @@
 
 ---
 
-###[[⬆]](#toc) <a name='stat'>Statement:</a>
+### [⬆](#toc) <a name='stat'>Statement:</a>
 
 Most questions come from IT company interview. Some solutions are NOT my
 original work, but I don't know who wrote them. Difficulty of questions changes greatly, and the special topics include several advanced ones.  
@@ -35,10 +35,10 @@ By default, the time complexity indicates the worst time and the space complexit
 
 ---
 
-###[[⬆]](#toc) <a name='prob'>Problem:</a>
+### [⬆](#toc) <a name='prob'>Problem:</a>
 
 
-####[[⬆]](#toc) <a name='array'>Array:</a>
+#### [⬆](#toc) <a name='array'>Array:</a>
 
 * [Calculate the rotation distance for a sorted rotated array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Array/Rotatearraydistance.cpp)
 * Celebrity problem
@@ -74,7 +74,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * Water flow path
 
 --
-####[[⬆]](#toc) <a name='str'>String:</a>
+#### [⬆](#toc) <a name='str'>String:</a>
 
 * [Binary string matching](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/BinaryMatching.cpp)
 * [Check whether two strings match by insert or delete or replace one char](https://github.com/checkcheckzz/coding-problems/blob/master/problem/String/Edit%20Distance%20one.cpp)
@@ -110,7 +110,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * Valid Phone Number
 
 --
-####[[⬆]](#toc) <a name='list'>Linked List:</a>
+#### [⬆](#toc) <a name='list'>Linked List:</a>
 
 * Flatten a list
 * Given linked list as a-x-b-y-c-z, output it as a-b-c-z-y-x
@@ -118,7 +118,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * [List Level Sum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/LinkedList/List%20level%20sum.cpp)
 
 --
-####[[⬆]](#toc) <a name='heap'>Heap:</a>
+#### [⬆](#toc) <a name='heap'>Heap:</a>
 
 * [Kth maximal element of array c, where c[k]=a[i]+b[j], a, b are another two arrays](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heap/Kth%20maximal%20element%20of%20sum%20of%20two%20arrays.cpp)
 * [Sliding Window Maximum](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heap/Sliding%20Window%20Maximum.cpp)
@@ -126,7 +126,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * [Water in a two dimensional histogram](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Heap/Waterin2dhistogram.cpp)
 
 --
-####[[⬆]](#toc) <a name='tree'>Tree:</a>
+#### [⬆](#toc) <a name='tree'>Tree:</a>
 
 * Binary search tree Iterator
 * [Binary tree Iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Tree/Iterator%20for%20binary%20tree.cpp)
@@ -159,7 +159,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * [Vertical sum in a binary tree](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Tree/Vertical%20sum%20in%20a%20binary%20tree.cpp)
 
 --
-####[[⬆]](#toc) <a name='math'>Math:</a>
+#### [⬆](#toc) <a name='math'>Math:</a>
 
 * [Angle between the hour and minute hands](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Math/Angle%20between%20the%20hour%20and%20minute.cpp)
 * [Calculate (m^n)%(10^k)](https://github.com/checkcheckzz/coding-problem/blob/master/problem/Math/Calculate%20(m%5En)%25(10%5Ek).cpp)
@@ -195,13 +195,13 @@ By default, the time complexity indicates the worst time and the space complexit
 * Smallest positive number that can not be represented
 
 --
-####[[⬆]](#toc) <a name='bit'>Bit Manipulation:</a>
+#### [⬆](#toc) <a name='bit'>Bit Manipulation:</a>
 
 * [Count the longest continuous 0 bits in an array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Bit/Count%20the%20longest%20continuous%20bit%200s.cpp)
 * Flip bits
 
 --
-####[[⬆]](#toc) <a name='graph'>Graph:</a>
+#### [⬆](#toc) <a name='graph'>Graph:</a>
 
 * [Black white reverse board game](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Blackwhitereversegame.cpp)
 * Boggle puzzle
@@ -218,7 +218,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * [Travel a grid](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Graph/Traversalgrid.cpp)
 
 --
-####[[⬆]](#toc) <a name='sortsearch'>Sorting and Search:</a>
+#### [⬆](#toc) <a name='sortsearch'>Sorting and Search:</a>
 
 * [Find the first target in a sorted array with duplicates](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortingSearch/Find%201st%20one%20in%20large%20duplicated%20sorted%20array.cpp)
 * [Find the minimal number in a given left turned array](https://github.com/checkcheckzz/coding-problems/blob/master/problem/SortingSearch/Minimalelementinleftsortedarray.cpp)
@@ -228,7 +228,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * [Sorting](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Sorting.cpp)
 
 --
-####[[⬆]](#toc) <a name='dp'>Dynamic Programming:</a>
+#### [⬆](#toc) <a name='dp'>Dynamic Programming:</a>
 
 * Climb ladder
 * [Harry potter in the maze](https://github.com/checkcheckzz/coding-problems/blob/master/problem/DynamicProgramming/Harryporterinmaze.cpp)
@@ -243,7 +243,7 @@ By default, the time complexity indicates the worst time and the space complexit
 
 --
 
-####[[⬆]](#toc) <a name='other'>Other:</a>
+#### [⬆](#toc) <a name='other'>Other:</a>
 
 * Closest pair problem
 * Copy on write string
