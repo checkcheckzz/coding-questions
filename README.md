@@ -248,7 +248,7 @@ By default, the time complexity indicates the worst time and the space complexit
 * Closest pair problem
 * Copy on write string
 * Cover board with tile
-* [Deep iterator](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Deepiterator.cpp)
+* [Deep iterator](problem/Deepiterator.cpp)
 * [Design a structure which supports insert, delete and getRandom](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Design%20class%20support%20add%20delete%20and%20getRandom.cpp)
 * Divide integers
 * [Equation solution](https://github.com/checkcheckzz/coding-problems/blob/master/problem/Equationsolution.cpp)
