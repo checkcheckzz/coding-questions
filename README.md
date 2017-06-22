@@ -24,7 +24,7 @@
 ### [⬆](#toc) <a name='stat'>Statement:</a>
 
 Most questions come from IT company interview. Some solutions are NOT my
-original work, but I don't know who wrote them. Difficulty of questions changes greatly, and the special topics include several advanced ones.  
+original work, but I don't know who wrote them. Difficulty of questions changes greatly, and the special topics include several advanced ones.
 
 Total Number (not including the problem in the special topics) of Problems: about 210 (120 done).
 
