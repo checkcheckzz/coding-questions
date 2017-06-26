@@ -32,14 +32,6 @@ class _BaseSolution:
         self.answer = self.findTheCelebrity(people)
         return self
 
-    def __str__(self):
-        if not self._called:
-            self.Solve()
-        return '%s => %s (%d calls to HasAcquaintance)' % (
-            self.__class__.__name__,
-            self.answer,
-            self.has_acquaintance_counter)
-
     def findTheCelebrity(self, people):
         """Return the name of the celebrity if they are at the party.
 
@@ -86,15 +78,16 @@ class NSquaredSolution(_BaseSolution):
                     possible_celebrities.discard(B)
 
         # (2) celebrities are known by everyone at the party
-        for _, celeb in enumerate(possible_celebrities):
+        celebrities = set(possible_celebrities)
+        for celeb in possible_celebrities:
             for edges in social_graph.values():
                 if celeb not in edges:
-                    possible_celebrities.discard(celeb)
+                    celebrities.discard(celeb)
                     break
 
-        if possible_celebrities:
+        if celebrities:
             # we assume there's only one celebrity
-            return possible_celebrities.pop()
+            return celebrities.pop()
 
         return None
 
@@ -115,6 +108,13 @@ def main():
                    'c': ('a', 'd'),
                    'd': ('e'),
                    'e': ('b', 'd')}),
+         _TestData('ALMOST_A_CELEBRITY',
+                   None,
+                  {'a': ('b', 'c', 'd'),
+                   'b': ('c', 'd'),
+                   'c': ('a', 'd'),
+                   'd': (),
+                   'e': ('b')}), # e has never heard of d
     ]
     solutions = [NSquaredSolution]
 
@@ -123,10 +123,14 @@ def main():
         print test_case.name
         for solution in solutions:
             s = solution(test_case.edges).Solve()
+            s_repr = '%s(%d)' % (s.__class__.__name__,
+                                 s.has_acquaintance_counter)
             if s.answer == test_case.expected:
-                print 'Correct: %s' % (s,)
+                print 'PASS %s: %s' % (s_repr, s.answer)
             else:
-                print 'Wrong(%s != %s): %s' % (test_case.expected, s.answer, s)
+                print 'FAIL %s: (expected %s, got %s)' % (s_repr,
+                                                          test_case.expected,
+                                                          s.answer)
 
 
 if __name__ == '__main__':
