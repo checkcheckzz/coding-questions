@@ -92,6 +92,32 @@ class NSquaredSolution(_BaseSolution):
         return None
 
 
+class TwoPointersSolution(_BaseSolution):
+    def findTheCelebrity(self, people):
+        a_idx = 0
+        b_idx = len(people) - 1
+        while a_idx < b_idx:
+            if self.HasAcquaintance(people[a_idx], people[b_idx]):
+                # if A knows B, then A can't be the celebrity
+                a_idx += 1
+            else:
+                # if A doesn't know B, then B can't be the celebrity
+                b_idx -= 1
+
+        # double check that A meets the celebrity requirements for everyone.
+        # we may have missed a disqualification when we aggressively walked
+        # people in the last step
+        A = people[a_idx]
+        for person in [p for p in people if p != A]:
+            if self.HasAcquaintance(A, person):
+                # if A knows someone at the party, they can't be the celebrity
+                return None
+            if not self.HasAcquaintance(person, A):
+                # if someone doesn't know A, then A can't be the celebrity
+                return None
+        return A
+
+
 def main():
     test_data = [
         _TestData('D_IS_THE_CELEBRITY',
@@ -116,7 +142,7 @@ def main():
                    'd': (),
                    'e': ('b')}), # e has never heard of d
     ]
-    solutions = [NSquaredSolution]
+    solutions = [NSquaredSolution, TwoPointersSolution]
 
     for test_case in test_data:
         print
