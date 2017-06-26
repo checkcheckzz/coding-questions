@@ -67,7 +67,48 @@ class _BaseSolution:
 
 
 class NSquaredSolution(_BaseSolution):
-    pass
+    """Assume everyone is the celebrity and disqualify them if they can't be
+    the celebrity:
+
+    (1) If they know anyone else in the party, they can't be the celebrity.
+
+    (2) If they are not known by everyone else in the party, they also cannot be
+        the celebrity.
+
+    If there is an entry remaining in the list of potential celebrities, then
+    that is the celebrity.  It's an error if there is more than one potential
+    celebrity.
+    """
+    def findTheCelebrity(self, people):
+        import collections
+        # each key knows everyone in their matching value
+        social_graph = collections.defaultdict(set)
+
+        possible_celebrities = set(people)
+        for A in people:
+            for B in [p for p in people if p != A]:
+                # (1) celebrities don't know anyone at the party
+                if self.HasAcquaintance(A, B):
+                    social_graph[A].add(B)
+                    possible_celebrities.discard(A)
+                if self.HasAcquaintance(B, A):
+                    social_graph[B].add(A)
+                    possible_celebrities.discard(B)
+
+        # (2) celebrities are known by everyone at the party
+        for _, celeb in enumerate(possible_celebrities):
+            for edges in social_graph.values():
+                if celeb not in edges:
+                    possible_celebrities.discard(celeb)
+                    break
+
+        if possible_celebrities:
+            # we assume there's only one celebrity
+            return possible_celebrities.pop()
+
+        return None
+
+
 def main():
     for test_case in (D_IS_THE_CELEBRITY, NO_CELEBRITY):
         print
