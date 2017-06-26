@@ -22,6 +22,14 @@ D_IS_THE_CELEBRITY = {
     'e': ('b', 'd'),
 }
 
+NO_CELEBRITY = {
+    'a': ('b', 'c', 'd'),
+    'b': ('c', 'd'),
+    'c': ('a', 'd'),
+    'd': ('e'),
+    'e': ('b', 'd'),
+}
+
 
 class Solution:
     def __init__(self, edges=None):
