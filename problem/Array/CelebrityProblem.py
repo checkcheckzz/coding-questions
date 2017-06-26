@@ -120,7 +120,7 @@ def main():
 
     for test_case in test_data:
         print
-        print test_case.name
+        print test_case.name, test_case.edges
         for solution in solutions:
             s = solution(test_case.edges).Solve()
             s_repr = '%s(%d)' % (s.__class__.__name__,
