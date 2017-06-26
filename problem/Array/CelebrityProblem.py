@@ -31,21 +31,32 @@ NO_CELEBRITY = {
 }
 
 
-class Solution:
+class _BaseSolution:
     def __init__(self, edges=None):
         self.edges = edges or {}
         self.has_acquaintance_counter = 0
+        self.answer = None
+        self._called = False
 
     def HasAcquaintance(self, A, B):
         """Returns True if A knows B."""
         self.has_acquaintance_counter += 1
         return B in self.edges.get(A, ())
 
-    def __call__(self, people=None):
+    def Solve(self, people=None):
         if people is None:
             people = self.edges.keys()
         celebrity = self.findTheCelebrity(people)
-        return self.has_acquaintance_counter, celebrity
+        self.answer = celebrity
+        return self.has_acquaintance_counter, self.answer
+
+    def __str__(self):
+        if not self._called:
+            self.Solve()
+        return '%s => %s (%d calls to HasAcquaintance)' % (
+            self.__class__.__name__,
+            self.answer,
+            self.has_acquaintance_counter)
 
     def findTheCelebrity(self, people):
         """Return the name of the celebrity if they are at the party.
@@ -55,9 +66,13 @@ class Solution:
         return None
 
 
+class NSquaredSolution(_BaseSolution):
+    pass
 def main():
-    s = Solution(D_IS_THE_CELEBRITY)
-    print s()
+    for test_case in (D_IS_THE_CELEBRITY, NO_CELEBRITY):
+        print
+        print test_case
+        print NSquaredSolution(test_case)
 
 
 if __name__ == '__main__':
