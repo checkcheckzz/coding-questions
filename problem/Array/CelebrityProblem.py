@@ -14,23 +14,6 @@ HasAcquaintance as possible.
 """
 
 
-D_IS_THE_CELEBRITY = {
-    'a': ('b', 'c', 'd'),
-    'b': ('c', 'd'),
-    'c': ('a', 'd'),
-    'd': (),
-    'e': ('b', 'd'),
-}
-
-NO_CELEBRITY = {
-    'a': ('b', 'c', 'd'),
-    'b': ('c', 'd'),
-    'c': ('a', 'd'),
-    'd': ('e'),
-    'e': ('b', 'd'),
-}
-
-
 class _BaseSolution:
     def __init__(self, edges=None):
         self.edges = edges or {}
@@ -46,9 +29,8 @@ class _BaseSolution:
     def Solve(self, people=None):
         if people is None:
             people = self.edges.keys()
-        celebrity = self.findTheCelebrity(people)
-        self.answer = celebrity
-        return self.has_acquaintance_counter, self.answer
+        self.answer = self.findTheCelebrity(people)
+        return self
 
     def __str__(self):
         if not self._called:
@@ -64,6 +46,14 @@ class _BaseSolution:
         Return None if there is no celebrity at the party.
         """
         return None
+
+
+class _TestData:
+    """Struct for containing test data and expected celebrity value."""
+    def __init__(self, name, expected, edges):
+        self.name = name
+        self.expected = expected
+        self.edges = edges
 
 
 class NSquaredSolution(_BaseSolution):
@@ -110,10 +100,33 @@ class NSquaredSolution(_BaseSolution):
 
 
 def main():
-    for test_case in (D_IS_THE_CELEBRITY, NO_CELEBRITY):
+    test_data = [
+        _TestData('D_IS_THE_CELEBRITY',
+                  'd',
+                  {'a': ('b', 'c', 'd'),
+                   'b': ('c', 'd'),
+                   'c': ('a', 'd'),
+                   'd': (),
+                   'e': ('b', 'd')}),
+        _TestData('NO_CELEBRITY',
+                  None,
+                  {'a': ('b', 'c', 'd'),
+                   'b': ('c', 'd'),
+                   'c': ('a', 'd'),
+                   'd': ('e'),
+                   'e': ('b', 'd')}),
+    ]
+    solutions = [NSquaredSolution]
+
+    for test_case in test_data:
         print
-        print test_case
-        print NSquaredSolution(test_case)
+        print test_case.name
+        for solution in solutions:
+            s = solution(test_case.edges).Solve()
+            if s.answer == test_case.expected:
+                print 'Correct: %s' % (s,)
+            else:
+                print 'Wrong(%s != %s): %s' % (test_case.expected, s.answer, s)
 
 
 if __name__ == '__main__':
