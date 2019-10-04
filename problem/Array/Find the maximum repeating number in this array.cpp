@@ -44,7 +44,7 @@ int MaxRepeat(int arr[], int len) {
    
     for (int i = 0; i < len; i++) {
     
-            arr[i] %= len;
+            arr[i] = arr[i]%len;
     }
 
     return result;
