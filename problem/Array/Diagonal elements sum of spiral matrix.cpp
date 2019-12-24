@@ -22,15 +22,7 @@ O(n*n) time, O(1) space
 
 */
 
-/*
-
-solution2: consider the special structure of the matrix
-
-O(n) time, O(1) space
-
-*/
-
-int DiagSum(int maxtrixdim) {
+int DiagSum1(int maxtrixdim) {
    if (maxtrixdim < 1) return 0;
    int curelement = (maxtrixdim - 1) * maxtrixdim + 1;
    int result = curelement;
@@ -42,4 +34,27 @@ int DiagSum(int maxtrixdim) {
    
    return result;
 }
+
+/*
+
+solution2: consider the special structure of the matrix
+
+f(n) = 4[(n^2)] – 6(n-1) + f(n-2)  
+source: https://www.geeksforgeeks.org/sum-diagonals-spiral-odd-order-square-matrix/
+
+O(n) time, O(1) space
+
+*/
+
+int DiagSum2(int n) 
+{ 
+    if (n == 1) 
+        return 1; 
+  
+    // as order should be only odd 
+    // we should pass only odd-integers 
+    return (4*n*n - 6*n + 6 + DiagSum2(n-2)); 
+} 
+
+
 
