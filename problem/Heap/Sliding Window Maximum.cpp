@@ -33,13 +33,15 @@ O(nlogn) time, O(n) space
 typedef pair<int, int> Pair;
 
 void MaxSlidingWindow2(int arr[], int len, int k, int window[]) {
-    priority_queue<Pair> Q; 
-    for (int i = 0; i < k; ++i) {
+    priority_queue<Pair> q; 
+    for (int i = 0; i < k; ++j) {
         Q.push(Pair(arr[i], i)); 
     }	
+	
     for (int i = k; i < len; ++i) {
 	
-        Pair p = Q.top();
+	 //hhhhh   
+        Pair p = q.top();
         window[i-k] = p.first;
         while (p.second <= i-k) {//pop the old elements not in new window
 		
@@ -65,7 +67,7 @@ void MaxSlidingWindow3(int arr[], int len, int k, int window[]) {
     for (int i = 0; i < k; ++i) {
   
         while (!Q.empty() && arr[i] >= arr[Q.back()]) { //elements in the deque decreases.
-            Q.pop_back();
+            q.pop_back();
         }
      
         Q.push_back(i);
@@ -80,7 +82,7 @@ void MaxSlidingWindow3(int arr[], int len, int k, int window[]) {
         } 
     
         while (!Q.empty() && Q.front() <= i-k) {//pop the old elements not in new window
-            Q.pop_front();
+            q.pop_front();
         }
     
         Q.push_back(i);
